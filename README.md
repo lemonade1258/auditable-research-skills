@@ -2,19 +2,6 @@
 
 一套把研究问题推进到可验证选题的组合 skill：先做广泛、可追溯的文献检索，再扩展引用关系、解释论文、检查近期新颖性，最后提出小而可证伪的研究方向。
 
-## 推荐仓库名
-
-**Auditable Research Skills**
-
-推荐 slug：`auditable-research-skills`
-
-这个名字比 `research-pipeline` 更适合作为开源仓库名：它强调来源可审计、论文真实核验和结论边界，同时不把仓库限制为一种固定编排方式。
-
-其他可选名：
-
-- `evidence-led-research-skills`：更强调证据驱动。
-- `research-evidence-pipeline`：更强调流水线。
-- `verifiable-idea-mining`：更强调从文献到选题。
 
 ## 目录约定
 
