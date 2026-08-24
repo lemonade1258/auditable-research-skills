@@ -1,0 +1,4 @@
+interface:
+  display_name: "Broad academic discovery"
+  short_description: "Multi-route paper, author, lab, and trend search"
+  default_prompt: "Use $literature-search to build a broad, current, and auditable literature set for this question."

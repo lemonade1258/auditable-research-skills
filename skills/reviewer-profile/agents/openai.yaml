@@ -1,0 +1,4 @@
+interface:
+  display_name: "Venue research taste"
+  short_description: "Analyze research taste separately from paper advice"
+  default_prompt: "Use $reviewer-profile to build a dated research-taste profile for these target venues."

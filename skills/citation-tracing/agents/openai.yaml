@@ -1,0 +1,4 @@
+interface:
+  display_name: "Literature graph tracing"
+  short_description: "Trace citations, datasets, authors, and labs"
+  default_prompt: "Use $citation-tracing to expand these anchors into an auditable related-work graph."

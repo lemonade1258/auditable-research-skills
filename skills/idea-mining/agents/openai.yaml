@@ -1,0 +1,4 @@
+interface:
+  display_name: "Current research idea mining"
+  short_description: "Find small ideas that survive novelty checks"
+  default_prompt: "Use $idea-mining to derive and stress-test small falsifiable ideas from this evidence map."

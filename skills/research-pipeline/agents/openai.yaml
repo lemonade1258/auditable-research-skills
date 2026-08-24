@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evidence-first research pipeline"
+  short_description: "Current, auditable research from question to idea"
+  default_prompt: "Use $research-pipeline to investigate this research question end to end with dated evidence and stage gates."

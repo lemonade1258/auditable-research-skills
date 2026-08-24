@@ -1,0 +1,12 @@
+# Local/generated files
+*.zip
+__pycache__/
+*.pyc
+
+# Legacy pre-standardization copies kept outside the public repository
+/citation-tracing/
+/idea-mining/
+/literature-search/
+/paper-extraction/
+/research-pipeline/
+/reviewer-profile/

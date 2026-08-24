@@ -1,0 +1,5 @@
+[
+  {"title": "A Study", "doi": "10.1000/example"},
+  {"title": "A Study", "doi": "https://doi.org/10.1000/example"},
+  {"title": "Another Study", "doi": ""}
+]

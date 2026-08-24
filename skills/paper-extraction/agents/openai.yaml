@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evidence-backed paper reading"
+  short_description: "Explain papers clearly at controlled reading depth"
+  default_prompt: "Use $paper-extraction to explain and compare these papers with evidence-backed reading cards."
