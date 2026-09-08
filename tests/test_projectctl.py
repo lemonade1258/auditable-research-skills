@@ -36,3 +36,26 @@ def test_gate_reports_missing_artifacts(tmp_path):
     assert gate.returncode == 1
     assert "coverage-ledger.json" in gate.stdout
 
+
+def test_import_artifact_validates_and_refuses_conflicts(tmp_path):
+    result = run("init", "demo-project", "--root", str(tmp_path))
+    assert result.returncode == 0
+    project = tmp_path / "demo-project"
+    source = tmp_path / "papers.json"
+    source.write_text(json.dumps([{
+        "paper_id": "p1", "title": "Paper", "source_url": "https://example.org/p",
+        "discovery_routes": ["direct"], "authority_tier": "A",
+        "reading_level": "metadata", "retrieved_at": "2026-09-08"
+    }]), encoding="utf-8")
+    imported = subprocess.run([
+        sys.executable, str(ROOT / "skills/research-pipeline/scripts/import_artifact.py"),
+        str(project), str(source), "03-literature/retained_registry.json", "literature"
+    ], cwd=ROOT, text=True, capture_output=True)
+    assert imported.returncode == 0, imported.stdout + imported.stderr
+    source.write_text("[]", encoding="utf-8")
+    conflict = subprocess.run([
+        sys.executable, str(ROOT / "skills/research-pipeline/scripts/import_artifact.py"),
+        str(project), str(source), "03-literature/retained_registry.json", "literature"
+    ], cwd=ROOT, text=True, capture_output=True)
+    assert conflict.returncode == 1
+    assert "CONFLICT" in conflict.stdout

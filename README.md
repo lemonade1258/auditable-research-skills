@@ -167,6 +167,10 @@ python skills/research-pipeline/scripts/projectctl.py event projects/my-topic \
 python skills/research-pipeline/scripts/projectctl.py gate projects/my-topic question
 python skills/research-pipeline/scripts/projectctl.py status projects/my-topic
 python skills/research-pipeline/scripts/projectctl.py validate projects/my-topic
+
+python skills/research-pipeline/scripts/import_artifact.py \
+  projects/my-topic discovered.json \
+  03-literature/retained_registry.json literature --stage discovery
 ```
 
 `projectctl.py` does not certify scientific correctness. It verifies that the
@@ -174,6 +178,10 @@ project has the declared artifacts, that structured records follow the shared
 contract, and that stage transitions are recorded. The append-only
 `90-logs/events.jsonl` file is the audit trail for reruns, manual decisions,
 failures, and superseded outputs.
+
+Use `import_artifact.py` at component boundaries. It validates the shared
+record contract, refuses to overwrite a different existing artifact, keeps the
+destination inside the project, and records the source-to-target handoff.
 
 The shared Python contract is in `skills/shared/artifact_contract.py`; event
 operations are in `skills/shared/project_events.py`. Components should use

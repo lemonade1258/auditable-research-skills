@@ -41,6 +41,7 @@ STAGES = {
     "manuscript": ("10-manuscript/claim-ledger.json",),
     "release": ("91-releases/release-audit.json",),
 }
+STAGE_ORDER = tuple(STAGES)
 
 
 def slug(value: str) -> str:
@@ -124,6 +125,15 @@ def gate(args: argparse.Namespace) -> int:
     required = STAGES[args.stage]
     missing = [item for item in required if not (args.project / item).exists()]
     manifest = json.loads((args.project / "manifest.json").read_text(encoding="utf-8"))
+    index = STAGE_ORDER.index(args.stage)
+    incomplete_prior = [stage for stage in STAGE_ORDER[:index]
+                        if manifest.get("stage_status", {}).get(stage) not in {"passed", "not_started"}]
+    # Stages that are not relevant to a minimal run may remain not_started, but
+    # an explicitly failed or blocked predecessor must be resolved first.
+    if incomplete_prior:
+        print("BLOCKED")
+        print(json.dumps({"stage": args.stage, "unresolved_prior_stages": incomplete_prior}, ensure_ascii=False, indent=2))
+        return 1
     if missing:
         print("BLOCKED")
         print(json.dumps({"stage": args.stage, "missing": missing}, ensure_ascii=False, indent=2))
@@ -208,4 +218,3 @@ def args_func(parser: argparse.ArgumentParser) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
