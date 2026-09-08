@@ -37,6 +37,17 @@ def test_gate_reports_missing_artifacts(tmp_path):
     assert "coverage-ledger.json" in gate.stdout
 
 
+def test_gate_does_not_accept_empty_directory_or_json(tmp_path):
+    result = run("init", "demo-project", "--root", str(tmp_path))
+    assert result.returncode == 0
+    project = tmp_path / "demo-project"
+    (project / "01-question-map" / "question-map.md").write_text("# Question map\n", encoding="utf-8")
+    assert run("gate", str(project), "question").returncode == 0
+    (project / "02-search" / "search-protocol.md").write_text("protocol\n", encoding="utf-8")
+    (project / "02-search" / "coverage-ledger.json").write_text("[]\n", encoding="utf-8")
+    assert run("gate", str(project), "discovery").returncode == 1
+
+
 def test_import_artifact_validates_and_refuses_conflicts(tmp_path):
     result = run("init", "demo-project", "--root", str(tmp_path))
     assert result.returncode == 0

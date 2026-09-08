@@ -2,6 +2,10 @@
 
 Reusable skills for taking a research question from broad discovery to a defensible, current, and testable research direction.
 
+## 中文入口
+
+先读 [用户总览](docs/system-overview.md)，再读 [使用手册](docs/using-the-pipeline.md)。用户总览说明整体设计、已实现边界和 AI 防御性写作规则；使用手册给出从建项目到文献、实验、写作、发布和技术转化的命令顺序。
+
 这套 skill 解决的是一个很具体的问题：直接问模型“这个方向有没有人做过、还能做什么”时，回答往往只覆盖熟悉论文，混淆论文贡献与方法，忽略引用链和近期工作，并在证据不足时过早提出“新颖想法”。本仓库把这件事拆成可复跑、可检查的研究环节：广泛检索、引用扩展、论文解析、证据归纳、科研品味、近期缺口复核和小规模 idea 挖掘。
 
 ## What this repository provides

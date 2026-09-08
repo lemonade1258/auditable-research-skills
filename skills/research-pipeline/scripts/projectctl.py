@@ -55,6 +55,23 @@ def write_json(path: Path, value: object) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def artifact_ready(path: Path) -> bool:
+    if not path.exists():
+        return False
+    if path.is_dir():
+        return any(item.is_file() and item.suffix.lower() in {".json", ".md", ".pdf", ".txt"}
+                   for item in path.rglob("*"))
+    if path.stat().st_size == 0:
+        return False
+    if path.suffix.lower() == ".json":
+        try:
+            value = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            return False
+        return bool(value)
+    return bool(path.read_text(encoding="utf-8", errors="ignore").strip())
+
+
 def init(args: argparse.Namespace) -> int:
     project = (args.root / args.slug).resolve()
     project.mkdir(parents=True, exist_ok=True)
@@ -123,7 +140,7 @@ def status(args: argparse.Namespace) -> int:
 
 def gate(args: argparse.Namespace) -> int:
     required = STAGES[args.stage]
-    missing = [item for item in required if not (args.project / item).exists()]
+    missing = [item for item in required if not artifact_ready(args.project / item)]
     manifest = json.loads((args.project / "manifest.json").read_text(encoding="utf-8"))
     index = STAGE_ORDER.index(args.stage)
     incomplete_prior = [stage for stage in STAGE_ORDER[:index]

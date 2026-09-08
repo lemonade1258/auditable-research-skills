@@ -14,7 +14,12 @@ projects/<slug>/
   05-reviewer-taste/
   06-ideas/
   07-discussion/
+  09-experiments/
+  10-manuscript/
+  11-reviews/
+  12-transfer/
   90-logs/
+  91-releases/
   99-temp/
 ```
 
