@@ -147,6 +147,38 @@ python skills/research-pipeline/scripts/validate_research_output.py \
 
 The validator checks coverage floors, authority tiers, anchors, compact/deep reading, explanation cards, freshness, nearest-work comparison, falsification, external validation, and scope. The floors are safety checks, not a target for padding the registry.
 
+### Project controller and event log
+
+For a new project, use `projectctl.py` when you need a manifest, stage status,
+append-only event log, and explicit artifact gates:
+
+```bash
+python skills/research-pipeline/scripts/projectctl.py init my-topic \
+  --root projects \
+  --question "Your research question" \
+  --domain "your domain" \
+  --venue NeurIPS \
+  --source notes.md
+
+python skills/research-pipeline/scripts/projectctl.py event projects/my-topic \
+  --type search.completed --stage discovery --status complete \
+  --details '{"queries": 18, "anchors": 10}'
+
+python skills/research-pipeline/scripts/projectctl.py gate projects/my-topic question
+python skills/research-pipeline/scripts/projectctl.py status projects/my-topic
+python skills/research-pipeline/scripts/projectctl.py validate projects/my-topic
+```
+
+`projectctl.py` does not certify scientific correctness. It verifies that the
+project has the declared artifacts, that structured records follow the shared
+contract, and that stage transitions are recorded. The append-only
+`90-logs/events.jsonl` file is the audit trail for reruns, manual decisions,
+failures, and superseded outputs.
+
+The shared Python contract is in `skills/shared/artifact_contract.py`; event
+operations are in `skills/shared/project_events.py`. Components should use
+these helpers instead of inventing incompatible status or provenance fields.
+
 ## Why this is not a single giant prompt
 
 The skills are deliberately separated because the failure modes differ:

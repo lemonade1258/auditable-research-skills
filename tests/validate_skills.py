@@ -5,7 +5,10 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS = ROOT / "skills"
 errors = []
-skill_dirs = sorted(p for p in SKILLS.iterdir() if p.is_dir() and p.name != "__pycache__")
+skill_dirs = sorted(
+    p for p in SKILLS.iterdir()
+    if p.is_dir() and p.name not in {"__pycache__", "shared"}
+)
 
 if not SKILLS.exists():
     errors.append("missing skills/ directory")

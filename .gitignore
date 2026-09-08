@@ -10,3 +10,6 @@ __pycache__/
 /paper-extraction/
 /research-pipeline/
 /reviewer-profile/
+
+# Local project runs and test artifacts
+/tmp/

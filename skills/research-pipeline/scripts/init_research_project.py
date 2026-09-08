@@ -19,7 +19,12 @@ DIRS = (
     "05-reviewer-taste",
     "06-ideas",
     "07-discussion",
+    "09-experiments",
+    "10-manuscript",
+    "11-reviews",
+    "12-transfer",
     "90-logs",
+    "91-releases",
     "99-temp",
 )
 
@@ -48,11 +53,26 @@ def main() -> int:
         copied = list(manifest.get("inputs", []))
     else:
         manifest = {
+            "schema_version": "1.0",
             "project_slug": args.slug,
             "created_at_utc": datetime.now(timezone.utc).isoformat(),
+            "updated_at_utc": None,
             "inputs": [],
             "literature_cutoff": None,
             "status": "initialized",
+            "current_stage": "intake",
+            "stage_status": {
+                "intake": "not_started",
+                "question": "not_started",
+                "discovery": "not_started",
+                "reading": "not_started",
+                "evidence": "not_started",
+                "freshness": "not_started",
+                "idea": "not_started",
+                "experiment": "not_started",
+                "manuscript": "not_started",
+                "release": "not_started",
+            },
         }
         copied = []
 
@@ -71,6 +91,7 @@ def main() -> int:
             copied.append(item)
 
     manifest["inputs"] = copied
+    manifest["updated_at_utc"] = datetime.now(timezone.utc).isoformat()
     manifest_path.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )

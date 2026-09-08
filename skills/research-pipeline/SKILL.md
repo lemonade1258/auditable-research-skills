@@ -13,6 +13,11 @@ Collect the question, domain, target venues, contribution type, time window, kno
 
 Create one isolated project directory before producing artifacts. Follow `references/project-layout.md`; never mix registries, PDFs, notes, or conclusions across projects.
 
+Use `scripts/projectctl.py init` for new projects when possible. It creates the
+canonical tree, `manifest.json`, and an append-only event log. Use its stage
+gate before treating an artifact as complete. Existing projects created by
+`init_research_project.py` remain supported.
+
 ## Stages and gates
 
 1. Write a question map: central question, importance, competing explanations, observable behaviors, task families, and non-goals.
@@ -32,3 +37,7 @@ Produce a plain-language report and machine-readable artifacts: question map, da
 Use counts as coverage floors, not quality targets. Do not propose ideas while core papers remain metadata-only, freshness checks are incomplete, or nearest-work comparisons lack evidence. If a gate fails, label the run incomplete and continue the missing stage.
 
 Use the shared schemas in `../shared/`. Define technical terms and always explain what a paper tried to do, how it did it, what it found, what it did not establish, and why it matters here.
+
+The controller and shared validators check artifact presence and provenance
+fields; they do not certify scientific truth, novelty, or publication readiness.
+Keep those judgments explicit in the relevant evidence and decision artifacts.

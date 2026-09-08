@@ -18,6 +18,18 @@ Turn a broad research request into an auditable decision record without forcing 
 
 `references/` contains branch-specific policy, schemas, and checks. `scripts/` contains deterministic file/API operations. Resources are loaded only when the relevant branch needs them.
 
+### Project state layer
+
+The coordinator also maintains a project manifest and append-only event log.
+`skills/research-pipeline/scripts/projectctl.py` creates the canonical project
+tree, records stage status, checks required artifacts, and emits events to
+`90-logs/events.jsonl`. This is intentionally separate from model-generated
+reports: a report can be persuasive while the project remains incomplete.
+
+Cross-skill records use the small dependency-free helpers in `skills/shared/`.
+They validate provenance-critical fields for literature, evidence, ideas, and
+manuscript claims without pretending to judge truth or novelty.
+
 ## Coordinator contract
 
 `research-pipeline` owns sequencing and gates. It invokes component skills conceptually through their artifacts:
