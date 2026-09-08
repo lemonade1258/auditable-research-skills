@@ -213,3 +213,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for skill structure, evidence requirement
 
 - [Architecture](docs/architecture.md): how routing metadata, skill procedures, resources, and stage gates fit together.
 - [Artifact contract](docs/artifact-contract.md): the minimum fields for literature records, paper cards, citation edges, and idea candidates.
+- [Using the pipeline](docs/using-the-pipeline.md): concrete commands and the handoff order for discovery, reading, evidence, experiments, writing, release, and transfer.

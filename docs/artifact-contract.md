@@ -61,3 +61,15 @@ Every retained idea should state the measured unresolved limitation, supporting 
 - `deep`: core or nearest paper read at deep depth.
 - `verified`: claim checked against a source.
 - `incomplete`: a required gate or evidence item remains missing.
+
+## Runtime artifacts
+
+The repository also validates paper cards, freshness records, experiment runs,
+manuscript claims, and patent/technical-transfer cases. These objects are
+written inside the project tree and imported through
+`skills/research-pipeline/scripts/import_artifact.py`; a handoff records its
+source, destination, artifact kind, and record count in the event log.
+
+An empty `supporting_evidence` list is valid for a manuscript claim whose
+`integrity_status` is `needs-source`. It is a visible incomplete state, not a
+license to use the claim in a final release.

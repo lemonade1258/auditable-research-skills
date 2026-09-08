@@ -59,14 +59,55 @@ def validate_idea(record: dict[str, Any]) -> list[str]:
 
 def validate_claim(record: dict[str, Any]) -> list[str]:
     errors = [f"missing {field}" for field in missing(record, (
-        "claim_id", "text", "supporting_evidence", "claim_type", "integrity_status",
+        "claim_id", "text", "claim_type", "integrity_status",
     ))]
+    if "supporting_evidence" not in record:
+        errors.append("missing supporting_evidence")
     if record.get("integrity_status") not in {"verified", "needs-source", "overclaim", "blocked"}:
         errors.append("invalid integrity_status")
     return errors
 
 
+def validate_paper_card(record: dict[str, Any]) -> list[str]:
+    fields = ("paper_id", "reading_level", "motivation", "method", "contribution", "insight")
+    errors = [f"missing {field}" for field in missing(record, fields)]
+    if record.get("reading_level") not in {"compact", "deep"}:
+        errors.append("paper card reading_level must be compact|deep")
+    return errors
+
+
+def validate_freshness(record: dict[str, Any]) -> list[str]:
+    errors = [f"missing {field}" for field in missing(record, (
+        "idea_id", "checked_at", "status", "queries", "nearest_work_ids", "evidence",
+    ))]
+    if record.get("status") not in {"open", "partially_open", "likely_closed", "unverified"}:
+        errors.append("invalid freshness status")
+    return errors
+
+
+def validate_run(record: dict[str, Any]) -> list[str]:
+    errors = [f"missing {field}" for field in missing(record, (
+        "run_id", "code_commit", "data_version", "config", "status",
+    ))]
+    if record.get("status") not in {"running", "complete", "failed", "superseded"}:
+        errors.append("invalid run status")
+    return errors
+
+
+def validate_transfer(record: dict[str, Any]) -> list[str]:
+    errors = [f"missing {field}" for field in missing(record, (
+        "case_id", "mode", "technical_facts", "open_questions", "status",
+    ))]
+    if record.get("mode") not in {"disclosure", "application", "docket"}:
+        errors.append("invalid transfer mode")
+    if record.get("status") not in {"intake", "questions", "draft", "review", "complete", "blocked"}:
+        errors.append("invalid transfer status")
+    return errors
+
+
 def validate_records(records: Any, kind: str) -> list[str]:
+    if kind == "transfer" and isinstance(records, dict):
+        records = [records]
     if not isinstance(records, list):
         return ["artifact must be a JSON array"]
     validator = {
@@ -74,6 +115,10 @@ def validate_records(records: Any, kind: str) -> list[str]:
         "evidence": validate_evidence,
         "idea": validate_idea,
         "claim": validate_claim,
+        "paper_card": validate_paper_card,
+        "freshness": validate_freshness,
+        "run": validate_run,
+        "transfer": validate_transfer,
     }.get(kind)
     if validator is None:
         return [f"unknown artifact kind: {kind}"]
@@ -84,4 +129,3 @@ def validate_records(records: Any, kind: str) -> list[str]:
             continue
         errors.extend(f"record {index}: {error}" for error in validator(record))
     return errors
-

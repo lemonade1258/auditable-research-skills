@@ -30,7 +30,7 @@ def main() -> int:
     parser.add_argument("project", type=project_path)
     parser.add_argument("source", type=Path)
     parser.add_argument("target", help="project-relative destination")
-    parser.add_argument("kind", choices=("literature", "evidence", "idea", "claim"))
+    parser.add_argument("kind", choices=("literature", "evidence", "idea", "claim", "paper_card", "freshness", "run", "transfer"))
     parser.add_argument("--stage", default="artifact")
     args = parser.parse_args()
 
@@ -56,14 +56,14 @@ def main() -> int:
     else:
         destination.write_bytes(source.read_bytes())
 
+    record_count = len(records) if isinstance(records, list) else 1
     append_event(args.project, "artifact.imported", stage=args.stage, status="verified",
                  details={"source": str(source), "target": str(destination.relative_to(args.project)),
-                          "kind": args.kind, "records": len(records),
+                          "kind": args.kind, "records": record_count,
                           "imported_at_utc": datetime.now(timezone.utc).isoformat()})
-    print(f"IMPORTED target={destination.relative_to(args.project)} records={len(records)}")
+    print(f"IMPORTED target={destination.relative_to(args.project)} records={record_count}")
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
