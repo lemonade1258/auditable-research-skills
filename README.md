@@ -1,220 +1,112 @@
 # Auditable Research Skills
 
-Reusable skills for taking a research question from broad discovery to a defensible, current, and testable research direction.
+一套把研究问题推进到“可核查、可复现、可证伪”的科研工作流。它不是一个会生成漂亮综述的超级提示词，也不是自动保证新颖性的论文机器人。
 
-## 中文入口
+它把研究拆成明确的 skill、项目文件、证据记录和阶段门禁：模型负责理解、比较和提出候选；脚本负责路径、字段、计数、版本和完整性检查；研究者负责事实裁决、实验真实性和最终判断。
 
-先读 [用户总览](docs/system-overview.md)，再读 [使用手册](docs/using-the-pipeline.md)。用户总览说明整体设计、已实现边界和 AI 防御性写作规则；使用手册给出从建项目到文献、实验、写作、发布和技术转化的命令顺序。
+## 先读这三份文档
 
-这套 skill 解决的是一个很具体的问题：直接问模型“这个方向有没有人做过、还能做什么”时，回答往往只覆盖熟悉论文，混淆论文贡献与方法，忽略引用链和近期工作，并在证据不足时过早提出“新颖想法”。本仓库把这件事拆成可复跑、可检查的研究环节：广泛检索、引用扩展、论文解析、证据归纳、科研品味、近期缺口复核和小规模 idea 挖掘。
+1. [系统总览](docs/system-overview.md)：项目解决什么问题，哪些已经实现，哪些仍需人工判断。
+2. [使用手册](docs/using-the-pipeline.md)：从创建项目到文献、实验、写作、发布和技术转化的实际命令。
+3. [架构说明](docs/architecture.md)：路由层、skill 层、资源层、项目状态层如何协作。
 
-## What this repository provides
+## 它解决的具体问题
 
-The repository contains six composable skills. `research-pipeline` is the coordinator; the other five skills are independently usable components.
+直接问模型“这个方向有没有人做过、还能做什么”，常见结果是：只覆盖熟悉论文，混淆论文贡献和方法，遗漏引用链与近期工作，在证据不足时过早提出 idea。
 
-| Skill | Responsibility | Main output |
-|---|---|---|
-| `research-pipeline` | Run the complete investigation and enforce stage gates | A dated research project with all required artifacts |
-| `literature-search` | Search independent routes and preserve authority decisions and near-misses | Search protocol, anchors, registry, coverage ledger |
-| `citation-tracing` | Expand every anchor through references, cited-by, related work, datasets, authors, and labs | Auditable literature graph and branch ledger |
-| `paper-extraction` | Read papers at explicit depths and compare claims with evidence | Paper cards and evidence-backed reading notes |
-| `reviewer-profile` | Analyze public venue-level research taste separately from generic paper advice | Time-aware reviewer-taste brief |
-| `idea-mining` | Derive small candidates only after literature and freshness gates pass | Candidate ideas, nearest-work checks, falsification plans |
-
-## How the pieces fit
+本仓库把这些风险拆成可检查的阶段：
 
 ```text
-research question
-      |
-      v
-research-pipeline ──> question map and scope
-      |
-      +── literature-search ──> broad discovery, anchors, near-misses
-      |
-      +── citation-tracing ──> per-anchor citation and author/lab graph
-      |
-      +── paper-extraction ──> compact/deep paper cards and evidence
-      |
-      +── evidence map ──> what each line of work actually establishes
-      |
-      +── reviewer-profile ──> venue taste and execution risks
-      |
-      +── freshness gate ──> current nearest-work check
-      |
-      +── idea-mining ──> small, falsifiable candidates and external validation
+问题定义
+  -> 多路线检索与策展
+  -> 引用、作者、实验室和数据集追踪
+  -> metadata / compact / deep 论文阅读
+  -> claim-evidence 矩阵
+  -> 当前日期 freshness 复核
+  -> 小而可证伪的 idea
+  -> 实验运行登记
+  -> claim ledger 驱动论文写作
+  -> 独立审阅、rebuttal 和发布审计
+  -> 专利交底或技术转化
 ```
 
-The arrows are gates, not suggestions. A title list cannot substitute for paper extraction. A model-memory gap cannot substitute for a freshness check. An idea cannot pass while its nearest work is metadata-only.
+箭头是门禁，不是装饰。没有完成前一阶段的证据，不能把后一阶段的文字当成结论。
 
-## Installation
+## 六个核心 skill
 
-### Install the complete package with `skills.sh`
+| Skill | 负责什么 | 主要产物 |
+|---|---|---|
+| `research-pipeline` | 协调整个调查、维护阶段门禁 | 项目 manifest、阶段状态、研究报告 |
+| `literature-search` | 独立路线检索、来源分级、保留和排除 | 搜索协议、OpenAlex 发现集、策展注册表 |
+| `citation-tracing` | 顺着 references、cited-by、作者、实验室、数据集追踪 | 文献图谱、关系边、分支台账 |
+| `paper-extraction` | 按深度阅读并解释论文 | PDF 文本、compact/deep paper card |
+| `reviewer-profile` | 分析公开 venue/领域评审品味 | 主题统计、数据范围和执行风险 |
+| `idea-mining` | 在 evidence 和 freshness 通过后形成候选 | 最近工作比较、证伪实验、外部验证 |
+
+配套脚本还提供：实验 `run registry`、论文 `claim ledger`、写作事实检查、投稿包审计和专利/技术转化 intake。
+
+## 最短可用入口
+
+```bash
+python skills/research-pipeline/scripts/projectctl.py init my-topic \
+  --root projects \
+  --question "一个可测量的研究问题" \
+  --domain finance \
+  --venue NeurIPS
+
+python skills/literature-search/scripts/openalex_collect.py projects/my-topic \
+  --query "直接问题" \
+  --query "同义概念" \
+  --query "任务或 benchmark"
+
+python skills/literature-search/scripts/curate_registry.py \
+  projects/my-topic/02-search/openalex_discovered.json \
+  projects/my-topic --keep 60
+```
+
+随后入库核心 PDF，补齐 paper cards，建立 evidence matrix，运行 freshness 检查，再进入 idea 和实验。完整命令见 [使用手册](docs/using-the-pipeline.md)。
+
+## 为什么它可信
+
+- 原始输入、检索日志、排除记录、PDF、论文卡、实验和旧版本分开保存。
+- 重要判断需要来源、原文位置、实验运行或明确标注为未核验推断。
+- `metadata` 不等于读过论文；空目录和空 JSON 不能通过阶段门禁。
+- `events.jsonl` 记录初始化、导入、阶段通过、失败和人工裁决。
+- 共享 artifact contract 防止不同模块各自发明互不兼容的字段。
+- 系统明确保留 `incomplete`、`unverified`、`blocked`，不把缺证据包装成完成。
+
+## AI 防御性写作规则
+
+写作模块遵循 anti-AI defensive writing 的边界：保留作者事实、数字、引用、公式和合理不确定性；不添加不存在的实验、统计、指标、机制、引用或 reviewer 话术；不使用空泛免责声明掩盖范围；不把润色变成改变作者观点。
+
+修改前后可以运行：
+
+```bash
+python skills/research-pipeline/scripts/check_writing_integrity.py before.md after.md
+```
+
+投稿包必须明确采用 `none`、`single-blind` 或 `double-blind`，再运行 release audit。文本扫描不能替代视觉 PDF 检查和 venue 政策确认。
+
+## 当前边界
+
+这套系统已经提供可运行的项目控制器、artifact schema、OpenAlex 适配器、PDF 入库、证据/新鲜度/实验/claim 记录、review 适配、写作检查、发布审计和专利转化 scaffold。
+
+它不自动裁决论文事实、新颖性、可发表性或专利法律结论。论文表格与图、实验真实性、竞争解释、venue 政策和技术事实仍需研究者或专业人员确认。
+
+## 安装
 
 ```bash
 npx skills@latest add lemonade1258/auditable-research-skills --skill '*' --agent '*' --copy
 ```
 
-### Install selected skills
+也可以直接使用本仓库的 `skills/<skill-name>/SKILL.md` 和对应 `scripts/`。
+
+## 验证
 
 ```bash
-npx skills@latest add lemonade1258/auditable-research-skills \
-  --skill research-pipeline \
-  --skill literature-search \
-  --skill citation-tracing \
-  --agent codex --copy
+python -m pytest -q
+python tests/validate_skills.py
+python -m compileall -q skills
 ```
 
-The repository follows the same project-local, editable-file philosophy used by `mattpocock/skills`: skills are ordinary files in the project, UI metadata lives in `agents/openai.yaml`, and the lock/install tool can be used to update them later.
-
-### Use from a local checkout
-
-Each skill is available at `skills/<skill-name>/SKILL.md`. The folder can be copied into an agent's skill directory or installed with the command above.
-
-## Which skill should I use?
-
-Use `research-pipeline` when the request is broad and the result must be defensible: “investigate this topic”, “find a research gap”, “help us choose a paper idea”, or “map the field”.
-
-Use `literature-search` when discovery is the task and no synthesis is needed yet.
-
-Use `citation-tracing` when you already have anchor papers and need to follow their intellectual neighborhoods rather than collect another keyword list.
-
-Use `paper-extraction` when the question is “what does this paper actually do, find, assume, or fail to establish?”.
-
-Use `reviewer-profile` when venue taste, accepted-paper movement, public reviews, or likely reviewer objections matter.
-
-Use `idea-mining` only after a verified literature map and current-gap check exist.
-
-## The research contract
-
-Every serious run should answer these questions:
-
-1. What exactly is the question, and which competing explanations are plausible?
-2. Which independent research lines were searched?
-3. Which sources are authoritative, and why?
-4. What did each important paper try to solve, build, measure, and establish?
-5. What did the papers not establish?
-6. What changed after citation, author/lab, and recent-work tracing?
-7. Is the claimed gap still open as of the dated cutoff?
-8. What is the smallest experiment that could falsify the candidate idea?
-9. What validation setting is independent of the project's private benchmark?
-
-If a required answer is missing, the report must say `incomplete` and list the missing artifact. It must not silently turn an unfinished search into a novelty claim.
-
-## Evidence labels
-
-Use these labels consistently in records, paper cards, evidence maps, and reports:
-
-- `author_claim`: what the paper explicitly claims.
-- `observed_result`: a result directly checked in a table, figure, appendix, or official benchmark report.
-- `pipeline_synthesis`: a conclusion derived by comparing multiple sources.
-- `unverified_inference`: a plausible interpretation that still needs checking.
-
-Also record the reading level:
-
-- `metadata`: title, venue, and index information only; discovery use, never “read”.
-- `compact`: abstract, introduction, method overview, main experiment, conclusion, and limitations.
-- `deep`: compact reading plus task construction, baselines, ablations, appendices, and claims checked against tables or figures.
-
-## Output layout
-
-The coordinator creates one isolated project per research question:
-
-```text
-projects/<slug>/
-├── 00-input/                 # unchanged user sources
-├── 01-question-map/          # question, tensions, observables, non-goals
-├── 02-search/                # dated protocol, raw responses, coverage ledger
-├── 03-literature/
-│   ├── papers/               # downloaded papers when permitted
-│   ├── paper-cards/          # compact/deep cards
-│   └── retained_registry.*   # machine-readable records
-├── 04-evidence-map/          # motivation/method/contribution/insight matrix
-├── 05-reviewer-taste/        # venue-level taste and risk brief
-├── 06-ideas/                 # freshness ledger, candidates, falsification
-├── 07-discussion/            # plain-language handoff
-├── 90-logs/                  # rerunnable scripts and run metadata
-└── 99-temp/                  # temporary downloads/renderings only
-```
-
-Do not mix raw discovery, verified records, PDFs, conclusions, or temporary files. Keep the original input unchanged.
-
-## Project initialization and validation
-
-The coordinator includes scripts for creating the artifact tree and checking a completed report:
-
-```bash
-python skills/research-pipeline/scripts/init_research_project.py my-topic --root projects
-python skills/research-pipeline/scripts/validate_research_output.py \
-  projects/my-topic/03-literature/retained_registry.json \
-  projects/my-topic/07-discussion/research-output.md
-```
-
-The validator checks coverage floors, authority tiers, anchors, compact/deep reading, explanation cards, freshness, nearest-work comparison, falsification, external validation, and scope. The floors are safety checks, not a target for padding the registry.
-
-### Project controller and event log
-
-For a new project, use `projectctl.py` when you need a manifest, stage status,
-append-only event log, and explicit artifact gates:
-
-```bash
-python skills/research-pipeline/scripts/projectctl.py init my-topic \
-  --root projects \
-  --question "Your research question" \
-  --domain "your domain" \
-  --venue NeurIPS \
-  --source notes.md
-
-python skills/research-pipeline/scripts/projectctl.py event projects/my-topic \
-  --type search.completed --stage discovery --status complete \
-  --details '{"queries": 18, "anchors": 10}'
-
-python skills/research-pipeline/scripts/projectctl.py gate projects/my-topic question
-python skills/research-pipeline/scripts/projectctl.py status projects/my-topic
-python skills/research-pipeline/scripts/projectctl.py validate projects/my-topic
-
-python skills/research-pipeline/scripts/import_artifact.py \
-  projects/my-topic discovered.json \
-  03-literature/retained_registry.json literature --stage discovery
-```
-
-`projectctl.py` does not certify scientific correctness. It verifies that the
-project has the declared artifacts, that structured records follow the shared
-contract, and that stage transitions are recorded. The append-only
-`90-logs/events.jsonl` file is the audit trail for reruns, manual decisions,
-failures, and superseded outputs.
-
-Use `import_artifact.py` at component boundaries. It validates the shared
-record contract, refuses to overwrite a different existing artifact, keeps the
-destination inside the project, and records the source-to-target handoff.
-
-The shared Python contract is in `skills/shared/artifact_contract.py`; event
-operations are in `skills/shared/project_events.py`. Components should use
-these helpers instead of inventing incompatible status or provenance fields.
-
-## Why this is not a single giant prompt
-
-The skills are deliberately separated because the failure modes differ:
-
-- Search must optimize coverage and authority.
-- Citation tracing must preserve branch provenance.
-- Paper extraction must prevent abstract paraphrases from masquerading as reading.
-- Reviewer profiling must distinguish research taste from generic writing advice.
-- Idea mining must resist attractive but already-covered gaps.
-
-The coordinator connects them with explicit artifacts and gates. You can run a component alone, but a standalone component should not claim to have completed the full research process.
-
-## Scope and limitations
-
-This repository is a research workflow, not a literature database and not a guarantee of novelty. APIs can be incomplete, publisher pages can be inaccessible, public reviewer data is biased, and recent preprints can change. The workflow records those limitations instead of hiding them.
-
-The skills do not automatically decide whether an idea is publishable. They produce an auditable basis for a human research decision.
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for skill structure, evidence requirements, validation, and forward-testing guidance.
-
-## Repository documentation
-
-- [Architecture](docs/architecture.md): how routing metadata, skill procedures, resources, and stage gates fit together.
-- [Artifact contract](docs/artifact-contract.md): the minimum fields for literature records, paper cards, citation edges, and idea candidates.
-- [Using the pipeline](docs/using-the-pipeline.md): concrete commands and the handoff order for discovery, reading, evidence, experiments, writing, release, and transfer.
+本仓库是研究工作流和审计基础设施，不是文献数据库，也不承诺自动发现新颖 idea。它的价值在于让研究判断有来源、有过程、有失败状态，也能在下一轮研究中复用。

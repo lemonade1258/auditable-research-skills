@@ -4,6 +4,13 @@
 
 Turn a broad research request into an auditable decision record without forcing every task through one oversized prompt. The unit of composition is a skill plus its artifacts.
 
+The system has two products at once:
+
+1. A human-facing research workflow that explains what to do next.
+2. A machine-readable project record that makes it possible to check what was actually done.
+
+The second product is what prevents the first from becoming a polished conversation with no research history.
+
 ## Three layers
 
 ### Routing layer
@@ -45,6 +52,83 @@ manuscript claims without pretending to judge truth or novelty.
 | Freshness | dated gap ledger and near-miss checks | novelty based on memory |
 | Ideas | candidate cards and falsification | idea proposed before evidence |
 | Scope | minimum experiment and external validation | benchmark/model/agent/platform sprawl |
+
+The coordinator does not call every component in one hidden prompt. It checks the
+artifact handoff between components. A component can be run alone, but it must
+label the project incomplete if its required predecessor artifacts are absent.
+
+## Runtime map
+
+| Layer | Code or files | User-visible responsibility |
+|---|---|---|
+| Route | `agents/openai.yaml`, skill descriptions | Select the correct capability and avoid accidental task switching |
+| Procedure | each `SKILL.md` | Define first action, required input, output, stop condition and evidence rules |
+| Deterministic adapter | each skill's `scripts/` | Query APIs, copy PDFs, normalize records, register runs, check files |
+| Shared contract | `skills/shared/artifact_contract.py` | Keep literature, evidence, claims, ideas and runs structurally compatible |
+| Project controller | `projectctl.py`, `import_artifact.py` | Create projects, enforce artifact gates, log handoffs and prevent unsafe overwrites |
+| Human/model interpretation | paper cards, evidence matrix, idea cards, reports | Explain findings and make decisions while preserving uncertainty |
+
+The division is deliberate. Models are useful for interpretation; deterministic
+code is better at paths, counts, IDs, versions, and integrity checks.
+
+## Handoff sequence
+
+```text
+question-map.md
+   ↓
+02-search/openalex_discovered.json
+   ↓ curate_registry.py
+03-literature/retained_registry.json
+   ↓ paper_ingest.py + human reading
+03-literature/paper-cards/*.json
+   ↓ evidence synthesis
+04-evidence-map/evidence-matrix.json
+   ↓ freshness_check.py
+06-ideas/freshness-ledger.json
+   ↓ human/model candidate review
+06-ideas/candidates.json
+   ↓ register_run.py
+09-experiments/run-registry.json
+   ↓ extract_claims.py + evidence binding
+10-manuscript/claim-ledger.json
+   ↓ writing/release checks
+91-releases/ and 12-transfer/
+```
+
+`import_artifact.py` is the controlled boundary when a component writes an
+artifact produced outside the project. It validates the record contract,
+refuses to overwrite a different file, and records the source and destination
+in `90-logs/events.jsonl`.
+
+## What “complete” means
+
+The controller can certify structure, not science. A complete research run must
+therefore have both:
+
+- **Structural completeness**: required artifacts exist, are non-empty, follow
+  the contract, and have an event trail.
+- **Evidence completeness**: claims have source locations or registered
+  experiments, core papers have the required reading depth, freshness has a
+  date and search trail, and unresolved items are visible.
+
+The scripts enforce the first and expose missing parts of the second. They do
+not turn a score, citation count, reviewer profile, or language-model agreement
+into proof.
+
+## User decision points
+
+The workflow intentionally stops for human decisions at these boundaries:
+
+1. Is the question important and measurable?
+2. Is a source authoritative enough for this claim?
+3. Did the paper actually establish the interpreted result?
+4. Is the gap still open after the dated search?
+5. What experiment could falsify the idea?
+6. Does the evidence support the manuscript wording?
+7. Is the package compliant with the venue or transfer policy?
+
+These are not missing automation features. They are the decisions the system is
+designed to make visible instead of silently guessing.
 
 ## Component boundaries
 
