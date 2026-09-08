@@ -29,6 +29,16 @@ python skills/literature-search/scripts/openalex_collect.py projects/credit-risk
 
 它只产生 `metadata` 级记录。记录有来源 URL、检索日期、查询路线、权威层级和摘要，但不能被称为已经读过论文。后续策展结果应通过 `import_artifact.py` 导入 `03-literature/retained_registry.json`。
 
+对发现集进行第一轮可复跑策展：
+
+```bash
+python skills/literature-search/scripts/curate_registry.py \
+  projects/credit-risk/02-search/openalex_discovered.json \
+  projects/credit-risk --keep 120 --keyword finance
+```
+
+它会同时写入保留、排除和锚点注册表，并保存类别、评分和排除理由。评分只用于排序，不替代人工 authority decision 或论文阅读。
+
 ## 3. PDF 与论文卡
 
 ```bash
@@ -122,4 +132,3 @@ python skills/research-pipeline/scripts/projectctl.py validate projects/credit-r
 ```
 
 每一步都有自己的产物、输入、失败状态和复核方式；AI 负责解释和提出候选，确定性脚本负责路径、字段、计数、版本和完整性。
-
