@@ -1,0 +1,64 @@
+{
+  "receipt": {
+    "purpose": "version-delta.classify",
+    "model": "qwen-max",
+    "prompt_digest": "9ef430a7c428397c",
+    "attempts": 1,
+    "latency_ms": 16076,
+    "usage": {
+      "prompt_tokens": 668,
+      "completion_tokens": 504,
+      "total_tokens": 1172,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "written_at_utc": "2026-11-08T10:17:05Z",
+    "raw_response": "[\n  {\n    \"delta_id\": \"item-20a\",\n    \"change_type\": \"field_added\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"The new version now requires a summary of the characteristics and risk of bias among contributing studies for each synthesis, which was not present in the old version.\",\n    \"worked_example\": \"\",\n    \"impact_summary\": \"New requirement to summarize study characteristics and risks of bias, adding to the reporting burden and detail expected from authors.\",\n    \"resolution_requirement\": \"Evidence must include summaries of the characteristics and risk of bias for contributing studies in each synthesis.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"-\",\n    \"new_excerpt\": \"For each synthesis, briefly summarise the characteristics and risk of bias among contributing studies.\"\n  },\n  {\n    \"delta_id\": \"item-23a\",\n    \"change_type\": \"field_added\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"The new version now requires providing a general interpretation of the results in the context of other evidence, which was not present in the old version.\",\n    \"worked_example\": \"\",\n    \"impact_summary\": \"New requirement to interpret the results in the context of other evidence, adding to the analysis depth expected from authors.\",\n    \"resolution_requirement\": \"Evidence must include a general interpretation of the results in the context of other evidence.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"-\",\n    \"new_excerpt\": \"Provide a general interpretation of the results in the context of other evidence.\"\n  },\n  {\n    \"delta_id\": \"item-24a\",\n    \"change_type\": \"field_added\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"The new version now requires providing registration information for the review, including register name and registration number, or stating that the review was not registered, which was not present in the old version.\",\n    \"worked_example\": \"\",\n    \"impact_summary\": \"New requirement to provide registration details or state that the review was not registered, increasing transparency and accountability.\",\n    \"resolution_requirement\": \"Evidence must include registration information for the review or a statement that the review was not registered.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"-\",\n    \"new_excerpt\": \"Provide registration information for the review, including register name and registration number, or state that the review was not registered.\"\n  }\n]",
+    "old_id": "PRISMA 2009",
+    "new_id": "PRISMA 2020",
+    "pair_keys": [
+      null,
+      null,
+      null
+    ]
+  },
+  "payload": [
+    {
+      "delta_id": "item-20a",
+      "change_type": "field_added",
+      "impact_level": "medium",
+      "interpretation": "The new version now requires a summary of the characteristics and risk of bias among contributing studies for each synthesis, which was not present in the old version.",
+      "worked_example": "",
+      "impact_summary": "New requirement to summarize study characteristics and risks of bias, adding to the reporting burden and detail expected from authors.",
+      "resolution_requirement": "Evidence must include summaries of the characteristics and risk of bias for contributing studies in each synthesis.",
+      "uncertainty": "low",
+      "old_excerpt": "-",
+      "new_excerpt": "For each synthesis, briefly summarise the characteristics and risk of bias among contributing studies."
+    },
+    {
+      "delta_id": "item-23a",
+      "change_type": "field_added",
+      "impact_level": "medium",
+      "interpretation": "The new version now requires providing a general interpretation of the results in the context of other evidence, which was not present in the old version.",
+      "worked_example": "",
+      "impact_summary": "New requirement to interpret the results in the context of other evidence, adding to the analysis depth expected from authors.",
+      "resolution_requirement": "Evidence must include a general interpretation of the results in the context of other evidence.",
+      "uncertainty": "low",
+      "old_excerpt": "-",
+      "new_excerpt": "Provide a general interpretation of the results in the context of other evidence."
+    },
+    {
+      "delta_id": "item-24a",
+      "change_type": "field_added",
+      "impact_level": "medium",
+      "interpretation": "The new version now requires providing registration information for the review, including register name and registration number, or stating that the review was not registered, which was not present in the old version.",
+      "worked_example": "",
+      "impact_summary": "New requirement to provide registration details or state that the review was not registered, increasing transparency and accountability.",
+      "resolution_requirement": "Evidence must include registration information for the review or a statement that the review was not registered.",
+      "uncertainty": "low",
+      "old_excerpt": "-",
+      "new_excerpt": "Provide registration information for the review, including register name and registration number, or state that the review was not registered."
+    }
+  ]
+}

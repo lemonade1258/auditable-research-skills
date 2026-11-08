@@ -1,0 +1,64 @@
+{
+  "receipt": {
+    "purpose": "version-delta.classify",
+    "model": "qwen-max",
+    "prompt_digest": "23bd7291d696f9a3",
+    "attempts": 1,
+    "latency_ms": 23879,
+    "usage": {
+      "prompt_tokens": 730,
+      "completion_tokens": 782,
+      "total_tokens": 1512,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "written_at_utc": "2026-11-08T10:15:22Z",
+    "raw_response": "[\n  {\n    \"delta_id\": \"item-16\",\n    \"change_type\": \"field_removed\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"The requirement to describe methods of additional analyses (such as sensitivity or subgroup analyses, meta-regression) and indicate which were pre-specified has been removed.\",\n    \"worked_example\": \"\",\n    \"impact_summary\": \"Prior versions required a description of additional analyses and their pre-specification status. This is no longer required, which may change the structure and content of future reports.\",\n    \"resolution_requirement\": \"Evidence must show that the removal of this section does not affect the overall conclusions or that any additional analyses are now presented in another part of the report.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Describe methods of additional analyses (such as sensitivity or subgroup analyses, meta-regression), if done, indicating which were pre-specified\",\n    \"new_excerpt\": \"\"\n  },\n  {\n    \"delta_id\": \"item-17\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"high\",\n    \"interpretation\": \"The requirement has shifted from providing numbers of studies screened, assessed for eligibility, and included in the review, with reasons for exclusions at each stage, to citing each included study and presenting its characteristics.\",\n    \"worked_example\": \"Under the old version, a report might include: '500 studies were screened, 100 were assessed for eligibility, and 10 were included. 490 were excluded due to not meeting inclusion criteria, and 90 were excluded due to poor quality.' Under the new version, the report would instead cite each of the 10 included studies and present their characteristics, without necessarily detailing the exclusion process.\",\n    \"impact_summary\": \"This change significantly alters the information provided about the study selection process, potentially affecting the transparency and reproducibility of the review.\",\n    \"resolution_requirement\": \"Evidence must now include citations and characteristics of each included study, and it should be clear how these studies were selected, even if the detailed exclusion process is not required.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Give numbers of studies screened, assessed for eligibility, and included in the review, with reasons for exclusions at each stage, ideally with a flow diagram\",\n    \"new_excerpt\": \"Cite each included study and present its characteristics.\"\n  },\n  {\n    \"delta_id\": \"item-18\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"high\",\n    \"interpretation\": \"The requirement has shifted from presenting characteristics for which data were extracted (such as study size, PICOS, follow-up period) to presenting assessments of risk of bias for each included study.\",\n    \"worked_example\": \"Under the old version, a report might include: 'Study A had 100 participants, used a randomized controlled design, and followed up for 12 months.' Under the new version, the report would instead focus on: 'Study A had a high risk of bias due to lack of blinding and incomplete outcome data.'\",\n    \"impact_summary\": \"This change significantly alters the type of information provided about each study, shifting the focus from general characteristics to risk of bias, which can impact the interpretation of the results.\",\n    \"resolution_requirement\": \"Evidence must now include a thorough assessment of the risk of bias for each included study, rather than just the general characteristics.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"For each study, present characteristics for which data were extracted (such as study size, PICOS, follow-up period) and provide the citations\",\n    \"new_excerpt\": \"Present assessments of risk of bias for each included study.\"\n  }\n]",
+    "old_id": "PRISMA 2009",
+    "new_id": "PRISMA 2020",
+    "pair_keys": [
+      "item-16",
+      "item-17",
+      "item-18"
+    ]
+  },
+  "payload": [
+    {
+      "delta_id": "item-16",
+      "change_type": "field_removed",
+      "impact_level": "medium",
+      "interpretation": "The requirement to describe methods of additional analyses (such as sensitivity or subgroup analyses, meta-regression) and indicate which were pre-specified has been removed.",
+      "worked_example": "",
+      "impact_summary": "Prior versions required a description of additional analyses and their pre-specification status. This is no longer required, which may change the structure and content of future reports.",
+      "resolution_requirement": "Evidence must show that the removal of this section does not affect the overall conclusions or that any additional analyses are now presented in another part of the report.",
+      "uncertainty": "low",
+      "old_excerpt": "Describe methods of additional analyses (such as sensitivity or subgroup analyses, meta-regression), if done, indicating which were pre-specified",
+      "new_excerpt": ""
+    },
+    {
+      "delta_id": "item-17",
+      "change_type": "semantic_shift",
+      "impact_level": "high",
+      "interpretation": "The requirement has shifted from providing numbers of studies screened, assessed for eligibility, and included in the review, with reasons for exclusions at each stage, to citing each included study and presenting its characteristics.",
+      "worked_example": "Under the old version, a report might include: '500 studies were screened, 100 were assessed for eligibility, and 10 were included. 490 were excluded due to not meeting inclusion criteria, and 90 were excluded due to poor quality.' Under the new version, the report would instead cite each of the 10 included studies and present their characteristics, without necessarily detailing the exclusion process.",
+      "impact_summary": "This change significantly alters the information provided about the study selection process, potentially affecting the transparency and reproducibility of the review.",
+      "resolution_requirement": "Evidence must now include citations and characteristics of each included study, and it should be clear how these studies were selected, even if the detailed exclusion process is not required.",
+      "uncertainty": "low",
+      "old_excerpt": "Give numbers of studies screened, assessed for eligibility, and included in the review, with reasons for exclusions at each stage, ideally with a flow diagram",
+      "new_excerpt": "Cite each included study and present its characteristics."
+    },
+    {
+      "delta_id": "item-18",
+      "change_type": "semantic_shift",
+      "impact_level": "high",
+      "interpretation": "The requirement has shifted from presenting characteristics for which data were extracted (such as study size, PICOS, follow-up period) to presenting assessments of risk of bias for each included study.",
+      "worked_example": "Under the old version, a report might include: 'Study A had 100 participants, used a randomized controlled design, and followed up for 12 months.' Under the new version, the report would instead focus on: 'Study A had a high risk of bias due to lack of blinding and incomplete outcome data.'",
+      "impact_summary": "This change significantly alters the type of information provided about each study, shifting the focus from general characteristics to risk of bias, which can impact the interpretation of the results.",
+      "resolution_requirement": "Evidence must now include a thorough assessment of the risk of bias for each included study, rather than just the general characteristics.",
+      "uncertainty": "low",
+      "old_excerpt": "For each study, present characteristics for which data were extracted (such as study size, PICOS, follow-up period) and provide the citations",
+      "new_excerpt": "Present assessments of risk of bias for each included study."
+    }
+  ]
+}

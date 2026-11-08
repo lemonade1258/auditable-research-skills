@@ -1,0 +1,64 @@
+{
+  "receipt": {
+    "purpose": "version-delta.classify",
+    "model": "qwen-max",
+    "prompt_digest": "0b503c593891124a",
+    "attempts": 1,
+    "latency_ms": 20154,
+    "usage": {
+      "prompt_tokens": 785,
+      "completion_tokens": 611,
+      "total_tokens": 1396,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "written_at_utc": "2026-11-08T10:16:26Z",
+    "raw_response": "[\n  {\n    \"delta_id\": \"item-25\",\n    \"change_type\": \"field_renamed\",\n    \"impact_level\": \"low\",\n    \"interpretation\": \"The field 'Limitations' has been renamed to 'Support'. The content of the field has changed from discussing limitations to describing sources of support and the role of funders or sponsors.\",\n    \"worked_example\": \"\",\n    \"impact_summary\": \"The requirement to discuss limitations has been replaced with a requirement to describe financial and non-financial support, and the role of funders or sponsors in the review.\",\n    \"resolution_requirement\": \"\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Discuss limitations at study and outcome level (such as risk of bias), and at review level (such as incomplete retrieval of identified research, reporting bias)\",\n    \"new_excerpt\": \"Describe sources of financial or non-financial support for the review, and the role of the funders or sponsors in the review.\"\n  },\n  {\n    \"delta_id\": \"item-26\",\n    \"change_type\": \"field_renamed\",\n    \"impact_level\": \"low\",\n    \"interpretation\": \"The field 'Conclusions' has been renamed to 'Competing interests'. The content of the field has changed from providing a general interpretation of the results to declaring any competing interests of the review authors.\",\n    \"worked_example\": \"\",\n    \"impact_summary\": \"The requirement to provide a general interpretation of the results and implications for future research has been replaced with a requirement to declare any competing interests of the review authors.\",\n    \"resolution_requirement\": \"\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Provide a general interpretation of the results in the context of other evidence, and implications for future research\",\n    \"new_excerpt\": \"Declare any competing interests of review authors.\"\n  },\n  {\n    \"delta_id\": \"item-27\",\n    \"change_type\": \"field_renamed\",\n    \"impact_level\": \"low\",\n    \"interpretation\": \"The field 'Funding' has been renamed to 'Availability of data, code, and other materials'. The content of the field has changed from describing sources of funding and support to reporting the availability of various materials used in the review.\",\n    \"worked_example\": \"\",\n    \"impact_summary\": \"The requirement to describe sources of funding and support has been replaced with a requirement to report the public availability of data, code, and other materials used in the review.\",\n    \"resolution_requirement\": \"\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Describe sources of funding for the systematic review and other support (such as supply of data) and role of funders for the systematic review\",\n    \"new_excerpt\": \"Report which of the following are publicly available and where they can be found: template data collection forms; data extracted from included studies; data used for all analyses; analytic code; any other materials used in the review.\"\n  }\n]",
+    "old_id": "PRISMA 2009",
+    "new_id": "PRISMA 2020",
+    "pair_keys": [
+      "item-25",
+      "item-26",
+      "item-27"
+    ]
+  },
+  "payload": [
+    {
+      "delta_id": "item-25",
+      "change_type": "field_renamed",
+      "impact_level": "low",
+      "interpretation": "The field 'Limitations' has been renamed to 'Support'. The content of the field has changed from discussing limitations to describing sources of support and the role of funders or sponsors.",
+      "worked_example": "",
+      "impact_summary": "The requirement to discuss limitations has been replaced with a requirement to describe financial and non-financial support, and the role of funders or sponsors in the review.",
+      "resolution_requirement": "",
+      "uncertainty": "low",
+      "old_excerpt": "Discuss limitations at study and outcome level (such as risk of bias), and at review level (such as incomplete retrieval of identified research, reporting bias)",
+      "new_excerpt": "Describe sources of financial or non-financial support for the review, and the role of the funders or sponsors in the review."
+    },
+    {
+      "delta_id": "item-26",
+      "change_type": "field_renamed",
+      "impact_level": "low",
+      "interpretation": "The field 'Conclusions' has been renamed to 'Competing interests'. The content of the field has changed from providing a general interpretation of the results to declaring any competing interests of the review authors.",
+      "worked_example": "",
+      "impact_summary": "The requirement to provide a general interpretation of the results and implications for future research has been replaced with a requirement to declare any competing interests of the review authors.",
+      "resolution_requirement": "",
+      "uncertainty": "low",
+      "old_excerpt": "Provide a general interpretation of the results in the context of other evidence, and implications for future research",
+      "new_excerpt": "Declare any competing interests of review authors."
+    },
+    {
+      "delta_id": "item-27",
+      "change_type": "field_renamed",
+      "impact_level": "low",
+      "interpretation": "The field 'Funding' has been renamed to 'Availability of data, code, and other materials'. The content of the field has changed from describing sources of funding and support to reporting the availability of various materials used in the review.",
+      "worked_example": "",
+      "impact_summary": "The requirement to describe sources of funding and support has been replaced with a requirement to report the public availability of data, code, and other materials used in the review.",
+      "resolution_requirement": "",
+      "uncertainty": "low",
+      "old_excerpt": "Describe sources of funding for the systematic review and other support (such as supply of data) and role of funders for the systematic review",
+      "new_excerpt": "Report which of the following are publicly available and where they can be found: template data collection forms; data extracted from included studies; data used for all analyses; analytic code; any other materials used in the review."
+    }
+  ]
+}

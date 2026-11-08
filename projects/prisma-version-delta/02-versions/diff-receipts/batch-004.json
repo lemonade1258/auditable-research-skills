@@ -1,0 +1,64 @@
+{
+  "receipt": {
+    "purpose": "version-delta.classify",
+    "model": "qwen-max",
+    "prompt_digest": "c1e7fc71df749041",
+    "attempts": 1,
+    "latency_ms": 23757,
+    "usage": {
+      "prompt_tokens": 799,
+      "completion_tokens": 829,
+      "total_tokens": 1628,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "written_at_utc": "2026-11-08T10:14:36Z",
+    "raw_response": "[\n  {\n    \"delta_id\": \"item-10\",\n    \"change_type\": \"field_removed\",\n    \"impact_level\": \"high\",\n    \"interpretation\": \"The new version has removed the requirement to describe the data collection process, including methods of data extraction and processes for obtaining and confirming data from investigators.\",\n    \"worked_example\": \"\",\n    \"impact_summary\": \"This change means that the specific details about how data was collected and verified are no longer required, which could affect the transparency and reproducibility of the review.\",\n    \"resolution_requirement\": \"Evidence must now be provided on the overall quality and reliability of the data used in the review, as the specific data collection process is no longer documented.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Describe method of data extraction from reports (such as piloted forms, independently, in duplicate) and any processes for obtaining and confirming data from investigators\",\n    \"new_excerpt\": \"\"\n  },\n  {\n    \"delta_id\": \"item-11\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"high\",\n    \"interpretation\": \"The focus has shifted from listing and defining all variables for which data were sought to specifying the methods used to assess risk of bias in the included studies. This includes details of the tools used, the number of reviewers, their independence, and the use of automation tools.\",\n    \"worked_example\": \"Under the old version, a study might list 'funding sources' as one of the data items. Under the new version, this would not be relevant unless it directly relates to the risk of bias assessment, such as using funding sources as a criterion in a risk of bias tool.\",\n    \"impact_summary\": \"This change significantly alters the scope of the item, moving from a broad data collection description to a focused risk of bias assessment, which will impact the way data is reported and analyzed.\",\n    \"resolution_requirement\": \"Evidence must now include detailed information on the risk of bias assessment methods, including the tools used, the number of reviewers, and the use of automation tools.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"List and define all variables for which data were sought (such as PICOS, funding sources) and any assumptions and simplifications made\",\n    \"new_excerpt\": \"Specify the methods used to assess risk of bias in the included studies, including details of the tool(s) used, how many reviewers assessed each study and whether they worked independently, and if applicable, details of automation tools used in the process.\"\n  },\n  {\n    \"delta_id\": \"item-12\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"high\",\n    \"interpretation\": \"The focus has shifted from describing the methods used for assessing the risk of bias of individual studies to specifying the effect measures used in the synthesis or presentation of results.\",\n    \"worked_example\": \"Under the old version, a study might describe the use of the Cochrane Risk of Bias Tool. Under the new version, this would not be relevant unless it pertains to the effect measures, such as specifying that a risk ratio was used in the synthesis.\",\n    \"impact_summary\": \"This change significantly alters the scope of the item, moving from a focus on risk of bias assessment to a focus on the effect measures used in the analysis, which will impact the way results are interpreted and presented.\",\n    \"resolution_requirement\": \"Evidence must now include detailed information on the effect measures used in the synthesis or presentation of results, such as risk ratio, mean difference, etc.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Describe methods used for assessing risk of bias of individual studies (including specification of whether this was done at the study or outcome level), and how this information is to be used in any data synthesis\",\n    \"new_excerpt\": \"Specify for each outcome the effect measure(s) (e.g. risk ratio, mean difference) used in the synthesis or presentation of results.\"\n  }\n]",
+    "old_id": "PRISMA 2009",
+    "new_id": "PRISMA 2020",
+    "pair_keys": [
+      "item-10",
+      "item-11",
+      "item-12"
+    ]
+  },
+  "payload": [
+    {
+      "delta_id": "item-10",
+      "change_type": "field_removed",
+      "impact_level": "high",
+      "interpretation": "The new version has removed the requirement to describe the data collection process, including methods of data extraction and processes for obtaining and confirming data from investigators.",
+      "worked_example": "",
+      "impact_summary": "This change means that the specific details about how data was collected and verified are no longer required, which could affect the transparency and reproducibility of the review.",
+      "resolution_requirement": "Evidence must now be provided on the overall quality and reliability of the data used in the review, as the specific data collection process is no longer documented.",
+      "uncertainty": "low",
+      "old_excerpt": "Describe method of data extraction from reports (such as piloted forms, independently, in duplicate) and any processes for obtaining and confirming data from investigators",
+      "new_excerpt": ""
+    },
+    {
+      "delta_id": "item-11",
+      "change_type": "semantic_shift",
+      "impact_level": "high",
+      "interpretation": "The focus has shifted from listing and defining all variables for which data were sought to specifying the methods used to assess risk of bias in the included studies. This includes details of the tools used, the number of reviewers, their independence, and the use of automation tools.",
+      "worked_example": "Under the old version, a study might list 'funding sources' as one of the data items. Under the new version, this would not be relevant unless it directly relates to the risk of bias assessment, such as using funding sources as a criterion in a risk of bias tool.",
+      "impact_summary": "This change significantly alters the scope of the item, moving from a broad data collection description to a focused risk of bias assessment, which will impact the way data is reported and analyzed.",
+      "resolution_requirement": "Evidence must now include detailed information on the risk of bias assessment methods, including the tools used, the number of reviewers, and the use of automation tools.",
+      "uncertainty": "low",
+      "old_excerpt": "List and define all variables for which data were sought (such as PICOS, funding sources) and any assumptions and simplifications made",
+      "new_excerpt": "Specify the methods used to assess risk of bias in the included studies, including details of the tool(s) used, how many reviewers assessed each study and whether they worked independently, and if applicable, details of automation tools used in the process."
+    },
+    {
+      "delta_id": "item-12",
+      "change_type": "semantic_shift",
+      "impact_level": "high",
+      "interpretation": "The focus has shifted from describing the methods used for assessing the risk of bias of individual studies to specifying the effect measures used in the synthesis or presentation of results.",
+      "worked_example": "Under the old version, a study might describe the use of the Cochrane Risk of Bias Tool. Under the new version, this would not be relevant unless it pertains to the effect measures, such as specifying that a risk ratio was used in the synthesis.",
+      "impact_summary": "This change significantly alters the scope of the item, moving from a focus on risk of bias assessment to a focus on the effect measures used in the analysis, which will impact the way results are interpreted and presented.",
+      "resolution_requirement": "Evidence must now include detailed information on the effect measures used in the synthesis or presentation of results, such as risk ratio, mean difference, etc.",
+      "uncertainty": "low",
+      "old_excerpt": "Describe methods used for assessing risk of bias of individual studies (including specification of whether this was done at the study or outcome level), and how this information is to be used in any data synthesis",
+      "new_excerpt": "Specify for each outcome the effect measure(s) (e.g. risk ratio, mean difference) used in the synthesis or presentation of results."
+    }
+  ]
+}

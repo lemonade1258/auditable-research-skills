@@ -1,0 +1,339 @@
+{
+  "old_version": {
+    "id": "PRISMA 2009",
+    "source": "C:\\Users\\lemonade\\AppData\\Local\\Temp\\specs\\prisma2009.json",
+    "units": [
+      {
+        "unit_id": "item-1",
+        "title": "Title",
+        "text": "Identify the report as a systematic review, meta-analysis, or both",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-2",
+        "title": "Structured summary",
+        "text": "Provide a structured summary including, as applicable, background, objectives, data sources, study eligibility criteria, participants, interventions, study appraisal and synthesis methods, results, limitations, conclusions and implications of key findings, systematic review registration number",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-3",
+        "title": "Rationale",
+        "text": "Describe the rationale for the review in the context of what is already known",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-4",
+        "title": "Objectives",
+        "text": "Provide an explicit statement of questions being addressed with reference to participants, interventions, comparisons, outcomes, and study design (PICOS)",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-5",
+        "title": "Protocol and registration",
+        "text": "Indicate if a review protocol exists, if and where it can be accessed (such as web address), and, if available, provide registration information including registration number",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-6",
+        "title": "Eligibility criteria",
+        "text": "Specify study characteristics (such as PICOS, length of follow-up) and report characteristics (such as years considered, language, publication status) used as criteria for eligibility, giving rationale",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-7",
+        "title": "Information sources",
+        "text": "Describe all information sources (such as databases with dates of coverage, contact with study authors to identify additional studies) in the search and date last searched",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-8",
+        "title": "Search",
+        "text": "Present full electronic search strategy for at least one database, including any limits used, such that it could be repeated",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-9",
+        "title": "Study selection",
+        "text": "State the process for selecting studies (that is, screening, eligibility, included in systematic review, and, if applicable, included in the meta-analysis)",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-10",
+        "title": "Data collection process",
+        "text": "Describe method of data extraction from reports (such as piloted forms, independently, in duplicate) and any processes for obtaining and confirming data from investigators",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-11",
+        "title": "Data items",
+        "text": "List and define all variables for which data were sought (such as PICOS, funding sources) and any assumptions and simplifications made",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-12",
+        "title": "Risk of bias in individual studies",
+        "text": "Describe methods used for assessing risk of bias of individual studies (including specification of whether this was done at the study or outcome level), and how this information is to be used in any data synthesis",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-13",
+        "title": "Summary measures",
+        "text": "State the principal summary measures (such as risk ratio, difference in means).",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-14",
+        "title": "Synthesis of results",
+        "text": "Describe the methods of handling data and combining results of studies, if done, including measures of consistency (such as I2) for each meta-analysis",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-15",
+        "title": "Risk of bias across studies",
+        "text": "Specify any assessment of risk of bias that may affect the cumulative evidence (such as publication bias, selective reporting within studies)",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-16",
+        "title": "Additional analyses",
+        "text": "Describe methods of additional analyses (such as sensitivity or subgroup analyses, meta-regression), if done, indicating which were pre-specified",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-17",
+        "title": "Study selection",
+        "text": "Give numbers of studies screened, assessed for eligibility, and included in the review, with reasons for exclusions at each stage, ideally with a flow diagram",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-18",
+        "title": "Study characteristics",
+        "text": "For each study, present characteristics for which data were extracted (such as study size, PICOS, follow-up period) and provide the citations",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-19",
+        "title": "Risk of bias within studies",
+        "text": "Present data on risk of bias of each study and, if available, any outcome-level assessment (see item 12).",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-20",
+        "title": "Results of individual studies",
+        "text": "For all outcomes considered (benefits or harms), present for each study (a) simple summary data for each intervention group and (b) effect estimates and confidence intervals, ideally with a forest plot",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-21",
+        "title": "Synthesis of results",
+        "text": "Present results of each meta-analysis done, including confidence intervals and measures of consistency",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-22",
+        "title": "Risk of bias across studies",
+        "text": "Present results of any assessment of risk of bias across studies (see item 15)",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-23",
+        "title": "Additional analysis",
+        "text": "Give results of additional analyses, if done (such as sensitivity or subgroup analyses, meta-regression [see item 16])",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-24",
+        "title": "Summary of evidence",
+        "text": "Summarise the main findings including the strength of evidence for each main outcome; consider their relevance to key groups (such as health care providers, users, and policy makers)",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-25",
+        "title": "Limitations",
+        "text": "Discuss limitations at study and outcome level (such as risk of bias), and at review level (such as incomplete retrieval of identified research, reporting bias)",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-26",
+        "title": "Conclusions",
+        "text": "Provide a general interpretation of the results in the context of other evidence, and implications for future research",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-27",
+        "title": "Funding",
+        "text": "Describe sources of funding for the systematic review and other support (such as supply of data) and role of funders for the systematic review",
+        "kind": "checklist_item"
+      }
+    ]
+  },
+  "new_version": {
+    "id": "PRISMA 2020",
+    "source": "C:\\Users\\lemonade\\AppData\\Local\\Temp\\specs\\prisma2020.json",
+    "units": [
+      {
+        "unit_id": "item-1",
+        "title": "Title",
+        "text": "Identify the report as a systematic review.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-2",
+        "title": "Abstract",
+        "text": "See the PRISMA 2020 for Abstracts checklist (table 2).",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-3",
+        "title": "Rationale",
+        "text": "Describe the rationale for the review in the context of existing knowledge.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-4",
+        "title": "Objectives",
+        "text": "Provide an explicit statement of the objective(s) or question(s) the review addresses.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-5",
+        "title": "Eligibility criteria",
+        "text": "Specify the inclusion and exclusion criteria for the review and how studies were grouped for the syntheses.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-6",
+        "title": "Information sources",
+        "text": "Specify all databases, registers, websites, organisations, reference lists and other sources searched or consulted to identify studies. Specify the date when each source was last searched or consulted.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-7",
+        "title": "Search strategy",
+        "text": "Present the full search strategies for all databases, registers and websites, including any filters and limits used.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-8",
+        "title": "Selection process",
+        "text": "Specify the methods used to decide whether a study met the inclusion criteria of the review, including how many reviewers screened each record and each report retrieved, whether they worked independently, and if applicable, details of automation tools used in the process.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-9",
+        "title": "Data collection process",
+        "text": "Specify the methods used to collect data from reports, including how many reviewers collected data from each report, whether they worked independently, any processes for obtaining or confirming data from study investigators, and if applicable, details of automation tools used in the process.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-10a",
+        "title": "Data items",
+        "text": "List and define all outcomes for which data were sought. Specify whether all results that were compatible with each outcome domain in each study were sought (e.g. for all measures, time points, analyses), and if not, the methods used to decide which results to collect.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-11",
+        "title": "Study risk of bias assessment",
+        "text": "Specify the methods used to assess risk of bias in the included studies, including details of the tool(s) used, how many reviewers assessed each study and whether they worked independently, and if applicable, details of automation tools used in the process.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-12",
+        "title": "Effect measures",
+        "text": "Specify for each outcome the effect measure(s) (e.g. risk ratio, mean difference) used in the synthesis or presentation of results.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-13a",
+        "title": "Synthesis methods",
+        "text": "Describe the processes used to decide which studies were eligible for each synthesis (e.g. tabulating the study intervention characteristics and comparing against the planned groups for each synthesis (item #5)).",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-14",
+        "title": "Reporting bias assessment",
+        "text": "Describe any methods used to assess risk of bias due to missing results in a synthesis (arising from reporting biases).",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-15",
+        "title": "Certainty assessment",
+        "text": "Describe any methods used to assess certainty (or confidence) in the body of evidence for an outcome.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-16a",
+        "title": "Study selection",
+        "text": "Describe the results of the search and selection process, from the number of records identified in the search to the number of studies included in the review, ideally using a flow diagram (see fig 1).",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-17",
+        "title": "Study characteristics",
+        "text": "Cite each included study and present its characteristics.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-18",
+        "title": "Risk of bias in studies",
+        "text": "Present assessments of risk of bias for each included study.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-19",
+        "title": "Results of individual studies",
+        "text": "For all outcomes, present, for each study: (a) summary statistics for each group (where appropriate) and (b) an effect estimate and its precision (e.g. confidence/credible interval), ideally using structured tables or plots.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-20a",
+        "title": "Results of syntheses",
+        "text": "For each synthesis, briefly summarise the characteristics and risk of bias among contributing studies.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-21",
+        "title": "Reporting biases",
+        "text": "Present assessments of risk of bias due to missing results (arising from reporting biases) for each synthesis assessed.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-22",
+        "title": "Certainty of evidence",
+        "text": "Present assessments of certainty (or confidence) in the body of evidence for each outcome assessed.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-23a",
+        "title": "Discussion",
+        "text": "Provide a general interpretation of the results in the context of other evidence.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-24a",
+        "title": "Registration and protocol",
+        "text": "Provide registration information for the review, including register name and registration number, or state that the review was not registered.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-25",
+        "title": "Support",
+        "text": "Describe sources of financial or non-financial support for the review, and the role of the funders or sponsors in the review.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-26",
+        "title": "Competing interests",
+        "text": "Declare any competing interests of review authors.",
+        "kind": "checklist_item"
+      },
+      {
+        "unit_id": "item-27",
+        "title": "Availability of data, code, and other materials",
+        "text": "Report which of the following are publicly available and where they can be found: template data collection forms; data extracted from included studies; data used for all analyses; analytic code; any other materials used in the review.",
+        "kind": "checklist_item"
+      }
+    ]
+  },
+  "retrieved_at": "2026-11-08"
+}

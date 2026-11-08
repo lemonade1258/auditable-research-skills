@@ -1,0 +1,64 @@
+{
+  "receipt": {
+    "purpose": "version-delta.classify",
+    "model": "qwen-max",
+    "prompt_digest": "975b11d3cefba3c0",
+    "attempts": 1,
+    "latency_ms": 21709,
+    "usage": {
+      "prompt_tokens": 738,
+      "completion_tokens": 754,
+      "total_tokens": 1492,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "written_at_utc": "2026-11-08T10:14:58Z",
+    "raw_response": "[\n    {\n        \"delta_id\": \"item-13\",\n        \"change_type\": \"field_removed\",\n        \"impact_level\": \"high\",\n        \"interpretation\": \"The requirement to state the principal summary measures (e.g., risk ratio, difference in means) has been removed.\",\n        \"worked_example\": \"\",\n        \"impact_summary\": \"This change removes a specific requirement for transparency and clarity regarding the statistical measures used, which could affect the interpretation and reproducibility of the results.\",\n        \"resolution_requirement\": \"If applicable, evidence must now be provided on how the summary measures were determined and why they were chosen, even though it is no longer explicitly required by the guideline.\",\n        \"uncertainty\": \"low\",\n        \"old_excerpt\": \"State the principal summary measures (such as risk ratio, difference in means).\",\n        \"new_excerpt\": \"\"\n    },\n    {\n        \"delta_id\": \"item-14\",\n        \"change_type\": \"semantic_shift\",\n        \"impact_level\": \"high\",\n        \"interpretation\": \"The focus has shifted from describing methods for handling data and combining results, including consistency measures, to describing methods for assessing the risk of bias due to missing results (reporting biases).\",\n        \"worked_example\": \"Under PRISMA 2009, a review might describe using a random-effects model and I2 statistic. Under PRISMA 2020, the same review would need to describe methods like funnel plots or Egger's test to assess reporting bias.\",\n        \"impact_summary\": \"This shift changes the emphasis from methodological aspects of synthesis to the assessment of potential biases, which could lead to different conclusions about the robustness of the findings.\",\n        \"resolution_requirement\": \"Evidence must now include a description of methods used to assess the risk of bias due to missing results, such as funnel plots, Egger's test, or other relevant techniques.\",\n        \"uncertainty\": \"low\",\n        \"old_excerpt\": \"Describe the methods of handling data and combining results of studies, if done, including measures of consistency (such as I2) for each meta-analysis\",\n        \"new_excerpt\": \"Describe any methods used to assess risk of bias due to missing results in a synthesis (arising from reporting biases).\"\n    },\n    {\n        \"delta_id\": \"item-15\",\n        \"change_type\": \"semantic_shift\",\n        \"impact_level\": \"high\",\n        \"interpretation\": \"The focus has shifted from specifying the assessment of risk of bias that may affect cumulative evidence to describing methods used to assess the certainty (or confidence) in the body of evidence for an outcome.\",\n        \"worked_example\": \"Under PRISMA 2009, a review might specify the use of funnel plots to assess publication bias. Under PRISMA 2020, the same review would need to describe the use of tools like GRADE to assess the overall certainty of the evidence.\",\n        \"impact_summary\": \"This shift changes the emphasis from identifying and addressing specific biases to a more comprehensive assessment of the quality and certainty of the evidence, which could lead to different conclusions about the strength of the findings.\",\n        \"resolution_requirement\": \"Evidence must now include a description of methods used to assess the certainty of the evidence, such as the use of the GRADE approach or similar frameworks.\",\n        \"uncertainty\": \"low\",\n        \"old_excerpt\": \"Specify any assessment of risk of bias that may affect the cumulative evidence (such as publication bias, selective reporting within studies)\",\n        \"new_excerpt\": \"Describe any methods used to assess certainty (or confidence) in the body of evidence for an outcome.\"\n    }\n]",
+    "old_id": "PRISMA 2009",
+    "new_id": "PRISMA 2020",
+    "pair_keys": [
+      "item-13",
+      "item-14",
+      "item-15"
+    ]
+  },
+  "payload": [
+    {
+      "delta_id": "item-13",
+      "change_type": "field_removed",
+      "impact_level": "high",
+      "interpretation": "The requirement to state the principal summary measures (e.g., risk ratio, difference in means) has been removed.",
+      "worked_example": "",
+      "impact_summary": "This change removes a specific requirement for transparency and clarity regarding the statistical measures used, which could affect the interpretation and reproducibility of the results.",
+      "resolution_requirement": "If applicable, evidence must now be provided on how the summary measures were determined and why they were chosen, even though it is no longer explicitly required by the guideline.",
+      "uncertainty": "low",
+      "old_excerpt": "State the principal summary measures (such as risk ratio, difference in means).",
+      "new_excerpt": ""
+    },
+    {
+      "delta_id": "item-14",
+      "change_type": "semantic_shift",
+      "impact_level": "high",
+      "interpretation": "The focus has shifted from describing methods for handling data and combining results, including consistency measures, to describing methods for assessing the risk of bias due to missing results (reporting biases).",
+      "worked_example": "Under PRISMA 2009, a review might describe using a random-effects model and I2 statistic. Under PRISMA 2020, the same review would need to describe methods like funnel plots or Egger's test to assess reporting bias.",
+      "impact_summary": "This shift changes the emphasis from methodological aspects of synthesis to the assessment of potential biases, which could lead to different conclusions about the robustness of the findings.",
+      "resolution_requirement": "Evidence must now include a description of methods used to assess the risk of bias due to missing results, such as funnel plots, Egger's test, or other relevant techniques.",
+      "uncertainty": "low",
+      "old_excerpt": "Describe the methods of handling data and combining results of studies, if done, including measures of consistency (such as I2) for each meta-analysis",
+      "new_excerpt": "Describe any methods used to assess risk of bias due to missing results in a synthesis (arising from reporting biases)."
+    },
+    {
+      "delta_id": "item-15",
+      "change_type": "semantic_shift",
+      "impact_level": "high",
+      "interpretation": "The focus has shifted from specifying the assessment of risk of bias that may affect cumulative evidence to describing methods used to assess the certainty (or confidence) in the body of evidence for an outcome.",
+      "worked_example": "Under PRISMA 2009, a review might specify the use of funnel plots to assess publication bias. Under PRISMA 2020, the same review would need to describe the use of tools like GRADE to assess the overall certainty of the evidence.",
+      "impact_summary": "This shift changes the emphasis from identifying and addressing specific biases to a more comprehensive assessment of the quality and certainty of the evidence, which could lead to different conclusions about the strength of the findings.",
+      "resolution_requirement": "Evidence must now include a description of methods used to assess the certainty of the evidence, such as the use of the GRADE approach or similar frameworks.",
+      "uncertainty": "low",
+      "old_excerpt": "Specify any assessment of risk of bias that may affect the cumulative evidence (such as publication bias, selective reporting within studies)",
+      "new_excerpt": "Describe any methods used to assess certainty (or confidence) in the body of evidence for an outcome."
+    }
+  ]
+}
