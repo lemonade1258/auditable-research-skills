@@ -1,0 +1,29 @@
+{
+  "receipt": {
+    "purpose": "version-delta.verify_alignment",
+    "model": "qwen-max",
+    "prompt_digest": "cac4e1d8989f1801",
+    "attempts": 1,
+    "latency_ms": 6821,
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 53,
+      "total_tokens": 407,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "written_at_utc": "2026-11-08T10:28:07Z",
+    "raw_response": "{\"verdict\": \"MISMATCH\", \"confidence\": \"high\", \"reason\": \"The old version focuses on the process for selecting studies, while the new version emphasizes describing the results of the search and selection process, including the use of a flow diagram.\"}",
+    "old_unit_id": "item-9",
+    "new_unit_id": "item-16a",
+    "old_title": "Study selection",
+    "new_title": "Study selection",
+    "verdict": "MISMATCH"
+  },
+  "payload": {
+    "verdict": "MISMATCH",
+    "confidence": "high",
+    "reason": "The old version focuses on the process for selecting studies, while the new version emphasizes describing the results of the search and selection process, including the use of a flow diagram."
+  }
+}

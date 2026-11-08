@@ -1,0 +1,1916 @@
+[
+  {
+    "paper_id": "W2944036551",
+    "openalex_id": "https://openalex.org/W2944036551",
+    "title": "Structured surgical residency training in Germany: an overview of existing training programs in 10 surgical subspecialties",
+    "authors": [
+      "Sabine Drossard"
+    ],
+    "year": 2019,
+    "venue": "Innovative Surgical Sciences",
+    "doi": "https://doi.org/10.1515/iss-2018-0033",
+    "source_url": "https://doi.org/10.1515/iss-2018-0033",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "INTRODUCTION: Surgery and the training of young surgeons face various challenges. Work hour restrictions, demographic changes, medicolegal demands, as well as economic constraints have led to changes in patient care and thus changed surgical residency. In addition to the daily training at work, several theoretical and practical courses are offered to surgical residents. The aim of this manuscript is to provide an overview of the existing courses and programs for surgical residents in Germany. It describes the current structure of surgical training in Germany for 10 subspecialties and sets out existing approaches to implement structured surgical training by professional associations as well as by commercial providers. MATERIALS AND METHODS: The official homepages of 10 surgical associations were analyzed for information on structured surgical training and a Google search for surgical training programs was conducted. Then, the websites of two commercial providers were searched for information in courses. In addition, the members of the German Young Surgeons Association were asked open questions about the existence of structured resident training and additional training opportunities in their specialty. The courses were analyzed for structural characteristics such as the price and type of course (single course, exam preparatory course, and structured program). A structured program was defined as a set of courses based on learning objectives that are designed to cover all aspects of the specialty and include some form of summative or formative assessment. RESULTS: Several courses are offered by varied providers; some of them associated with surgical associations and some commercial. Seven of 10 professional associations offer single courses and six of them offer exam preparatory courses. Commercial providers only offer single courses. All of these courses are optional; there is no requirement to take part in any of them. None of them is free of charge, but most offer discounts for members of surgical societies. Only one structured program exists for orthopedics and trauma surgery. A fixed schedule does not exist for any surgical subspecialty, but it is rather the responsibility of the trainee or his/her supervisor to pick or suggest a course that suits their personal state of knowledge. DISCUSSION: Until now, it depends on personal motivation and the generosity of hospitals whether or not surgical residents will receive training outside of their training hospital. Various external courses are offered in all surgical subspecialties to complement on-the-job training. It is unknown how many residents take part in them. The implementation of new, competence-based specialist training regulations in Germany in 2018 may facilitate a change in surgical education. Simulation-based education can promote the acquisition and consolidation of surgical skills. Additional training possibilities and structured programs should be implemented in surgical resident training to foster competence-based education and surgical proficiency.",
+    "cited_by_count": 33,
+    "discovery_routes": [
+      "openalex:search:surgical text revision alignment paragraph"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method",
+      "application"
+    ],
+    "curation_score": 21.745,
+    "retained": false
+  },
+  {
+    "paper_id": "W4385574131",
+    "openalex_id": "https://openalex.org/W4385574131",
+    "title": "Legal and Political Stance Detection of SCOTUS Language",
+    "authors": [
+      "Noah Bergam",
+      "Emily Allaway",
+      "Kathleen R. McKeown"
+    ],
+    "year": 2022,
+    "venue": "Natural Legal Language Processing Workshop (NLLP)",
+    "doi": "https://doi.org/10.18653/v1/2022.nllp-1.25",
+    "source_url": "https://doi.org/10.18653/v1/2022.nllp-1.25",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "We analyze publicly available US Supreme Court documents using automated stance detection.In the first phase of our work, we investigate the extent to which the Court's publicfacing language is political.We propose and calculate two distinct ideology metrics of SCO-TUS justices using oral argument transcripts.We then compare these language-based metrics to existing social scientific measures of the ideology of the Supreme Court and the public.Through this cross-disciplinary analysis, we find that justices who are more responsive to public opinion tend to express their ideology during oral arguments.This observation provides a new kind of evidence in favor of the attitudinal change hypothesis of Supreme Court justice behavior.As a natural extension of this political stance detection, we propose the more specialized task of legal stance detection with our new dataset SC-stance, which matches written opinions to legal questions.We find competitive performance on this dataset using language adapters trained on legal documents.",
+    "cited_by_count": 7,
+    "discovery_routes": [
+      "openalex:search:legal document amendment detection BERT"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "evidence",
+      "application"
+    ],
+    "curation_score": 21.646,
+    "retained": false
+  },
+  {
+    "paper_id": "W4400716830",
+    "openalex_id": "https://openalex.org/W4400716830",
+    "title": "DOCBENCH: A Benchmark for Evaluating LLM-based Document Reading Systems",
+    "authors": [
+      "Anni Zou",
+      "Wenhao Yu",
+      "Hongming Zhang",
+      "Kaixin Ma",
+      "Deng Cai",
+      "Zhuosheng Zhang",
+      "Hai Zhao",
+      "Dong Yu"
+    ],
+    "year": 2024,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2407.10701",
+    "source_url": "https://doi.org/10.48550/arxiv.2407.10701",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Recently, there has been a growing interest among large language model (LLM) developers in LLM-based document reading systems, which enable users to upload their own documents and pose questions related to the document contents, going beyond simple reading comprehension tasks. Consequently, these systems have been carefully designed to tackle challenges such as file parsing, metadata extraction, multi-modal information understanding and long-context reading. However, no current benchmark exists to evaluate their performance in such scenarios, where a raw file and questions are provided as input, and a corresponding response is expected as output. In this paper, we introduce DocBench, a new benchmark designed to evaluate LLM-based document reading systems. Our benchmark involves a meticulously crafted process, including the recruitment of human annotators and the generation of synthetic questions. It includes 229 real documents and 1,102 questions, spanning across five different domains and four major types of questions. We evaluate both proprietary LLM-based systems accessible via web interfaces or APIs, and a parse-then-read pipeline employing open-source LLMs. Our evaluations reveal noticeable gaps between existing LLM-based document reading systems and human performance, underscoring the challenges of developing proficient systems. To summarize, DocBench aims to establish a standardized benchmark for evaluating LLM-based document reading systems under diverse real-world scenarios, thereby guiding future advancements in this research area.",
+    "cited_by_count": 31,
+    "discovery_routes": [
+      "openalex:search:benchmark LLM reasoning about differences between documents"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 21.568,
+    "retained": false
+  },
+  {
+    "paper_id": "W4200627112",
+    "openalex_id": "https://openalex.org/W4200627112",
+    "title": "A Delphi-method-based consensus guideline for definition of treatment-resistant depression for clinical trials",
+    "authors": [
+      "Luca Sforzini",
+      "Courtney Worrell",
+      "Melisa Kose",
+      "Ian Muir Anderson",
+      "Bruno Aouizerate",
+      "Volker Arolt",
+      "Michael Bauer",
+      "Bernhard Theodor Baune",
+      "Pierre Blier",
+      "Anthony James Cleare",
+      "Philip J. Cowen",
+      "Timothy G. Dinan",
+      "Andrea M. Fagiolini",
+      "Ian Nicol Ferrier",
+      "Ulrich Hegerl",
+      "Andrew D. Krystal",
+      "Marion Leboyer",
+      "Hamish McAllister-Williams",
+      "Roger S. McIntyre",
+      "Andreas Meyer‐Lindenberg"
+    ],
+    "year": 2021,
+    "venue": "Molecular Psychiatry",
+    "doi": "https://doi.org/10.1038/s41380-021-01381-x",
+    "source_url": "https://doi.org/10.1038/s41380-021-01381-x",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Criteria for treatment-resistant depression (TRD) and partially responsive depression (PRD) as subtypes of major depressive disorder (MDD) are not unequivocally defined. In the present document we used a Delphi-method-based consensus approach to define TRD and PRD and to serve as operational criteria for future clinical studies, especially if conducted for regulatory purposes. We reviewed the literature and brought together a group of international experts (including clinicians, academics, researchers, employees of pharmaceutical companies, regulatory bodies representatives, and one person with lived experience) to evaluate the state-of-the-art and main controversies regarding the current classification. We then provided recommendations on how to design clinical trials, and on how to guide research in unmet needs and knowledge gaps. This report will feed into one of the main objectives of the EUropean Patient-cEntric clinicAl tRial pLatforms, Innovative Medicines Initiative (EU-PEARL, IMI) MDD project, to design a protocol for platform trials of new medications for TRD/PRD.",
+    "cited_by_count": 232,
+    "discovery_routes": [
+      "openalex:search:clinical practice guideline change tracking automation"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "application"
+    ],
+    "curation_score": 21.232,
+    "retained": false
+  },
+  {
+    "paper_id": "W4411555651",
+    "openalex_id": "https://openalex.org/W4411555651",
+    "title": "Use of Voluntary Alignment in the Next Generation ACO Model",
+    "authors": [
+      "Tyler Boese"
+    ],
+    "year": 2025,
+    "venue": "The American Journal of Managed Care",
+    "doi": "https://doi.org/10.37765/ajmc.2025.89739",
+    "source_url": "https://doi.org/10.37765/ajmc.2025.89739",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "OBJECTIVES: To describe adoption and use of voluntary alignment throughout the Next Generation Accountable Care Organization (NGACO) model from 2016 through 2021. Voluntary alignment allows Medicare beneficiaries to self-attribute to a particular medical provider or organization by signing a form or making a selection in the MyMedicare.gov portal. STUDY DESIGN: We performed mixed-methods analyses of cross-sectional survey, enrollment, and claims data and coding transcripts of interviews with NGACO leadership. METHODS: We statistically compared characteristics of NGACOs and beneficiaries that engaged in voluntary alignment compared to claims alignment. Additionally, we grouped qualitative interview responses into 2 overarching themes that emerged around NGACO leaders' perceptions, use, and experiences with voluntary alignment. RESULTS: Few NGACOs engaged in widespread use of voluntary alignment. NGACOs that adopted voluntary alignment were similar to those that did not in most respects, although beneficiaries aligned through voluntary alignment were sicker and more expensive than those aligned through claims only. Many NGACO leaders reported they were content with claims-based alignment and did not think implementing initiatives to increase voluntary alignment would be worthwhile. CONCLUSIONS: The analysis suggests possible lessons for using voluntary alignment in future ACO models. NGACO leaders perceived that the use of voluntary alignment was limited by a high implementation effort, a need for patient education, and tight administrative time frames. Perceived benefits of voluntary alignment included attribution flexibility and creating opportunities for beneficiary engagement. Some leaders suggested allowing year-round voluntary alignment sign-up to better integrate voluntary alignment into their regular office workflows.",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:surgical text revision alignment paragraph"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method",
+      "evidence",
+      "application"
+    ],
+    "curation_score": 21.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W4412886984",
+    "openalex_id": "https://openalex.org/W4412886984",
+    "title": "RuleArena: A Benchmark for Rule-Guided Reasoning with LLMs in Real-World Scenarios",
+    "authors": [
+      "Ruiwen Zhou",
+      "Wenyue Hua",
+      "Liangming Pan",
+      "Sitao Cheng",
+      "Xiaobao Wu",
+      "En Yu",
+      "William Yang Wang"
+    ],
+    "year": 2025,
+    "venue": "Proceedings of the conference - Association for Computational Linguistics. Meeting",
+    "doi": "https://doi.org/10.18653/v1/2025.acl-long.27",
+    "source_url": "https://doi.org/10.18653/v1/2025.acl-long.27",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Ruiwen Zhou, Wenyue Hua, Liangming Pan, Sitao Cheng, Xiaobao Wu, En Yu, William Yang Wang. Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2025.",
+    "cited_by_count": 33,
+    "discovery_routes": [
+      "openalex:search:benchmark LLM reasoning about differences between documents"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 20.745,
+    "retained": false
+  },
+  {
+    "paper_id": "W3106615749",
+    "openalex_id": "https://openalex.org/W3106615749",
+    "title": "Reading the city through its neighbourhoods: Deep text embeddings of Yelp reviews as a basis for determining similarity and change",
+    "authors": [
+      "Alexander W Olson",
+      "Fernando Calderón-Figueroa",
+      "Olimpia Bidian",
+      "Daniel Silver",
+      "Scott Sanner"
+    ],
+    "year": 2020,
+    "venue": "Cities",
+    "doi": "https://doi.org/10.1016/j.cities.2020.103045",
+    "source_url": "https://doi.org/10.1016/j.cities.2020.103045",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "This paper develops novel methods for using Yelp reviews as a window into the collective representations of a city and its neighbourhoods. Basing analysis on social media data such as Yelp is a challenging task because review data is highly sparse and direct analysis may fail to uncover hidden trends. To this end, we propose a deep autoencoder approach for embedding the language of neighbourhood-based business reviews into a reduced dimensional space that facilitates similarity comparison of neighbourhoods and their change over time. Our model improves performance in distinguishing real and fake neighbourhood descriptions derived from real reviews, increasing performance in the task from an average accuracy of 0.46 to 0.77. This improvement in performance indicates that this novel application of embedded language analysis permits us to uncover comparative trends in neighbourhood change through the lens of their venues' reviews, providing a computational methodology for reading a city through its neighbourhoods. The resulting toolkit makes it possible to examine a city's current sociological trends in terms of its neighbourhoods' collective identities.",
+    "cited_by_count": 29,
+    "discovery_routes": [
+      "openalex:search:policy change detection text embedding"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 20.385,
+    "retained": false
+  },
+  {
+    "paper_id": "W4401880082",
+    "openalex_id": "https://openalex.org/W4401880082",
+    "title": "Leveraging Large Language Models for Automatic Smart Contract Generation",
+    "authors": [
+      "Emanuele Antonio Napoli",
+      "Fadi Barbàra",
+      "Valentina Gatteschi",
+      "Claudio Schifanella"
+    ],
+    "year": 2024,
+    "venue": "IEEE Annual International Computer Software and Applications Conference (COMPSAC)",
+    "doi": "https://doi.org/10.1109/compsac61105.2024.00100",
+    "source_url": "https://doi.org/10.1109/compsac61105.2024.00100",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "In the rapidly evolving landscape of blockchain technology, smart contracts stand as pivotal instrument for automating and enforcing digital agreements. However, their creation often necessitates specialized programming skills, hindering broader adoption and accessibility. This paper proposes a pipeline that leverages the capabilities of Large Language Models (LLMs) to automate the generation of smart contracts. By harnessing the natural language understanding and generation capabilities of LLMs, our approach aims to make accessible smart contract development to people that are not familiar with this task. The proposed pipeline employs the CO-STAR methodology to optimize prompt creation for high-quality outputs. Moreover, in order to assess the correctness and reliability of the generated smart contracts, we leverage on Slither, one of the most cutting-edge vulnerability detection tools. Furthermore, we propose a benchmarking suite based on metrics such as compilability, vulnerabilities, and presence of comments, among the others, in order to evaluate the effectiveness of the pipeline in terms of consistency of generated smart contracts, LLM's temperature effect, and prompt selection. The results show that our pipeline is able to produce 98.1% of compilable smart contracts, the temperature value has negligible effect on the generated smart contracts, and the CO-STAR methodology produces valuable and consistent outputs with low-impact vulnerabilities.",
+    "cited_by_count": 29,
+    "discovery_routes": [
+      "openalex:search:contract clause change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 20.385,
+    "retained": false
+  },
+  {
+    "paper_id": "W4417474777",
+    "openalex_id": "https://openalex.org/W4417474777",
+    "title": "Scientific production in the era of large language models",
+    "authors": [
+      "Keigo Kusumegi",
+      "Xinyu Yang",
+      "Paul Ginsparg",
+      "Mathijs de Vaan",
+      "Toby E. Stuart",
+      "Yian Yin"
+    ],
+    "year": 2025,
+    "venue": "Science",
+    "doi": "https://doi.org/10.1126/science.adw3000",
+    "source_url": "https://doi.org/10.1126/science.adw3000",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "With the production process rapidly evolving, science policy must consider how institutions could evolve.",
+    "cited_by_count": 122,
+    "discovery_routes": [
+      "openalex:search:contract clause change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 20.045,
+    "retained": false
+  },
+  {
+    "paper_id": "W4415030084",
+    "openalex_id": "https://openalex.org/W4415030084",
+    "title": "Survey on legal information extraction: current status and open challenges",
+    "authors": [
+      "Damith Premasiri",
+      "Tharindu Ranasinghe",
+      "Ruslan Mitkov",
+      "Mahmoud El‐Haj",
+      "Ingo Frommholz"
+    ],
+    "year": 2025,
+    "venue": "Knowledge and Information Systems",
+    "doi": "https://doi.org/10.1007/s10115-025-02600-5",
+    "source_url": "https://doi.org/10.1007/s10115-025-02600-5",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Abstract The goal of information extraction is to extract structural knowledge (such as entities, relations and events) from plain and unstructured texts. Information extraction in legal documents has recently gained a lot of attention in the natural language processing (NLP) community due to the high demand for efficient information extraction for legal practitioners and companies. Given that the legal documents are unique and their processing is challenging, there is a pressing need for applications of NLP techniques to tackle these challenges. In this research, we present a survey on the recent advancements in legal information extraction focusing on three tasks: named entity recognition, relationship extraction and event detection. We report language resources and systems in multiple jurisdictions and languages for each task. Based on the thorough review conducted, we identify insights into the techniques employed and promising research directions that merit further exploration in future studies. We maintain a public repository and consistently update related resources at https://github.com/DamithDR/legalinformationextraction .",
+    "cited_by_count": 24,
+    "discovery_routes": [
+      "openalex:search:legal document amendment detection BERT"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "application"
+    ],
+    "curation_score": 19.899,
+    "retained": false
+  },
+  {
+    "paper_id": "W4415150942",
+    "openalex_id": "https://openalex.org/W4415150942",
+    "title": "DNR Bench: Benchmarking Over-Reasoning in Reasoning LLMs",
+    "authors": [
+      "Hashemi, Masoud",
+      "Oluwanifemi Bamgbose",
+      "Sathwik Tejaswi Madhusudhan",
+      "Jishnu Sethumadhavan Nair",
+      "Tiwari, Aman",
+      "Vikas Yadav"
+    ],
+    "year": 2025,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2503.15793",
+    "source_url": "https://doi.org/10.48550/arxiv.2503.15793",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Test-time scaling has significantly improved large language model performance, enabling deeper reasoning to solve complex problems. However, this increased reasoning capability also leads to excessive token generation and unnecessary problem-solving attempts. We introduce Dont Reason Bench (DNR Bench), a new benchmark designed to evaluate LLMs ability to robustly understand the tricky reasoning triggers and avoiding unnecessary generation. DNR Bench consists of 150 adversarially designed prompts that are easy for humans to understand and respond to, but surprisingly not for many of the recent prominent LLMs. DNR Bench tests models abilities across different capabilities, such as instruction adherence, hallucination avoidance, redundancy filtering, and unanswerable question recognition. We evaluate reasoning LLMs (RLMs), including DeepSeek-R1, OpenAI O3-mini, Claude-3.7-sonnet and compare them against a powerful non-reasoning model, e.g., GPT-4o. Our experiments reveal that RLMs generate up to 70x more tokens than necessary, often failing at tasks that simpler non-reasoning models handle efficiently with higher accuracy. Our findings underscore the need for more effective training and inference strategies in RLMs.",
+    "cited_by_count": 15,
+    "discovery_routes": [
+      "openalex:search:benchmark LLM reasoning about differences between documents"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 19.873,
+    "retained": false
+  },
+  {
+    "paper_id": "W2130155377",
+    "openalex_id": "https://openalex.org/W2130155377",
+    "title": "Canadian Thoracic Society 2011 Guideline Update: Diagnosis and Treatment of Sleep Disordered Breathing",
+    "authors": [
+      "John A. Fleetham",
+      "Najib Ayas",
+      "Douglas Bradley",
+      "Michael Fitzpatrick",
+      "Thomas K Oliver",
+      "Debra Morrison",
+      "Frank Ryan",
+      "Frédéric Sériès",
+      "Robert Skomro",
+      "Willis H. Tsai"
+    ],
+    "year": 2011,
+    "venue": "Canadian Respiratory Journal",
+    "doi": "https://doi.org/10.1155/2011/506189",
+    "source_url": "https://doi.org/10.1155/2011/506189",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "The Canadian Thoracic Society (CTS) published an executive summary of guidelines for the diagnosis and treatment of sleep disordered breathing in 2006⁄2007. These guidelines were developed during several meetings by a group of experts with evidence grading based on committee consensus. These guidelines were well received and the majority of the recommendations remain unchanged. The CTS embarked on a more rigorous process for the 2011 guideline update, and addressed eight areas that were believed to be controversial or in which new data emerged. The CTS Sleep Disordered Breathing Committee posed specific questions for each area. The recommendations regarding maximum assessment wait times, portable monitoring, treatment of asymptomatic adult obstructive sleep apnea patients, treatment with conventional continuous positive airway pressure compared with automatic continuous positive airway pressure, and treatment of central sleep apnea syndrome in heart failure patients replace the recommendations in the 2006⁄2007 guidelines. The recommendations on bariatric surgery, complex sleep apnea and optimum positive airway pressure technologies are new topics, which were not covered in the 2006⁄2007 guidelines.",
+    "cited_by_count": 135,
+    "discovery_routes": [
+      "openalex:search:guideline update comparison automatic"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "evidence"
+    ],
+    "curation_score": 18.619,
+    "retained": false
+  },
+  {
+    "paper_id": "W4389505367",
+    "openalex_id": "https://openalex.org/W4389505367",
+    "title": "Evaluation of clinical practice guideline-derived clinical decision support systems using a novel quality model",
+    "authors": [
+      "J. A. García-García",
+      "Manuel Carrero",
+      "María José Escalona",
+      "David Lizcano"
+    ],
+    "year": 2023,
+    "venue": "Journal of Biomedical Informatics",
+    "doi": "https://doi.org/10.1016/j.jbi.2023.104573",
+    "source_url": "https://doi.org/10.1016/j.jbi.2023.104573",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "",
+    "cited_by_count": 12,
+    "discovery_routes": [
+      "openalex:search:clinical practice guideline change tracking automation"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 18.464,
+    "retained": false
+  },
+  {
+    "paper_id": "W4290774620",
+    "openalex_id": "https://openalex.org/W4290774620",
+    "title": "Revise and Resubmit: An Intertextual Model of Text-based Collaboration in Peer Review",
+    "authors": [
+      "Ilia Kuznetsov",
+      "Jan Buchmann",
+      "Max Eichler",
+      "Iryna Gurevych"
+    ],
+    "year": 2022,
+    "venue": "Computational Linguistics",
+    "doi": "https://doi.org/10.1162/coli_a_00455",
+    "source_url": "https://doi.org/10.1162/coli_a_00455",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Abstract Peer review is a key component of the publishing process in most fields of science. Increasing submission rates put a strain on reviewing quality and efficiency, motivating the development of applications to support the reviewing and editorial work. While existing NLP studies focus on the analysis of individual texts, editorial assistance often requires modeling interactions between pairs of texts—yet general frameworks and datasets to support this scenario are missing. Relationships between texts are the core object of the intertextuality theory—a family of approaches in literary studies not yet operationalized in NLP. Inspired by prior theoretical work, we propose the first intertextual model of text-based collaboration, which encompasses three major phenomena that make up a full iteration of the review–revise–and–resubmit cycle: pragmatic tagging, linking, and long-document version alignment. While peer review is used across the fields of science and publication formats, existing datasets solely focus on conference-style review in computer science. Addressing this, we instantiate our proposed model in the first annotated multidomain corpus in journal-style post-publication open peer review, and provide detailed insights into the practical aspects of intertextual annotation. Our resource is a major step toward multidomain, fine-grained applications of NLP in editorial support for peer review, and our intertextual framework paves the path for general-purpose modeling of text-based collaboration. We make our corpus, detailed annotation guidelines, and accompanying code publicly available.1",
+    "cited_by_count": 26,
+    "discovery_routes": [
+      "openalex:search:surgical text revision alignment paragraph"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 18.099,
+    "retained": false
+  },
+  {
+    "paper_id": "W4412614034",
+    "openalex_id": "https://openalex.org/W4412614034",
+    "title": "Semantic equivalence ofan instrument to assessmothers/caregiversbeliefs about earlychildhood caries",
+    "authors": [
+      "Kethlen Sara Correa de Souza",
+      "Juliana Freire-Maia",
+      "Luna Chagas Clementino",
+      "Matheus França Perazzo",
+      "Brenda Heaton",
+      "Raul I. García",
+      "Saul Martins Paiva",
+      "Paulo Antônio Martins‐Júnior"
+    ],
+    "year": 2025,
+    "venue": "Brazilian journal of oral sciences/Brazilian Journal of Oral Sciences",
+    "doi": "https://doi.org/10.20396/bjos.v24i00.8677809",
+    "source_url": "https://doi.org/10.20396/bjos.v24i00.8677809",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "The knowledge and beliefs can affect the behavior of parents about preventive oral care of their children. Aim: This study aimed to perform the semantic equivalence of an instrument that assesses beliefs, knowledge, behaviors and barriers to oral care of mothers/caregivers about early childhood caries in their children aged 0 to 5 years between the original English version and the Brazilian Portuguese language version. Methods: Conceptual and item equivalence were initially performed. Following, semantic equivalence was evaluated according to the following steps: (1) translations of the instrument into Brazilian Portuguese, performed by two independent translators (both native in Brazilian Portuguese and fluent in English); (2) unification of the two translations by an expert committee; (3) two back-translations performed by two independent translators (both native in English and fluent in Brazilian Portuguese); (4) unification of the two back-translations by an expert committee; (5) unified back-translated version sent to the authors of the original instrument for evaluation; (6) committee review; (7) pre-test in a group of 20 Brazilian mothers/caregivers of children aged 0 to 5 years; (8) review and final version of the instrument in Brazilian Portuguese. Results: All items adequately reflected the Brazilian culture. Small divergences were found during translations and back-translations, and the expert committee chose the versions that would best fit into Brazilian culture. Pre-test also brought important insights to the process. All changes made were presented and approved by the original authors. Conclusion: The semantic equivalence allowed the development of a Brazilian Portuguese version of the instrument semantically equivalent to the original version.",
+    "cited_by_count": 1,
+    "discovery_routes": [
+      "openalex:search:cross-version semantic equivalence sentence"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task"
+    ],
+    "curation_score": 18.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W4409379779",
+    "openalex_id": "https://openalex.org/W4409379779",
+    "title": "Automating construction contract review using knowledge graph-enhanced large language models",
+    "authors": [
+      "Chunmo Zheng",
+      "Saika Wong",
+      "Xing Su",
+      "Yinqiu Tang",
+      "Ahsan Nawaz",
+      "Mohamad Kassem"
+    ],
+    "year": 2025,
+    "venue": "Automation in Construction",
+    "doi": "https://doi.org/10.1016/j.autcon.2025.106179",
+    "source_url": "https://doi.org/10.1016/j.autcon.2025.106179",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "",
+    "cited_by_count": 80,
+    "discovery_routes": [
+      "openalex:search:contract clause change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 17.944,
+    "retained": false
+  },
+  {
+    "paper_id": "W4379522373",
+    "openalex_id": "https://openalex.org/W4379522373",
+    "title": "An Empirical Study on Vagueness Detection in Privacy Policy Texts",
+    "authors": [
+      "Garima Malik",
+      "Savaş Yıldırım",
+      "Mücahit Çevik",
+      "Ayşe Bener"
+    ],
+    "year": 2023,
+    "venue": "",
+    "doi": "https://doi.org/10.21428/594757db.2728303d",
+    "source_url": "https://doi.org/10.21428/594757db.2728303d",
+    "authority_tier": "C",
+    "authority_reason": "other source",
+    "abstract": "Website privacy policies outline how a website handles personal information. Many such policies are written vaguely, making it difficult for users to comprehend what data is collected and how it’s used, posing a threat to privacy and security. The empirical study in this paper aims to address this issue by applying transformer models to automatically detect the level of vagueness in privacy policy texts. We calculate the vagueness scores based on annotations obtained through arithmetic mean, geometric mean, and harmonic mean of the individual annotations and discretize the policy text into four distinct vagueness categories. Our detailed numerical study shows that transformer models perform well for the vagueness classification tasks and they can be effective in enhancing the clarity and transparency of privacy policies. Our experiments also highlight the importance of reliable annotations and show that the transformer model performance can be enhanced with more reliable annotations with lower standard deviation and entropy values.",
+    "cited_by_count": 3,
+    "discovery_routes": [
+      "openalex:search:policy change detection text embedding"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 17.732,
+    "retained": false
+  },
+  {
+    "paper_id": "W4393079208",
+    "openalex_id": "https://openalex.org/W4393079208",
+    "title": "Construction contract risk identification based on knowledge-augmented language models",
+    "authors": [
+      "Saika Wong",
+      "Chunmo Zheng",
+      "Xing Su",
+      "Yinqiu Tang"
+    ],
+    "year": 2024,
+    "venue": "Computers in Industry",
+    "doi": "https://doi.org/10.1016/j.compind.2024.104082",
+    "source_url": "https://doi.org/10.1016/j.compind.2024.104082",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "",
+    "cited_by_count": 72,
+    "discovery_routes": [
+      "openalex:search:contract clause change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 17.485,
+    "retained": false
+  },
+  {
+    "paper_id": "W3139408490",
+    "openalex_id": "https://openalex.org/W3139408490",
+    "title": "Features to Text: A Comprehensive Survey of Deep Learning on Semantic Segmentation and Image Captioning",
+    "authors": [
+      "Ariyo Oluwasanmi",
+      "Muhammad Umar Aftab",
+      "Zhiguang Qin",
+      "Ngo Tung Son",
+      "Thang Van Doan",
+      "Son Ba Nguyen",
+      "Son Hoang Nguyen",
+      "Giang Nguyen"
+    ],
+    "year": 2021,
+    "venue": "Complexity",
+    "doi": "https://doi.org/10.1155/2021/5538927",
+    "source_url": "https://doi.org/10.1155/2021/5538927",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "With the emergence of deep learning, computer vision has witnessed extensive advancement and has seen immense applications in multiple domains. Specifically, image captioning has become an attractive focal direction for most machine learning experts, which includes the prerequisite of object identification, location, and semantic understanding. In this paper, semantic segmentation and image captioning are comprehensively investigated based on traditional and state‐of‐the‐art methodologies. In this survey, we deliberate on the use of deep learning techniques on the segmentation analysis of both 2D and 3D images using a fully convolutional network and other high‐level hierarchical feature extraction methods. First, each domain’s preliminaries and concept are described, and then semantic segmentation is discussed alongside its relevant features, available datasets, and evaluation criteria. Also, the semantic information capturing of objects and their attributes is presented in relation to their annotation generation. Finally, analysis of the existing methods, their contributions, and relevance are highlighted, informing the importance of these methods and illuminating a possible research continuation for the application of semantic image segmentation and image captioning approaches.",
+    "cited_by_count": 25,
+    "discovery_routes": [
+      "openalex:search:semantic diff text revision understanding NLP"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 17.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W4414421219",
+    "openalex_id": "https://openalex.org/W4414421219",
+    "title": "ULBERT: a domain-adapted BERT model for bilingual information retrieval from Pakistan's constitution",
+    "authors": [
+      "Qaiser Abbas",
+      "Waqas Nawaz",
+      "Sadia Niazi",
+      "Muhammad Awais"
+    ],
+    "year": 2025,
+    "venue": "Frontiers in Big Data",
+    "doi": "https://doi.org/10.3389/fdata.2025.1448785",
+    "source_url": "https://doi.org/10.3389/fdata.2025.1448785",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Introduction: Navigating legal texts like a national constitution is notoriously difficult due to specialized jargon and complex internal references. For the Constitution of Pakistan, no automated, user-friendly search tool existed to address this challenge. This paper introduces ULBERT, a novel AI-powered information retrieval framework designed to make the constitution accessible to all users, from legal experts to ordinary citizens, in both English and Urdu. Methods: The system is built around a custom AI model that moves beyond keyword matching to understand the semantic meaning of a user's query. It processes questions in English or Urdu and compares them to the constitutional text, identifying the most relevant passages based on contextual and semantic similarity. Results: In performance testing, the ULBERT framework proved highly effective. It successfully retrieved the correct constitutional information with an accuracy of 86% for English queries and 73% for Urdu queries. Discussion: These results demonstrate a significant breakthrough in enhancing the accessibility of foundational legal documents through artificial intelligence. The framework provides an effective and intuitive tool for legal inquiry, empowering a broader audience to understand the Constitution of Pakistan.",
+    "cited_by_count": 1,
+    "discovery_routes": [
+      "openalex:search:legal document amendment detection BERT"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method",
+      "application"
+    ],
+    "curation_score": 17.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W7129409284",
+    "openalex_id": "https://openalex.org/W7129409284",
+    "title": "Named Entity Recognition for Serbian Legal Documents: Design, Methodology and Dataset Development",
+    "authors": [
+      "Vladimir Kalušev",
+      "Branko Brkljač"
+    ],
+    "year": 2026,
+    "venue": "Lecture notes in networks and systems",
+    "doi": "https://doi.org/10.1007/978-3-032-04890-5_30",
+    "source_url": "https://doi.org/10.1007/978-3-032-04890-5_30",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "",
+    "cited_by_count": 2,
+    "discovery_routes": [
+      "openalex:search:legal document amendment detection BERT"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "application"
+    ],
+    "curation_score": 16.414,
+    "retained": false
+  },
+  {
+    "paper_id": "W7160940018",
+    "openalex_id": "https://openalex.org/W7160940018",
+    "title": "CodeClinic: Evaluating Automation of Coding Skills for Clinical Reasoning Agents",
+    "authors": [
+      "Timothy Ossowski",
+      "Xinchi Liu",
+      "Danyal Maqbool",
+      "Vaibhav Dhanuka",
+      "Sheng Zhang",
+      "Hoifung Poon",
+      "Majid Afshar",
+      "Tyler Bradshaw",
+      "Junjie Hu"
+    ],
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2605.09675",
+    "source_url": "https://doi.org/10.48550/arxiv.2605.09675",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Clinical reasoning agents based on large language models (LLMs) aim to automate tasks such as intensive care unit (ICU) monitoring and patient state tracking from electronic health records (EHRs). Existing systems typically rely on manually curated clinical tools or skills for concepts such as sepsis detection and organ failure assessment. However, maintaining these tool libraries requires substantial expert effort, while zero-shot querying or code generation often produces inefficient and unreliable reasoning chains, especially under institution-specific clinical policies. We introduce CodeClinic, a benchmark built on MIMIC-IV for evaluating whether LLM agents can synthesize and compose reusable clinical skills instead of relying on fixed toolboxes. The benchmark contains two complementary tasks: longitudinal ICU surveillance and compositional information seeking. The longitudinal setting simulates monitoring patient trajectories with structured decisions every four hours across 25 findings and eight clinical families, while the compositional setting spans 63k instances across 259 tasks in nine domains and is stratified by compositional dependency depth to evaluate increasingly complex multi-step reasoning. We further propose an offline autoformalization pipeline that converts natural-language clinical guidelines into reusable and verified Python skill libraries through iterative LLM refinement. Compared with zero-shot code generation, the resulting libraries improve consistency while reducing per-query token usage by up to 40%.",
+    "cited_by_count": 2,
+    "discovery_routes": [
+      "openalex:search:clinical practice guideline change tracking automation"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 16.414,
+    "retained": false
+  },
+  {
+    "paper_id": "W4225873185",
+    "openalex_id": "https://openalex.org/W4225873185",
+    "title": "Evaluating the construct validity of text embeddings with application to survey questions",
+    "authors": [
+      "Qixiang Fang",
+      "Dong Nguyen",
+      "Daniel Leonard Oberski"
+    ],
+    "year": 2022,
+    "venue": "EPJ Data Science",
+    "doi": "https://doi.org/10.1140/epjds/s13688-022-00353-7",
+    "source_url": "https://doi.org/10.1140/epjds/s13688-022-00353-7",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Abstract Text embedding models from Natural Language Processing can map text data (e.g. words, sentences, documents) to meaningful numerical representations (a.k.a. text embeddings). While such models are increasingly applied in social science research, one important issue is often not addressed: the extent to which these embeddings are high-quality representations of the information needed to be encoded. We view this quality evaluation problem from a measurement validity perspective, and propose the use of the classic construct validity framework to evaluate the quality of text embeddings. First, we describe how this framework can be adapted to the opaque and high-dimensional nature of text embeddings. Second, we apply our adapted framework to an example where we compare the validity of survey question representation across text embedding models.",
+    "cited_by_count": 19,
+    "discovery_routes": [
+      "openalex:search:policy change detection text embedding"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 16.359,
+    "retained": false
+  },
+  {
+    "paper_id": "W2163168379",
+    "openalex_id": "https://openalex.org/W2163168379",
+    "title": "Automatically finding relevant citations for clinical guideline development",
+    "authors": [
+      "Duy Duc An Bui",
+      "Siddhartha Jonnalagadda",
+      "Guilherme Del Fiol"
+    ],
+    "year": 2015,
+    "venue": "Journal of Biomedical Informatics",
+    "doi": "https://doi.org/10.1016/j.jbi.2015.09.003",
+    "source_url": "https://doi.org/10.1016/j.jbi.2015.09.003",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "OBJECTIVE: Literature database search is a crucial step in the development of clinical practice guidelines and systematic reviews. In the age of information technology, the process of literature search is still conducted manually, therefore it is costly, slow and subject to human errors. In this research, we sought to improve the traditional search approach using innovative query expansion and citation ranking approaches. METHODS: We developed a citation retrieval system composed of query expansion and citation ranking methods. The methods are unsupervised and easily integrated over the PubMed search engine. To validate the system, we developed a gold standard consisting of citations that were systematically searched and screened to support the development of cardiovascular clinical practice guidelines. The expansion and ranking methods were evaluated separately and compared with baseline approaches. RESULTS: Compared with the baseline PubMed expansion, the query expansion algorithm improved recall (80.2% vs. 51.5%) with small loss on precision (0.4% vs. 0.6%). The algorithm could find all citations used to support a larger number of guideline recommendations than the baseline approach (64.5% vs. 37.2%, p<0.001). In addition, the citation ranking approach performed better than PubMed's \"most recent\" ranking (average precision +6.5%, recall@k +21.1%, p<0.001), PubMed's rank by \"relevance\" (average precision +6.1%, recall@k +14.8%, p<0.001), and the machine learning classifier that identifies scientifically sound studies from MEDLINE citations (average precision +4.9%, recall@k +4.2%, p<0.001). CONCLUSIONS: Our unsupervised query expansion and ranking techniques are more flexible and effective than PubMed's default search engine behavior and the machine learning classifier. Automated citation finding is promising to augment the traditional literature search.",
+    "cited_by_count": 19,
+    "discovery_routes": [
+      "openalex:search:guideline update comparison automatic"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method",
+      "evidence"
+    ],
+    "curation_score": 16.359,
+    "retained": false
+  },
+  {
+    "paper_id": "W4402782739",
+    "openalex_id": "https://openalex.org/W4402782739",
+    "title": "Updated practice guideline for dual-energy X-ray absorptiometry (DXA)",
+    "authors": [
+      "Riemer H. J. A. Slart",
+      "Marija Punda",
+      "Dalal S. Ali",
+      "Alberto Bazzocchi",
+      "Oliver Bock",
+      "Pauline M. Camacho",
+      "JOHN J. CAREY",
+      "Anita Colquhoun",
+      "Juliet Compston",
+      "Klaus Engelke",
+      "Paola Anna Erba",
+      "Nicholas C. Harvey",
+      "Diane C. Krueger",
+      "Willem Frederik Lems",
+      "Edward Michael Lewiecki",
+      "Sarah Morgan",
+      "Kendall F. Moseley",
+      "Christopher O’Brien",
+      "Linda J. Probyn",
+      "Yumie Rhee"
+    ],
+    "year": 2024,
+    "venue": "European Journal of Nuclear Medicine and Molecular Imaging",
+    "doi": "https://doi.org/10.1007/s00259-024-06912-6",
+    "source_url": "https://doi.org/10.1007/s00259-024-06912-6",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "The introduction of dual-energy X-ray absorptiometry (DXA) technology in the 1980s revolutionized the diagnosis, management and monitoring of osteoporosis, providing a clinical tool which is now available worldwide. However, DXA measurements are influenced by many technical factors, including the quality control procedures for the instrument, positioning of the patient, and approach to analysis. Reporting of DXA results may be confounded by factors such as selection of reference ranges for T-scores and Z-scores, as well as inadequate knowledge of current standards for interpretation. These points are addressed at length in many international guidelines but are not always easily assimilated by practising clinicians and technicians. Our aim in this report is to identify key elements pertaining to the use of DXA in clinical practice, considering both technical and clinical aspects. Here, we discuss technical aspects of DXA procedures, approaches to interpretation and integration into clinical practice, and the use of non-bone mineral density measurements, such as a vertebral fracture assessment, in clinical risk assessment.",
+    "cited_by_count": 170,
+    "discovery_routes": [
+      "openalex:search:guideline update comparison automatic"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 16.038,
+    "retained": false
+  },
+  {
+    "paper_id": "W7166850480",
+    "openalex_id": "https://openalex.org/W7166850480",
+    "title": "MirrorQA: Benchmarking Multimodal LLMs on Mirror-Orientation Reasoning",
+    "authors": [
+      "Jingping Liu",
+      "Xingchen Peng",
+      "Yan Zhou",
+      "Ziyan Liu",
+      "Jie Zhai",
+      "Ronghao Chen",
+      "Huacan Wang",
+      "Xiaofeng Jia"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the conference - Association for Computational Linguistics. Meeting",
+    "doi": "https://doi.org/10.18653/v1/2026.acl-long.1879",
+    "source_url": "https://doi.org/10.18653/v1/2026.acl-long.1879",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Jingping Liu, Xingchen Peng, Yan Zhou, Ziyan Liu, Jie Zhai, Ronghao Chen, Huacan Wang, Xiaofeng Jia. Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2026.",
+    "cited_by_count": 1,
+    "discovery_routes": [
+      "openalex:search:benchmark LLM reasoning about differences between documents"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 16.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W7110233090",
+    "openalex_id": "https://openalex.org/W7110233090",
+    "title": "Exploring Embedding Interpretability by Correspondences Between Topic Models and Text Embeddings",
+    "authors": [
+      "Meng Yuan",
+      "Lida Rashidi",
+      "Justin Zobel"
+    ],
+    "year": 2025,
+    "venue": "Information Retrieval Research",
+    "doi": "https://doi.org/10.54195/irrj.23703",
+    "source_url": "https://doi.org/10.54195/irrj.23703",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Text embeddings have become essential for representing documents in Information Retrieval (IR), yet their high-dimensional nature often limits interpretability. To bridge this gap, we introduce a novel mapping framework that aligns embedding dimensions with topics derived from both probabilistic and neural models. Using three standard collections and three embedding methods, we demonstrate that embedding features consistently map to a subset of coherent topics, even as the total number of topics varies. We further quantify this correspondence with a Mean Mapping Specificity Improvement Rate, showing that mapped topics exhibit significantly higher specificity than the global topic set if the embedding dimensions are set properly. A stability analysis over varying embedding dimensions confirms the stability of the mapping across random feature samples. Our contributions are three-fold: A general-purpose mapping method that visualizes and formalizes correspondences between embedding features and topic representations; Empirical evidence that text embeddings and topic models are not independent descriptors but can mutually validate each other’s semantic structures; A numeric indicator that captures the degree to which embedding features correspond to high-quality topics, providing a new tool for evaluating embedding interpretability and guiding dimensionality reduction choices. These findings suggest that topic-embedding mapping can serve both as a diagnostic for embedding quality and as a means to visualise embedding dimensions more human-interpretable, advancing the practice of collection description in IR.",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:policy change detection text embedding"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method",
+      "evidence"
+    ],
+    "curation_score": 15.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W7167598365",
+    "openalex_id": "https://openalex.org/W7167598365",
+    "title": "Integrating Artificial Intelligence and Automation Into Living Guideline Development: A Scoping Review of Existing Frameworks, Methods, and Applications",
+    "authors": [
+      "Nofisat Ismaila",
+      "Syed Arsalan Ahmed Naqvi",
+      "Lawrence C. E. Mbuagbaw",
+      "Jinhui Ma",
+      "Lehana Thabane"
+    ],
+    "year": 2026,
+    "venue": "Clinical and Public Health Guidelines",
+    "doi": "https://doi.org/10.1002/gin2.70079",
+    "source_url": "https://doi.org/10.1002/gin2.70079",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Background: Artificial intelligence (AI) and automation offer opportunities to enhance the efficiency, timeliness, and sustainability of living guidelines (LGs). However, how AI and automation have been integrated into existing LG development frameworks remains unclear. This scoping review represents the first step in a broader programme of work aimed at developing a framework which aims to guide responsible and coordinated AI adoption across all phases of LG development. Objective: To identify existing frameworks, methods, and approaches that integrate AI or automation into any stage of LG development. Methods: We conducted a structured search of PubMed, Embase, Web of Science, Scopus, Cochrane Database for Systematic Review and Cochrane Central Register of Controlled Trials from inception to March 12, 2026. We included peer-reviewed articles describing frameworks, models, or methods that applied AI or automation in the development of LGs. We extracted data into a standardised form, capturing study characteristics, AI methods, targeted guideline processes, and key findings and synthesised findings using a thematic narrative approach. Results: Of 1090 records identified, three studies met the inclusion criteria. The included studies described AI or automation applied to select components of the LG process, to support continuous evidence surveillance, to semi-automate study screening, and incremental updating of living systematic reviews. None addressed multiple stages of LG development in an integrated manner. Conclusions: Current evidence demonstrates fragmented and narrowly focused AI or automation applications within LG development processes. Our findings highlight opportunities for future work to develop and evaluate more comprehensive frameworks that span multiple stages of the LG lifecycle.",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:clinical practice guideline change tracking automation"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method",
+      "evidence"
+    ],
+    "curation_score": 15.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W4303649334",
+    "openalex_id": "https://openalex.org/W4303649334",
+    "title": "Measuring Fine-Grained Semantic Equivalence with Abstract Meaning Representation",
+    "authors": [
+      "Shira Wein",
+      "Zhuxin Wang",
+      "Nathan Schneider"
+    ],
+    "year": 2022,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2210.03018",
+    "source_url": "https://doi.org/10.48550/arxiv.2210.03018",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Identifying semantically equivalent sentences is important for many cross-lingual and mono-lingual NLP tasks. Current approaches to semantic equivalence take a loose, sentence-level approach to \"equivalence,\" despite previous evidence that fine-grained differences and implicit content have an effect on human understanding (Roth and Anthonio, 2021) and system performance (Briakou and Carpuat, 2021). In this work, we introduce a novel, more sensitive method of characterizing semantic equivalence that leverages Abstract Meaning Representation graph structures. We develop an approach, which can be used with either gold or automatic AMR annotations, and demonstrate that our solution is in fact finer-grained than existing corpus filtering methods and more accurate at predicting strictly equivalent sentences than existing semantic similarity metrics. We suggest that our finer-grained measure of semantic equivalence could limit the workload in the task of human post-edited machine translation and in human evaluation of sentence similarity.",
+    "cited_by_count": 1,
+    "discovery_routes": [
+      "openalex:search:cross-version semantic equivalence sentence"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task",
+      "evidence"
+    ],
+    "curation_score": 14.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W2609848151",
+    "openalex_id": "https://openalex.org/W2609848151",
+    "title": "Conceptual equivalence of items and semantic equivalence of the Brazilian version of the EORTC QLQ-ELD14 instrument to evaluate the quality of life of elderly people with cancer",
+    "authors": [
+      "Bianca Maria Oliveira Luvisaro",
+      "Josiane Roberta de Menezes",
+      "Claudia Fernandes Rodrigues",
+      "Ana Luiza Alfaya Gallego Soares",
+      "Camila Drumond Muzi",
+      "Raphael Mendonça Guimarães"
+    ],
+    "year": 2017,
+    "venue": "Revista Brasileira de Geriatria e Gerontologia",
+    "doi": "https://doi.org/10.1590/1981-22562017020.160024",
+    "source_url": "https://doi.org/10.1590/1981-22562017020.160024",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Abstract Objective: to describe the process of semantic equivalence, the first stage in the validation of the EORTC QLQ-ELD14 instrument for Brazilian Portuguese. Method: Direct and independent translations of the instrument into Portuguese were carried out and validated by a meeting of experts to generate a synthesis version. The version chosen was submitted to reverse translations into English, and the form was pre-tested with patients. At the conclusion of the process, a summary version was presented. The pre-test and the final version of the instrument were applied to a total of 28 patients at a high complexity oncology treatment center. Result: after completion of the first round of pretesting, some adjustments for the next phase of the study were necessary by the expert committee. After these adjustments, in the second phase of pre-testing, the instrument was well-accepted by the population. Conclusion: the Portuguese summary version of the EORTC QLQ-ELD14 instrument for assessing the quality of life of elderly cancer patients is ready to be submitted to the next stages of the evaluation of its psychometric properties.",
+    "cited_by_count": 2,
+    "discovery_routes": [
+      "openalex:search:cross-version semantic equivalence sentence"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task"
+    ],
+    "curation_score": 13.414,
+    "retained": false
+  },
+  {
+    "paper_id": "W152218010",
+    "openalex_id": "https://openalex.org/W152218010",
+    "title": "Approaches to equivalence in cross-cultural and cross-national survey research",
+    "authors": [
+      "Timothy P. Johnson"
+    ],
+    "year": 1998,
+    "venue": "Social Science Open Access Repository (GESIS – Leibniz Institute for the Social Sciences)",
+    "doi": null,
+    "source_url": "https://openalex.org/W152218010",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "\"In cross-cultural (and cross-national) survey research, the equivalence of survey questions rivals the importance of their reliability and validity. This paper presents a review of the multiple dimensions of equivalence that must be addressed when conducting comparative survey research. Available methodologies for establishing one or more forms of equivalence are also identified and the strengths and limitations of each approach are examined. It is concluded that multiple methodologies must be implemented in order to insure the cross-cultural equivalence of survey measures.\" (author's abstract)",
+    "cited_by_count": 175,
+    "discovery_routes": [
+      "openalex:search:cross-version semantic equivalence sentence"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 13.229,
+    "retained": false
+  },
+  {
+    "paper_id": "W7140806694",
+    "openalex_id": "https://openalex.org/W7140806694",
+    "title": "Imageless navigation in unicompartmental and total knee arthroplasty: Systematic evidence on alignment, kinematics, and outcomes",
+    "authors": [
+      "Hélder Trindade",
+      "Junichiro Sado",
+      "Renan Simoes Heyn",
+      "Ricardo Gouvea Goulart",
+      "Juliano Francisco da Silva",
+      "Bruno Oliveira",
+      "João Gabriel Ventura Bariani",
+      "Mário Augusto Silva Pereira",
+      "Bruno Vinicius Aparecido da Silva",
+      "Vinicius Borges dos Santos",
+      "Enio Chaves de Oliveira",
+      "Fernanda Grazielle da Silva Azevedo Nora"
+    ],
+    "year": 2026,
+    "venue": "National Journal of Clinical Orthopaedics",
+    "doi": "https://doi.org/10.33545/orthor.2026.v10.i1.a.505",
+    "source_url": "https://doi.org/10.33545/orthor.2026.v10.i1.a.505",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Objective: To assess the clinical efficacy and surgical precision of unicompartmental (UKA) and total knee arthroplasty (TKA) performed using navigation systems, comparing outcomes with conventional instrumentation and contemporary robotic platforms. Methodology: A PRISMA-compliant systematic review was conducted across PubMed, ScienceDirect, and Google Scholar (January 2010-October 2025), using Boolean combinations targeting knee arthroplasty, computer-assisted/navigation technologies, robotics, and Amplivision/Amplitude systems. Eligible studies included clinical trials, prospective and retrospective cohorts, experimental accuracy studies, and human case reports. Exclusion criteria comprised reviews, editorials, nonclinical cadaveric or animal studies, and inaccessible full texts. Two independent reviewers performed screening, data extraction, and bias assessment using RoB-2 and NOS tools, resolving discrepancies by consensus. Primary endpoints included distributional alignment (HKA; component orientation in coronal, sagittal, and axial planes; outliers at ±2-3°), soft-tissue balance surrogates, early recovery metrics (pain, length of stay), complications, patient-reported outcomes (PROMs), and revision rates. Results: From 312 records, 124 full texts were reviewed, and 59 studies were included. Amplivision-specific findings encompassed complex UKA-to-TKA conversions with restoration of mechanical axis and joint line, a 447-case routine TKA cohort (≈47% using Amplivision) with no mid-term mechanical loosening or dislocation, and a dual-centre trochlear-guided program achieving CT-validated femoral rotational alignment, preserved rectangular flexion gaps, and elimination of internal-rotation outliers. Across randomized and comparative studies, computer navigation consistently reduced coronal outliers and narrowed alignment dispersion compared to conventional jigs. Registry data linked navigation to lower revision risk in patients under 65 years, likely due to suppression of extreme malalignment under higher activity exposure. Robotic systems (MAKO, ROSA, NAVIO/CORI) further reduced plan-to-implant error and enhanced early recovery within optimized ERAS protocols, though long-term superiority over high-quality navigation remains inconclusive. Conclusion: Amplivision offers a CT-free, radiation-sparing precision layer that enables standardized three-plane alignment and gap-guided balancing in both routine and complex arthroplasty. Its device-level control of rotational alignment complements coronal accuracy, with service-level benefits driven by outlier suppression rather than mean shifts alone. Robotic platforms provide incremental gains in dispersion control and early recovery when supported by mature ERAS pathways and institutional resources. Future multicentre trials should pre-register distributional radiographic endpoints, kinematic and gap metrics, cause-specific revision rates, and ≥5-year survivorship to rigorously quantify Amplivision’s comparative value against imageless and robotic technologies.",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:surgical text revision alignment paragraph"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "evidence"
+    ],
+    "curation_score": 13.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W2056208789",
+    "openalex_id": "https://openalex.org/W2056208789",
+    "title": "Translation and cultural adaptation of Brazilian Detailed Assessment of Speed of Handwriting: conceptual and semantic equivalence",
+    "authors": [
+      "Monique Herrera Cardoso",
+      "SHEILA E. HENDERSON",
+      "Simone Aparecida Capellini"
+    ],
+    "year": 2014,
+    "venue": "Audiology - Communication Research",
+    "doi": "https://doi.org/10.1590/s2317-64312014000400001447",
+    "source_url": "https://doi.org/10.1590/s2317-64312014000400001447",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Purpose To perform the translation and cultural adaptation of the Detailed Assessment of Speed of Handwriting (DASH) for the Brazilian population. Methods (1) Evaluation of conceptual and items equivalence, and (2) Semantic equivalence, including the steps of (2a) Translation, (2b) retranslation, (2c) Review by the committee of judges and (2d) Pre-test. The second step was carried out by two professionals and 2b by two other professionals, 2c was formed by speech therapists, occupational therapists and educators and the 2d was carried out with 32 students, four from each age group (9-16 years old). Results (1) It was found that the concepts and items are equivalent in both cultures (British and Brazilian). In the second stage it was found that two tasks in the original procedure, pangrama classified as a phrase in the English language is used. Therefore, when performing unification of translations, an adjustment was made for the phrase pangrama in Portuguese. In 2b showed that the translation was valid and 2c was consolidated all versions produced in a single version in Portuguese, which was applied in school. In 2d there was acceptance and understanding of the students in the proposed tasks and internal consistency value of 0.701, others words, satisfactory variability. Conclusion This procedure can be applied in the Brazilian population, however new studies are being developed with the objective of providing greater reliability and validity of the instrument.",
+    "cited_by_count": 23,
+    "discovery_routes": [
+      "openalex:search:cross-version semantic equivalence sentence"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task"
+    ],
+    "curation_score": 12.796,
+    "retained": false
+  },
+  {
+    "paper_id": "W3128646207",
+    "openalex_id": "https://openalex.org/W3128646207",
+    "title": "Guideline (S2k) on acute therapy and management of anaphylaxis: 2021 update",
+    "authors": [
+      "Johannes Ring",
+      "Kirsten Beyer",
+      "Tilo Biedermann",
+      "Andreas J. Bircher",
+      "Matthias Joachim Fischer",
+      "Thomas Fuchs",
+      "Axel Rüdiger Heller",
+      "Florian Hoffmann",
+      "Isidor Huttegger",
+      "Thilo Jakob",
+      "Ludger Klimek",
+      "Matthias Kopp",
+      "Claudia Kugler",
+      "Lars Lange",
+      "Oliver Pfaar",
+      "Ernst Rietschel",
+      "Franziska Ruëff",
+      "Sabine Schnadt",
+      "Roland Seifert",
+      "Britta Stöcker"
+    ],
+    "year": 2021,
+    "venue": "Allergo Journal International",
+    "doi": "https://doi.org/10.1007/s40629-020-00158-y",
+    "source_url": "https://doi.org/10.1007/s40629-020-00158-y",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "the Swiss Society for Allergy and Immunology (SGAI), the German Society of Anaesthesiology and Intensive Care Medicine (DGAI), the German Society of Pharmacology (DGP), the German Respiratory Society (DGP), the patient organization German Allergy and Asthma Association (DAAB), the German Working Group of Anaphylaxis Training and Education (AGATE)",
+    "cited_by_count": 163,
+    "discovery_routes": [
+      "openalex:search:guideline update comparison automatic"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 12.767,
+    "retained": false
+  },
+  {
+    "paper_id": "W3116338348",
+    "openalex_id": "https://openalex.org/W3116338348",
+    "title": "Approaches to the rationalization of surgical instrument trays: scoping review and research agenda",
+    "authors": [
+      "Bruno Miranda dos Santos",
+      "Flavio Sanson Fogliatto",
+      "Carolina Melecardi Zani",
+      "Fernanda Araújo Pimentel Peres"
+    ],
+    "year": 2021,
+    "venue": "BMC Health Services Research",
+    "doi": "https://doi.org/10.1186/s12913-021-06142-8",
+    "source_url": "https://doi.org/10.1186/s12913-021-06142-8",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "BACKGROUND: Surgical Tray Rationalization (STR) consists of a systematic reduction in the number of surgical instruments to perform specific procedures without compromising patient safety while reducing losses in the sterilization and assembly of trays. STR is one example of initiatives to improve process performance that have been widely reported in industrial settings but only recently have gained popularity in healthcare organizations. METHODS: We conduct a scoping review of the literature to identify and map available evidence on surgical tray management. Five methodological stages are implemented and reported; they are: identifying research questions, identifying relevant studies, study selection, charting the data, and collating, summarizing and reporting the results. RESULTS: We reviewed forty-eight articles on STR, which were grouped according to their main proposed approaches: expert analysis, lean practices, and mathematical programming. We identify the most frequently used techniques within each approach and point to their potential contributions to operational and economic dimensions of STR. We also consolidate our findings, proposing a roadmap to STR with four generic steps (prepare, rationalize, implement, and consolidate) and recommended associated techniques. CONCLUSIONS: To the best of our knowledge, ours is the first study that reviews and systematizes the existing literature on the subject of STR. Our study closes with the proposition of future research directions, which are presented as nine research questions associated with the four generic steps proposed in the STR roadmap.",
+    "cited_by_count": 39,
+    "discovery_routes": [
+      "openalex:search:surgical text revision alignment paragraph"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "evidence"
+    ],
+    "curation_score": 12.245,
+    "retained": false
+  },
+  {
+    "paper_id": "W2296749509",
+    "openalex_id": "https://openalex.org/W2296749509",
+    "title": "Cross-Language Semantic Similarity of Arabic-English Short Phrases and Sentences",
+    "authors": [
+      "Salha M. Alzahrani"
+    ],
+    "year": 2016,
+    "venue": "Journal of Computer Science",
+    "doi": "https://doi.org/10.3844/jcssp.2016.1.18",
+    "source_url": "https://doi.org/10.3844/jcssp.2016.1.18",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Measuring cross-language semantic similarity between short texts is a task that is challenging in terms of human understanding. This paper addresses this problem by carrying out a study of Arabic–English semantic similarity in short phrases and sentences. Human-rated benchmark dataset was carefully constructed for this research. Dictionary and machine translation techniques were employed to determine the relatedness between the cross-lingual texts from a monolingual perspective. Three algorithms were developed to rate the semantic similarity and these were applied to the human-rated benchmark. An averaged maximum-translation similarity algorithm was proposed using the term sets produced by the dictionary-based technique. Noun-verb and term vectors obtained by the Machine Translation (MT) technique were also suggested to compute the semantic similarity. The results were compared with the human ratings in our benchmark using Pearson correlation coefficient and these were triangulated with the best, worst and mean for all human participants. MT-based term vector semantic similarity algorithm obtained the highest correlation (r = 0.8657) followed by averaged maximum-translation similarity algorithm (r = 0.7206). Further statistical analysis showed no significant difference between both algorithms and the humans’ judgement.",
+    "cited_by_count": 23,
+    "discovery_routes": [
+      "openalex:search:cross-version semantic equivalence sentence"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task"
+    ],
+    "curation_score": 11.796,
+    "retained": false
+  },
+  {
+    "paper_id": "W2964979110",
+    "openalex_id": "https://openalex.org/W2964979110",
+    "title": "The Interlinking Theorization of Management Concepts: Cohesion and Semantic Equivalence in Management Knowledge",
+    "authors": [
+      "Markus A. Höllerer",
+      "Dennis Clemens Jancsary",
+      "Vitaliano Barberio",
+      "Renate Elisabeth Meyer"
+    ],
+    "year": 2019,
+    "venue": "Organization Studies",
+    "doi": "https://doi.org/10.1177/0170840619856033",
+    "source_url": "https://doi.org/10.1177/0170840619856033",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "This article develops the idea of ‘interlinking theorization’ in the context of management knowledge. We explain how management concepts are theorized through their direct co-occurrence with other management concepts, on the one hand, and their embeddedness in general business vocabulary, on the other. Conceptually, we extend a semantic network approach to vocabularies and suggest both cohesion between management concepts (i.e. a clustering in bundles) and their semantic equivalence (i.e. similar patterns of connectivity to general business vocabulary indicating specific types) as core dimensions of interlinking theorization. Empirically, we illustrate and further develop our conceptual model with data collected from magazines targeting management practitioners in the Austrian public sector. Our article contributes to existing literature by extending theorization to include different kinds of relationships between management concepts and focusing on direct and indirect relations across populations of management concepts as characteristics of the overall ‘architecture’ of management knowledge.",
+    "cited_by_count": 21,
+    "discovery_routes": [
+      "openalex:search:cross-version semantic equivalence sentence"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 11.583,
+    "retained": false
+  },
+  {
+    "paper_id": "W4211202729",
+    "openalex_id": "https://openalex.org/W4211202729",
+    "title": "A text-embedding-based approach to measuring patent-to-patent technological similarity",
+    "authors": [
+      "Daniel Stefan Hain",
+      "Roman Jurowetzki",
+      "Tobias Olaf Buchmann",
+      "Patrick Wolf"
+    ],
+    "year": 2022,
+    "venue": "Technological Forecasting and Social Change",
+    "doi": "https://doi.org/10.1016/j.techfore.2022.121559",
+    "source_url": "https://doi.org/10.1016/j.techfore.2022.121559",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "",
+    "cited_by_count": 129,
+    "discovery_routes": [
+      "openalex:search:policy change detection text embedding"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 11.358,
+    "retained": false
+  },
+  {
+    "paper_id": "W4411300509",
+    "openalex_id": "https://openalex.org/W4411300509",
+    "title": "Ontology-based NLP tool for tracing software requirements and conceptual models: an empirical study",
+    "authors": [
+      "David Mosquera",
+      "Marcela Ruiz",
+      "Óscar Pastor"
+    ],
+    "year": 2025,
+    "venue": "Requirements Engineering",
+    "doi": "https://doi.org/10.1007/s00766-025-00447-4",
+    "source_url": "https://doi.org/10.1007/s00766-025-00447-4",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Abstract Software traceability refers to maintaining, using, and generating traces among software artefacts—i.e., triples comprised of a source artefact, a target artefact, and a trace link—to support software quality assurance. Due to the effort of manually discovering trace links and the variety of software artefacts, trace link discovery tools have been proposed. Among these is OntoTraceV2.0, an ontology-based automatic reasoning and Natural Language Processing (NLP) tool for trace link discovery. In this paper, we evaluate how OntoTraceV2.0 affects subjects’ efficiency, effectiveness, and satisfaction during trace link discovery. We conducted three quasi-experiments with 70 subjects in total. We asked subjects to discover trace links between a set of semi-structured software requirements in natural language—i.e., user stories—and a conceptual model—i.e., existence dependency graphs (EDGs)—with the support of OntoTraceV2.0 and without tool support. OntoTraceV2.0 increased subjects’ median precision compared to manual trace link discovery, with an average recall decrease of 7%. Despite this, OntoTraceV2.0 enabled subjects to discover trace links 1.41–2.55 times faster, indicating a significant increase in efficiency. Moreover, OntoTraceV2.0 positively affected subjects’ perceived usefulness, while ease of use and intention to use remain areas for improvement. Qualitative feedback highlighted the need for better guidance, automation, clearer benefits of long-term traceability, and improved user experience. To improve lower recall and enhance effectiveness while improving satisfaction, we propose an improved architecture for OntoTrace. We expect our experience to allow researchers and practitioners to devise new and better tools for trace link discovery automation.",
+    "cited_by_count": 5,
+    "discovery_routes": [
+      "openalex:search:semantic diff text revision understanding NLP"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 11.236,
+    "retained": false
+  },
+  {
+    "paper_id": "W2770717329",
+    "openalex_id": "https://openalex.org/W2770717329",
+    "title": "Conditional Image-Text Embedding Networks",
+    "authors": [
+      "Bryan A. Plummer",
+      "Paige Kordas",
+      "M. Hadi Kiapour",
+      "Shuai Zheng",
+      "Robinson Piramuthu",
+      "Svetlana Lazebnik"
+    ],
+    "year": 2018,
+    "venue": "Lecture notes in computer science",
+    "doi": "https://doi.org/10.1007/978-3-030-01258-8_16",
+    "source_url": "https://doi.org/10.1007/978-3-030-01258-8_16",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "",
+    "cited_by_count": 122,
+    "discovery_routes": [
+      "openalex:search:policy change detection text embedding"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 11.045,
+    "retained": false
+  },
+  {
+    "paper_id": "W4401370861",
+    "openalex_id": "https://openalex.org/W4401370861",
+    "title": "Enhancing the design of voting advice applications with BERT language model",
+    "authors": [
+      "Daniil Buryakov",
+      "Mate Kovacs",
+      "Uwe Serdült",
+      "Victor V. Kryssanov"
+    ],
+    "year": 2024,
+    "venue": "Frontiers in Artificial Intelligence",
+    "doi": "https://doi.org/10.3389/frai.2024.1343214",
+    "source_url": "https://doi.org/10.3389/frai.2024.1343214",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "The relevance and importance of voting advice applications (VAAs) are demonstrated by their popularity among potential voters. On average, around 30% of voters take into account the recommendations of these applications during elections. The comparison between potential voters' and parties' positions is made on the basis of VAA policy statements on which users are asked to express opinions. VAA designers devote substantial time and effort to analyzing domestic and international politics to formulate policy statements and select those to be included in the application. This procedure involves manually reading and evaluating a large volume of publicly available data, primarily party manifestos. A problematic part of the work is the limited time frame. This study proposes a system to assist VAA designers in formulating, revising, and selecting policy statements. Using pre-trained language models and machine learning methods to process politics-related textual data, the system produces a set of suggestions corresponding to relevant VAA statements. Experiments were conducted using party manifestos and YouTube comments from Japan, combined with VAA policy statements from six Japanese and two European VAAs. The technical approaches used in the system are based on the BERT language model, which is known for its capability to capture the context of words in the documents. Although the output of the system does not completely eliminate the need for manual human assessment, it provides valuable suggestions for updating VAA policy statements on an objective, i.e., bias-free, basis.",
+    "cited_by_count": 3,
+    "discovery_routes": [
+      "openalex:search:legal document amendment detection BERT"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 10.732,
+    "retained": false
+  },
+  {
+    "paper_id": "W2051537303",
+    "openalex_id": "https://openalex.org/W2051537303",
+    "title": "A framework for a distributed, hybrid, multiple-ontology clinical-guideline library, and automated guideline-support tools",
+    "authors": [
+      "Yuval Shahar M. D",
+      "Ohad Young",
+      "Erez Shalom",
+      "Maya Galperin",
+      "Alon Mayaffit",
+      "Robert Moskovitch",
+      "Alon Hessing"
+    ],
+    "year": 2004,
+    "venue": "Journal of Biomedical Informatics",
+    "doi": "https://doi.org/10.1016/j.jbi.2004.07.001",
+    "source_url": "https://doi.org/10.1016/j.jbi.2004.07.001",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "",
+    "cited_by_count": 112,
+    "discovery_routes": [
+      "openalex:search:clinical practice guideline change tracking automation"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 10.583,
+    "retained": false
+  },
+  {
+    "paper_id": "W2782760443",
+    "openalex_id": "https://openalex.org/W2782760443",
+    "title": "Automated Detection of Unfair Clauses in Online Consumer Contracts",
+    "authors": [
+      "Marco Lippi",
+      "Przemysław Pałka",
+      "Giuseppe Contissa",
+      "Francesca Lagioia",
+      "Hans‐W. Micklitz",
+      "Yannis Panagis",
+      "Giovanni Sartor B",
+      "Paolo Torroni"
+    ],
+    "year": 2017,
+    "venue": "Frontiers in artificial intelligence and applications",
+    "doi": "https://doi.org/10.3233/978-1-61499-838-9-145",
+    "source_url": "https://doi.org/10.3233/978-1-61499-838-9-145",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Consumer contracts too often present clauses that are potentially unfair to the subscriber. We present an experimental study where machine learning is employed to automatically detect such potentially unfair clauses in online contracts. Results show that the proposed system could provide a valuable tool for lawyers and consumers alike.",
+    "cited_by_count": 18,
+    "discovery_routes": [
+      "openalex:search:contract clause change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 10.243,
+    "retained": false
+  },
+  {
+    "paper_id": "W7108327387",
+    "openalex_id": "https://openalex.org/W7108327387",
+    "title": "Semantic Clustering in the Context of Legislative Amendments",
+    "authors": [
+      "Pedro L. C. de Andrade",
+      "Ellen P. R. Souza",
+      "Nádia F. F. da Silva",
+      "André C. P. L. F. de Carvalho"
+    ],
+    "year": 2025,
+    "venue": "",
+    "doi": "https://doi.org/10.5753/eniac.2025.13910",
+    "source_url": "https://doi.org/10.5753/eniac.2025.13910",
+    "authority_tier": "C",
+    "authority_reason": "other source",
+    "abstract": "This study explores the semantic clustering of Brazilian legislative amendments through Large Language Models. Given the high number of amendments drafted annually in the Brazilian Federal Chamber of Deputies and the Federal Senate, and the consequent extensive hours spent by teams responsible for grouping these documents, the use of automated techniques for efficient analysis and organization presents itself as a beneficial alternative for legislative bodies. The study compared approaches with and without text preprocessing, varying the model’s temperature parameter to assess its impact on result quality. To validate the effectiveness of the formed clusters, precision, recall, and F1 metrics were applied.",
+    "cited_by_count": 1,
+    "discovery_routes": [
+      "openalex:search:legal document amendment detection BERT"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 10.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W4382242184",
+    "openalex_id": "https://openalex.org/W4382242184",
+    "title": "Laboratory automation, informatics, and artificial intelligence: current and future perspectives in clinical microbiology",
+    "authors": [
+      "Antonella Mencacci",
+      "Giuseppe Vittorio De Socio",
+      "Eleonora Pirelli",
+      "Paola Bondi",
+      "Elio Cenci"
+    ],
+    "year": 2023,
+    "venue": "Frontiers in Cellular and Infection Microbiology",
+    "doi": "https://doi.org/10.3389/fcimb.2023.1188684",
+    "source_url": "https://doi.org/10.3389/fcimb.2023.1188684",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Clinical diagnostic laboratories produce one product-information-and for this to be valuable, the information must be clinically relevant, accurate, and timely. Although diagnostic information can clearly improve patient outcomes and decrease healthcare costs, technological challenges and laboratory workflow practices affect the timeliness and clinical value of diagnostics. This article will examine how prioritizing laboratory practices in a patient-oriented approach can be used to optimize technology advances for improved patient care.",
+    "cited_by_count": 43,
+    "discovery_routes": [
+      "openalex:search:clinical practice guideline change tracking automation"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 9.557,
+    "retained": false
+  },
+  {
+    "paper_id": "W158837568",
+    "openalex_id": "https://openalex.org/W158837568",
+    "title": "Semantic Publishing: issues, solutions and new trends in scholarly publishing within the Semantic Web era",
+    "authors": [
+      "Silvio Peroni"
+    ],
+    "year": 2012,
+    "venue": "AMS Dottorato Institutional Doctoral Theses Repository (University of Bologna)",
+    "doi": "https://doi.org/10.6092/unibo/amsdottorato/4766",
+    "source_url": "https://doi.org/10.6092/unibo/amsdottorato/4766",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "This work is concerned with the increasing relationships between two distinct multidisciplinary research fields, Semantic Web technologies and scholarly publishing, that in this context converge into one precise research topic: Semantic Publishing. In the spirit of the original aim of Semantic Publishing, i.e. the improvement of scientific communication by means of semantic technologies, this thesis proposes theories, formalisms and applications for opening up semantic publishing to an effective interaction between scholarly documents (e.g., journal articles) and their related semantic and formal descriptions. In fact, the main aim of this work is to increase the users' comprehension of documents and to allow document enrichment, discovery and linkage to document-related resources and contexts, such as other articles and raw scientific data. In order to achieve these goals, this thesis investigates and proposes solutions for three of the main issues that semantic publishing promises to address, namely: the need of tools for linking document text to a formal representation of its meaning, the lack of complete metadata schemas for describing documents according to the publishing vocabulary, and absence of effective user interfaces for easily acting on semantic publishing models and theories.",
+    "cited_by_count": 10,
+    "discovery_routes": [
+      "openalex:search:semantic diff text revision understanding NLP"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 9.162,
+    "retained": false
+  },
+  {
+    "paper_id": "W2798819017",
+    "openalex_id": "https://openalex.org/W2798819017",
+    "title": "Exploring Semantic Properties of Sentence Embeddings",
+    "authors": [
+      "Xunjie Zhu",
+      "Tingfeng Li",
+      "Gerard de Melo"
+    ],
+    "year": 2018,
+    "venue": "Proceedings of the conference - Association for Computational Linguistics. Meeting",
+    "doi": "https://doi.org/10.18653/v1/p18-2100",
+    "source_url": "https://doi.org/10.18653/v1/p18-2100",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Neural vector representations are ubiquitous throughout all subfields of NLP.While word vectors have been studied in much detail, thus far only little light has been shed on the properties of sentence embeddings.In this paper, we assess to what extent prominent sentence embedding methods exhibit select semantic properties.We propose a framework that generate triplets of sentences to explore how changes in the syntactic structure or semantics of a given sentence affect the similarities obtained between their sentence embeddings.",
+    "cited_by_count": 65,
+    "discovery_routes": [
+      "openalex:search:cross-version semantic equivalence sentence"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 9.062,
+    "retained": false
+  },
+  {
+    "paper_id": "W7171772877",
+    "openalex_id": "https://openalex.org/W7171772877",
+    "title": "Identifying Potential Competition-Restricting Clauses in Public Procurement Using Large Language Models",
+    "authors": [
+      "Vicente Rodríguez Montequín",
+      "Antonio Saldaña Fernández del Viso",
+      "Joaquín Manuel Villanueva Balsera",
+      "Javier García González"
+    ],
+    "year": 2026,
+    "venue": "Proceedings",
+    "doi": "https://doi.org/10.61547/2601326",
+    "source_url": "https://doi.org/10.61547/2601326",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "International Congress on Project Management and Engineering (30 th. 2026. Castellón de la Plana)",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:contract clause change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 9.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W113182897",
+    "openalex_id": "https://openalex.org/W113182897",
+    "title": "Computation of Semantic Equivalence for Question Answering",
+    "authors": [
+      "Tetsuro Takahashi"
+    ],
+    "year": 2005,
+    "venue": "Institutional Repositories DataBase (IRDB)",
+    "doi": "https://doi.org/10.34413/dr.00456",
+    "source_url": "https://doi.org/10.34413/dr.00456",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "There are vast amounts of text data on the World Wide Web and in encyclopedias and newspapers.For efficient information access to such text data, Question Answering is an option.Question Answering which this thesis uses is defined as a technique to find the answer for a given question written in natural language from a large amount of text data.We take an approach to the Question Answering task based on semantic equivalence, regarding the problem of Question Answering as the computation of semantic equivalence between a question and a text.We propose to evaluate methods of semantic equivalence in three levels, (1) approximate semantic equivalence obtained from text structure, (2) semantic equivalence using lexico-structural transformations, (3) semantic equivalence through extracted semantic relations.At the first level, we conducted structural matching as an approximation to semantic equivalence instead of bag-of-words matching which is commonly utilized for Question Answering in previous works.The proposed method, an extension of Collins' Tree Kernel, provides three options for similarity measurement and relaxes the constraints of matching with the time complexity O(|T 1 ||T 2 |) where |T 1 | and |T 2 | are the number of nodes in trees T 1 and T 2 .For the second level, we developed a Japanese lexico-structural paraphrasing engine called Kura.We also proposed an answer seeking algorithm for Question Answering that integrates structural matching and paraphrasing.We assume that",
+    "cited_by_count": 5,
+    "discovery_routes": [
+      "openalex:search:cross-version semantic equivalence sentence"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task"
+    ],
+    "curation_score": 8.236,
+    "retained": false
+  },
+  {
+    "paper_id": "W3122694257",
+    "openalex_id": "https://openalex.org/W3122694257",
+    "title": "Automation of extra-analytical phase for clinical laboratory",
+    "authors": [
+      "Ebubekîr Bakan",
+      "Fatma Zühal Umudum"
+    ],
+    "year": 2021,
+    "venue": "Turkish Journal of Biochemistry",
+    "doi": "https://doi.org/10.1515/tjb-2020-0138",
+    "source_url": "https://doi.org/10.1515/tjb-2020-0138",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Abstract Extra-analytical automation is of critical importance in patient safety with respect to accurate, fast test result reporting. Through the previous decades, significant improvements in laboratory errors have been achieved by technological facilities, which have become a substantial part of the reduction of preventable diagnostic errors. In clinical laboratory practice, the total testing process (TTP) is under the effect of error sources: preanalytical, analytical, and post-analytical variables. Since many extra-analytical processes within and outside the clinical laboratory may be automated, management of the extra-analytical phase can prevent errors, resulting in the total quality of laboratory diagnostics and customer satisfaction. The automation technologies have added a serious impact on the proficiency of clinical laboratories. To improve standardization, organization, efficiency, and quality of TTP, many manual tasks have now been partially or entirely automated by labor-saving instrumentations. The implementation of extra-analytical automation in the laboratory processes has recently made them standardized and manageable. Depending on the workload and workflow of the clinical laboratory, it is of critical importance to implement adequate systems, providing standardization of the TTP and resulting in high-quality test results.",
+    "cited_by_count": 4,
+    "discovery_routes": [
+      "openalex:search:clinical practice guideline change tracking automation"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [
+      "task"
+    ],
+    "curation_score": 8.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W4321083456",
+    "openalex_id": "https://openalex.org/W4321083456",
+    "title": "Network embedding aided vaccine skepticism detection",
+    "authors": [
+      "Ferenc Béres",
+      "Tamás Vilmos Michaletzky",
+      "Rita Csoma",
+      "András A. Benczúr"
+    ],
+    "year": 2023,
+    "venue": "Applied Network Science",
+    "doi": "https://doi.org/10.1007/s41109-023-00534-x",
+    "source_url": "https://doi.org/10.1007/s41109-023-00534-x",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "We investigate automatic methods to assess COVID vaccination views in Twitter content. Vaccine skepticism has been a controversial topic of long history that has become more important than ever with the COVID-19 pandemic. Our main goal is to demonstrate the importance of network effects in detecting vaccination skeptic content. Towards this end, we collected and manually labeled vaccination-related Twitter content in the first half of 2021. Our experiments confirm that the network carries information that can be exploited to improve the accuracy of classifying attitudes towards vaccination over content classification as baseline. We evaluate a variety of network embedding algorithms, which we combine with text embedding to obtain classifiers for vaccination skeptic content. In our experiments, by using Walklets, we improve the AUC of the best classifier with no network information by. We publicly release our labels, Tweet IDs and source codes on GitHub.",
+    "cited_by_count": 11,
+    "discovery_routes": [
+      "openalex:search:policy change detection text embedding"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 6.317,
+    "retained": false
+  },
+  {
+    "paper_id": "W2608620021",
+    "openalex_id": "https://openalex.org/W2608620021",
+    "title": "Understanding policy persistence—The case of police drug detection dog policy in NSW, Australia",
+    "authors": [
+      "Caitlin Hughes",
+      "Alison J. Ritter",
+      "Kari Lancaster",
+      "Robert Hoppe"
+    ],
+    "year": 2017,
+    "venue": "International Journal of Drug Policy",
+    "doi": "https://doi.org/10.1016/j.drugpo.2017.03.007",
+    "source_url": "https://doi.org/10.1016/j.drugpo.2017.03.007",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "",
+    "cited_by_count": 27,
+    "discovery_routes": [
+      "openalex:search:policy change detection text embedding"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 5.196,
+    "retained": false
+  },
+  {
+    "paper_id": "W7112577474",
+    "openalex_id": "https://openalex.org/W7112577474",
+    "title": "Executive Summary: Clinical Practice Guideline Medication Reconciliation as a Catalyst for Patient Safety and Outcome",
+    "authors": [
+      "Arevalo, Monica"
+    ],
+    "year": 2025,
+    "venue": "ScholarWorks (Walden University)",
+    "doi": null,
+    "source_url": "https://openalex.org/W7112577474",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "This doctoral project centered on the development and implementation of a Clinical Practice Guideline (CPG) aimed at improving the accuracy of medication reconciliation for patients with complex medication regimens. Medication discrepancies and associated adverse drug events are significant concerns in healthcare, particularly during care transitions. The project addressed the practice-focused question: Will an interprofessional team reach consensus on a plan to standardize and automate the medication reconciliation process? This question highlights the importance of interprofessional collaboration in ensuring patient safety and improving healthcare outcomes. The project’s purpose was to standardize and automate the reconciliation process to reduce discrepancies, improve medication list accuracy, and enhance overall patient safety. Analytical strategies involved pre- and post-implementation data collection on key metrics. Post-implementation results were significant: medication list accuracy improved by 20%, discrepancies decreased by 8%, ADEs reduced by 9%, and hospital readmissions dropped by 10%. These outcomes affirm the effectiveness of the CPG and its potential for broader application. The project produced a validated CPG, training resources, and a structured workflow for automation and interprofessional collaboration. Recommendations include continued education for healthcare providers, regular updates to the guidelines, and integration of automated tools to sustain improvements. Beyond the local setting, the project contributes to positive social change by improving equitable access to safer healthcare by fostering interprofessional teamwork and equipping nurses with tools to enhance care transitions.",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:clinical practice guideline change tracking automation"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 4.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W3130910518",
+    "openalex_id": "https://openalex.org/W3130910518",
+    "title": "Surgical Ophthalmic Oncology",
+    "authors": [
+      "Sonal S. Chaugule",
+      "Santosh G Honavar",
+      "Paul T. Finger"
+    ],
+    "year": 2019,
+    "venue": "Springer eBooks",
+    "doi": "https://doi.org/10.1007/978-3-030-18757-6",
+    "source_url": "https://doi.org/10.1007/978-3-030-18757-6",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Designed as an easy-to-use, practical guide to tumors of the eye, lids, and orbit, this Open Access book comprehensively addresses surgical treatment and management of diseases related to ophthalmic oncology. It is written for general ophthalmologists providing oncology care and specialists.",
+    "cited_by_count": 15,
+    "discovery_routes": [
+      "openalex:search:surgical text revision alignment paragraph"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 3.873,
+    "retained": false
+  },
+  {
+    "paper_id": "W7222524732",
+    "openalex_id": "https://openalex.org/W7222524732",
+    "title": "Left Ventricular Strain: Guideline Update and New Analysis Software",
+    "authors": [
+      "Helder Moura Gomes",
+      "Halsted Alarcão Gomes Pereira da Silva"
+    ],
+    "year": 2026,
+    "venue": "ARQUIVOS BRASILEIROS DE CARDIOLOGIA - IMAGEM CARDIOVASCULAR",
+    "doi": "https://doi.org/10.36660/abcimg.20260101i",
+    "source_url": "https://doi.org/10.36660/abcimg.20260101i",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:guideline update comparison automatic"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 3.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W366831518",
+    "openalex_id": "https://openalex.org/W366831518",
+    "title": "Towards corporate semantic web",
+    "authors": [
+      "Coskun, Gökhan",
+      "Ralf Heese",
+      "Luczak-Rösch, Markus",
+      "Radoslaw Oldakowski",
+      "Ralph Schäfermeier",
+      "Olga Streibel"
+    ],
+    "year": 2008,
+    "venue": "Refubium (Universitätsbibliothek der Freien Universität Berlin)",
+    "doi": "https://doi.org/10.17169/refubium-22229",
+    "source_url": "https://doi.org/10.17169/refubium-22229",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "In this report, we introduce our initial vision of the Corporate Semantic Web as the next step in the broad field of Semantic Web research. We identify requirements of the corporate environment and gaps between current approaches to tackle problems facing ontology engineering, semantic collaboration, and semantic search. Each of these pillars will yield innovative methods and tools during the project runtime until 2013. Corporate ontology engineering will improve the facilitation of agile ontology engineering to lessen the costs of ontology development and, especially, maintenance. Corporate semantic collaboration focuses the human-centered aspects of knowledge management in corporate contexts. Corporate semantic search is settled on the highest application level of the three research areas and at that point it is a representative for applications working on and with the appropriately represented and delivered background knowledge. We propose an initial layout for an integrative architecture of a Corporate Semantic Web provided by these three core pillars.",
+    "cited_by_count": 6,
+    "discovery_routes": [
+      "openalex:search:semantic diff text revision understanding NLP"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 2.449,
+    "retained": false
+  },
+  {
+    "paper_id": "W2251313705",
+    "openalex_id": "https://openalex.org/W2251313705",
+    "title": "Building and Exploring Semantic Equivalences Resources",
+    "authors": [
+      "Gracinda Carvalho",
+      "David Martins de Matos",
+      "Vitor Jorge Ramos Rocio"
+    ],
+    "year": 2012,
+    "venue": "Language Resources and Evaluation Conference (LREC)",
+    "doi": "https://doi.org/10.63317/5ebyfxebrvpf",
+    "source_url": "https://doi.org/10.63317/5ebyfxebrvpf",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Language resources that include semantic equivalences at word level are common, and its usefulness is well established in text processing applications, as in the case of search.Named entities also play an important role for text based applications, but are not usually covered by the previously mentioned resources.The present work describes the WES base, Wikipedia Entity Synonym base, a freely available resource based on the Wikipedia.The WES base was built for the Portuguese Language, with the same format of another freely available thesaurus for the same language, the TeP base, which allows integration of equivalences both at word level and entity level.The resource has been built in a language independent way, so that it can be extended to different languages.The WES base was used in a Question Answering system, enhancing significantly its performance.",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:cross-version semantic equivalence sentence"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 1.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W2782118936",
+    "openalex_id": "https://openalex.org/W2782118936",
+    "title": "Detection of causality relations in plain text with the use of word embeddings",
+    "authors": [
+      "Μπάστας, Γρηγόριος",
+      "Bastas, Grigorios"
+    ],
+    "year": 2018,
+    "venue": "DSpace - NTUA (National Technical University of Athens)",
+    "doi": "https://doi.org/10.26240/heal.ntua.15245",
+    "source_url": "https://doi.org/10.26240/heal.ntua.15245",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:policy change detection text embedding"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 0.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W2737168945",
+    "openalex_id": "https://openalex.org/W2737168945",
+    "title": "The tibio-femoral joint line : what is the biomechanical and clinical effect of surgical modifications?",
+    "authors": [
+      "Thomas Luyckx"
+    ],
+    "year": 2015,
+    "venue": "Lirias",
+    "doi": null,
+    "source_url": "https://openalex.org/W2737168945",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Chapter 4: The tibio--femoral joint line in the replaced knee163 4.1 The orientation of the tibio--femoral joint line in the axial plane165 4.2 The orientation of the tibiofemoral joint line in the coronal plane176 4.2.1 The effect of joint line orientation on alignment after TKA 176 4.2.2The effect of joint line orientation on clinical outcome after TKA 187 Chapter 5: Concluding discussion and future perspectives",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:surgical text revision alignment paragraph"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 0.0,
+    "retained": false
+  },
+  {
+    "paper_id": "W1578938502",
+    "openalex_id": "https://openalex.org/W1578938502",
+    "title": "Negotiating Contract Language on Health & Safety: A Union Guide to Planning, with Sample Clauses",
+    "authors": [
+      "James W. Platner",
+      "Debi Duke",
+      "Susan Zucker"
+    ],
+    "year": 1991,
+    "venue": "eCommons (Cornell University)",
+    "doi": null,
+    "source_url": "https://openalex.org/W1578938502",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Initial development of this manual was funded through occupational safety and health training and education grant #C00-6025 from the New York State Hazard Abatement Board.",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:contract clause change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "lower authority or relevance score",
+    "categories": [],
+    "curation_score": 0.0,
+    "retained": false
+  }
+]

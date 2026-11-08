@@ -31,6 +31,31 @@ the other, and never treat a summary of a rulebook as the rulebook.
    or many segments in the new version. Record the alignment explicitly. Do not
    let the LLM silently drop unmatched segments: a dropped segment is a change.
 
+   **Alignment is a separate step from classification, and it comes first.**
+   Item numbers are not an alignment anchor — publishers reuse numbers for
+   different topics between editions. A wrong pairing does not fail loudly:
+   the classifier will write a fluent, confident `semantic_shift` explaining
+   how "Risk of bias in individual studies" became "Effect measures", and the
+   entire downstream map is contaminated while looking plausible.
+
+   Align in three passes, and keep the evidence for each:
+
+   - *Mechanical*: normalized title similarity proposes candidate pairs.
+   - *Verified*: for every proposed pair, ask the model whether the two units
+     address the same underlying concern. A `MISMATCH` demotes the pair; both
+     sides return to the unmatched pool.
+   - *Resolved*: match the leftovers against each other by meaning, not by
+     number. This is where reworded-but-equivalent items ("Search" ->
+     "Search strategy") are recovered.
+
+   Record `aligned_by` on every pair (`title_similarity`, `title_similarity+model_verified`,
+   `model_resolved`) plus the model's confidence and reason. A delta map whose
+   alignments lack a model-verified reason is not auditable.
+
+   Validate alignment before classifying it. If you catch yourself explaining a
+   shift between two units that plainly address different topics, the pairing is
+   wrong — go back to alignment, do not explain it away.
+
 3. **Classify each difference.** For every aligned pair that differs, assign
    exactly one `change_type`:
 

@@ -2,63 +2,50 @@
   "receipt": {
     "purpose": "version-delta.classify",
     "model": "qwen-max",
-    "prompt_digest": "c8b5fa946e3c2d23",
+    "prompt_digest": "cb469fc5453f3b25",
     "attempts": 1,
-    "latency_ms": 21779,
+    "latency_ms": 20014,
     "usage": {
-      "prompt_tokens": 779,
-      "completion_tokens": 732,
-      "total_tokens": 1511,
+      "prompt_tokens": 624,
+      "completion_tokens": 648,
+      "total_tokens": 1272,
       "prompt_tokens_details": {
         "cached_tokens": 256
       }
     },
-    "written_at_utc": "2026-11-08T10:15:44Z",
-    "raw_response": "[\n    {\n        \"delta_id\": \"item-19\",\n        \"change_type\": \"field_renamed\",\n        \"impact_level\": \"low\",\n        \"interpretation\": \"The label and the content of the item have changed, but the new version is now more specific about presenting summary statistics and effect estimates for each study.\",\n        \"worked_example\": \"\",\n        \"impact_summary\": \"This change updates the presentation requirements to be more detailed and structured, but does not fundamentally alter the requirement to present data from individual studies.\",\n        \"resolution_requirement\": \"\",\n        \"uncertainty\": \"low\",\n        \"old_excerpt\": \"Present data on risk of bias of each study and, if available, any outcome-level assessment (see item 12).\",\n        \"new_excerpt\": \"For all outcomes, present, for each study: (a) summary statistics for each group (where appropriate) and (b) an effect estimate and its precision (e.g. confidence/credible interval), ideally using structured tables or plots.\"\n    },\n    {\n        \"delta_id\": \"item-20\",\n        \"change_type\": \"field_removed\",\n        \"impact_level\": \"high\",\n        \"interpretation\": \"The requirement to present simple summary data and effect estimates for each intervention group has been removed in the new version.\",\n        \"worked_example\": \"Under PRISMA 2009, a review would need to present the mean and standard deviation for each group and the effect size with a confidence interval. Under PRISMA 2020, this requirement is no longer specified, leading to potential omission of these details.\",\n        \"impact_summary\": \"This removal significantly changes the reporting requirements, potentially affecting the completeness and comparability of the results presented in systematic reviews.\",\n        \"resolution_requirement\": \"Evidence that the new version still requires the presentation of simple summary data and effect estimates, or that these are covered by other items in the new guidelines.\",\n        \"uncertainty\": \"low\",\n        \"old_excerpt\": \"For all outcomes considered (benefits or harms), present for each study (a) simple summary data for each intervention group and (b) effect estimates and confidence intervals, ideally with a forest plot\",\n        \"new_excerpt\": \"\"\n    },\n    {\n        \"delta_id\": \"item-21\",\n        \"change_type\": \"semantic_shift\",\n        \"impact_level\": \"high\",\n        \"interpretation\": \"The focus has shifted from synthesizing results to assessing and reporting biases due to missing results. This is a significant change in the scope and purpose of the item.\",\n        \"worked_example\": \"In PRISMA 2009, a meta-analysis would report the combined effect size and confidence intervals, along with measures of consistency like I². In PRISMA 2020, the same meta-analysis would instead report on the risk of bias due to missing results, such as publication bias or selective reporting.\",\n        \"impact_summary\": \"This shift means that the focus is now on the quality and completeness of the evidence rather than the combined effect size, which can lead to different conclusions and interpretations.\",\n        \"resolution_requirement\": \"Evidence that the new version still requires the synthesis of results, or that this is covered by other items in the new guidelines.\",\n        \"uncertainty\": \"low\",\n        \"old_excerpt\": \"Present results of each meta-analysis done, including confidence intervals and measures of consistency\",\n        \"new_excerpt\": \"Present assessments of risk of bias due to missing results (arising from reporting biases) for each synthesis assessed.\"\n    }\n]",
+    "written_at_utc": "2026-11-08T10:31:27Z",
+    "raw_response": "[\n  {\n    \"delta_id\": \"item-14-to-item-13a\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"The old version focuses on the methods of handling data and combining results, including measures of consistency for each meta-analysis. The new version shifts to describing the processes used to decide which studies were eligible for each synthesis, such as comparing study intervention characteristics against planned groups.\",\n    \"worked_example\": \"Under the old version, a review that only describes how data from included studies are combined (e.g., using a random-effects model) without discussing the eligibility criteria for the synthesis would be compliant. Under the new version, this same review would not be compliant, as it must also describe the process for deciding which studies are eligible for the synthesis, such as tabulating and comparing intervention characteristics.\",\n    \"impact_summary\": \"The change requires a more detailed description of the decision-making process for study inclusion in the synthesis, which may alter the scope and focus of the reported methods.\",\n    \"resolution_requirement\": \"Evidence of the process for determining study eligibility for each synthesis, including comparisons of study intervention characteristics against planned groups.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Describe the methods of handling data and combining results of studies, if done, including measures of consistency (such as I2) for each meta-analysis\",\n    \"new_excerpt\": \"Describe the processes used to decide which studies were eligible for each synthesis (e.g., tabulating the study intervention characteristics and comparing against the planned groups for each synthesis (item #5)).\"\n  },\n  {\n    \"delta_id\": \"item-15-to-item-14\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"The old version broadly covers any assessment of risk of bias that may affect the cumulative evidence, including publication bias and selective reporting within studies. The new version specifically focuses on methods used to assess risk of bias due to missing results in a synthesis, arising from reporting biases.\",\n    \"worked_example\": \"Under the old version, a review that assesses the risk of bias from various sources, such as funding, conflicts of interest, and publication bias, would be compliant. Under the new version, this same review would need to specifically address the methods used to assess risk of bias due to missing results, such as using funnel plots or statistical tests for small-study effects.\",\n    \"impact_summary\": \"The change narrows the focus to specific types of reporting biases and the methods used to assess them, which may require additional or different analyses.\",\n    \"resolution_requirement\": \"Evidence of methods used to assess risk of bias due to missing results, such as funnel plots or statistical tests for small-study effects.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Specify any assessment of risk of bias that may affect the cumulative evidence (such as publication bias, selective reporting within studies)\",\n    \"new_excerpt\": \"Describe any methods used to assess risk of bias due to missing results in a synthesis (arising from reporting biases).\"\n  }\n]",
     "old_id": "PRISMA 2009",
     "new_id": "PRISMA 2020",
     "pair_keys": [
-      "item-19",
-      "item-20",
-      "item-21"
+      "item-14",
+      "item-15"
     ]
   },
   "payload": [
     {
-      "delta_id": "item-19",
-      "change_type": "field_renamed",
-      "impact_level": "low",
-      "interpretation": "The label and the content of the item have changed, but the new version is now more specific about presenting summary statistics and effect estimates for each study.",
-      "worked_example": "",
-      "impact_summary": "This change updates the presentation requirements to be more detailed and structured, but does not fundamentally alter the requirement to present data from individual studies.",
-      "resolution_requirement": "",
-      "uncertainty": "low",
-      "old_excerpt": "Present data on risk of bias of each study and, if available, any outcome-level assessment (see item 12).",
-      "new_excerpt": "For all outcomes, present, for each study: (a) summary statistics for each group (where appropriate) and (b) an effect estimate and its precision (e.g. confidence/credible interval), ideally using structured tables or plots."
-    },
-    {
-      "delta_id": "item-20",
-      "change_type": "field_removed",
-      "impact_level": "high",
-      "interpretation": "The requirement to present simple summary data and effect estimates for each intervention group has been removed in the new version.",
-      "worked_example": "Under PRISMA 2009, a review would need to present the mean and standard deviation for each group and the effect size with a confidence interval. Under PRISMA 2020, this requirement is no longer specified, leading to potential omission of these details.",
-      "impact_summary": "This removal significantly changes the reporting requirements, potentially affecting the completeness and comparability of the results presented in systematic reviews.",
-      "resolution_requirement": "Evidence that the new version still requires the presentation of simple summary data and effect estimates, or that these are covered by other items in the new guidelines.",
-      "uncertainty": "low",
-      "old_excerpt": "For all outcomes considered (benefits or harms), present for each study (a) simple summary data for each intervention group and (b) effect estimates and confidence intervals, ideally with a forest plot",
-      "new_excerpt": ""
-    },
-    {
-      "delta_id": "item-21",
+      "delta_id": "item-14-to-item-13a",
       "change_type": "semantic_shift",
-      "impact_level": "high",
-      "interpretation": "The focus has shifted from synthesizing results to assessing and reporting biases due to missing results. This is a significant change in the scope and purpose of the item.",
-      "worked_example": "In PRISMA 2009, a meta-analysis would report the combined effect size and confidence intervals, along with measures of consistency like I². In PRISMA 2020, the same meta-analysis would instead report on the risk of bias due to missing results, such as publication bias or selective reporting.",
-      "impact_summary": "This shift means that the focus is now on the quality and completeness of the evidence rather than the combined effect size, which can lead to different conclusions and interpretations.",
-      "resolution_requirement": "Evidence that the new version still requires the synthesis of results, or that this is covered by other items in the new guidelines.",
+      "impact_level": "medium",
+      "interpretation": "The old version focuses on the methods of handling data and combining results, including measures of consistency for each meta-analysis. The new version shifts to describing the processes used to decide which studies were eligible for each synthesis, such as comparing study intervention characteristics against planned groups.",
+      "worked_example": "Under the old version, a review that only describes how data from included studies are combined (e.g., using a random-effects model) without discussing the eligibility criteria for the synthesis would be compliant. Under the new version, this same review would not be compliant, as it must also describe the process for deciding which studies are eligible for the synthesis, such as tabulating and comparing intervention characteristics.",
+      "impact_summary": "The change requires a more detailed description of the decision-making process for study inclusion in the synthesis, which may alter the scope and focus of the reported methods.",
+      "resolution_requirement": "Evidence of the process for determining study eligibility for each synthesis, including comparisons of study intervention characteristics against planned groups.",
       "uncertainty": "low",
-      "old_excerpt": "Present results of each meta-analysis done, including confidence intervals and measures of consistency",
-      "new_excerpt": "Present assessments of risk of bias due to missing results (arising from reporting biases) for each synthesis assessed."
+      "old_excerpt": "Describe the methods of handling data and combining results of studies, if done, including measures of consistency (such as I2) for each meta-analysis",
+      "new_excerpt": "Describe the processes used to decide which studies were eligible for each synthesis (e.g., tabulating the study intervention characteristics and comparing against the planned groups for each synthesis (item #5))."
+    },
+    {
+      "delta_id": "item-15-to-item-14",
+      "change_type": "semantic_shift",
+      "impact_level": "medium",
+      "interpretation": "The old version broadly covers any assessment of risk of bias that may affect the cumulative evidence, including publication bias and selective reporting within studies. The new version specifically focuses on methods used to assess risk of bias due to missing results in a synthesis, arising from reporting biases.",
+      "worked_example": "Under the old version, a review that assesses the risk of bias from various sources, such as funding, conflicts of interest, and publication bias, would be compliant. Under the new version, this same review would need to specifically address the methods used to assess risk of bias due to missing results, such as using funnel plots or statistical tests for small-study effects.",
+      "impact_summary": "The change narrows the focus to specific types of reporting biases and the methods used to assess them, which may require additional or different analyses.",
+      "resolution_requirement": "Evidence of methods used to assess risk of bias due to missing results, such as funnel plots or statistical tests for small-study effects.",
+      "uncertainty": "low",
+      "old_excerpt": "Specify any assessment of risk of bias that may affect the cumulative evidence (such as publication bias, selective reporting within studies)",
+      "new_excerpt": "Describe any methods used to assess risk of bias due to missing results in a synthesis (arising from reporting biases)."
     }
   ]
 }

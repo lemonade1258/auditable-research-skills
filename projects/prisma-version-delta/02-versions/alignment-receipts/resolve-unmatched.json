@@ -1,0 +1,139 @@
+{
+  "receipt": {
+    "purpose": "version-delta.resolve_unmatched",
+    "model": "qwen-max",
+    "prompt_digest": "1cb0f06114275261",
+    "attempts": 1,
+    "latency_ms": 31130,
+    "usage": {
+      "prompt_tokens": 1677,
+      "completion_tokens": 1167,
+      "total_tokens": 2844,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "written_at_utc": "2026-11-08T10:29:14Z",
+    "raw_response": "{\n  \"matches\": [\n    {\n      \"old_unit_id\": \"item-2\",\n      \"new_unit_id\": \"item-2\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items refer to the summary of the review, though the new version specifically refers to the PRISMA 2020 for Abstracts checklist.\"\n    },\n    {\n      \"old_unit_id\": \"item-5\",\n      \"new_unit_id\": \"item-24a\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items address the protocol and registration of the review, including where it can be accessed and registration information.\"\n    },\n    {\n      \"old_unit_id\": \"item-8\",\n      \"new_unit_id\": \"item-7\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items require the presentation of the full electronic search strategy, including any limits used.\"\n    },\n    {\n      \"old_unit_id\": \"item-9\",\n      \"new_unit_id\": \"item-8\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items describe the process for selecting studies, including screening and eligibility criteria.\"\n    },\n    {\n      \"old_unit_id\": \"item-11\",\n      \"new_unit_id\": \"item-10a\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items list and define the data items sought, including variables and outcomes.\"\n    },\n    {\n      \"old_unit_id\": \"item-12\",\n      \"new_unit_id\": \"item-11\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items describe the methods used to assess the risk of bias in individual studies.\"\n    },\n    {\n      \"old_unit_id\": \"item-13\",\n      \"new_unit_id\": \"item-12\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items specify the principal summary measures used in the synthesis or presentation of results.\"\n    },\n    {\n      \"old_unit_id\": \"item-14\",\n      \"new_unit_id\": \"item-13a\",\n      \"confidence\": \"medium\",\n      \"reason\": \"Both items describe the methods of handling data and combining results, though the new version is more specific about the processes used to decide which studies were eligible for each synthesis.\"\n    },\n    {\n      \"old_unit_id\": \"item-15\",\n      \"new_unit_id\": \"item-14\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items address the assessment of risk of bias across studies, including publication bias and selective reporting.\"\n    },\n    {\n      \"old_unit_id\": \"item-16\",\n      \"new_unit_id\": \"item-13a\",\n      \"confidence\": \"medium\",\n      \"reason\": \"Both items describe the methods of additional analyses, though the new version is more specific about the processes used to decide which studies were eligible for each synthesis.\"\n    },\n    {\n      \"old_unit_id\": \"item-17\",\n      \"new_unit_id\": \"item-16a\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items provide the numbers of studies screened, assessed for eligibility, and included in the review, often with a flow diagram.\"\n    },\n    {\n      \"old_unit_id\": \"item-19\",\n      \"new_unit_id\": \"item-18\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items present the data on the risk of bias of each study.\"\n    },\n    {\n      \"old_unit_id\": \"item-21\",\n      \"new_unit_id\": \"item-20a\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items present the results of each meta-analysis, including confidence intervals and measures of consistency.\"\n    },\n    {\n      \"old_unit_id\": \"item-22\",\n      \"new_unit_id\": \"item-21\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items present the results of any assessment of risk of bias across studies.\"\n    },\n    {\n      \"old_unit_id\": \"item-23\",\n      \"new_unit_id\": \"item-20a\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items give the results of additional analyses, such as sensitivity or subgroup analyses.\"\n    },\n    {\n      \"old_unit_id\": \"item-24\",\n      \"new_unit_id\": \"item-23a\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items summarize the main findings and their relevance to key groups, and provide a general interpretation of the results.\"\n    },\n    {\n      \"old_unit_id\": \"item-25\",\n      \"new_unit_id\": \"item-23a\",\n      \"confidence\": \"medium\",\n      \"reason\": \"Both items discuss the limitations at the study and outcome level, and at the review level. The new version is part of the broader discussion section.\"\n    },\n    {\n      \"old_unit_id\": \"item-26\",\n      \"new_unit_id\": \"item-23a\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items provide a general interpretation of the results in the context of other evidence and implications for future research.\"\n    },\n    {\n      \"old_unit_id\": \"item-27\",\n      \"new_unit_id\": \"item-25\",\n      \"confidence\": \"high\",\n      \"reason\": \"Both items describe the sources of funding for the systematic review and other support, and the role of funders.\"\n    }\n  ]\n}",
+    "old_candidates": 19,
+    "new_candidates": 19
+  },
+  "payload": {
+    "matches": [
+      {
+        "old_unit_id": "item-2",
+        "new_unit_id": "item-2",
+        "confidence": "high",
+        "reason": "Both items refer to the summary of the review, though the new version specifically refers to the PRISMA 2020 for Abstracts checklist."
+      },
+      {
+        "old_unit_id": "item-5",
+        "new_unit_id": "item-24a",
+        "confidence": "high",
+        "reason": "Both items address the protocol and registration of the review, including where it can be accessed and registration information."
+      },
+      {
+        "old_unit_id": "item-8",
+        "new_unit_id": "item-7",
+        "confidence": "high",
+        "reason": "Both items require the presentation of the full electronic search strategy, including any limits used."
+      },
+      {
+        "old_unit_id": "item-9",
+        "new_unit_id": "item-8",
+        "confidence": "high",
+        "reason": "Both items describe the process for selecting studies, including screening and eligibility criteria."
+      },
+      {
+        "old_unit_id": "item-11",
+        "new_unit_id": "item-10a",
+        "confidence": "high",
+        "reason": "Both items list and define the data items sought, including variables and outcomes."
+      },
+      {
+        "old_unit_id": "item-12",
+        "new_unit_id": "item-11",
+        "confidence": "high",
+        "reason": "Both items describe the methods used to assess the risk of bias in individual studies."
+      },
+      {
+        "old_unit_id": "item-13",
+        "new_unit_id": "item-12",
+        "confidence": "high",
+        "reason": "Both items specify the principal summary measures used in the synthesis or presentation of results."
+      },
+      {
+        "old_unit_id": "item-14",
+        "new_unit_id": "item-13a",
+        "confidence": "medium",
+        "reason": "Both items describe the methods of handling data and combining results, though the new version is more specific about the processes used to decide which studies were eligible for each synthesis."
+      },
+      {
+        "old_unit_id": "item-15",
+        "new_unit_id": "item-14",
+        "confidence": "high",
+        "reason": "Both items address the assessment of risk of bias across studies, including publication bias and selective reporting."
+      },
+      {
+        "old_unit_id": "item-16",
+        "new_unit_id": "item-13a",
+        "confidence": "medium",
+        "reason": "Both items describe the methods of additional analyses, though the new version is more specific about the processes used to decide which studies were eligible for each synthesis."
+      },
+      {
+        "old_unit_id": "item-17",
+        "new_unit_id": "item-16a",
+        "confidence": "high",
+        "reason": "Both items provide the numbers of studies screened, assessed for eligibility, and included in the review, often with a flow diagram."
+      },
+      {
+        "old_unit_id": "item-19",
+        "new_unit_id": "item-18",
+        "confidence": "high",
+        "reason": "Both items present the data on the risk of bias of each study."
+      },
+      {
+        "old_unit_id": "item-21",
+        "new_unit_id": "item-20a",
+        "confidence": "high",
+        "reason": "Both items present the results of each meta-analysis, including confidence intervals and measures of consistency."
+      },
+      {
+        "old_unit_id": "item-22",
+        "new_unit_id": "item-21",
+        "confidence": "high",
+        "reason": "Both items present the results of any assessment of risk of bias across studies."
+      },
+      {
+        "old_unit_id": "item-23",
+        "new_unit_id": "item-20a",
+        "confidence": "high",
+        "reason": "Both items give the results of additional analyses, such as sensitivity or subgroup analyses."
+      },
+      {
+        "old_unit_id": "item-24",
+        "new_unit_id": "item-23a",
+        "confidence": "high",
+        "reason": "Both items summarize the main findings and their relevance to key groups, and provide a general interpretation of the results."
+      },
+      {
+        "old_unit_id": "item-25",
+        "new_unit_id": "item-23a",
+        "confidence": "medium",
+        "reason": "Both items discuss the limitations at the study and outcome level, and at the review level. The new version is part of the broader discussion section."
+      },
+      {
+        "old_unit_id": "item-26",
+        "new_unit_id": "item-23a",
+        "confidence": "high",
+        "reason": "Both items provide a general interpretation of the results in the context of other evidence and implications for future research."
+      },
+      {
+        "old_unit_id": "item-27",
+        "new_unit_id": "item-25",
+        "confidence": "high",
+        "reason": "Both items describe the sources of funding for the systematic review and other support, and the role of funders."
+      }
+    ]
+  }
+}

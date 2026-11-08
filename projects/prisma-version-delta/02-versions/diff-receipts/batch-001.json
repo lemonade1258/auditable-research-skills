@@ -2,63 +2,50 @@
   "receipt": {
     "purpose": "version-delta.classify",
     "model": "qwen-max",
-    "prompt_digest": "0dd28d8a8fc131a1",
+    "prompt_digest": "59bf9c10c5d06a59",
     "attempts": 1,
-    "latency_ms": 23835,
+    "latency_ms": 21447,
     "usage": {
-      "prompt_tokens": 733,
-      "completion_tokens": 736,
-      "total_tokens": 1469,
+      "prompt_tokens": 584,
+      "completion_tokens": 589,
+      "total_tokens": 1173,
       "prompt_tokens_details": {
-        "cached_tokens": 256
+        "cached_tokens": 0
       }
     },
-    "written_at_utc": "2026-11-08T10:13:22Z",
-    "raw_response": "[\n  {\n    \"delta_id\": \"item-1\",\n    \"change_type\": \"scope_narrowed\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"The new version specifies that the report should be identified as a systematic review, whereas the old version allowed for identification as a meta-analysis or both a systematic review and a meta-analysis.\",\n    \"worked_example\": \"A report that is solely a meta-analysis would be identified as such under the old version but must now be identified as a systematic review, even if it is not, to comply with the new version.\",\n    \"impact_summary\": \"The scope of what can be identified in the title has been narrowed, which may affect how reports are titled and could lead to misidentification of the type of study.\",\n    \"resolution_requirement\": \"Evidence must now show that the report is clearly identified as a systematic review, regardless of whether it includes a meta-analysis.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Identify the report as a systematic review, meta-analysis, or both\",\n    \"new_excerpt\": \"Identify the report as a systematic review.\"\n  },\n  {\n    \"delta_id\": \"item-2\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"high\",\n    \"interpretation\": \"The new version directs the reader to an external checklist (PRISMA 2020 for Abstracts), while the old version provided a detailed list of elements to include in the structured summary. This suggests a change in the specific requirements for the abstract.\",\n    \"worked_example\": \"An abstract that follows the detailed guidelines from the old version (e.g., including background, objectives, data sources, etc.) may no longer be compliant if it does not adhere to the new checklist in PRISMA 2020 for Abstracts, which may have different or additional requirements.\",\n    \"impact_summary\": \"The change in the reference point for the abstract's content means that the specific requirements for the abstract have shifted, potentially requiring significant changes to existing abstracts.\",\n    \"resolution_requirement\": \"Evidence must now show compliance with the PRISMA 2020 for Abstracts checklist, including any additional or modified requirements.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Provide a structured summary including, as applicable, background, objectives, data sources, study eligibility criteria, participants, interventions, study appraisal and synthesis methods, results, limitations, conclusions and implications of key findings, systematic review registration number\",\n    \"new_excerpt\": \"See the PRISMA 2020 for Abstracts checklist (table 2).\"\n  },\n  {\n    \"delta_id\": \"item-3\",\n    \"change_type\": \"field_renamed\",\n    \"impact_level\": \"low\",\n    \"interpretation\": \"The field has been renamed from 'in the context of what is already known' to 'in the context of existing knowledge', but the meaning remains the same.\",\n    \"worked_example\": \"A rationale describing the review in the context of previous research would be appropriate under both versions, as the terms 'what is already known' and 'existing knowledge' are synonymous.\",\n    \"impact_summary\": \"The change is cosmetic, and the requirement for the rationale remains the same.\",\n    \"resolution_requirement\": \"\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Describe the rationale for the review in the context of what is already known\",\n    \"new_excerpt\": \"Describe the rationale for the review in the context of existing knowledge.\"\n  }\n]",
+    "written_at_utc": "2026-11-08T10:29:36Z",
+    "raw_response": "[\n  {\n    \"delta_id\": \"unit item-1\",\n    \"change_type\": \"scope_narrowed\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"The new version narrows the scope to only identifying the report as a systematic review, whereas the old version included both systematic reviews and meta-analyses.\",\n    \"worked_example\": \"A paper that is a meta-analysis. Under the old version, it would be identified as a meta-analysis or both a systematic review and a meta-analysis. Under the new version, it would only be identified as a systematic review if it also meets the criteria for a systematic review.\",\n    \"impact_summary\": \"This change affects how reports are labeled, particularly those that are meta-analyses but not systematic reviews. It may require re-evaluation of the title for some reports.\",\n    \"resolution_requirement\": \"Evidence that the report has been reviewed to ensure it is correctly identified as a systematic review, and any meta-analysis aspects are noted separately if applicable.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Identify the report as a systematic review, meta-analysis, or both\",\n    \"new_excerpt\": \"Identify the report as a systematic review.\"\n  },\n  {\n    \"delta_id\": \"unit item-2\",\n    \"change_type\": \"requirement_removed\",\n    \"impact_level\": \"high\",\n    \"interpretation\": \"The new version removes the detailed requirements for the structured summary and instead refers to an external checklist. This shifts the specific content requirements to a different document.\",\n    \"worked_example\": \"A structured summary that includes background, objectives, data sources, study eligibility criteria, participants, interventions, study appraisal and synthesis methods, results, limitations, conclusions, and implications of key findings, and a systematic review registration number. Under the old version, this summary would meet the requirement. Under the new version, the summary must comply with the PRISMA 2020 for Abstracts checklist (table 2), which may have different or additional requirements.\",\n    \"impact_summary\": \"This change requires authors to refer to an external document for the specific content of the abstract, which may include different or additional elements. This could significantly change the structure and content of the abstract.\",\n    \"resolution_requirement\": \"Evidence that the abstract has been revised to comply with the PRISMA 2020 for Abstracts checklist (table 2).\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Provide a structured summary including, as applicable, background, objectives, data sources, study eligibility criteria, participants, interventions, study appraisal and synthesis methods, results, limitations, conclusions and implications of key findings, systematic review registration number\",\n    \"new_excerpt\": \"See the PRISMA 2020 for Abstracts checklist (table 2).\"\n  }\n]",
     "old_id": "PRISMA 2009",
     "new_id": "PRISMA 2020",
     "pair_keys": [
       "item-1",
-      "item-2",
-      "item-3"
+      "item-2"
     ]
   },
   "payload": [
     {
-      "delta_id": "item-1",
+      "delta_id": "unit item-1",
       "change_type": "scope_narrowed",
       "impact_level": "medium",
-      "interpretation": "The new version specifies that the report should be identified as a systematic review, whereas the old version allowed for identification as a meta-analysis or both a systematic review and a meta-analysis.",
-      "worked_example": "A report that is solely a meta-analysis would be identified as such under the old version but must now be identified as a systematic review, even if it is not, to comply with the new version.",
-      "impact_summary": "The scope of what can be identified in the title has been narrowed, which may affect how reports are titled and could lead to misidentification of the type of study.",
-      "resolution_requirement": "Evidence must now show that the report is clearly identified as a systematic review, regardless of whether it includes a meta-analysis.",
+      "interpretation": "The new version narrows the scope to only identifying the report as a systematic review, whereas the old version included both systematic reviews and meta-analyses.",
+      "worked_example": "A paper that is a meta-analysis. Under the old version, it would be identified as a meta-analysis or both a systematic review and a meta-analysis. Under the new version, it would only be identified as a systematic review if it also meets the criteria for a systematic review.",
+      "impact_summary": "This change affects how reports are labeled, particularly those that are meta-analyses but not systematic reviews. It may require re-evaluation of the title for some reports.",
+      "resolution_requirement": "Evidence that the report has been reviewed to ensure it is correctly identified as a systematic review, and any meta-analysis aspects are noted separately if applicable.",
       "uncertainty": "low",
       "old_excerpt": "Identify the report as a systematic review, meta-analysis, or both",
       "new_excerpt": "Identify the report as a systematic review."
     },
     {
-      "delta_id": "item-2",
-      "change_type": "semantic_shift",
+      "delta_id": "unit item-2",
+      "change_type": "requirement_removed",
       "impact_level": "high",
-      "interpretation": "The new version directs the reader to an external checklist (PRISMA 2020 for Abstracts), while the old version provided a detailed list of elements to include in the structured summary. This suggests a change in the specific requirements for the abstract.",
-      "worked_example": "An abstract that follows the detailed guidelines from the old version (e.g., including background, objectives, data sources, etc.) may no longer be compliant if it does not adhere to the new checklist in PRISMA 2020 for Abstracts, which may have different or additional requirements.",
-      "impact_summary": "The change in the reference point for the abstract's content means that the specific requirements for the abstract have shifted, potentially requiring significant changes to existing abstracts.",
-      "resolution_requirement": "Evidence must now show compliance with the PRISMA 2020 for Abstracts checklist, including any additional or modified requirements.",
+      "interpretation": "The new version removes the detailed requirements for the structured summary and instead refers to an external checklist. This shifts the specific content requirements to a different document.",
+      "worked_example": "A structured summary that includes background, objectives, data sources, study eligibility criteria, participants, interventions, study appraisal and synthesis methods, results, limitations, conclusions, and implications of key findings, and a systematic review registration number. Under the old version, this summary would meet the requirement. Under the new version, the summary must comply with the PRISMA 2020 for Abstracts checklist (table 2), which may have different or additional requirements.",
+      "impact_summary": "This change requires authors to refer to an external document for the specific content of the abstract, which may include different or additional elements. This could significantly change the structure and content of the abstract.",
+      "resolution_requirement": "Evidence that the abstract has been revised to comply with the PRISMA 2020 for Abstracts checklist (table 2).",
       "uncertainty": "low",
       "old_excerpt": "Provide a structured summary including, as applicable, background, objectives, data sources, study eligibility criteria, participants, interventions, study appraisal and synthesis methods, results, limitations, conclusions and implications of key findings, systematic review registration number",
       "new_excerpt": "See the PRISMA 2020 for Abstracts checklist (table 2)."
-    },
-    {
-      "delta_id": "item-3",
-      "change_type": "field_renamed",
-      "impact_level": "low",
-      "interpretation": "The field has been renamed from 'in the context of what is already known' to 'in the context of existing knowledge', but the meaning remains the same.",
-      "worked_example": "A rationale describing the review in the context of previous research would be appropriate under both versions, as the terms 'what is already known' and 'existing knowledge' are synonymous.",
-      "impact_summary": "The change is cosmetic, and the requirement for the rationale remains the same.",
-      "resolution_requirement": "",
-      "uncertainty": "low",
-      "old_excerpt": "Describe the rationale for the review in the context of what is already known",
-      "new_excerpt": "Describe the rationale for the review in the context of existing knowledge."
     }
   ]
 }

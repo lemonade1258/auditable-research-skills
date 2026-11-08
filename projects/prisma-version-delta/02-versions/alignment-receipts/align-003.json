@@ -1,0 +1,29 @@
+{
+  "receipt": {
+    "purpose": "version-delta.verify_alignment",
+    "model": "qwen-max",
+    "prompt_digest": "c8739240238e7a85",
+    "attempts": 1,
+    "latency_ms": 7152,
+    "usage": {
+      "prompt_tokens": 310,
+      "completion_tokens": 41,
+      "total_tokens": 351,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      }
+    },
+    "written_at_utc": "2026-11-08T10:27:36Z",
+    "raw_response": "{\"verdict\": \"ALIGN\", \"confidence\": \"high\", \"reason\": \"Both items request a description of the rationale for the review in the context of current knowledge, despite slight wording differences.\"}",
+    "old_unit_id": "item-3",
+    "new_unit_id": "item-3",
+    "old_title": "Rationale",
+    "new_title": "Rationale",
+    "verdict": "ALIGN"
+  },
+  "payload": {
+    "verdict": "ALIGN",
+    "confidence": "high",
+    "reason": "Both items request a description of the rationale for the review in the context of current knowledge, despite slight wording differences."
+  }
+}

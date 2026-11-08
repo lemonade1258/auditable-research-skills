@@ -1,0 +1,29 @@
+{
+  "receipt": {
+    "purpose": "version-delta.verify_alignment",
+    "model": "qwen-max",
+    "prompt_digest": "75a11c1c0b2824a2",
+    "attempts": 1,
+    "latency_ms": 8244,
+    "usage": {
+      "prompt_tokens": 346,
+      "completion_tokens": 48,
+      "total_tokens": 394,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "written_at_utc": "2026-11-08T10:28:00Z",
+    "raw_response": "{\"verdict\": \"ALIGN\", \"confidence\": \"high\", \"reason\": \"Both items require the specification of information sources and the dates they were last searched or consulted, even though the new version provides more detailed examples of sources.\"}",
+    "old_unit_id": "item-7",
+    "new_unit_id": "item-6",
+    "old_title": "Information sources",
+    "new_title": "Information sources",
+    "verdict": "ALIGN"
+  },
+  "payload": {
+    "verdict": "ALIGN",
+    "confidence": "high",
+    "reason": "Both items require the specification of information sources and the dates they were last searched or consulted, even though the new version provides more detailed examples of sources."
+  }
+}

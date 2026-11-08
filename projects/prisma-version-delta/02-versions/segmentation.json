@@ -1,7 +1,7 @@
 {
   "old_version": {
     "id": "PRISMA 2009",
-    "source": "C:\\Users\\lemonade\\AppData\\Local\\Temp\\specs\\prisma2009.json",
+    "source": "projects\\prisma-version-delta\\00-input\\prisma2009.json",
     "units": [
       {
         "unit_id": "item-1",
@@ -169,7 +169,7 @@
   },
   "new_version": {
     "id": "PRISMA 2020",
-    "source": "C:\\Users\\lemonade\\AppData\\Local\\Temp\\specs\\prisma2020.json",
+    "source": "projects\\prisma-version-delta\\00-input\\prisma2020.json",
     "units": [
       {
         "unit_id": "item-1",

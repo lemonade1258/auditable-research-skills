@@ -2,63 +2,50 @@
   "receipt": {
     "purpose": "version-delta.classify",
     "model": "qwen-max",
-    "prompt_digest": "24b9bf4055019092",
+    "prompt_digest": "92c429692ed79e8a",
     "attempts": 1,
-    "latency_ms": 24197,
+    "latency_ms": 16584,
     "usage": {
-      "prompt_tokens": 787,
-      "completion_tokens": 773,
-      "total_tokens": 1560,
+      "prompt_tokens": 568,
+      "completion_tokens": 482,
+      "total_tokens": 1050,
       "prompt_tokens_details": {
-        "cached_tokens": 0
+        "cached_tokens": 256
       }
     },
-    "written_at_utc": "2026-11-08T10:13:47Z",
-    "raw_response": "[\n  {\n    \"delta_id\": \"item-4\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"The old version required an explicit statement of questions being addressed, specifically mentioning PICOS elements. The new version requires a statement of the objectives or questions without specifying the need to reference PICOS.\",\n    \"worked_example\": \"Under the old version, a statement like 'We aim to compare the effectiveness of drug A versus drug B in reducing blood pressure in adults over 50 years, using randomized controlled trials with a follow-up period of at least 6 months' would be compliant. Under the new version, a broader statement such as 'This review aims to assess the effectiveness of different drugs in reducing blood pressure' could be sufficient, without needing to specify the PICOS elements.\",\n    \"impact_summary\": \"The change broadens the scope of what is acceptable for stating the objectives, potentially allowing for less detailed statements.\",\n    \"resolution_requirement\": \"Evidence must now show that the objectives or questions are clearly stated, but there is no requirement to explicitly reference PICOS.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Provide an explicit statement of questions being addressed with reference to participants, interventions, comparisons, outcomes, and study design (PICOS)\",\n    \"new_excerpt\": \"Provide an explicit statement of the objective(s) or question(s) the review addresses.\"\n  },\n  {\n    \"delta_id\": \"item-5\",\n    \"change_type\": \"field_renamed\",\n    \"impact_level\": \"high\",\n    \"interpretation\": \"The field has been renamed from 'Protocol and registration' to 'Eligibility criteria', and the content has changed from indicating the existence and accessibility of a protocol to specifying inclusion and exclusion criteria and how studies were grouped for syntheses.\",\n    \"worked_example\": \"\",\n    \"impact_summary\": \"The change completely alters the requirements, shifting from protocol transparency to criteria specification, which significantly changes the compliance requirements.\",\n    \"resolution_requirement\": \"Evidence must now include the inclusion and exclusion criteria and how studies were grouped for the syntheses, rather than information about the protocol and its registration.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Indicate if a review protocol exists, if and where it can be accessed (such as web address), and, if available, provide registration information including registration number\",\n    \"new_excerpt\": \"Specify the inclusion and exclusion criteria for the review and how studies were grouped for the syntheses.\"\n  },\n  {\n    \"delta_id\": \"item-6\",\n    \"change_type\": \"field_renamed\",\n    \"impact_level\": \"high\",\n    \"interpretation\": \"The field has been renamed from 'Eligibility criteria' to 'Information sources', and the content has changed from specifying eligibility criteria to specifying the sources used to identify studies.\",\n    \"worked_example\": \"\",\n    \"impact_summary\": \"The change completely alters the requirements, shifting from defining eligibility criteria to detailing the sources of information used in the review, which significantly changes the compliance requirements.\",\n    \"resolution_requirement\": \"Evidence must now include the databases, registers, websites, organizations, reference lists, and other sources searched or consulted, along with the dates when each source was last searched or consulted.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Specify study characteristics (such as PICOS, length of follow-up) and report characteristics (such as years considered, language, publication status) used as criteria for eligibility, giving rationale\",\n    \"new_excerpt\": \"Specify all databases, registers, websites, organisations, reference lists and other sources searched or consulted to identify studies. Specify the date when each source was last searched or consulted.\"\n  }\n]",
+    "written_at_utc": "2026-11-08T10:29:52Z",
+    "raw_response": "[\n  {\n    \"delta_id\": \"item-3\",\n    \"change_type\": \"field_renamed\",\n    \"impact_level\": \"low\",\n    \"interpretation\": \"The requirement to describe the rationale for the review in the context of what is already known has been rephrased, but the core meaning remains the same.\",\n    \"worked_example\": \"\",\n    \"impact_summary\": \"The change in wording does not alter the requirement; it simply updates the language used to express the need to provide a rationale for the review within the current body of knowledge.\",\n    \"resolution_requirement\": \"\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Describe the rationale for the review in the context of what is already known\",\n    \"new_excerpt\": \"Describe the rationale for the review in the context of existing knowledge.\"\n  },\n  {\n    \"delta_id\": \"item-4\",\n    \"change_type\": \"scope_narrowed\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"The new version no longer explicitly requires reference to participants, interventions, comparisons, outcomes, and study design (PICOS). This narrows the scope of the required details for stating the objectives or questions of the review.\",\n    \"worked_example\": \"Under the old version, a review must specify: 'To evaluate the effectiveness of drug A compared to drug B in treating condition C, as measured by outcome D, in adult patients, using randomized controlled trials.' Under the new version, the statement could be more general: 'To evaluate the effectiveness of drug A in treating condition C.'\",\n    \"impact_summary\": \"The change allows for a broader and less specific statement of the review's objectives, which may affect how reviewers structure their objective statements and the level of detail they provide.\",\n    \"resolution_requirement\": \"Reviewers must now ensure that the stated objectives or questions are clear and explicit, even if they do not follow the PICOS framework. Evidence should demonstrate that the objectives are well-defined and address the purpose of the review.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Provide an explicit statement of questions being addressed with reference to participants, interventions, comparisons, outcomes, and study design (PICOS)\",\n    \"new_excerpt\": \"Provide an explicit statement of the objective(s) or question(s) the review addresses.\"\n  }\n]",
     "old_id": "PRISMA 2009",
     "new_id": "PRISMA 2020",
     "pair_keys": [
-      "item-4",
-      "item-5",
-      "item-6"
+      "item-3",
+      "item-4"
     ]
   },
   "payload": [
     {
+      "delta_id": "item-3",
+      "change_type": "field_renamed",
+      "impact_level": "low",
+      "interpretation": "The requirement to describe the rationale for the review in the context of what is already known has been rephrased, but the core meaning remains the same.",
+      "worked_example": "",
+      "impact_summary": "The change in wording does not alter the requirement; it simply updates the language used to express the need to provide a rationale for the review within the current body of knowledge.",
+      "resolution_requirement": "",
+      "uncertainty": "low",
+      "old_excerpt": "Describe the rationale for the review in the context of what is already known",
+      "new_excerpt": "Describe the rationale for the review in the context of existing knowledge."
+    },
+    {
       "delta_id": "item-4",
-      "change_type": "semantic_shift",
+      "change_type": "scope_narrowed",
       "impact_level": "medium",
-      "interpretation": "The old version required an explicit statement of questions being addressed, specifically mentioning PICOS elements. The new version requires a statement of the objectives or questions without specifying the need to reference PICOS.",
-      "worked_example": "Under the old version, a statement like 'We aim to compare the effectiveness of drug A versus drug B in reducing blood pressure in adults over 50 years, using randomized controlled trials with a follow-up period of at least 6 months' would be compliant. Under the new version, a broader statement such as 'This review aims to assess the effectiveness of different drugs in reducing blood pressure' could be sufficient, without needing to specify the PICOS elements.",
-      "impact_summary": "The change broadens the scope of what is acceptable for stating the objectives, potentially allowing for less detailed statements.",
-      "resolution_requirement": "Evidence must now show that the objectives or questions are clearly stated, but there is no requirement to explicitly reference PICOS.",
+      "interpretation": "The new version no longer explicitly requires reference to participants, interventions, comparisons, outcomes, and study design (PICOS). This narrows the scope of the required details for stating the objectives or questions of the review.",
+      "worked_example": "Under the old version, a review must specify: 'To evaluate the effectiveness of drug A compared to drug B in treating condition C, as measured by outcome D, in adult patients, using randomized controlled trials.' Under the new version, the statement could be more general: 'To evaluate the effectiveness of drug A in treating condition C.'",
+      "impact_summary": "The change allows for a broader and less specific statement of the review's objectives, which may affect how reviewers structure their objective statements and the level of detail they provide.",
+      "resolution_requirement": "Reviewers must now ensure that the stated objectives or questions are clear and explicit, even if they do not follow the PICOS framework. Evidence should demonstrate that the objectives are well-defined and address the purpose of the review.",
       "uncertainty": "low",
       "old_excerpt": "Provide an explicit statement of questions being addressed with reference to participants, interventions, comparisons, outcomes, and study design (PICOS)",
       "new_excerpt": "Provide an explicit statement of the objective(s) or question(s) the review addresses."
-    },
-    {
-      "delta_id": "item-5",
-      "change_type": "field_renamed",
-      "impact_level": "high",
-      "interpretation": "The field has been renamed from 'Protocol and registration' to 'Eligibility criteria', and the content has changed from indicating the existence and accessibility of a protocol to specifying inclusion and exclusion criteria and how studies were grouped for syntheses.",
-      "worked_example": "",
-      "impact_summary": "The change completely alters the requirements, shifting from protocol transparency to criteria specification, which significantly changes the compliance requirements.",
-      "resolution_requirement": "Evidence must now include the inclusion and exclusion criteria and how studies were grouped for the syntheses, rather than information about the protocol and its registration.",
-      "uncertainty": "low",
-      "old_excerpt": "Indicate if a review protocol exists, if and where it can be accessed (such as web address), and, if available, provide registration information including registration number",
-      "new_excerpt": "Specify the inclusion and exclusion criteria for the review and how studies were grouped for the syntheses."
-    },
-    {
-      "delta_id": "item-6",
-      "change_type": "field_renamed",
-      "impact_level": "high",
-      "interpretation": "The field has been renamed from 'Eligibility criteria' to 'Information sources', and the content has changed from specifying eligibility criteria to specifying the sources used to identify studies.",
-      "worked_example": "",
-      "impact_summary": "The change completely alters the requirements, shifting from defining eligibility criteria to detailing the sources of information used in the review, which significantly changes the compliance requirements.",
-      "resolution_requirement": "Evidence must now include the databases, registers, websites, organizations, reference lists, and other sources searched or consulted, along with the dates when each source was last searched or consulted.",
-      "uncertainty": "low",
-      "old_excerpt": "Specify study characteristics (such as PICOS, length of follow-up) and report characteristics (such as years considered, language, publication status) used as criteria for eligibility, giving rationale",
-      "new_excerpt": "Specify all databases, registers, websites, organisations, reference lists and other sources searched or consulted to identify studies. Specify the date when each source was last searched or consulted."
     }
   ]
 }

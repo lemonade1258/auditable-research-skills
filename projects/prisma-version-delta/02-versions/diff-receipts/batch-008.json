@@ -2,63 +2,50 @@
   "receipt": {
     "purpose": "version-delta.classify",
     "model": "qwen-max",
-    "prompt_digest": "0d334dcea686319a",
+    "prompt_digest": "f85d85ffa66375fc",
     "attempts": 1,
-    "latency_ms": 21984,
+    "latency_ms": 21084,
     "usage": {
-      "prompt_tokens": 717,
-      "completion_tokens": 712,
-      "total_tokens": 1429,
+      "prompt_tokens": 632,
+      "completion_tokens": 537,
+      "total_tokens": 1169,
       "prompt_tokens_details": {
-        "cached_tokens": 0
+        "cached_tokens": 256
       }
     },
-    "written_at_utc": "2026-11-08T10:16:06Z",
-    "raw_response": "[\n    {\n        \"delta_id\": \"item-22\",\n        \"change_type\": \"semantic_shift\",\n        \"impact_level\": \"medium\",\n        \"interpretation\": \"The focus has shifted from presenting the risk of bias across studies to presenting the certainty (or confidence) in the body of evidence for each outcome. This is a significant change in the scope and nature of the information required.\",\n        \"worked_example\": \"Under the old version, a review might report that there was a high risk of bias across studies due to poor blinding. Under the new version, the same review would need to present the level of certainty (e.g., high, moderate, low, very low) for each specific outcome, which may involve different criteria and methods.\",\n        \"impact_summary\": \"This shift changes the type of analysis and reporting required, moving from a general assessment of bias to a more nuanced evaluation of the certainty of evidence for each outcome.\",\n        \"resolution_requirement\": \"Evidence must now include an assessment of the certainty (or confidence) in the body of evidence for each outcome, using appropriate tools or frameworks (e.g., GRADE).\",\n        \"uncertainty\": \"low\",\n        \"old_excerpt\": \"Present results of any assessment of risk of bias across studies (see item 15)\",\n        \"new_excerpt\": \"Present assessments of certainty (or confidence) in the body of evidence for each outcome assessed.\"\n    },\n    {\n        \"delta_id\": \"item-23\",\n        \"change_type\": \"field_removed\",\n        \"impact_level\": \"high\",\n        \"interpretation\": \"The requirement to give results of additional analyses, such as sensitivity or subgroup analyses, meta-regression, has been removed.\",\n        \"worked_example\": \"In the old version, a review would need to report the results of a sensitivity analysis to assess the robustness of the findings. In the new version, this requirement is no longer specified, meaning such analyses may not be reported.\",\n        \"impact_summary\": \"This removal could lead to less comprehensive reporting of the robustness and variability of the findings, potentially affecting the interpretation and application of the review.\",\n        \"resolution_requirement\": \"\",\n        \"uncertainty\": \"low\",\n        \"old_excerpt\": \"Give results of additional analyses, if done (such as sensitivity or subgroup analyses, meta-regression [see item 16])\",\n        \"new_excerpt\": \"\"\n    },\n    {\n        \"delta_id\": \"item-24\",\n        \"change_type\": \"field_removed\",\n        \"impact_level\": \"high\",\n        \"interpretation\": \"The requirement to summarize the main findings, including the strength of evidence for each main outcome and their relevance to key groups, has been removed.\",\n        \"worked_example\": \"In the old version, a review would need to summarize the main findings and discuss their relevance to health care providers, users, and policy makers. In the new version, this requirement is no longer specified, meaning such a summary may not be provided.\",\n        \"impact_summary\": \"This removal could result in a lack of clear, actionable conclusions and a reduced emphasis on the practical implications of the findings for different stakeholders.\",\n        \"resolution_requirement\": \"\",\n        \"uncertainty\": \"low\",\n        \"old_excerpt\": \"Summarise the main findings including the strength of evidence for each main outcome; consider their relevance to key groups (such as health care providers, users, and policy makers)\",\n        \"new_excerpt\": \"\"\n    }\n]",
+    "written_at_utc": "2026-11-08T10:31:48Z",
+    "raw_response": "[\n  {\n    \"delta_id\": \"item-18-to-17\",\n    \"change_type\": \"field_renamed\",\n    \"impact_level\": \"low\",\n    \"interpretation\": \"The requirement to present study characteristics and provide citations for each included study is maintained, but the item number has changed from 18 to 17.\",\n    \"worked_example\": \"\",\n    \"impact_summary\": \"The change is purely in the numbering of the item. The content and requirements remain the same, leading to no impact on the operational meaning or compliance status.\",\n    \"resolution_requirement\": \"\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"For each study, present characteristics for which data were extracted (such as study size, PICOS, follow-up period) and provide the citations\",\n    \"new_excerpt\": \"Cite each included study and present its characteristics.\"\n  },\n  {\n    \"delta_id\": \"item-20-to-19\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"There is a shift in how the results of individual studies should be presented, with the new version providing more specific guidance on the presentation format and the type of data to be reported.\",\n    \"worked_example\": \"Under PRISMA 2009, if a study did not report confidence intervals, it might still be compliant by presenting simple summary data and effect estimates. Under PRISMA 2020, this would not be fully compliant without an explicit statement of precision, such as a credible interval, where confidence intervals are not available.\",\n    \"impact_summary\": \"The new version requires a more structured approach to reporting, potentially changing the way researchers and reviewers handle and interpret the data. This could lead to changes in the presentation of results, particularly emphasizing the need for precision measures.\",\n    \"resolution_requirement\": \"Evidence must now include a clear demonstration that all outcomes have been reported with both summary statistics and an effect estimate with a measure of precision, using structured tables or plots where appropriate.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"For all outcomes considered (benefits or harms), present for each study (a) simple summary data for each intervention group and (b) effect estimates and confidence intervals, ideally with a forest plot\",\n    \"new_excerpt\": \"For all outcomes, present, for each study: (a) summary statistics for each group (where appropriate) and (b) an effect estimate and its precision (e.g. confidence/credible interval), ideally using structured tables or plots.\"\n  }\n]",
     "old_id": "PRISMA 2009",
     "new_id": "PRISMA 2020",
     "pair_keys": [
-      "item-22",
-      "item-23",
-      "item-24"
+      "item-18",
+      "item-20"
     ]
   },
   "payload": [
     {
-      "delta_id": "item-22",
+      "delta_id": "item-18-to-17",
+      "change_type": "field_renamed",
+      "impact_level": "low",
+      "interpretation": "The requirement to present study characteristics and provide citations for each included study is maintained, but the item number has changed from 18 to 17.",
+      "worked_example": "",
+      "impact_summary": "The change is purely in the numbering of the item. The content and requirements remain the same, leading to no impact on the operational meaning or compliance status.",
+      "resolution_requirement": "",
+      "uncertainty": "low",
+      "old_excerpt": "For each study, present characteristics for which data were extracted (such as study size, PICOS, follow-up period) and provide the citations",
+      "new_excerpt": "Cite each included study and present its characteristics."
+    },
+    {
+      "delta_id": "item-20-to-19",
       "change_type": "semantic_shift",
       "impact_level": "medium",
-      "interpretation": "The focus has shifted from presenting the risk of bias across studies to presenting the certainty (or confidence) in the body of evidence for each outcome. This is a significant change in the scope and nature of the information required.",
-      "worked_example": "Under the old version, a review might report that there was a high risk of bias across studies due to poor blinding. Under the new version, the same review would need to present the level of certainty (e.g., high, moderate, low, very low) for each specific outcome, which may involve different criteria and methods.",
-      "impact_summary": "This shift changes the type of analysis and reporting required, moving from a general assessment of bias to a more nuanced evaluation of the certainty of evidence for each outcome.",
-      "resolution_requirement": "Evidence must now include an assessment of the certainty (or confidence) in the body of evidence for each outcome, using appropriate tools or frameworks (e.g., GRADE).",
+      "interpretation": "There is a shift in how the results of individual studies should be presented, with the new version providing more specific guidance on the presentation format and the type of data to be reported.",
+      "worked_example": "Under PRISMA 2009, if a study did not report confidence intervals, it might still be compliant by presenting simple summary data and effect estimates. Under PRISMA 2020, this would not be fully compliant without an explicit statement of precision, such as a credible interval, where confidence intervals are not available.",
+      "impact_summary": "The new version requires a more structured approach to reporting, potentially changing the way researchers and reviewers handle and interpret the data. This could lead to changes in the presentation of results, particularly emphasizing the need for precision measures.",
+      "resolution_requirement": "Evidence must now include a clear demonstration that all outcomes have been reported with both summary statistics and an effect estimate with a measure of precision, using structured tables or plots where appropriate.",
       "uncertainty": "low",
-      "old_excerpt": "Present results of any assessment of risk of bias across studies (see item 15)",
-      "new_excerpt": "Present assessments of certainty (or confidence) in the body of evidence for each outcome assessed."
-    },
-    {
-      "delta_id": "item-23",
-      "change_type": "field_removed",
-      "impact_level": "high",
-      "interpretation": "The requirement to give results of additional analyses, such as sensitivity or subgroup analyses, meta-regression, has been removed.",
-      "worked_example": "In the old version, a review would need to report the results of a sensitivity analysis to assess the robustness of the findings. In the new version, this requirement is no longer specified, meaning such analyses may not be reported.",
-      "impact_summary": "This removal could lead to less comprehensive reporting of the robustness and variability of the findings, potentially affecting the interpretation and application of the review.",
-      "resolution_requirement": "",
-      "uncertainty": "low",
-      "old_excerpt": "Give results of additional analyses, if done (such as sensitivity or subgroup analyses, meta-regression [see item 16])",
-      "new_excerpt": ""
-    },
-    {
-      "delta_id": "item-24",
-      "change_type": "field_removed",
-      "impact_level": "high",
-      "interpretation": "The requirement to summarize the main findings, including the strength of evidence for each main outcome and their relevance to key groups, has been removed.",
-      "worked_example": "In the old version, a review would need to summarize the main findings and discuss their relevance to health care providers, users, and policy makers. In the new version, this requirement is no longer specified, meaning such a summary may not be provided.",
-      "impact_summary": "This removal could result in a lack of clear, actionable conclusions and a reduced emphasis on the practical implications of the findings for different stakeholders.",
-      "resolution_requirement": "",
-      "uncertainty": "low",
-      "old_excerpt": "Summarise the main findings including the strength of evidence for each main outcome; consider their relevance to key groups (such as health care providers, users, and policy makers)",
-      "new_excerpt": ""
+      "old_excerpt": "For all outcomes considered (benefits or harms), present for each study (a) simple summary data for each intervention group and (b) effect estimates and confidence intervals, ideally with a forest plot",
+      "new_excerpt": "For all outcomes, present, for each study: (a) summary statistics for each group (where appropriate) and (b) an effect estimate and its precision (e.g. confidence/credible interval), ideally using structured tables or plots."
     }
   ]
 }

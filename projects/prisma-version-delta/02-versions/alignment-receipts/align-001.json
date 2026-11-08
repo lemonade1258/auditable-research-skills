@@ -1,0 +1,29 @@
+{
+  "receipt": {
+    "purpose": "version-delta.verify_alignment",
+    "model": "qwen-max",
+    "prompt_digest": "172266926b593620",
+    "attempts": 1,
+    "latency_ms": 7118,
+    "usage": {
+      "prompt_tokens": 304,
+      "completion_tokens": 54,
+      "total_tokens": 358,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      }
+    },
+    "written_at_utc": "2026-11-08T10:27:29Z",
+    "raw_response": "{\"verdict\": \"ALIGN\", \"confidence\": \"high\", \"reason\": \"Both items require the title to identify the report as a systematic review, with the 2009 version also allowing for meta-analysis which is a specific type of systematic review.\"}",
+    "old_unit_id": "item-1",
+    "new_unit_id": "item-1",
+    "old_title": "Title",
+    "new_title": "Title",
+    "verdict": "ALIGN"
+  },
+  "payload": {
+    "verdict": "ALIGN",
+    "confidence": "high",
+    "reason": "Both items require the title to identify the report as a systematic review, with the 2009 version also allowing for meta-analysis which is a specific type of systematic review."
+  }
+}

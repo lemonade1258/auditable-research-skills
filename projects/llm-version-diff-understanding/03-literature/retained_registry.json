@@ -1,0 +1,2112 @@
+[
+  {
+    "paper_id": "W4404781152",
+    "openalex_id": "https://openalex.org/W4404781152",
+    "title": "On Evaluating Explanation Utility for Human-AI Decision Making in NLP",
+    "authors": [
+      "Fateme Hashemi Chaleshtori",
+      "Atreya Ghosal",
+      "Alexander Gill",
+      "Purbid Bambroo",
+      "Ana Marasović"
+    ],
+    "year": 2024,
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP)",
+    "doi": "https://doi.org/10.18653/v1/2024.findings-emnlp.439",
+    "source_url": "https://doi.org/10.18653/v1/2024.findings-emnlp.439",
+    "authority_tier": "A",
+    "authority_reason": "venue marker",
+    "abstract": "Is explainability a false promise? This debate has emerged from the insufficient evidence that explanations help people in situations they are introduced for. More human-centered, application-grounded evaluations of explanations are needed to settle this. Yet, with no established guidelines for such studies in NLP, researchers accustomed to standardized proxy evaluations must discover appropriate measurements, tasks, datasets, and sensible models for human-AI teams in their studies. To aid with this, we first review existing metrics suitable for application-grounded evaluation. We then establish criteria to select appropriate datasets, and using them, we find that only 4 out of over 50 datasets available for explainability research in NLP meet them. We then demonstrate the importance of reassessing the state of the art to form and study human-AI teams: teaming people with models for certain tasks might only now start to make sense, and for others, it remains unsound. Finally, we present the exemplar studies of human-AI decision-making for one of the identified tasks -- verifying the correctness of a legal claim given a contract. Our results show that providing AI predictions, with or without explanations, does not cause decision makers to speed up their work without compromising performance. We argue for revisiting the setup of human-AI teams and improving automatic deferral of instances to AI, where explanations could play a useful role.",
+    "cited_by_count": 15,
+    "discovery_routes": [
+      "openalex:search:semantic diff text revision understanding NLP"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "evidence",
+      "application"
+    ],
+    "curation_score": 30.873,
+    "retained": true
+  },
+  {
+    "paper_id": "W4416035724",
+    "openalex_id": "https://openalex.org/W4416035724",
+    "title": "Detecting Legal Citations in United Kingdom Court Judgments",
+    "authors": [
+      "Holli Sargeant",
+      "Andreas Östling",
+      "Måns Magnusson"
+    ],
+    "year": 2025,
+    "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    "doi": "https://doi.org/10.18653/v1/2025.emnlp-main.1361",
+    "source_url": "https://doi.org/10.18653/v1/2025.emnlp-main.1361",
+    "authority_tier": "A",
+    "authority_reason": "venue marker",
+    "abstract": "Legal citation detection in court judgments underpins reliable precedent mapping, citation analytics, and document retrieval.Extracting references to legislation and case law in the United Kingdom is especially challenging: citation styles have evolved over centuries, and judgments routinely cite foreign or historical authorities.We conduct the first systematic comparison of three modelling paradigms on this task using the Cambridge Law Corpus: (i) rule-based regular expressions; (ii) transformer-based encoders (BERT, RoBERTa, LEGAL-BERT, ModernBERT); and (iii) large language models (GPT-4.1).We produced a gold-standard high-quality corpus of 190 court judgments containing 45,179 fine-grained annotations for UK and non-UK legislation and case references.ModernBERT achieves a macroaveraged F1 of 93.3%,only marginally ahead of the other encoder-only models, yet significantly outperforming the strongest regularexpression baseline (35.42% F1) and GPT-4.1 (76.57%F1).",
+    "cited_by_count": 1,
+    "discovery_routes": [
+      "openalex:search:legal document amendment detection BERT"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "evidence",
+      "application"
+    ],
+    "curation_score": 28.0,
+    "retained": true
+  },
+  {
+    "paper_id": "W4385567241",
+    "openalex_id": "https://openalex.org/W4385567241",
+    "title": "arXivEdits: Understanding the Human Revision Process in Scientific Writing",
+    "authors": [
+      "Chao Jiang",
+      "Wei Hong Xu",
+      "Samuel Stevens"
+    ],
+    "year": 2022,
+    "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    "doi": "https://doi.org/10.18653/v1/2022.emnlp-main.641",
+    "source_url": "https://doi.org/10.18653/v1/2022.emnlp-main.641",
+    "authority_tier": "A",
+    "authority_reason": "venue marker",
+    "abstract": "Scientific publications are the primary means to communicate research discoveries, where the writing quality is of crucial importance.However, prior work studying the human editing process in this domain mainly focused on the abstract or introduction sections, resulting in an incomplete picture.In this work, we provide a complete computational framework for studying text revision in scientific writing.We first introduce ARXIVEDITS, a new annotated corpus of 751 full papers from arXiv with gold sentence alignment across their multiple versions of revision, as well as fine-grained span-level edits and their underlying intentions for 1,000 sentence pairs.It supports our datadriven analysis to unveil the common strategies practiced by researchers for revising their papers.To scale up the analysis, we also develop automatic methods to extract revision at document-, sentence-, and word-levels.A neural CRF sentence alignment model trained on our corpus achieves 93.8 F1, enabling the reliable matching of sentences between different versions.We formulate the edit extraction task as a span alignment problem, and our proposed method extracts more fine-grained and explainable edits, compared to the commonly used diff algorithm.An intention classifier trained on our dataset achieves 78.9 F1 on the finegrained intent classification task.Our data and system are released at tiny.one/arxivedits.",
+    "cited_by_count": 18,
+    "discovery_routes": [
+      "openalex:search:semantic diff text revision understanding NLP"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 24.243,
+    "retained": true
+  },
+  {
+    "paper_id": "W2758097047",
+    "openalex_id": "https://openalex.org/W2758097047",
+    "title": "Identifying Semantic Edit Intentions from Revisions in Wikipedia",
+    "authors": [
+      "Diyi Yang",
+      "Aaron Halfaker",
+      "Robert E. Kraut",
+      "Eduard H. Hovy"
+    ],
+    "year": 2017,
+    "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    "doi": "https://doi.org/10.18653/v1/d17-1213",
+    "source_url": "https://doi.org/10.18653/v1/d17-1213",
+    "authority_tier": "A",
+    "authority_reason": "venue marker",
+    "abstract": "Most studies on human editing focus merely on syntactic revision operations, failing to capture the intentions behind revision changes, which are essential for facilitating the single and collaborative writing process.In this work, we develop in collaboration with Wikipedia editors a 13-category taxonomy of the semantic intention behind edits in Wikipedia articles.Using labeled article edits, we build a computational classifier of intentions that achieved a micro-averaged F1 score of 0.621.We use this model to investigate edit intention effectiveness: how different types of edits predict the retention of newcomers and changes in the quality of articles, two key concerns for Wikipedia today.Our analysis shows that the types of edits that users make in their first session predict their subsequent survival as Wikipedia editors, and articles in different stages need different types of edits.",
+    "cited_by_count": 73,
+    "discovery_routes": [
+      "openalex:search:semantic diff text revision understanding NLP"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 22.544,
+    "retained": true
+  },
+  {
+    "paper_id": "W7110917350",
+    "openalex_id": "https://openalex.org/W7110917350",
+    "title": "TxSum: User-Centered Ethereum Transaction Understanding with Micro-Level Semantic Grounding",
+    "authors": [
+      "Zifan Peng",
+      "Jingyi Zheng",
+      "Yule Liu",
+      "Huaiyu Jia",
+      "Qiming Ye",
+      "Jingyu Liu",
+      "Xufeng Yang",
+      "Mingchen Li",
+      "Qingyuan Gong",
+      "Xuechao Wang",
+      "Xinlei He"
+    ],
+    "year": 2026,
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP)",
+    "doi": "https://doi.org/10.18653/2026.findings-emnlp.366",
+    "source_url": "https://doi.org/10.18653/2026.findings-emnlp.366",
+    "authority_tier": "A",
+    "authority_reason": "venue marker",
+    "abstract": "Understanding the economic intent of Ethereum transactions is critical for user safety, yet current tools expose only raw on-chain data or surface-level intent, leading to widespread \"blind signing\" (approving transactions without understanding them).Through interviews with 16 Web3 users, we find that effective explanations should be structured, risk-aware, and grounded at the token-flow level.Motivated by these findings, we formulate TxSum, a new domain-grounded NLP task for DeFi transaction explanation, and construct a dataset of 187 complex Ethereum transactions with 2,375 token-flow annotations and transaction-level summaries.We further introduce MATEX, a grounded multi-agent framework for high-stakes transaction explanation.It selectively retrieves external knowledge under uncertainty and audits explanations against raw traces to improve token-flow-level factual consistency.MATEX achieves the strongest overall explanation quality, especially on micro-level factuality and intent quality.It improves user comprehension on complex transactions from 52.9% to 76.5% over the strongest baseline and raises malicious-transaction rejection from 36.0% to 88.0%, while maintaining a low false-rejection rate on benign transactions.",
+    "cited_by_count": 2,
+    "discovery_routes": [
+      "openalex:search:semantic diff text revision understanding NLP"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "evidence",
+      "application"
+    ],
+    "curation_score": 22.414,
+    "retained": true
+  },
+  {
+    "paper_id": "W7166881797",
+    "openalex_id": "https://openalex.org/W7166881797",
+    "title": "Making Revisions Understandable: A Survey of Edit Intentions, Methods, and Applications",
+    "authors": [
+      "Fangping Lan",
+      "Qi Zhang",
+      "Eduard Constantin Dragut"
+    ],
+    "year": 2026,
+    "venue": "Findings of the Association for Computational Linguistics: ACL (Findings of ACL)",
+    "doi": "https://doi.org/10.18653/v1/2026.findings-acl.1747",
+    "source_url": "https://doi.org/10.18653/v1/2026.findings-acl.1747",
+    "authority_tier": "A",
+    "authority_reason": "venue marker",
+    "abstract": "Text revision is a core process in document creation, capturing how authors iteratively refine, reorganize, and improve written content.With the increasing availability of large-scale revision histories from platforms such as Wikipedia and arXiv, NLP research has begun to move beyond modeling what changes are made to understanding why they are made, i.e., the underlying edit intentions.To our knowledge, this is the first survey 1 that synthesizes text revision research through the lens of edit intentions, providing a unified view of datasets, taxonomies, identification methods, and applications.We review prior work across the full revision workflow, including revision corpus construction, edit intention taxonomy design, and edit intention identification.We further categorize representative datasets and methods, summarize downstream applications such as writing assistance and document edit summarization, and highlight key open research directions.",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:semantic diff text revision understanding NLP"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 22.0,
+    "retained": true
+  },
+  {
+    "paper_id": "W7166804489",
+    "openalex_id": "https://openalex.org/W7166804489",
+    "title": "ComicVQA: A Benchmark for Visual Reasoning in Multimodal LLMs",
+    "authors": [
+      "Eric Gan",
+      "H. Alex Brown",
+      "David Herel",
+      "Kenji Kawaguchi",
+      "Min‐Yen Kan",
+      "Michael Shieh"
+    ],
+    "year": 2026,
+    "venue": "Findings of the Association for Computational Linguistics: ACL (Findings of ACL)",
+    "doi": "https://doi.org/10.18653/v1/2026.findings-acl.1268",
+    "source_url": "https://doi.org/10.18653/v1/2026.findings-acl.1268",
+    "authority_tier": "A",
+    "authority_reason": "venue marker",
+    "abstract": "We introduce Comic Visual Question Answering (ComicVQA), a comics-based benchmark for evaluating MLLMs on visual reasoning.ComicVQA comprises of (i) Missing Panel Prediction, testing fine-grained visual grounding and (ii) Panel Sorting, which evaluates sequential narrative understanding.Proprietary models achieve up to 62.6% on Missing Panel Prediction and 46.4% on Panel Sorting, whereas open-source models reach only 47.7% and 26.9%, respectively.In contrast, human annotators achieve over 83% accuracy on both tasks, revealing a large gap between current models and human-level multimodal understanding in comics.Through controlled ordering ablations and a detailed error taxonomy, we show that current MLLMs rely primarily on coarse temporal cues and struggle with fine-grained visual reasoning.These findings demonstrate ComicVQA as a diagnostic benchmark for advancing multimodal visual reasoning in comics. 1",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:benchmark LLM reasoning about differences between documents"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "evidence"
+    ],
+    "curation_score": 21.0,
+    "retained": true
+  },
+  {
+    "paper_id": "W4416034213",
+    "openalex_id": "https://openalex.org/W4416034213",
+    "title": "Efficient Layer-wise LLM Fine-tuning for Revision Intention Prediction",
+    "authors": [
+      "Zhexiong Liu",
+      "Diane J. Litman"
+    ],
+    "year": 2025,
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP)",
+    "doi": "https://doi.org/10.18653/v1/2025.findings-emnlp.829",
+    "source_url": "https://doi.org/10.18653/v1/2025.findings-emnlp.829",
+    "authority_tier": "A",
+    "authority_reason": "venue marker",
+    "abstract": "Large Language Models (LLMs) have shown extraordinary success across various text generation tasks; however, their potential for simple yet essential text classification remains underexplored, as LLM pre-training tends to emphasize generation over classification.While LLMs with instruction tuning can transform classification into a generation task, they often struggle to categorize nuanced texts.One such example is text revision, which involves nuanced edits between pairs of texts.Although simply finetuning LLMs for revision classification seems plausible, it requires a large amount of revision annotations, which are exceptionally expensive and scarce in the community.To address this issue, we introduce a plug-and-play layer-wise parameter-efficient fine-tuning (PEFT) framework, i.e., IR-Tuning, which fine-tunes a subset of important LLM layers that are dynamically selected based on their gradient norm distribution, while freezing those of redundant layers.Extensive experiments suggest that IR-Tuning surpasses several layer-wise PEFT baselines over diverse text revisions, while achieving fast convergence, low GPU memory consumption, and effectiveness on small revision corpora.",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:surgical text revision alignment paragraph"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 21.0,
+    "retained": true
+  },
+  {
+    "paper_id": "W4391136507",
+    "openalex_id": "https://openalex.org/W4391136507",
+    "title": "A Survey on Evaluation of Large Language Models",
+    "authors": [
+      "Yupeng Chang",
+      "Xu Wang",
+      "Jindong Wang",
+      "Yuan Wu",
+      "Linyi Yang",
+      "Kaijie Zhu",
+      "Hao Chen",
+      "Xiaoyuan Yi",
+      "Cunxiang Wang",
+      "Yidong Wang",
+      "Wei Ye",
+      "Yue Zhang",
+      "Yi Chang",
+      "Philip S. Yu",
+      "Qiang Yang",
+      "Xing Xie"
+    ],
+    "year": 2024,
+    "venue": "ACM Transactions on Intelligent Systems and Technology",
+    "doi": "https://doi.org/10.1145/3641289",
+    "source_url": "https://doi.org/10.1145/3641289",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Large language models (LLMs) are gaining increasing popularity in both academia and industry, owing to their unprecedented performance in various applications. As LLMs continue to play a vital role in both research and daily use, their evaluation becomes increasingly critical, not only at the task level, but also at the society level for better understanding of their potential risks. Over the past years, significant efforts have been made to examine LLMs from various perspectives. This paper presents a comprehensive review of these evaluation methods for LLMs, focusing on three key dimensions: what to evaluate , where to evaluate , and how to evaluate . Firstly, we provide an overview from the perspective of evaluation tasks, encompassing general natural language processing tasks, reasoning, medical usage, ethics, education, natural and social sciences, agent applications, and other areas. Secondly, we answer the ‘where’ and ‘how’ questions by diving into the evaluation methods and benchmarks, which serve as crucial components in assessing the performance of LLMs. Then, we summarize the success and failure cases of LLMs in different tasks. Finally, we shed light on several future challenges that lie ahead in LLMs evaluation. Our aim is to offer invaluable insights to researchers in the realm of LLMs evaluation, thereby aiding the development of more proficient LLMs. Our key point is that evaluation should be treated as an essential discipline to better assist the development of LLMs. We consistently maintain the related open-source materials at: https://github.com/MLGroupJLU/LLM-eval-survey",
+    "cited_by_count": 4245,
+    "discovery_routes": [
+      "openalex:search:document version change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "application"
+    ],
+    "curation_score": 44.361,
+    "retained": true
+  },
+  {
+    "paper_id": "W4361866125",
+    "openalex_id": "https://openalex.org/W4361866125",
+    "title": "BloombergGPT: A Large Language Model for Finance",
+    "authors": [
+      "Shijie Wu",
+      "Ozan İrsoy",
+      "Steven Z. Lu",
+      "Vadim Dabravolski",
+      "Mark H. Dredze",
+      "Sebastian Gehrmann",
+      "Prabhanjan Kambadur",
+      "David Rosenberg",
+      "Mann, Gideon"
+    ],
+    "year": 2023,
+    "venue": "RePEc: Research Papers in Economics",
+    "doi": "https://doi.org/10.48550/arxiv.2303.17564",
+    "source_url": "https://doi.org/10.48550/arxiv.2303.17564",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "The use of NLP in the realm of financial technology is broad and complex, with applications ranging from sentiment analysis and named entity recognition to question answering. Large Language Models (LLMs) have been shown to be effective on a variety of tasks; however, no LLM specialized for the financial domain has been reported in literature. In this work, we present BloombergGPT, a 50 billion parameter language model that is trained on a wide range of financial data. We construct a 363 billion token dataset based on Bloomberg's extensive data sources, perhaps the largest domain-specific dataset yet, augmented with 345 billion tokens from general purpose datasets. We validate BloombergGPT on standard LLM benchmarks, open financial benchmarks, and a suite of internal benchmarks that most accurately reflect our intended usage. Our mixed dataset training leads to a model that outperforms existing models on financial tasks by significant margins without sacrificing performance on general LLM benchmarks. Additionally, we explain our modeling choices, training process, and evaluation methodology. We release Training Chronicles (Appendix C) detailing our experience in training BloombergGPT.",
+    "cited_by_count": 1804,
+    "discovery_routes": [
+      "openalex:search:document version change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "application"
+    ],
+    "curation_score": 43.361,
+    "retained": true
+  },
+  {
+    "paper_id": "W2764148593",
+    "openalex_id": "https://openalex.org/W2764148593",
+    "title": "ACC/AHA 2005 Guideline Update for the Diagnosis and Management of Chronic Heart Failure in the Adult",
+    "authors": [
+      "Sharon A. Hunt",
+      "William T. Abraham",
+      "Marshall H. Chin",
+      "Arthur Michael Feldman",
+      "Gary S. Francis",
+      "Théodore G. Ganiats",
+      "Mariell L Jessup",
+      "Marvin A. Konstam",
+      "DONNA M. MANCINI",
+      "Keith Michl",
+      "John A. Oates",
+      "Peter S. Rahko",
+      "Marc A. Silver",
+      "Lynne Warner Stevenson",
+      "Clyde W. Yancy",
+      "Elliott Marshall Antman",
+      "Sidney C. Smith",
+      "Cynthia D. Adams",
+      "Jeffrey L. Anderson",
+      "David P. Faxon"
+    ],
+    "year": 2005,
+    "venue": "Circulation",
+    "doi": "https://doi.org/10.1161/circulationaha.105.167586",
+    "source_url": "https://doi.org/10.1161/circulationaha.105.167586",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "It is important that the medical profession play a significant role in critically evaluating the use of diagnostic procedures and therapies as they are introduced and tested in the detection, management, or prevention of disease states.Rigorous and expert analysis of the available data documenting relative benefits and risks of those procedures and therapies can produce helpful guidelines that improve the effectiveness of care, optimize patient outcomes, and favorably affect the overall cost of care by focusing resources on the most effective strategies.The American College of Cardiology (ACC) and the American Heart Association (AHA) have jointly engaged in the production of such guidelines in the area of cardiovascular disease since 1980.This effort is directed by the ACC/AHA Task Force on Practice Guidelines, whose charge is to develop and revise practice guidelines for important cardiovascular diseases and procedures.Experts in the subject under consideration are selected from both organizations and charged with examining subject-specific data and writing or updating these guidelines.The process includes additional representatives from other medical practitioner and specialty groups where appropriate.Writing groups are specifically charged to perform a formal literature review, weigh the strength of evidence for or against a particular treatment or procedure, and include estimates of expected health outcomes where data exist.Patient-specific modifiers, comorbidities, and issues of patient preference that might influence the choice of particular tests or therapies are considered, as are frequency of follow-up and cost-effectiveness.When available, information from studies on cost will be considered; however, review of data on efficacy and clinical out-e156",
+    "cited_by_count": 2267,
+    "discovery_routes": [
+      "openalex:search:guideline update comparison automatic"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "evidence",
+      "application"
+    ],
+    "curation_score": 40.361,
+    "retained": true
+  },
+  {
+    "paper_id": "W4415795271",
+    "openalex_id": "https://openalex.org/W4415795271",
+    "title": "Gorilla: Large Language Model Connected with Massive APIs",
+    "authors": [
+      "Shishir G. Patil",
+      "Tianjun Zhang",
+      "Xin Wang",
+      "Joseph Gonzalez"
+    ],
+    "year": 2024,
+    "venue": "neural information processing systems",
+    "doi": "https://doi.org/10.52202/079017-4020",
+    "source_url": "https://doi.org/10.52202/079017-4020",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Large Language Models (LLMs) have seen an impressive wave of advances recently, with models now excelling in a variety of tasks, such as mathematical reasoning and program synthesis. However, their potential to effectively use tools via API calls remains unfulfilled. This is a challenging task even for today's state-of-the-art LLMs such as GPT-4, largely due to their inability to generate accurate input arguments and their tendency to hallucinate the wrong usage of an API call. We release Gorilla, a finetuned LLaMA-based model that surpasses the performance of GPT-4 on writing API calls. When combined with a document retriever, Gorilla demonstrates a strong capability to adapt to test-time document changes, enabling flexible user updates or version changes. It also substantially mitigates the issue of hallucination, commonly encountered when prompting LLMs directly. To evaluate the model's ability, we introduce APIBench, a comprehensive dataset consisting of HuggingFace, TorchHub, and TensorHub APIs. The successful integration of the retrieval system with Gorilla demonstrates the potential for LLMs to use tools more accurately, keep up with frequently updated documentation, and consequently increase the reliability and applicability of their outputs. Gorilla's code, model, data, and demo are available at https://gorilla.cs.berkeley.edu",
+    "cited_by_count": 1091,
+    "discovery_routes": [
+      "openalex:search:document version change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 40.361,
+    "retained": true
+  },
+  {
+    "paper_id": "W4400141990",
+    "openalex_id": "https://openalex.org/W4400141990",
+    "title": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+    "authors": [
+      "White, Colin",
+      "Samuel W. Dooley",
+      "Manley Roberts",
+      "Arka Pal",
+      "Ben Feuer",
+      "Siddhartha Jain",
+      "Ravid Shwartz-Ziv",
+      "Neel Jain",
+      "Saifullah, Khalid",
+      "Dey, Sreemanti",
+      "Shubh-Agrawal",
+      "Sandha, Sandeep Singh",
+      "Siddartha Naidu",
+      "Chinmay Hegde",
+      "Yann LeCun",
+      "Tom Goldstein",
+      "Willie Neiswanger",
+      "Micah Goldblum"
+    ],
+    "year": 2024,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2406.19314",
+    "source_url": "https://doi.org/10.48550/arxiv.2406.19314",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Test set contamination, wherein test data from a benchmark ends up in a newer model's training set, is a well-documented obstacle for fair LLM evaluation and can quickly render benchmarks obsolete. To mitigate this, many recent benchmarks crowdsource new prompts and evaluations from human or LLM judges; however, these can introduce significant biases, and break down when scoring hard questions. In this work, we introduce a new benchmark for LLMs designed to be resistant to both test set contamination and the pitfalls of LLM judging and human crowdsourcing. We release LiveBench, the first benchmark that (1) contains frequently-updated questions from recent information sources, (2) scores answers automatically according to objective ground-truth values, and (3) contains a wide variety of challenging tasks, spanning math, coding, reasoning, language, instruction following, and data analysis. To achieve this, LiveBench contains questions that are based on recently-released math competitions, arXiv papers, news articles, and datasets, and it contains harder, contamination-limited versions of tasks from previous benchmarks such as Big-Bench Hard, AMPS, and IFEval. We evaluate many prominent closed-source models, as well as dozens of open-source models ranging from 0.5B to 405B in size. LiveBench is difficult, with top models achieving below 70% accuracy. We release all questions, code, and model answers. Questions are added and updated on a monthly basis, and we release new tasks and harder versions of tasks over time so that LiveBench can distinguish between the capabilities of LLMs as they improve in the future. We welcome community engagement and collaboration for expanding the benchmark tasks and models.",
+    "cited_by_count": 423,
+    "discovery_routes": [
+      "openalex:search:benchmark LLM reasoning about differences between documents"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 38.567,
+    "retained": true
+  },
+  {
+    "paper_id": "W4391766565",
+    "openalex_id": "https://openalex.org/W4391766565",
+    "title": "Large Language Models: A Survey",
+    "authors": [
+      "Shervin Minaee",
+      "Tomáš Mikolov",
+      "Nikzad, Narjes",
+      "Meysam Asgari-Chenaghlu",
+      "Richard Socher",
+      "Xavier Amatriain",
+      "Jianfeng Gao"
+    ],
+    "year": 2024,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2402.06196",
+    "source_url": "https://doi.org/10.48550/arxiv.2402.06196",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Large Language Models (LLMs) have drawn a lot of attention due to their strong performance on a wide range of natural language tasks, since the release of ChatGPT in November 2022. LLMs' ability of general-purpose language understanding and generation is acquired by training billions of model's parameters on massive amounts of text data, as predicted by scaling laws \\cite{kaplan2020scaling,hoffmann2022training}. The research area of LLMs, while very recent, is evolving rapidly in many different ways. In this paper, we review some of the most prominent LLMs, including three popular LLM families (GPT, LLaMA, PaLM), and discuss their characteristics, contributions and limitations. We also give an overview of techniques developed to build, and augment LLMs. We then survey popular datasets prepared for LLM training, fine-tuning, and evaluation, review widely used LLM evaluation metrics, and compare the performance of several popular LLMs on a set of representative benchmarks. Finally, we conclude the paper by discussing open challenges and future research directions.",
+    "cited_by_count": 1847,
+    "discovery_routes": [
+      "openalex:search:document version change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 38.361,
+    "retained": true
+  },
+  {
+    "paper_id": "W4362515116",
+    "openalex_id": "https://openalex.org/W4362515116",
+    "title": "A Survey of Large Language Models",
+    "authors": [
+      "Wayne Xin Zhao",
+      "Kun Zhou",
+      "Junyi Li",
+      "Tianyi Tang",
+      "Zican Dong",
+      "Yupeng Hou",
+      "Beichen Zhang",
+      "Yingqian Min",
+      "Junjie Zhang",
+      "Peiyu Liu",
+      "Xiaolei Wang",
+      "Yifan Du",
+      "Yushuo Chen",
+      "Yushuo Chen",
+      "Zhipeng Chen",
+      "Jinhao Jiang",
+      "Ruiyang Ren",
+      "Yifan Li",
+      "Xinyu Tang",
+      "Peiyu Liu"
+    ],
+    "year": 2026,
+    "venue": "Frontiers of Computer Science",
+    "doi": "https://doi.org/10.1007/s11704-026-60308-3",
+    "source_url": "https://doi.org/10.1007/s11704-026-60308-3",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Abstract The rapid evolution of large language models (LLMs) has driven a transformative shift in artificial intelligence (AI), reshaping both research paradigms and practical applications. Distinguished from their predecessors by unprecedented scale and advanced capabilities, LLMs necessitate new frameworks for understanding their development, behavior, and societal impact. This survey systematically reviews recent advancements in LLM techniques across four key dimensions: (1) pre-training methodologies, which establish core model capabilities through large-scale self-supervised training, architectural innovations, and data curation strategies; (2) post-training techniques, including supervised fine-tuning and reinforcement learning, which adapt foundational models to downstream tasks and enhance their alignment and safety; (3) utilization strategies, such as in-context learning, prompt engineering, and agentic reasoning, that optimize real-world deployment and enable effective interaction with external environments; and (4) evaluation methods, encompassing benchmarks for key ability dimensions such as core language capabilities, reasoning, and safety, which support comprehensive and reliable assessment of model performance. Additionally, we identify critical research issues, including those concerning theoretical foundations, efficient scaling, alignment, and agentic capability, and highlight the open challenges they present. By synthesizing state-of-the-art insights and emerging trends, this survey aims to provide a systematic and comprehensive framework for understanding the trajectory, current limitations, and future directions of LLM progress.",
+    "cited_by_count": 8087,
+    "discovery_routes": [
+      "openalex:search:document version change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 37.361,
+    "retained": true
+  },
+  {
+    "paper_id": "W2095601341",
+    "openalex_id": "https://openalex.org/W2095601341",
+    "title": "Systematic review automation technologies",
+    "authors": [
+      "Guy Tsafnat",
+      "Paul Glasziou",
+      "Miew Keen Choong",
+      "Adam G. Dunn",
+      "Filippo Galgani",
+      "Enrico W Coiera"
+    ],
+    "year": 2014,
+    "venue": "Systematic Reviews",
+    "doi": "https://doi.org/10.1186/2046-4053-3-74",
+    "source_url": "https://doi.org/10.1186/2046-4053-3-74",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Systematic reviews, a cornerstone of evidence-based medicine, are not produced quickly enough to support clinical practice. The cost of production, availability of the requisite expertise and timeliness are often quoted as major contributors for the delay. This detailed survey of the state of the art of information systems designed to support or automate individual tasks in the systematic review, and in particular systematic reviews of randomized controlled clinical trials, reveals trends that see the convergence of several parallel research projects.We surveyed literature describing informatics systems that support or automate the processes of systematic review or each of the tasks of the systematic review. Several projects focus on automating, simplifying and/or streamlining specific tasks of the systematic review. Some tasks are already fully automated while others are still largely manual. In this review, we describe each task and the effect that its automation would have on the entire systematic review process, summarize the existing information system support for each task, and highlight where further research is needed for realizing automation for the task. Integration of the systems that automate systematic review tasks may lead to a revised systematic review workflow. We envisage the optimized workflow will lead to system in which each systematic review is described as a computer program that automatically retrieves relevant trials, appraises them, extracts and synthesizes data, evaluates the risk of bias, performs meta-analysis calculations, and produces a report in real time.",
+    "cited_by_count": 499,
+    "discovery_routes": [
+      "openalex:search:clinical practice guideline change tracking automation"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "evidence"
+    ],
+    "curation_score": 34.338,
+    "retained": true
+  },
+  {
+    "paper_id": "W4295298787",
+    "openalex_id": "https://openalex.org/W4295298787",
+    "title": "WGO Guideline—Endoscope Disinfection Update",
+    "authors": [
+      "Tony Speer",
+      "Michelle J. Alfa",
+      "Dianne Jones",
+      "Karen Vickery",
+      "Helen Griffiths",
+      "Roque Sáenz",
+      "Anton LeMair"
+    ],
+    "year": 2022,
+    "venue": "Journal of Clinical Gastroenterology",
+    "doi": "https://doi.org/10.1097/mcg.0000000000001759",
+    "source_url": "https://doi.org/10.1097/mcg.0000000000001759",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "The WGO Guideline “Endoscope Disinfection” is intended for use by health providers and professionals who are involved in the use, cleaning, and maintenance of endoscopes and aims to support national societies, official bodies and individual endoscopy departments in developing local standards and protocols for reprocessing endoscopes. This updated Endoscope Disinfection Guideline addresses the recent outbreaks of multi-drug resistant organisms after endoscopy and proposes measures to reduce the risks of these outbreaks occurring. The recommendations are based on the consensus findings of an international multidisciplinary working group with expertise in microbiology, including biofilms, endoscope reprocessing, nursing, and gastroenterology, and with broad experience in developing national and international reprocessing guidelines. - First Name Country 1. Tony Speer (Chair) Australia 2. Michelle Alfa Canada 3. Alistair Cowen Australia 4. Dianne Jones Australia 5. Karen Vickery Australia 6. Helen Griffiths UK 7. Roque Sáenz Chile 8. Anton LeMair Netherlands GUIDELINES OR STANDARDS Reprocessing instructions are often called guidelines but are, in fact, a technical standard that sets out the minimum acceptable practice for reprocessing to deliver high-level disinfection of endoscopes. The distinction between the 2 terms is important. Medical guidelines usually address a narrow clinical question using population-based data, often results of randomized trials in a specific population, to guide the care of an individual patient.1 Standards are broader in the application and set out specifications and procedures designed to ensure products, services, and systems are safe, reliable, and consistently perform the way they were intended. The supporting evidence for a standard is based on science, technology, and experience rather than clinical trials. The standards governing reprocessing are based on the science of cleaning, disinfection, drying, and microbiology, and recommendations are supported by measurements of efficacy in models with artificial soils and/or a known inoculum of bacteria. The implementation of the appropriate standards for reprocessing should follow the general principles of good manufacturing practice (GMP). GMP is a set of regulations, codes, and guidelines for a manufacturing process, in this case reprocessing an endoscope to produce a high-level disinfected endoscope. These regulations cover both performances of reprocessing and quality control of the process. GMP is recognized worldwide for the control and management of manufacturing and quality control testing of pharmaceutical products and has evolved over the last 60 years in response to multiple well-publicized problems in the pharmaceutical industry.2 While the terms guidelines and standards are both used to describe instructions for endoscope reprocessing3,4 these instructions are best considered as a technical standard. General Principles in Endoscope Reprocessing The most important step in endoscope reprocessing is scrupulous manual cleaning before disinfection. Disinfection will fail if the cleaning has been inadequate.5–7 Manual cleaning must be undertaken by a person familiar with the structure of the endoscope and trained in cleaning techniques. Cleaning should begin immediately after the endoscope is used so that biological material does not dry and harden. Appropriate detergents and cleaning equipment should be used; in particular appropriate diameter brushes should be used for each channel. Cleaning should be followed by thorough rinsing to ensure all debris and detergents are removed before disinfection. Manual Cleaning Pre-Cleaning—Immediately after each procedure, with the endoscope still attached to the light source, the insertion tube should be wiped with a lint-free disposable cloth and the distal tip placed in a low foaming medical grade detergent solution and detergent aspirated through all channels, including the suction/biopsy channel. The air/water channels should be flushed with detergent, and then all channels flushed, including the jet channel if present, with water, then air, as per the manufacturer’s instructions. A specific valve may be required to flush the air/water channels with detergent. The endoscope should be removed from the light source and transported to the cleaning area in a closed container that avoids environmental contamination from drip or spill, and that clearly indicates that the endoscope within is contaminated. It is essential that the endoscope is not allowed to dry before further cleaning as this will make the removal of organic matter difficult or impossible. Endoscopes should be processed without delay within 30 minutes. Leak testing should be performed to check the integrity of all channels before further processing. All the valves and buttons should be removed and leak testing performed as per the manufacturer’s instructions. Buttons and valves should be brushed and disinfected, paying particular attention to internal surfaces and high-level disinfection or sterilization according to the original equipment manufacturer’s instructions. The endoscope should be placed in a detergent solution in a sink in the “dirty” section of the decontamination area and the outer surface washed. A low foaming medical grade detergent should be used at the appropriate dilution according to the manufacturer’s instructions. All accessible sections of the suction biopsy channel should be brushed according to the manufacturer's instructions for use, and each channel should be brushed until all debris is removed. The tip and handles and clean valve seats should be brushed and then cleaning adapters fitted and channels flushed with fresh detergent for the product specified time. The endoscope should be rinsed by draining the detergent from the sink, rinsing the outer surface with cold running tap water, then filling the sink with tap water and purging the channels with tap water using the cleaning adapters following the manufacturer’s instructions. The channels should be purged with air to remove rinse water. Disinfection High-level disinfection is performed in an Automatic Flexible Endoscope Reprocessor (AFER) that should comply with the relevant national standard or be approved by the Food and Drug Administration (FDA). The AFER may or may not have an automated cleaning and disinfection cycle. All connectors should be specifically designed for each endoscope model. All channels should be connected at the start and end of a cycle. The detachable components, including the air/water and suction valves, can be steam sterilized or reprocessed with the endoscope if the ability of the AFER to clean and/or disinfect these detachable components is validated by the AFER manufacturer. After high-level disinfection, the endoscope is rinsed in the AFER with bacteria-free water produced by sub-micron filters. Water quality should be checked regularly. Manual high-level disinfection is another option that is effective when performed by well-trained, dedicated reprocessing staff supplied with appropriate personal protective equipment. The endoscope should be immersed in disinfectant, and all channels are filled with disinfectant solution, and the buttons and valves should be immersed in the disinfectant. The instrument should be soaked for the required time at the required temperature and concentration as specified by the disinfectant manufacturer. All channels should be purged with air to remove the disinfectant, the exterior of the endoscope rinsed and the channels flushed with bacteria-free water, with the volume required for the specific disinfectant used, to remove any traces of disinfectant. Drying Endoscopes should be dried after each procedure by purging the water from the channels with compressed air, then flushing the channels with alcohol, followed by forced air drying. Alcohol flush facilitates drying and is a useful adjunct to disinfection because of its bactericidal effects.8 The use of alcohol may not be permitted in some countries (France, UK) because of concerns about variant Creutzfeldt-Jakob disease. The endoscope should be stored in a forced air-drying cabinet to supplement drying. If an endoscope is used infrequently, it is reasonable to store it separately hanging vertically in a purpose-built cabinet as opposed to a forced air storage/drying cabinet, and then reprocess the endoscope before the next patient use. Endoscopes should be dried completely before hanging. Accessories The water bottle should be changed after each endoscopy session and steam sterilized. The water bottle should be filled with sterile water immediately before use. Documentation All essential steps of endoscope reprocessing should be documented for quality assurance and for patient tracing if necessary. OUTBREAKS The recent reports of outbreaks of multi-drug resistant organisms (MDROs) after endoscopy, particularly carbapenem-producing Enterobacteriacae (CPE), have focused critical attention on the efficacy and safety of reprocessing protocols. CPE has become established in the hospital environment and may cause clinical infections with substantial morbidity and mortality because of their antibiotic resistance. Outbreaks of CPE after endoscopy have been reported in several countries often after ERCP9 but also following bronchoscopy,10 gastroscopy,11–13, and flexible cystoscopy.14,15 Often, microbiological surveillance identifies a single source for an outbreak of MDROs that can be traced to a culprit endoscope that has transmitted genetically similar bacteria on multiple occasions despite reprocessing. MDROs may also be transmitted sporadically by endoscopes without a single source being identified by genetic studies. In case-control studies of hospital inpatients, a recent endoscopy, including gastroscopy, bronchoscopy, and ERCP, was a significant risk factor for acquiring MDRO colonization/infection.13,16–18. The risk of transmitting infection at endoscopy is underestimated; a risk of 1 in 1.8 million is often quoted.19 The correlation of an infection with a previous endoscopy is difficult to establish confidently, and if established, is not always reported to authorities and is seldom published.20,21 The paucity of reports from less developed countries is likely to be due to failure of detection and reporting rather than a true absence. Cultures of patient-ready endoscopes provide a better estimate of the problem.22 Cultures of endoscopes performed immediately before a procedure and for routine microbiological surveillance suggest that at least 2-4% of endoscopes, including gastroscopes, colonoscopes, and duodenoscopes are transmitting bacteria.23–26 Transmission of antibiotic-sensitive enteric bacteria at gastroscopy and colonoscopy rarely causes clinical illness; however, transmitted bacteria may colonize the patient.27,28 The recent outbreaks were only identified because of the distinctive features of the CPE, the antibiotic resistance.29 CPE is acting as a marker of transmission, and the emergence of CPE has exposed long-standing flaws in endoscope reprocessing.30 Many of the problems associated with recent outbreaks are well recognized problems from the past, including breaches of cleaning and disinfection protocols, often failure to dry before storage, and occult endoscope defects that compromise cleanability. However, there are also outbreaks where cleaning and disinfection were performed according to guidelines, and the manufacturer can find no fault in the endoscope. Recent publications have found that current reprocessing standards do not provide a reasonable level of safety and effectiveness.31–34 In response to outbreaks, the FDA’s May 2015 Advisory Panel35 encouraged facilities to consider supplemental measures, including double reprocessing between patients, ethylene oxide sterilization, or the use of a liquid sterilant processing system. About 15 months after these recommendations were made, a survey of providers performing ERCP in the USA found 63% of centers performed double disinfection and 12% ethylene oxide sterilization.36 However, these additional measures are expensive and time-consuming, and ethylene oxide sterilization is not readily available.33 Subsequent to this advice, a randomized trial comparing the 3 reprocessing protocols, standard high-level disinfection, double high-level disinfection, and ethylene oxide sterilization, concluded that these enhanced disinfection methods did not provide additional protection against contamination.33 Another randomized trial found double high-level disinfection was no better than standard high-level disinfection.37 It is increasingly recognized that biofilms on endoscopes compromise cleaning and disinfection.34,38,39 The conditions reported as causes of outbreaks facilitate biofilm formation and growth; these include inadequate cleaning, inadequate drying, occult endoscope defects, including channel damage and breaches of reprocessing protocols. Biofilm prevention and control are core problems in reprocessing that are addressed in these guidelines The changes proposed can be broadly summarized as follows: Cleaning—carefully follow the manufacturers’ updated reprocessing instructions specific for each model of endoscope. Drying—improved drying with an alcohol flush and 10 minutes of forced air after each procedure. Endoscopes should be stored in a forced-air drying cabinet. Occult endoscope defects—routine endoscope maintenance to identify and repair defects. Routine channel replacement to reduce the prevalence of occult defects and maintain a smooth cleanable channel surface. Breaches of reprocessing protocols—Establish a multidisciplinary committee to develop and implement reprocessing protocols and to perform quality control of training, the process and outcomes. NEW RECOMMENDATIONS Recommended Changes to Reprocessing and Storage Prompt attention to cleaning, disinfection, and complete drying reduces the growth of established biofilm and prevents bacteria from forming new biofilm (Table 1). TABLE 1 - Specific Recommendations for Reprocessing and Storage Activity Recommendations Precleaning Precleaning must be carried out IMMEDIATELY after use. Cleaning Cleaning (manual or using an AFER with an FDA or National approved cleaning cycle) must be carried out PROMPTLY* within 30 minutes after precleaning. Always follow the most up to date manufacturer’s specific instructions for cleaning for each model of endoscope. Disinfection After manual cleaning of the endoscope, machine or manual high-level disinfection must be undertaken promptly. Endoscopes should be thoroughly rinsed with bacteria-free water after disinfection. Alcohol flush and forced-air drying After disinfection by any means the endoscope must have prompt alcohol flush and forced-air for 10 minutes and in an approved forced air storage/drying Drying cabinet Endoscopes must in approved forced air-drying until next patient use. surveillance surveillance of endoscopes and at appropriate to local conditions and endoscopes for maintenance and consider the instrument channel 2 years or according to as by the endoscope are considered in these means within 30 endoscope may be used on another patient after the forced-air drying but it must be placed the cabinet if not immediately used for another patient section on Drying indicates flexible endoscope Recommended Changes for 2 TABLE 2 - Specific Recommendations for ERCP of procedures the of ERCP procedures performed is to this clinical staff and dedicated staff reprocessing duodenoscopes who are of and have undertaken specific in the particular problems associated with cleaning, and endoscope for surveillance surveillance of duodenoscopes protocols that include from the distal with surveillance with organisms of should be for there is an staff appropriate risk of MDRO in their of duodenoscopes for instrument channels and at least on as by the endoscope should be to using the and that has been validated by indicates multi-drug resistant Endoscope Drying It is critical that drying is performed following manual or AFER of AFER manufacturer endoscopes should have a alcohol flush and forced-air channel drying for 10 minutes. drying endoscopes should be to an approved endoscope forced air storage/drying cabinet, and air drying This should until the endoscope is used or the has should comply with the relevant National or with the Storage for Endoscopes If the can be used for another patient procedure after the forced air drying or before the drying in the cabinet is to CPE Transmission in the CPE is through the the of is often through of or bacteria are found in hospital and also found in and an outbreak of an MDRO after ERCP found the culprit MDRO in and in the water used to rinse the before for prevention and control of CPE surveillance and and environmental should implement national and local infection control multi-drug resistant guidelines. that with reduces of (Table TABLE 3 - Recommendations to CPE Transmission Recommendations CPE of the CPE of CPE that known CPE are to the endoscopy at the CPE or at who are to be should be last on the and in from with use of a or a and procedure after the endoscopy procedure as per specific protocols for cleaning of standards and should comply with the national standards to the risks of from in or of from control procedures The emergence of CPE is another to follow standard infection control procedures including and the use of appropriate personal protective equipment and for each should provide and of with and environmental cleaning and CPE indicates carbapenem-producing AFER Water quality should be appropriate for the water should be according to an established and the internal sub-micron as per the manufacturer’s instructions for use. GUIDELINES recommendations for reprocessing are set out in international and national Recent guidelines from and the have been updated to the and the manufacturer’s These guidelines will the of national and guidelines. In all health are according to in low and countries have increasingly focused on The of endoscopy can be from the of the services, the and the of The emergence of CPE has the risk of infections after endoscopy and the of inadequate reprocessing. The of an infection with CPE are substantial in both developed and low and The risk of transmitting CPE on the prevalence of CPE in for endoscopy quality of reprocessing and of repair of the endoscopes. and hospital should the local prevalence of CPE to implement appropriate risk must the principles of reprocessing and be of the risk to when there is failure of endoscope should to an previous of maintenance and and that are or have a previous should be reported that inadequate to 2 duodenoscopes to an outbreak and the of endoscope and Endoscope reprocessing should be by a multidisciplinary committee reprocessing is on by The of is best by a multidisciplinary committee including infection control and and most The committee should use a process to and the of a quality management for both the and the process as by the Standards and The recent of the of and of and quality for endoscope and should be developed in with relevant The committee must be up to date with recent publications and internal to ensure reprocessing with recent recommendations from and In low and there may be a of and a in trained guidelines should be to specific and quality control should start with measures as of process and with guidelines should be over surveillance that is expensive and If are a local multidisciplinary committee should the and make a based on a risk by local to consider include to a with and the for a trial of a outbreaks of MDROs after endoscopy, may become and no clinical only to develop infections to months with mortality reported as as a single of CPE is transmitted from 1 endoscope on multiple occasions despite reprocessing. This is best by a biofilm on the endoscope bacteria from cleaning and disinfection and acting as a for of Biofilm In the of an outbreak of a following bronchoscopy, it was considered that biofilm forming in difficult to endoscopy channels to this A the surfaces of endoscope channels with and the of biofilm often in surface studies have also found biofilm on endoscope and on culprit endoscopes in reports of Biofilm is a of bacteria attached to a surface and to each by an in a biofilm have than bacteria of the biofilms are often resistant to used at reprocessing CPE are in 1 by of standard a safety for these However, biofilm the of the multiple of and biofilm are difficult for the disinfectant to of do not the bacteria within in biofilm that in defects on endoscope channel surfaces are also by organic debris and difficult to with standard reprocessing based on from models using artificial soils and bacteria to be using models bacteria in biofilm or Biofilm attached to the surface of an endoscope channel as a of and bacteria in biofilms can their and be transmitted to and a of facilitate biofilm growth and of bacteria. The of biofilm growth and the of complete drying after reprocessing has been in the evidence indicates of endoscopes still in channels after AFER alcohol a drying and in a the endoscope of particularly the channels storage, must be a in endoscopes cleaning and provide a for biofilms to defects may be identified by including defects in the and and the Occult defects that do not with endoscope are difficult to identify without the endoscope or using as a of channels in working endoscopes has found and defects on the channel of channel surfaces biofilm in these that culprit endoscopes have found occult defects, including and routine and maintenance reduce the use of endoscopes with defects that compromise Endoscope and national guidelines routine are difficult to clean and In to the as the of for ERCP, and the performed also to the risk of and infection from bacteria transmitted the procedure. The of contamination of as by surveillance is similar to the of contamination of and patient and the performed are in the of outbreaks after The risks of outbreaks are best addressed by specific changes to cleaning and disinfection of duodenoscopes as well as to reprocessing protocols for all endoscopes. The manufacturers’ updated cleaning protocols are an important in reprocessing. of a quality assurance of found that implementation of the new cleaning protocols the of However, manufacturers’ surveillance studies have found with important Drying The reprocessing step of drying has often been or carried out and is to A survey in the of reprocessing in endoscopy performing found that of the centers did not comply with the and did not use forced air to dry are with another and do not always the for Recent studies have found in up to of endoscope channels after reprocessing and drying, drying guidelines to Alfa and in a that if duodenoscopes were after reprocessing there was growth of and Drying for 10 minutes with forced air this in all duodenoscopes of an alcohol flush followed by forced air drying outbreaks of infections after ERCP in the recent studies have that alcohol flush followed by 10 minutes of forced air drying was effective than alcohol flush followed by a time of forced air endoscopes should be stored in a drying cabinet and evidence that of flexible endoscopes facilitates drying, the for and protection from environmental This is supported by a of surveillance of patient-ready endoscopes, including gastroscopes, colonoscopes, and found that the of drying the risk of endoscope In a a forced-air drying cabinet dried endoscopes and growth with a standard The science of reprocessing is including clinical and randomized trials undertaken in response to the publications of outbreaks of CPE, is being Endoscope to endoscope and new reprocessing instructions. drying and cleaning are in the are updated of reprocessing guidelines in response to the of These and recent guidelines a multidisciplinary committee with a of and expertise to new as it is and and reprocessing guidelines that are appropriate to the and patient reprocessing is to patient safety in",
+    "cited_by_count": 18,
+    "discovery_routes": [
+      "openalex:search:guideline update comparison automatic"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "method",
+      "evidence",
+      "application"
+    ],
+    "curation_score": 34.243,
+    "retained": true
+  },
+  {
+    "paper_id": "W3021153741",
+    "openalex_id": "https://openalex.org/W3021153741",
+    "title": "Automatic Detection of Generated Text is Easiest when Humans are Fooled",
+    "authors": [
+      "Daphne Ippolito",
+      "Daniel Duckworth",
+      "Chris Callison-Burch",
+      "Douglas Eck"
+    ],
+    "year": 2020,
+    "venue": "Proceedings of the conference - Association for Computational Linguistics. Meeting",
+    "doi": "https://doi.org/10.18653/v1/2020.acl-main.164",
+    "source_url": "https://doi.org/10.18653/v1/2020.acl-main.164",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Recent advancements in neural language modelling make it possible to rapidly generate vast amounts of human-sounding text.The capabilities of humans and automatic discriminators to detect machine-generated text have been a large source of research interest, but humans and machines rely on different cues to make their decisions.Here, we perform careful benchmarking and analysis of three popular sampling-based decoding strategies-topk, nucleus sampling, and untruncated random sampling-and show that improvements in decoding methods have primarily optimized for fooling humans.This comes at the expense of introducing statistical abnormalities that make detection easy for automatic systems.We also show that though both human and automatic detector performance improve with longer excerpt length, even multi-sentence excerpts can fool expert human raters over 30% of the time.Our findings reveal the importance of using both human and automatic detectors to assess the humanness of text generation systems.",
+    "cited_by_count": 403,
+    "discovery_routes": [
+      "openalex:search:policy change detection text embedding"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 33.075,
+    "retained": true
+  },
+  {
+    "paper_id": "W4407231747",
+    "openalex_id": "https://openalex.org/W4407231747",
+    "title": "Demystifying Long Chain-of-Thought Reasoning in LLMs",
+    "authors": [
+      "Edward Yeo",
+      "Tong, Yuxuan",
+      "Niu, Morry",
+      "Graham Neubig",
+      "Xiang Yue"
+    ],
+    "year": 2025,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2502.03373",
+    "source_url": "https://doi.org/10.48550/arxiv.2502.03373",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Scaling inference compute enhances reasoning in large language models (LLMs), with long chains-of-thought (CoTs) enabling strategies like backtracking and error correction. Reinforcement learning (RL) has emerged as a crucial method for developing these capabilities, yet the conditions under which long CoTs emerge remain unclear, and RL training requires careful design choices. In this study, we systematically investigate the mechanics of long CoT reasoning, identifying the key factors that enable models to generate long CoT trajectories. Through extensive supervised fine-tuning (SFT) and RL experiments, we present four main findings: (1) While SFT is not strictly necessary, it simplifies training and improves efficiency; (2) Reasoning capabilities tend to emerge with increased training compute, but their development is not guaranteed, making reward shaping crucial for stabilizing CoT length growth; (3) Scaling verifiable reward signals is critical for RL. We find that leveraging noisy, web-extracted solutions with filtering mechanisms shows strong potential, particularly for out-of-distribution (OOD) tasks such as STEM reasoning; and (4) Core abilities like error correction are inherently present in base models, but incentivizing these skills effectively for complex tasks via RL demands significant compute, and measuring their emergence requires a nuanced approach. These insights provide practical guidance for optimizing training strategies to enhance long CoT reasoning in LLMs. Our code is available at: https://github.com/eddycmu/demystify-long-cot.",
+    "cited_by_count": 326,
+    "discovery_routes": [
+      "openalex:search:benchmark LLM reasoning about differences between documents"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 33.055,
+    "retained": true
+  },
+  {
+    "paper_id": "W4384920109",
+    "openalex_id": "https://openalex.org/W4384920109",
+    "title": "Challenges and Applications of Large Language Models",
+    "authors": [
+      "Jean Kaddour",
+      "Joshua Harris",
+      "Maximilian Mozes",
+      "Herbie Bradley",
+      "Roberta Răileanu",
+      "Robert McHardy"
+    ],
+    "year": 2023,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2307.10169",
+    "source_url": "https://doi.org/10.48550/arxiv.2307.10169",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Large Language Models (LLMs) went from non-existent to ubiquitous in the machine learning discourse within a few years. Due to the fast pace of the field, it is difficult to identify the remaining challenges and already fruitful application areas. In this paper, we aim to establish a systematic set of open problems and application successes so that ML researchers can comprehend the field's current state more quickly and become productive.",
+    "cited_by_count": 835,
+    "discovery_routes": [
+      "openalex:search:document version change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 32.361,
+    "retained": true
+  },
+  {
+    "paper_id": "W4391940723",
+    "openalex_id": "https://openalex.org/W4391940723",
+    "title": "Large Language Models for Forecasting and Anomaly Detection: A Systematic Literature Review",
+    "authors": [
+      "Jing Su",
+      "Chufeng Jiang",
+      "Xin Jin",
+      "Qiao, Yuxin",
+      "Tingsong Xiao",
+      "Hongda Ma",
+      "Rong Wei",
+      "Zhi Jing",
+      "Jiajun Xu",
+      "Junhong Lin"
+    ],
+    "year": 2024,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2402.10350",
+    "source_url": "https://doi.org/10.48550/arxiv.2402.10350",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "This systematic literature review comprehensively examines the application of Large Language Models (LLMs) in forecasting and anomaly detection, highlighting the current state of research, inherent challenges, and prospective future directions. LLMs have demonstrated significant potential in parsing and analyzing extensive datasets to identify patterns, predict future events, and detect anomalous behavior across various domains. However, this review identifies several critical challenges that impede their broader adoption and effectiveness, including the reliance on vast historical datasets, issues with generalizability across different contexts, the phenomenon of model hallucinations, limitations within the models' knowledge boundaries, and the substantial computational resources required. Through detailed analysis, this review discusses potential solutions and strategies to overcome these obstacles, such as integrating multimodal data, advancements in learning methodologies, and emphasizing model explainability and computational efficiency. Moreover, this review outlines critical trends that are likely to shape the evolution of LLMs in these fields, including the push toward real-time processing, the importance of sustainable modeling practices, and the value of interdisciplinary collaboration. Conclusively, this review underscores the transformative impact LLMs could have on forecasting and anomaly detection while emphasizing the need for continuous innovation, ethical considerations, and practical solutions to realize their full potential.",
+    "cited_by_count": 240,
+    "discovery_routes": [
+      "openalex:search:document version change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 31.492,
+    "retained": true
+  },
+  {
+    "paper_id": "W4415307593",
+    "openalex_id": "https://openalex.org/W4415307593",
+    "title": "HalluLens: LLM Hallucination Benchmark",
+    "authors": [
+      "Yejin Bang",
+      "Ziwei Ji",
+      "Alan Schelten",
+      "Hartshorn, Anthony",
+      "Fowler, Tara",
+      "Cheng Zhang",
+      "Nicola Cancedda",
+      "Pascale Fung"
+    ],
+    "year": 2025,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2504.17550",
+    "source_url": "https://doi.org/10.48550/arxiv.2504.17550",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Large language models (LLMs) often generate responses that deviate from user input or training data, a phenomenon known as \"hallucination.\" These hallucinations undermine user trust and hinder the adoption of generative AI systems. Addressing hallucinations is essential for the advancement of LLMs. This paper introduces a comprehensive hallucination benchmark, incorporating both new extrinsic and existing intrinsic evaluation tasks, built upon clear taxonomy of hallucination. A major challenge in benchmarking hallucinations is the lack of a unified framework due to inconsistent definitions and categorizations. We disentangle LLM hallucination from \"factuality,\" proposing a clear taxonomy that distinguishes between extrinsic and intrinsic hallucinations, to promote consistency and facilitate research. Extrinsic hallucinations, where the generated content is not consistent with the training data, are increasingly important as LLMs evolve. Our benchmark includes dynamic test set generation to mitigate data leakage and ensure robustness against such leakage. We also analyze existing benchmarks, highlighting their limitations and saturation. The work aims to: (1) establish a clear taxonomy of hallucinations, (2) introduce new extrinsic hallucination tasks, with data that can be dynamically regenerated to prevent saturation by leakage, (3) provide a comprehensive analysis of existing benchmarks, distinguishing them from factuality evaluations.",
+    "cited_by_count": 110,
+    "discovery_routes": [
+      "openalex:search:benchmark LLM reasoning about differences between documents"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "evidence"
+    ],
+    "curation_score": 31.488,
+    "retained": true
+  },
+  {
+    "paper_id": "W4392935324",
+    "openalex_id": "https://openalex.org/W4392935324",
+    "title": "Dissociating language and thought in large language models",
+    "authors": [
+      "Kyle Mahowald",
+      "Anna Aleksandrovna Ivanova",
+      "Idan Blank",
+      "Nancy Kanwisher",
+      "Joshua B. Tenenbaum",
+      "Evelina G. Fedorenko"
+    ],
+    "year": 2024,
+    "venue": "Trends in Cognitive Sciences",
+    "doi": "https://doi.org/10.1016/j.tics.2024.01.011",
+    "source_url": "https://doi.org/10.1016/j.tics.2024.01.011",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "",
+    "cited_by_count": 675,
+    "discovery_routes": [
+      "openalex:search:document version change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 31.361,
+    "retained": true
+  },
+  {
+    "paper_id": "W4318149317",
+    "openalex_id": "https://openalex.org/W4318149317",
+    "title": "A Watermark for Large Language Models",
+    "authors": [
+      "John Kirchenbauer",
+      "Jonas Geiping",
+      "Yuxin Wen",
+      "Jonathan I. Katz",
+      "Ian Miers",
+      "Tom Goldstein"
+    ],
+    "year": 2023,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2301.10226",
+    "source_url": "https://doi.org/10.48550/arxiv.2301.10226",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Potential harms of large language models can be mitigated by watermarking model output, i.e., embedding signals into generated text that are invisible to humans but algorithmically detectable from a short span of tokens. We propose a watermarking framework for proprietary language models. The watermark can be embedded with negligible impact on text quality, and can be detected using an efficient open-source algorithm without access to the language model API or parameters. The watermark works by selecting a randomized set of \"green\" tokens before a word is generated, and then softly promoting use of green tokens during sampling. We propose a statistical test for detecting the watermark with interpretable p-values, and derive an information-theoretic framework for analyzing the sensitivity of the watermark. We test the watermark using a multi-billion parameter model from the Open Pretrained Transformer (OPT) family, and discuss robustness and security.",
+    "cited_by_count": 526,
+    "discovery_routes": [
+      "openalex:search:document version change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 31.361,
+    "retained": true
+  },
+  {
+    "paper_id": "W4399511748",
+    "openalex_id": "https://openalex.org/W4399511748",
+    "title": "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+    "authors": [
+      "Shengqiong Wu",
+      "Hao Fei",
+      "Xiangtai Li",
+      "Jiayi Ji",
+      "Hanwang Zhang",
+      "Tat‐Seng Chua",
+      "Shuicheng Yan"
+    ],
+    "year": 2024,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2406.05127",
+    "source_url": "https://doi.org/10.48550/arxiv.2406.05127",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Multimodal Large Language Models (MLLMs) have demonstrated exceptional capabilities in processing vision-language tasks. One of the crux of MLLMs lies in vision tokenization, which involves efficiently transforming input visual signals into feature representations that are most beneficial for LLMs. However, existing vision tokenizers, essential for semantic alignment between vision and language, remain problematic. Existing methods aggressively fragment visual input, corrupting the visual semantic integrity. To address this, this paper proposes a novel dynamic Semantic-Equivalent Vision Tokenizer (SeTok), which groups visual features into semantic units via a dynamic clustering algorithm, flexibly determining the number of tokens based on image complexity. The resulting vision tokens effectively preserve semantic integrity and capture both low-frequency and high-frequency visual features. The proposed MLLM (Setokim) equipped with SeTok significantly demonstrates superior performance across various tasks, as evidenced by our experimental results. The project page is at https://chocowu.github.io/SeTok-web/.",
+    "cited_by_count": 107,
+    "discovery_routes": [
+      "openalex:search:cross-version semantic equivalence sentence"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "evidence"
+    ],
+    "curation_score": 31.344,
+    "retained": true
+  },
+  {
+    "paper_id": "W7166832146",
+    "openalex_id": "https://openalex.org/W7166832146",
+    "title": "RegTrack: A Fine-Grained Benchmark for Multi-Class Legal Change Detection",
+    "authors": [
+      "Joe Yu",
+      "K Li",
+      "Julian Ostarek"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the conference - Association for Computational Linguistics. Meeting",
+    "doi": "https://doi.org/10.18653/v1/2026.acl-srw.68",
+    "source_url": "https://doi.org/10.18653/v1/2026.acl-srw.68",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Organizations must continuously monitor evolving regulations to maintain compliance.While current tools are limited to surface-level text comparison, existing models lack the finegrained classification schemes to determine whether small changes impact legal obligations or merely update formatting.To address this gap, we introduce a novel benchmark for change detection in EU regulations.It comprises 4,772 manually annotated pairs of structurally distinct provisions, defined as Atomic Legal Units (ALUs), mapped to a six-class taxonomy of legal change types.We formalize three core tasks: structural alignment, change classification, and a combined task requiring simultaneous alignment and classification.Evaluating lexical algorithms, dense encoders, and Large Language Models (LLMs) as baselines, we find LLMs excel at isolated change classification, whereas domain-specific dense encoders offer the most robust combined performance.By providing fine-grained labeled data, this benchmark enables the development of AI systems that can help organizations analyze regulatory shifts and support version-aware retrieval in the legal domain.",
+    "cited_by_count": 1,
+    "discovery_routes": [
+      "openalex:search:legal document amendment detection BERT"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "application"
+    ],
+    "curation_score": 31.0,
+    "retained": true
+  },
+  {
+    "paper_id": "W4388764805",
+    "openalex_id": "https://openalex.org/W4388764805",
+    "title": "The unreasonable effectiveness of large language models in zero-shot semantic annotation of legal texts",
+    "authors": [
+      "Jaromír Šavelka",
+      "Kevin D. Ashley"
+    ],
+    "year": 2023,
+    "venue": "Frontiers in Artificial Intelligence",
+    "doi": "https://doi.org/10.3389/frai.2023.1279794",
+    "source_url": "https://doi.org/10.3389/frai.2023.1279794",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "The emergence of ChatGPT has sensitized the general public, including the legal profession, to large language models' (LLMs) potential uses (e.g., document drafting, question answering, and summarization). Although recent studies have shown how well the technology performs in diverse semantic annotation tasks focused on legal texts, an influx of newer, more capable (GPT-4) or cost-effective (GPT-3.5-turbo) models requires another analysis. This paper addresses recent developments in the ability of LLMs to semantically annotate legal texts in zero-shot learning settings. Given the transition to mature generative AI systems, we examine the performance of GPT-4 and GPT-3.5-turbo(-16k), comparing it to the previous generation of GPT models, on three legal text annotation tasks involving diverse documents such as adjudicatory opinions, contractual clauses, or statutory provisions. We also compare the models' performance and cost to better understand the trade-offs. We found that the GPT-4 model clearly outperforms the GPT-3.5 models on two of the three tasks. The cost-effective GPT-3.5-turbo matches the performance of the 20× more expensive text-davinci-003 model. While one can annotate multiple data points within a single prompt, the performance degrades as the size of the batch increases. This work provides valuable information relevant for many practical applications (e.g., in contract review) and research projects (e.g., in empirical legal studies). Legal scholars and practicing lawyers alike can leverage these findings to guide their decisions in integrating LLMs in a wide range of workflows involving semantic annotation of legal texts.",
+    "cited_by_count": 90,
+    "discovery_routes": [
+      "openalex:search:contract clause change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "application"
+    ],
+    "curation_score": 30.487,
+    "retained": true
+  },
+  {
+    "paper_id": "W4405543707",
+    "openalex_id": "https://openalex.org/W4405543707",
+    "title": "Large Language Model for Vulnerability Detection and Repair: Literature Review and the Road Ahead",
+    "authors": [
+      "Xin Zhou",
+      "Sicong Cao",
+      "Xiaobing Sun",
+      "David Lo"
+    ],
+    "year": 2024,
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "doi": "https://doi.org/10.1145/3708522",
+    "source_url": "https://doi.org/10.1145/3708522",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "The significant advancements in Large Language Models (LLMs) have resulted in their widespread adoption across various tasks within Software Engineering (SE), including vulnerability detection and repair. Numerous studies have investigated the application of LLMs to enhance vulnerability detection and repair tasks. Despite the increasing research interest, there is currently no existing survey that focuses on the utilization of LLMs for vulnerability detection and repair. In this paper, we aim to bridge this gap by offering a systematic literature review of approaches aimed at improving vulnerability detection and repair through the utilization of LLMs. The review encompasses research work from leading SE, AI, and Security conferences and journals, encompassing 43 papers published across 25 distinct venues, along with 15 high-quality preprint papers, bringing the total to 58 papers. By answering three key research questions, we aim to (1) summarize the LLMs employed in the relevant literature, (2) categorize various LLM adaptation techniques in vulnerability detection, and (3) classify various LLM adaptation techniques in vulnerability repair. Based on our findings, we have identified a series of limitations of existing studies. Additionally, we have outlined a roadmap highlighting potential opportunities that we believe are pertinent and crucial for future research endeavors.",
+    "cited_by_count": 215,
+    "discovery_routes": [
+      "openalex:search:document version change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 29.663,
+    "retained": true
+  },
+  {
+    "paper_id": "W4399695687",
+    "openalex_id": "https://openalex.org/W4399695687",
+    "title": "Test of Time: A Benchmark for Evaluating LLMs on Temporal Reasoning",
+    "authors": [
+      "Bahare Fatemi",
+      "Mehran Kazemi",
+      "Anton Tsitsulin",
+      "Karishma Malkan",
+      "Jinyeong Yim",
+      "John Palowitch",
+      "Sungyong Seo",
+      "Jonathan Halcrow",
+      "Bryan Perozzi"
+    ],
+    "year": 2024,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2406.09170",
+    "source_url": "https://doi.org/10.48550/arxiv.2406.09170",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Large language models (LLMs) have showcased remarkable reasoning capabilities, yet they remain susceptible to errors, particularly in temporal reasoning tasks involving complex temporal logic. Existing research has explored LLM performance on temporal reasoning using diverse datasets and benchmarks. However, these studies often rely on real-world data that LLMs may have encountered during pre-training or employ anonymization techniques that can inadvertently introduce factual inconsistencies. In this work, we address these limitations by introducing novel synthetic datasets specifically designed to assess LLM temporal reasoning abilities in various scenarios. The diversity of question types across these datasets enables systematic investigation into the impact of the problem structure, size, question type, fact order, and other factors on LLM performance. Our findings provide valuable insights into the strengths and weaknesses of current LLMs in temporal reasoning tasks. To foster further research in this area, we are open-sourcing the datasets and evaluation framework used in our experiments: https://huggingface.co/datasets/baharef/ToT.",
+    "cited_by_count": 75,
+    "discovery_routes": [
+      "openalex:search:benchmark LLM reasoning about differences between documents"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "evidence"
+    ],
+    "curation_score": 29.66,
+    "retained": true
+  },
+  {
+    "paper_id": "W7139919331",
+    "openalex_id": "https://openalex.org/W7139919331",
+    "title": "FinTradeBench: A Financial Reasoning Benchmark for LLMs",
+    "authors": [
+      "Yogesh Agrawal",
+      "Anirban Dutta",
+      "Md Mahadi Hasan",
+      "Santu Karmaker",
+      "Aritra Dutta"
+    ],
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2603.19225",
+    "source_url": "https://doi.org/10.48550/arxiv.2603.19225",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Financial analysis requires reasoning over heterogeneous signals, including company fundamentals from regulatory filings and trading signals derived from market prices. However, existing financial benchmarks focus almost exclusively on regulatory filings, neglecting market dynamics and cross-signal interactions. We introduce FinTradeBench, a benchmark of 1,400 questions covering NASDAQ-100 stocks over a ten-year window. To holistically evaluate financial reasoning, FinTradeBench includes questions in three reasoning categories: fundamentals-focused, trading-signal-focused, and hybrid questions that require cross-signal reasoning. Our benchmark starts with 150 expert-authored seed questions, which are then scaled to 1400. To ensure reliable evaluation, we create a Core400 subset in which every item is expert-reviewed. In zero-shot (No-RAG) response generation, we observe that all models perform substantially worse on trading-focused questions compared to fundamental-focused questions. To identify failure causes, we evaluate LLMs under controlled settings including retrieval-based baselines, tool-assisted computation, oracle conditions, and time-series-specialized pipelines. LLMs' capabilities to do computation and evidence selection contribute most to reasoning failures. Additionally, retrieval significantly improves trading-signal reasoning but does not improve fundamental reasoning, where identifying relevant signals remains the dominant failure mode. Finally, rather than relying on a small, fine-tuned model for time-series reasoning, it is better to summarize the time-series data and leverage LLMs' reasoning capabilities.",
+    "cited_by_count": 7,
+    "discovery_routes": [
+      "openalex:search:benchmark LLM reasoning about differences between documents"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "evidence",
+      "application"
+    ],
+    "curation_score": 29.646,
+    "retained": true
+  },
+  {
+    "paper_id": "W2149116105",
+    "openalex_id": "https://openalex.org/W2149116105",
+    "title": "Clinical Practice Guideline (Update): Adult Sinusitis",
+    "authors": [
+      "Richard M. Rosenfeld",
+      "Jay F. Piccirillo",
+      "Sujana S. Chandrasekhar",
+      "Itzhak Brook",
+      "Kaparaboyna Ashok Kumar",
+      "Maggie A. Kramper",
+      "Richard R. Orlandi",
+      "James N. Palmer",
+      "Zara M. Patel",
+      "Anju Tripathi Peters",
+      "Sandra A. Walsh",
+      "Maureen D. Corrigan"
+    ],
+    "year": 2015,
+    "venue": "Otolaryngology",
+    "doi": "https://doi.org/10.1177/0194599815572097",
+    "source_url": "https://doi.org/10.1177/0194599815572097",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "OBJECTIVE: This update of a 2007 guideline from the American Academy of Otolaryngology--Head and Neck Surgery Foundation provides evidence-based recommendations to manage adult rhinosinusitis, defined as symptomatic inflammation of the paranasal sinuses and nasal cavity. Changes from the prior guideline include a consumer added to the update group, evidence from 42 new systematic reviews, enhanced information on patient education and counseling, a new algorithm to clarify action statement relationships, expanded opportunities for watchful waiting (without antibiotic therapy) as initial therapy of acute bacterial rhinosinusitis (ABRS), and 3 new recommendations for managing chronic rhinosinusitis (CRS). PURPOSE: The purpose of this multidisciplinary guideline is to identify quality improvement opportunities in managing adult rhinosinusitis and to create explicit and actionable recommendations to implement these opportunities in clinical practice. Specifically, the goals are to improve diagnostic accuracy for adult rhinosinusitis, promote appropriate use of ancillary tests to confirm diagnosis and guide management, and promote judicious use of systemic and topical therapy, which includes radiography, nasal endoscopy, computed tomography, and testing for allergy and immune function. Emphasis was also placed on identifying multiple chronic conditions that would modify management of rhinosinusitis, including asthma, cystic fibrosis, immunocompromised state, and ciliary dyskinesia. ACTION STATEMENTS: The update group made strong recommendations that clinicians (1) should distinguish presumed ABRS from acute rhinosinusitis (ARS) caused by viral upper respiratory infections and noninfectious conditions and (2) should confirm a clinical diagnosis of CRS with objective documentation of sinonasal inflammation, which may be accomplished using anterior rhinoscopy, nasal endoscopy, or computed tomography. The update group made recommendations that clinicians (1) should either offer watchful waiting (without antibiotics) or prescribe initial antibiotic therapy for adults with uncomplicated ABRS; (2) should prescribe amoxicillin with or without clavulanate as ﬁrst-line therapy for 5 to 10 days (if a decision is made to treat ABRS with an antibiotic); (3) should reassess the patient to confirm ABRS, exclude other causes of illness, and detect complications if the patient worsens or fails to improve with the initial management option by 7 days after diagnosis or worsens during the initial management; (4) should distinguish CRS and recurrent ARS from isolated episodes of ABRS and other causes of sinonasal symptoms; (5) should assess the patient with CRS or recurrent ARS for multiple chronic conditions that would modify management, such as asthma, cystic fibrosis, immunocompromised state, and ciliary dyskinesia; (6) should confirm the presence or absence of nasal polyps in a patient with CRS; and (7) should recommend saline nasal irrigation, topical intranasal corticosteroids, or both for symptom relief of CRS. The update group stated as options that clinicians may (1) recommend analgesics, topical intranasal steroids, and/or nasal saline irrigation for symptomatic relief of viral rhinosinusitis; (2) recommend analgesics, topical intranasal steroids, and/or nasal saline irrigation) for symptomatic relief of ABRS; and (3) obtain testing for allergy and immune function in evaluating a patient with CRS or recurrent ARS. The update group made recommendations that clinicians (1) should not obtain radiographic imaging for patients who meet diagnostic criteria for ARS, unless a complication or alternative diagnosis is suspected, and (2) should not prescribe topical or systemic antifungal therapy for patients with CRS.",
+    "cited_by_count": 1196,
+    "discovery_routes": [
+      "openalex:search:guideline update comparison automatic"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "evidence"
+    ],
+    "curation_score": 29.361,
+    "retained": true
+  },
+  {
+    "paper_id": "W2582313049",
+    "openalex_id": "https://openalex.org/W2582313049",
+    "title": "Updated guideline on the management of common bile duct stones (CBDS)",
+    "authors": [
+      "Earl Williams",
+      "Ian J. Beckingham",
+      "Ghassan Elsayed",
+      "Kurinchi Selvan Gurusamy",
+      "Richard P. Sturgess",
+      "George J M Webster",
+      "Tudor Young"
+    ],
+    "year": 2017,
+    "venue": "Gut",
+    "doi": "https://doi.org/10.1136/gutjnl-2016-312317",
+    "source_url": "https://doi.org/10.1136/gutjnl-2016-312317",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Common bile duct stones (CBDS) are estimated to be present in 10-20% of individuals with symptomatic gallstones. They can result in a number of health problems, including pain, jaundice, infection and acute pancreatitis. A variety of imaging modalities can be employed to identify the condition, while management of confirmed cases of CBDS may involve endoscopic retrograde cholangiopancreatography, surgery and radiological methods of stone extraction. Clinicians are therefore confronted with a number of potentially valid options to diagnose and treat individuals with suspected CBDS. The British Society of Gastroenterology first published a guideline on the management of CBDS in 2008. Since then a number of developments in management have occurred along with further systematic reviews of the available evidence. The following recommendations reflect these changes and provide updated guidance to healthcare professionals who are involved in the care of adult patients with suspected or proven CBDS. It is not a protocol and the recommendations contained within should not replace individual clinical judgement.",
+    "cited_by_count": 502,
+    "discovery_routes": [
+      "openalex:search:guideline update comparison automatic"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "evidence"
+    ],
+    "curation_score": 29.361,
+    "retained": true
+  },
+  {
+    "paper_id": "W4393855100",
+    "openalex_id": "https://openalex.org/W4393855100",
+    "title": "Unfair clause detection in terms of service across multiple languages",
+    "authors": [
+      "Andrea Galassi",
+      "Francesca Lagioia",
+      "Agnieszka Jabłonowska",
+      "Marco Lippi"
+    ],
+    "year": 2024,
+    "venue": "Artificial Intelligence and Law",
+    "doi": "https://doi.org/10.1007/s10506-024-09398-7",
+    "source_url": "https://doi.org/10.1007/s10506-024-09398-7",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Abstract Most of the existing natural language processing systems for legal texts are developed for the English language. Nevertheless, there are several application domains where multiple versions of the same documents are provided in different languages, especially inside the European Union. One notable example is given by Terms of Service (ToS). In this paper, we compare different approaches to the task of detecting potential unfair clauses in ToS across multiple languages. In particular, after developing an annotated corpus and a machine learning classifier for English, we consider and compare several strategies to extend the system to other languages: building a novel corpus and training a novel machine learning system for each language, from scratch; projecting annotations across documents in different languages, to avoid the creation of novel corpora; translating training documents while keeping the original annotations; translating queries at prediction time and relying on the English system only. An extended experimental evaluation conducted on a large, original dataset indicates that the time-consuming task of re-building a novel annotated corpus for each language can often be avoided with no significant degradation in terms of performance.",
+    "cited_by_count": 19,
+    "discovery_routes": [
+      "openalex:search:contract clause change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "application"
+    ],
+    "curation_score": 29.359,
+    "retained": true
+  },
+  {
+    "paper_id": "W3000736236",
+    "openalex_id": "https://openalex.org/W3000736236",
+    "title": "Significant Revision Identification between Revised Texts in a Multi-Author Environment",
+    "authors": [
+      "Ping Ping Tan"
+    ],
+    "year": 2019,
+    "venue": "Minerva Access (University of Melbourne)",
+    "doi": null,
+    "source_url": "https://openalex.org/W3000736236",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Despite advancement in collaborative writing tools, the track changes capability remains limited to highlighting syntactic changes, with authors still required to manually read through each of the revisions.We envision a collaborative authoring system where an author could accept all minor edits first and then focus on the substantial changes.The primary goal of this thesis is to develop a computational framework for significant revision identification where paraphrase approaches cannot fully support such identification.An existing taxonomy of revision analysis categorises revisions to surface (i.e.no meaning) and text-base (i.e.meaning) changes, with further categorisation of surface change to formal changes and meaning preserving changes, while textbase change is sub-divided to micro-structure and macro-structure changes.However, the taxonomy lacks details for computational modelling.Through examination of the works in the domain of psycho-linguistics, introspective analysis and feedback from both authors and non-authors on what constitute significant revisions, a conceptual framework for significant revision identification is proposed.An inter-rater agreement of alpha Krippendorff = 0.745 was obtained for the annotation between the authors and non-authors.The core concept of our proposed approach is bi-directional textual entailment assessment.We demonstrated that this concept is computationally feasible by relying on existing textual entailment systems.Our proposed approach is more accurate (micro-averaged F 1 = 0.541) compared to several baseline approaches based on edit distance, which are similar to the current track changes capability built in most of the word processors.Computationally identifying significant revisions between two versions of a text document has the potential to improve the revision process in a multi-author environment when multiple revisions are done by different authors.",
+    "cited_by_count": 1,
+    "discovery_routes": [
+      "openalex:search:semantic diff text revision understanding NLP"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 29.0,
+    "retained": true
+  },
+  {
+    "paper_id": "W2098044946",
+    "openalex_id": "https://openalex.org/W2098044946",
+    "title": "Clinical Decision Support Systems for the Practice of Evidence-based Medicine",
+    "authors": [
+      "Ida Sim",
+      "Paul Gorman",
+      "Robert A. Greenes",
+      "Robert Brian Haynes",
+      "Bonnie Kaplan",
+      "Harold P. Lehmann",
+      "Paul C. Tang"
+    ],
+    "year": 2001,
+    "venue": "Journal of the American Medical Informatics Association",
+    "doi": "https://doi.org/10.1136/jamia.2001.0080527",
+    "source_url": "https://doi.org/10.1136/jamia.2001.0080527",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "BACKGROUND: The use of clinical decision support systems to facilitate the practice of evidence-based medicine promises to substantially improve health care quality. OBJECTIVE: To describe, on the basis of the proceedings of the Evidence and Decision Support track at the 2000 AMIA Spring Symposium, the research and policy challenges for capturing research and practice-based evidence in machine-interpretable repositories, and to present recommendations for accelerating the development and adoption of clinical decision support systems for evidence-based medicine. RESULTS: The recommendations fall into five broad areas--capture literature-based and practice-based evidence in machine--interpretable knowledge bases; develop maintainable technical and methodological foundations for computer-based decision support; evaluate the clinical effects and costs of clinical decision support systems and the ways clinical decision support systems affect and are affected by professional and organizational practices; identify and disseminate best practices for work flow-sensitive implementations of clinical decision support systems; and establish public policies that provide incentives for implementing clinical decision support systems to improve health care quality. CONCLUSIONS: Although the promise of clinical decision support system-facilitated evidence-based medicine is strong, substantial work remains to be done to realize the potential benefits.",
+    "cited_by_count": 752,
+    "discovery_routes": [
+      "openalex:search:clinical practice guideline change tracking automation"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "evidence"
+    ],
+    "curation_score": 28.361,
+    "retained": true
+  },
+  {
+    "paper_id": "W2621036075",
+    "openalex_id": "https://openalex.org/W2621036075",
+    "title": "Surgical process modeling",
+    "authors": [
+      "Thomas Neumuth"
+    ],
+    "year": 2017,
+    "venue": "Innovative Surgical Sciences",
+    "doi": "https://doi.org/10.1515/iss-2017-0005",
+    "source_url": "https://doi.org/10.1515/iss-2017-0005",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Due to the rapidly evolving medical, technological, and technical possibilities, surgical procedures are becoming more and more complex. On the one hand, this offers an increasing number of advantages for patients, such as enhanced patient safety, minimal invasive interventions, and less medical malpractices. On the other hand, it also heightens pressure on surgeons and other clinical staff and has brought about a new policy in hospitals, which must rely on a great number of economic, social, psychological, qualitative, practical, and technological resources. As a result, medical disciplines, such as surgery, are slowly merging with technical disciplines. However, this synergy is not yet fully matured. The current information and communication technology in hospitals cannot manage the clinical and operational sequence adequately. The consequences are breaches in the surgical workflow, extensions in procedure times, and media disruptions. Furthermore, the data accrued in operating rooms (ORs) by surgeons and systems are not sufficiently implemented. A flood of information, \"big data\", is available from information systems. That might be deployed in the context of Medicine 4.0 to facilitate the surgical treatment. However, it is unused due to infrastructure breaches or communication errors. Surgical process models (SPMs) alleviate these problems. They can be defined as simplified, formal, or semiformal representations of a network of surgery-related activities, reflecting a predefined subset of interest. They can employ different means of generation, languages, and data acquisition strategies. They can represent surgical interventions with high resolution, offering qualifiable and quantifiable information on the course of the intervention on the level of single, minute, surgical work-steps. The basic idea is to gather information concerning the surgical intervention and its activities, such as performance time, surgical instrument used, trajectories, movements, or intervention phases. These data can be gathered by means of workflow recordings. These recordings are abstracted to represent an individual surgical process as a model and are an essential requirement to enable Medicine 4.0 in the OR. Further abstraction can be generated by merging individual process models to form generic SPMs to increase the validity for a larger number of patients. Furthermore, these models can be applied in a wide variety of use-cases. In this regard, the term \"modeling\" can be used to support either one or more of the following tasks: \"to describe\", \"to understand\", \"to explain\", to optimize\", \"to learn\", \"to teach\", or \"to automate\". Possible use-cases are requirements analyses, evaluating surgical assist systems, generating surgeon-specific training-recommendation, creating workflow management systems for ORs, and comparing different surgical strategies. The presented chapter will give an introduction into this challenging topic, presenting different methods to generate SPMs from the workflow in the OR, as well as various use-cases, and state-of-the-art research in this field. Although many examples in the article are given according to SPMs that were computed based on observations, the same approaches can be easily applied to SPMs that were measured automatically and mined from big data.",
+    "cited_by_count": 52,
+    "discovery_routes": [
+      "openalex:search:surgical text revision alignment paragraph"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "application"
+    ],
+    "curation_score": 28.211,
+    "retained": true
+  },
+  {
+    "paper_id": "W7152980456",
+    "openalex_id": "https://openalex.org/W7152980456",
+    "title": "Multimodal Reasoning with LLM for Encrypted Traffic Interpretation: A Benchmark",
+    "authors": [
+      "Longgang Zhang",
+      "Chenxu Zhang",
+      "Xiaowei Fu",
+      "Fuxiang Huang",
+      "Lei Zhang"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Multimedia",
+    "doi": "https://doi.org/10.1109/tmm.2026.3730256",
+    "source_url": "https://doi.org/10.1109/tmm.2026.3730256",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Network traffic, as a key media format, is crucial for ensuring security and communications in modern internet infrastructure. While existing methods offer excellent performance, they face two key bottlenecks: (1) They fail to capture multidimensional semantics beyond unimodal sequence patterns. (2) Their black box property, i.e., providing only category labels, lacks an auditable reasoning process. We identify a key factor that existing network traffic datasets are primarily designed for classification and inherently lack rich semantic annotations, failing to generate human-readable evidence report. To address data scarcity, this paper proposes a Byte-Grounded Traffic Description (BGTD) benchmark for the first time, combining raw bytes with structured expert annotations. BGTD provides necessary behavioral features and verifiable chains of evidence for multimodal reasoning towards explainable encrypted traffic interpretation. Built upon BGTD, this paper proposes an end-to-end traffic-language representation framework (mmTraffic), a multimodal reasoning architecture bridging physical traffic encoding and semantic interpretation. In order to alleviate modality interference and generative hallucinations, mmTraffic adopts a jointly-optimized perception-cognition architecture. By incorporating a perception-centered traffic encoder and a cognition-centered LLM generator, mmTraffic achieves refined traffic interpretation with guaranteed category prediction. Extensive experiments demonstrate that mmTraffic autonomously generates high-fidelity, human-readable, and evidence-grounded traffic interpretation reports, while maintaining highly competitive classification accuracy comparing to specialized unimodal model (e.g., NetMamba). The source code is available at https://github.com/lgzhangzlg/Multimodal-Reasoning-with-LLM-for-Encrypted-Traffic-Interpretation-A-Benchmark",
+    "cited_by_count": 1,
+    "discovery_routes": [
+      "openalex:search:benchmark LLM reasoning about differences between documents"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "evidence",
+      "application"
+    ],
+    "curation_score": 28.0,
+    "retained": true
+  },
+  {
+    "paper_id": "W7222064187",
+    "openalex_id": "https://openalex.org/W7222064187",
+    "title": "Sparse Autoencoders for Mechanistic Interpretability in NLP: A Critical Survey of Recoverability, Interpretability, and Utility",
+    "authors": [
+      "Salima Lamsiyah",
+      "Adelaide Danilov",
+      "Oleksandr Marchenko Breneur",
+      "Aria Nourbakhsh"
+    ],
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2610.20139",
+    "source_url": "https://doi.org/10.48550/arxiv.2610.20139",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Sparse autoencoders (SAEs) have emerged as a promising approach to mechanistic interpretability by decomposing language-model activations into sparse, potentially interpretable features. However, differences in design assumptions, evaluation objectives, and experimental settings complicate conclusions about their effectiveness. We present a critical survey of 138 studies on SAEs in natural language processing. Our contributions are fourfold: (1) we propose a task-grounded taxonomy connecting dictionary design, feature operations, and NLP functions; (2) we examine how sparsity allocation, geometry, data coverage, and inference affect feature recoverability; (3) we assess evidence for semantic interpretability, mechanistic faithfulness, and behavioral utility; and (4) we synthesize findings across multilingual processing, retrieval, reasoning, classification, and behavioral regulation, highlighting the roles of objectives, baselines, supervision, and intervention pipelines. Through comparative analyses of published results, we reconcile apparent disagreements, identify unresolved questions, and propose directions for more rigorous evaluation. An anonymous research register https://anonymous.4open.science/r/sae-research-register-C331/register.html accompanies the survey.",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:semantic diff text revision understanding NLP"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "evidence",
+      "application"
+    ],
+    "curation_score": 28.0,
+    "retained": true
+  },
+  {
+    "paper_id": "W4413803716",
+    "openalex_id": "https://openalex.org/W4413803716",
+    "title": "Ontologies as the semantic bridge between artificial intelligence and healthcare",
+    "authors": [
+      "Radha Ambalavanan",
+      "R Sterling Snead",
+      "Julia Marczika",
+      "Gideon Towett",
+      "Alex Malioukis",
+      "Mercy Mbogori-Kairichi"
+    ],
+    "year": 2025,
+    "venue": "Frontiers in Digital Health",
+    "doi": "https://doi.org/10.3389/fdgth.2025.1668385",
+    "source_url": "https://doi.org/10.3389/fdgth.2025.1668385",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Background: Ontologies serve as a foundational bridge between artificial intelligence (AI) and healthcare, enabling structured knowledge frameworks that enhance data interoperability, clinical decision support, and precision medicine. Objective: This perspective aims to highlight the essential role of ontologies in enabling adaptive, interoperable frameworks that evolve with technological and medical advances to support personalized, accurate, and globally connected healthcare solutions. Methods: This perspective is based on a targeted literature exploration conducted across PubMed, Scopus, and Google Scholar, prioritizing studies published between 2010 and 2025 and including earlier seminal works where necessary to provide historical context, focusing on ontology-driven AI applications in healthcare. Sources were selected for their relevance to semantic integration, interoperability, and interdisciplinary applicability. Results: Through the standardization of medical concepts, relationships, and terminologies, ontologies enable semantic integration across diverse healthcare datasets, including clinical, genomic, and phenotypic data. They also address challenges such as fragmented data and inconsistent terminologies. This semantic clarity supports AI applications in clinical decision support, predictive analytics, natural language processing (NLP), and patient-specific disease modeling. Conclusions: Despite their transformative potential, ontology integration faces significant challenges, including computational complexity, scalability, and semantic mismatches across evolving international standards, such as SNOMED CT and HL7 FHIR. Ethical concerns, particularly around data privacy, informed consent, and algorithmic bias, also require careful consideration. To address these challenges, this perspective outlines strategies including adaptive ontology models, robust governance frameworks, and AI-assisted ontology management techniques. Together, these approaches aim to support personalized, accurate, and globally interoperable healthcare systems.",
+    "cited_by_count": 41,
+    "discovery_routes": [
+      "openalex:search:semantic diff text revision understanding NLP"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "application"
+    ],
+    "curation_score": 27.403,
+    "retained": true
+  },
+  {
+    "paper_id": "W4389615859",
+    "openalex_id": "https://openalex.org/W4389615859",
+    "title": "Insight into the Digital Health System of Ukraine (eHealth): Trends, Definitions, Standards, and Legislative Revisions",
+    "authors": [
+      "Kyrylo S. Malakhov"
+    ],
+    "year": 2023,
+    "venue": "International Journal of Telerehabilitation",
+    "doi": "https://doi.org/10.5195/ijt.2023.6599",
+    "source_url": "https://doi.org/10.5195/ijt.2023.6599",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Purpose: This article aims to provide an in-depth examination of the digital health system of Ukraine, focusing on the emerging trends, precise definitions, established standards, and recent legislative revisions that shape the practice and implementation of eHealth solutions within the country. Background: The digital health landscape in Ukraine has witnessed significant transformations, especially in the wake of the COVID-19 pandemic and subsequent military conflicts. These events have catalyzed the expansion of telemedicine services, leading to innovative approaches in healthcare delivery. The national strategy underscores the necessity for human-centric and accessible telemedicine, reinforced by technological neutrality, and harmonization with global standards. Methods: A review of the current literature, national strategies, and legal documents was conducted, alongside an analysis of data usage and service provision patterns in various Ukrainian regions. Participation in the \"Science for Safety and Sustainable Development of Ukraine\" competition facilitated project initiatives like the development of a cloud-based platform for patient-centered telerehabilitation for oncology patients. Findings: The utilization of telemedicine has significantly increased in conflict-affected regions, demonstrating the need for, and the effective deployment of, digital health strategies under crisis conditions. Private health facilities and entrepreneurs have been pivotal in the provision of telemedicine services. Legislative efforts have been geared toward framing telemedicine as an integral component of the national eHealth system, ensuring interoperability, and aligning with international standards and the Internet of Medical Things (IoMT). Interpretation: The findings underscore the resilience and adaptability of the Ukrainian healthcare system in the face of adversity. There is a clear trend towards a more integrated, patient-focused, and technologically advanced healthcare model, aligning with international trends and prioritizing public health goals over private profits. This progress, however, is contingent upon continuous development, investment in technological infrastructure, and legislative support to sustain and advance digital health initiatives.",
+    "cited_by_count": 100,
+    "discovery_routes": [
+      "openalex:search:surgical text revision alignment paragraph"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "method",
+      "application"
+    ],
+    "curation_score": 27.0,
+    "retained": true
+  },
+  {
+    "paper_id": "W7223058961",
+    "openalex_id": "https://openalex.org/W7223058961",
+    "title": "StrucChunk: Structure-Aware Retrieval for Legal Document RAG",
+    "authors": [
+      "Surya Deep Singh",
+      "Ashutosh Kumar Tripathi",
+      "Gaurav Deep Singh"
+    ],
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2610.26313",
+    "source_url": "https://doi.org/10.48550/arxiv.2610.26313",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Retrieval-Augmented Generation (RAG) can ground LLM outputs in domain-specific knowledge, but legal documents are hard: standard chunking fragments hierarchical argument structure, and generic embeddings struggle with both precise citation matching and semantic understanding. We propose StrucChunk (Structure Aware Chunking) with hybrid dense-sparse retrieval for hierarchically structured legal documents. It treats documents as directed acyclic graphs of provisions, preserves clause boundaries, resolves cross-references before embedding, and combines BM25 with BGE-M3 via Reciprocal Rank Fusion. We evaluate on five corpora, three legal traditions and two languages. StrucChunk reaches 100% boundary precision (vs. 7.7% for recursive splitting on CrPC), preserves 97.6% of documented cross-references (vs. 0%), and matches section coverage with 40.3% fewer chunks on GDPR. On LegalBench-RAG (6,858 query-passage pairs), it achieves Char-Recall@8 of 48.18% vs. 23.59% for the best baseline (+104%), surpassing the published state of the art by +83%. On 501 queries each for CrPC and CPC (Indian law), Recall@5 improves from 0.557 to 0.804 (+44.4%) and from 0.158 to 0.259 (+64.6%); chunking accounts for 88% and 73% of the gain. On 501 GDPR queries, Recall@5 is 0.868 with R@1 improving +59%. On NitiBench-CCL (3,730 Thai financial law queries), HR@5 is 0.856 vs. 0.594 for naive chunking (+44.1%), showing that section-boundary alignment is the dominant factor across languages, and cross-reference augmentation adds +2.3% on cross-reference queries. We release the implementation, 5,256 evaluation queries across five legal corpora, annotation methodology and chunking quality metrics. Code: github.com/SinghSuryaDeep/legal-rag-strucchunk-1",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:legal document amendment detection BERT"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "evidence",
+      "application"
+    ],
+    "curation_score": 27.0,
+    "retained": true
+  },
+  {
+    "paper_id": "W4417258166",
+    "openalex_id": "https://openalex.org/W4417258166",
+    "title": "AbstentionBench: Reasoning LLMs Fail on Unanswerable Questions",
+    "authors": [
+      "Polina Kirichenko",
+      "Mark Ibrahim",
+      "Kamalika Chaudhuri",
+      "Samuel J. Bell"
+    ],
+    "year": 2025,
+    "venue": "neural information processing systems",
+    "doi": "https://doi.org/10.52202/085713-5729",
+    "source_url": "https://doi.org/10.52202/085713-5729",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "For Large Language Models (LLMs) to be reliably deployed in both everyday and high-stakes domains, knowing when not to answer is equally critical as answering correctly. Real-world user queries, which can be underspecified, ill-posed, or fundamentally unanswerable, require LLMs to reason about uncertainty and selectively abstain -- i.e., refuse to answer definitively. However, abstention remains understudied, without a systematic evaluation framework for modern LLMs. In this work, we introduce AbstentionBench, a large-scale benchmark for holistically evaluating abstention across 20 diverse datasets, including questions with unknown answers, underspecification, false premises, subjective interpretations, and outdated information. Evaluating 20 frontier LLMs reveals abstention is an unsolved problem, and one where scaling models is of little use. While recent reasoning LLMs have shown impressive results in complex problem solving, surprisingly, we find that reasoning fine-tuning degrades abstention (by $24\\%$ on average), even for math and science domains on which reasoning models are explicitly trained. We find that while a carefully crafted system prompt can boost abstention in practice, it does not resolve models' fundamental inability to reason about uncertainty. We release AbstentionBench to foster research into advancing LLM reliability.",
+    "cited_by_count": 137,
+    "discovery_routes": [
+      "openalex:search:benchmark LLM reasoning about differences between documents"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 26.705,
+    "retained": true
+  },
+  {
+    "paper_id": "W4406243685",
+    "openalex_id": "https://openalex.org/W4406243685",
+    "title": "Improving Text Recognition Accuracy for Serbian Legal Documents Using BERT",
+    "authors": [
+      "Miloš Bogdanović",
+      "Milena Frtunić Gligorijević",
+      "Jelena Kocić",
+      "Leonid V. Stoimenov"
+    ],
+    "year": 2025,
+    "venue": "Applied Sciences",
+    "doi": "https://doi.org/10.3390/app15020615",
+    "source_url": "https://doi.org/10.3390/app15020615",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Producing a new high-quality text corpus is a big challenge due to the required complexity and labor expenses. High-quality datasets, considered a prerequisite for many supervised machine learning algorithms, are often only available in very limited quantities. This in turn limits the capabilities of many advanced technologies when used in a specific field of research and development. This is also the case for the Serbian language, which is considered low-resourced in digitized language resources. In this paper, we address this issue for the Serbian language through a novel approach for generating high-quality text corpora by improving text recognition accuracy for scanned documents belonging to Serbian legal heritage. Our approach integrates three different components to provide high-quality results: a BERT-based large language model built specifically for Serbian legal texts, a high-quality open-source optical character recognition (OCR) model, and a word-level similarity measure for Serbian Cyrillic developed for this research and used for generating necessary correction suggestions. This approach was evaluated manually using scanned legal documents sampled from three different epochs between the years 1970 and 2002 with more than 14,500 test cases. We demonstrate that our approach can correct up to 88% of terms inaccurately extracted by the OCR model in the case of Serbian legal texts.",
+    "cited_by_count": 11,
+    "discovery_routes": [
+      "openalex:search:legal document amendment detection BERT"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "application"
+    ],
+    "curation_score": 26.317,
+    "retained": true
+  },
+  {
+    "paper_id": "W4390222534",
+    "openalex_id": "https://openalex.org/W4390222534",
+    "title": "Automation in Contemporary Clinical Information Systems: a Survey of AI in Healthcare Settings",
+    "authors": [
+      "Farah Magrabi",
+      "David Lyell",
+      "Enrico W Coiera"
+    ],
+    "year": 2023,
+    "venue": "Yearbook of Medical Informatics",
+    "doi": "https://doi.org/10.1055/s-0043-1768733",
+    "source_url": "https://doi.org/10.1055/s-0043-1768733",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "AIMS AND OBJECTIVES: To examine the nature and use of automation in contemporary clinical information systems by reviewing studies reporting the implementation and evaluation of artificial intelligence (AI) technologies in healthcare settings. METHOD: PubMed/MEDLINE, Web of Science, EMBASE, the tables of contents of major informatics journals, and the bibliographies of articles were searched for studies reporting evaluation of AI in clinical settings from January 2021 to December 2022. We documented the clinical application areas and tasks supported, and the level of system autonomy. Reported effects on user experience, decision-making, care delivery and outcomes were summarised. RESULTS: AI technologies are being applied in a wide variety of clinical areas. Most contemporary systems utilise deep learning, use routinely collected data, support diagnosis and triage, are assistive (requiring users to confirm or approve AI provided information or decisions), and are used by doctors in acute care settings in high-income nations. AI systems are integrated and used within existing clinical information systems including electronic medical records. There is limited support for One Health goals. Evaluation is largely based on quantitative methods measuring effects on decision-making. CONCLUSION: AI systems are being implemented and evaluated in many clinical areas. There remain many opportunities to understand patterns of routine use and evaluate effects on decision-making, care delivery and patient outcomes using mixed-methods. Support for One Health including integrating data about environmental factors and social determinants needs further exploration.",
+    "cited_by_count": 28,
+    "discovery_routes": [
+      "openalex:search:clinical practice guideline change tracking automation"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "application"
+    ],
+    "curation_score": 26.292,
+    "retained": true
+  },
+  {
+    "paper_id": "W3132967229",
+    "openalex_id": "https://openalex.org/W3132967229",
+    "title": "Automated Change Detection in Privacy Policies",
+    "authors": [
+      "Andrick Adhikari"
+    ],
+    "year": 2020,
+    "venue": "Digital Commons - DU (University of Denver)",
+    "doi": null,
+    "source_url": "https://openalex.org/W3132967229",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Privacy policies notify Internet users about the privacy practices of websites, mobile apps, and other products and services. However, users rarely read them and struggle to understand their contents. Also, the entities that provide these policies are sometimes unmotivated to make them comprehensible. Due to the complicated nature of these documents, it gets even harder for users to understand and take note of any changes of interest or concern when these policies are changed or revised. With recent development of machine learning and natural language processing, tools that can automatically annotate sentences of policies have been developed. These annotations can help a user quickly identify and understand relevant parts of the policy. Similarly a tool can be developed that can help identify changes between different versions of a policy that can be informative for the user. For example, suppose according to the new policy a website will start sharing audio data as well. The proposed tool can help users to be aware of such important changes. This thesis presents a tool that takes two different versions of a privacy policy as input, matches the sentences of one version of a policy to the sentences of another version of the policy based on semantic similarity, and inform the user of key relevant changes between two matched sentences. We discuss different supervised machine learning models that are explored to develop a method to annotate the sentences of privacy policies according to expert-identified categories for organization and analysis of the contents. Different word-embedding and similarity techniques are explored and evaluated to develop a method to match the sentences of one version of the policy to another version of a policy. The annotation of the sentences are used to increase the efficiency of the matching process. Methods to detect changes between two matched sentences through analysis of the structure of sentences are then implemented. We combined the developed methods for annotation of policies, matching the sentences between two versions of a policy and detecting change between sentences to realize the proposed tool. The research work not only shows the potential of machine learning and natural language processing as an important tool for privacy engineering but also introduces various techniques that can be utilized for any natural language document.",
+    "cited_by_count": 0,
+    "discovery_routes": [
+      "openalex:search:policy change detection text embedding"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 26.0,
+    "retained": true
+  },
+  {
+    "paper_id": "W4394946805",
+    "openalex_id": "https://openalex.org/W4394946805",
+    "title": "LegalPro-BERT: Classification of Legal Provisions by fine-tuning BERT Large Language Model",
+    "authors": [
+      "Amit Tewari"
+    ],
+    "year": 2024,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2404.10097",
+    "source_url": "https://doi.org/10.48550/arxiv.2404.10097",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "A contract is a type of legal document commonly used in organizations. Contract review is an integral and repetitive process to avoid business risk and liability. Contract analysis requires the identification and classification of key provisions and paragraphs within an agreement. Identification and validation of contract clauses can be a time-consuming and challenging task demanding the services of trained and expensive lawyers, paralegals or other legal assistants. Classification of legal provisions in contracts using artificial intelligence and natural language processing is complex due to the requirement of domain-specialized legal language for model training and the scarcity of sufficient labeled data in the legal domain. Using general-purpose models is not effective in this context due to the use of specialized legal vocabulary in contracts which may not be recognized by a general model. To address this problem, we propose the use of a pre-trained large language model which is subsequently calibrated on legal taxonomy. We propose LegalPro-BERT, a BERT transformer architecture model that we fine-tune to efficiently handle classification task for legal provisions. We conducted experiments to measure and compare metrics with current benchmark results. We found that LegalPro-BERT outperforms the previous benchmark used for comparison in this research.",
+    "cited_by_count": 19,
+    "discovery_routes": [
+      "openalex:search:legal document amendment detection BERT"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "application"
+    ],
+    "curation_score": 25.359,
+    "retained": true
+  },
+  {
+    "paper_id": "W4404792899",
+    "openalex_id": "https://openalex.org/W4404792899",
+    "title": "Enhancing Contract Negotiations with LLM-Based Legal Document Comparison",
+    "authors": [
+      "Savinay Narendra",
+      "Kaushal Shetty",
+      "Adwait Ratnaparkhi"
+    ],
+    "year": 2024,
+    "venue": "Natural Legal Language Processing Workshop (NLLP)",
+    "doi": "https://doi.org/10.18653/v1/2024.nllp-1.11",
+    "source_url": "https://doi.org/10.18653/v1/2024.nllp-1.11",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "We present a large language model (LLM) based approach for comparing legal contracts with their corresponding template documents.Legal professionals use commonly observed deviations between templates and contracts to help with contract negotiations, and also to refine the template documents.Our comparison approach, based on the well-studied natural language inference (NLI) task, first splits a template into key concepts and then uses LLMs to decide if the concepts are entailed by the contract document.We also repeat this procedure in the opposite direction -contract clauses are tested for entailment against the template clause to see if they contain additional information.The non-entailed concepts are labelled, organized and filtered by frequency, and placed into a clause library, which is used to suggest changes to the template documents.We first show that our LLM-based approach outperforms all previous work on a publicly available dataset designed for NLI in the legal domain.We then apply it to a private real-world legal dataset, achieve an accuracy of 96.46%.Our approach is the first in the literature to produce a natural language comparison between legal contracts and their template documents.",
+    "cited_by_count": 11,
+    "discovery_routes": [
+      "openalex:search:legal document amendment detection BERT"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "application"
+    ],
+    "curation_score": 25.317,
+    "retained": true
+  },
+  {
+    "paper_id": "W4401068660",
+    "openalex_id": "https://openalex.org/W4401068660",
+    "title": "Prompts and Large Language Models: A New Tool for Drafting, Reviewing and Interpreting Contracts?",
+    "authors": [
+      "Brydon T. Wang"
+    ],
+    "year": 2024,
+    "venue": "Law Technology and Humans",
+    "doi": "https://doi.org/10.5204/lthj.3483",
+    "source_url": "https://doi.org/10.5204/lthj.3483",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "The rise of Large Language Models (LLMs) in the field of generative AI and the practice of designing inputs (prompts) to drive optimal outputs for these models are transforming legal practice. This article examines the legal status of these prompts that are used to generate contractual clauses and the potential of prompts to be used for interpreting ambiguous contractual terms. In doing so, it presents a novel analysis of the interaction of prompts with the parol evidence rule. The article begins with an introduction to the promise offered by LLMs in the field of contract drafting before venturing into a non-technical explanation of LLMs. It then explores the current use of LLMs in the automation of the contract drafting process and challenges in deploying LLMs in legal practice. The article then proceeds to explore four scenarios of potential uses of LLMs in contract drafting and how these might impact the legal status of prompts and their interaction with the parol evidence rule. Finally, the article sets out suggested practice approaches for incorporating prompts into the contracting process for clarity and enforceability before presenting a conclusion on the state of the evolving landscape of AI-powered legal practice and the drafting of contracts.",
+    "cited_by_count": 15,
+    "discovery_routes": [
+      "openalex:search:contract clause change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "method",
+      "evidence",
+      "application"
+    ],
+    "curation_score": 24.873,
+    "retained": true
+  },
+  {
+    "paper_id": "W4392099441",
+    "openalex_id": "https://openalex.org/W4392099441",
+    "title": "Principles of Analytic Validation of Immunohistochemical Assays: Guideline Update",
+    "authors": [
+      "Jeffrey D. Goldsmith",
+      "Megan L. Troxell",
+      "Sinchita Roy‐Chowdhuri",
+      "Carol Colasacco",
+      "Mary Elizabeth Edgerton",
+      "Patrick L. Fitzgibbons",
+      "Regan S. Fulton",
+      "Thomas Haas",
+      "Patricia L. Kandalaft",
+      "Tanja Kalicanin",
+      "Christina Lacchetti",
+      "Patti A. Loykasek",
+      "Nicole Thomas",
+      "Paul E. Swanson",
+      "Andrew M. Bellizzi"
+    ],
+    "year": 2024,
+    "venue": "Archives of Pathology & Laboratory Medicine",
+    "doi": "https://doi.org/10.5858/arpa.2023-0483-cp",
+    "source_url": "https://doi.org/10.5858/arpa.2023-0483-cp",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "CONTEXT.—: In 2014, the College of American Pathologists developed an evidence-based guideline to address analytic validation of immunohistochemical assays. Fourteen recommendations were offered. Per the National Academy of Medicine standards for developing trustworthy guidelines, guidelines should be updated when new evidence suggests modifications. OBJECTIVE.—: To assess evidence published since the release of the original guideline and develop updated evidence-based recommendations. DESIGN.—: The College of American Pathologists convened an expert panel to perform a systematic review of the literature and update the original guideline recommendations using the Grading of Recommendations Assessment, Development and Evaluation approach. RESULTS.—: Two strong recommendations, 1 conditional recommendation, and 12 good practice statements are offered in this updated guideline. They address analytic validation or verification of predictive and nonpredictive assays, and recommended revalidation procedures following changes in assay conditions. CONCLUSIONS.—: While many of the original guideline statements remain similar, new recommendations address analytic validation of assays with distinct scoring systems, such as programmed death receptor-1 and analytic verification of US Food and Drug Administration approved/cleared assays; more specific guidance is offered for validating immunohistochemistry performed on cytology specimens.",
+    "cited_by_count": 72,
+    "discovery_routes": [
+      "openalex:search:guideline update comparison automatic"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "evidence"
+    ],
+    "curation_score": 24.485,
+    "retained": true
+  },
+  {
+    "paper_id": "W4387329785",
+    "openalex_id": "https://openalex.org/W4387329785",
+    "title": "AAPM Medical Physics Practice Guideline 8.b: Linear accelerator performance tests",
+    "authors": [
+      "Robert F. Krauss",
+      "Salim Balik",
+      "Eileen T. Cirino",
+      "Austin Hadley",
+      "Navneeth Hariharan",
+      "Shannon M. Holmes",
+      "K Kielar",
+      "Hossein Lavvafi",
+      "Kiernan T. McCullough",
+      "Steven Palefsky",
+      "J. Phillip Sawyer",
+      "Koren S. Smith",
+      "Jason Tracy",
+      "Jeff D. Winter",
+      "Nicholai E. Wingreen"
+    ],
+    "year": 2023,
+    "venue": "Journal of Applied Clinical Medical Physics",
+    "doi": "https://doi.org/10.1002/acm2.14160",
+    "source_url": "https://doi.org/10.1002/acm2.14160",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "The purpose of this guideline is to provide a list of critical performance tests to assist the Qualified Medical Physicist (QMP) in establishing and maintaining a safe and effective quality assurance (QA) program. The performance tests on a linear accelerator (linac) should be selected to fit the clinical patterns of use of the accelerator and care should be given to perform tests which are relevant to detecting errors related to the specific use of the accelerator. Current recommendations for linac QA were reviewed to determine any changes required to those tests highlighted by the original report as well as considering new components of the treatment process that have become common since its publication. Recommendations are made on the acquisition of reference data, routine establishment of machine isocenter, basing performance tests on clinical use of the linac, working with vendors to establish QA tests and performing tests after maintenance and upgrades. The recommended tests proposed in this guideline were chosen based on consensus of the guideline's committee after assessing necessary changes from the previous report. The tests are grouped together by class of test (e.g., dosimetry, mechanical, etc.) and clinical parameter tested. Implementation notes are included for each test so that the QMP can understand the overall goal of each test. This guideline will assist the QMP in developing a comprehensive QA program for linacs in the external beam radiation therapy setting. The committee sought to prioritize tests by their implication on quality and patient safety. The QMP is ultimately responsible for implementing appropriate tests. In the spirit of the report from American Association of Physicists in Medicine Task Group 100, individual institutions are encouraged to analyze the risks involved in their own clinical practice and determine which performance tests are relevant in their own radiotherapy clinics.",
+    "cited_by_count": 54,
+    "discovery_routes": [
+      "openalex:search:clinical practice guideline change tracking automation"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "application"
+    ],
+    "curation_score": 24.348,
+    "retained": true
+  },
+  {
+    "paper_id": "W7124427471",
+    "openalex_id": "https://openalex.org/W7124427471",
+    "title": "Hallucination Detection and Mitigation in Large Language Models",
+    "authors": [
+      "Ahmad Pesaranghader",
+      "Erin Li"
+    ],
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2601.09929",
+    "source_url": "https://doi.org/10.48550/arxiv.2601.09929",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Large Language Models (LLMs) and Large Reasoning Models (LRMs) offer transformative potential for high-stakes domains like finance and law, but their tendency to hallucinate, generating factually incorrect or unsupported content, poses a critical reliability risk. This paper introduces a comprehensive operational framework for hallucination management, built on a continuous improvement cycle driven by root cause awareness. We categorize hallucination sources into model, data, and context-related factors, allowing targeted interventions over generic fixes. The framework integrates multi-faceted detection methods (e.g., uncertainty estimation, reasoning consistency) with stratified mitigation strategies (e.g., knowledge grounding, confidence calibration). We demonstrate its application through a tiered architecture and a financial data extraction case study, where model, context, and data tiers form a closed feedback loop for progressive reliability enhancement. This approach provides a systematic, scalable methodology for building trustworthy generative AI systems in regulated environments.",
+    "cited_by_count": 11,
+    "discovery_routes": [
+      "openalex:search:contract clause change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "method",
+      "evidence",
+      "application"
+    ],
+    "curation_score": 24.317,
+    "retained": true
+  },
+  {
+    "paper_id": "W4410857897",
+    "openalex_id": "https://openalex.org/W4410857897",
+    "title": "Transformers and large language models for efficient intrusion detection systems: A comprehensive survey",
+    "authors": [
+      "Hamza Kheddar"
+    ],
+    "year": 2025,
+    "venue": "Information Fusion",
+    "doi": "https://doi.org/10.1016/j.inffus.2025.103347",
+    "source_url": "https://doi.org/10.1016/j.inffus.2025.103347",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "",
+    "cited_by_count": 231,
+    "discovery_routes": [
+      "openalex:search:document version change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 24.199,
+    "retained": true
+  },
+  {
+    "paper_id": "W4402684020",
+    "openalex_id": "https://openalex.org/W4402684020",
+    "title": "Re3: A Holistic Framework and Dataset for Modeling Collaborative Document Revision",
+    "authors": [
+      "Qian Ruan",
+      "Ilia Kuznetsov",
+      "Iryna Gurevych"
+    ],
+    "year": 2024,
+    "venue": "Proceedings of the conference - Association for Computational Linguistics. Meeting",
+    "doi": "https://doi.org/10.18653/v1/2024.acl-long.255",
+    "source_url": "https://doi.org/10.18653/v1/2024.acl-long.255",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Collaborative review and revision of textual documents is the core of knowledge work and a promising target for empirical analysis and NLP assistance.Yet, a holistic framework that would allow modeling complex relationships between document revisions, reviews and author responses is lacking.To address this gap, we introduce Re3, a framework for joint analysis of collaborative document revision.We instantiate this framework in the scholarly domain, and present Re3-Sci, a large corpus of aligned scientific paper revisions manually labeled according to their action and intent, and supplemented with the respective peer reviews and human-written edit summaries.We use the new data to provide first empirical insights into collaborative document revision in the academic domain, and to assess the capabilities of state-of-the-art LLMs at automating edit analysis and facilitating text-based collaboration.We make our annotation environment and protocols, the resulting data and experimental code publicly available.1",
+    "cited_by_count": 5,
+    "discovery_routes": [
+      "openalex:search:surgical text revision alignment paragraph"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 23.236,
+    "retained": true
+  },
+  {
+    "paper_id": "W4380033094",
+    "openalex_id": "https://openalex.org/W4380033094",
+    "title": "On the Reliability of Watermarks for Large Language Models",
+    "authors": [
+      "John Kirchenbauer",
+      "Jonas Geiping",
+      "Yuxin Wen",
+      "Manli Shu",
+      "Saifullah, Khalid",
+      "Kezhi Kong",
+      "Fernando, Kasun",
+      "Saha, Aniruddha",
+      "Micah Goldblum",
+      "Tom Goldstein"
+    ],
+    "year": 2023,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2306.04634",
+    "source_url": "https://doi.org/10.48550/arxiv.2306.04634",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "As LLMs become commonplace, machine-generated text has the potential to flood the internet with spam, social media bots, and valueless content. Watermarking is a simple and effective strategy for mitigating such harms by enabling the detection and documentation of LLM-generated text. Yet a crucial question remains: How reliable is watermarking in realistic settings in the wild? There, watermarked text may be modified to suit a user's needs, or entirely rewritten to avoid detection. We study the robustness of watermarked text after it is re-written by humans, paraphrased by a non-watermarked LLM, or mixed into a longer hand-written document. We find that watermarks remain detectable even after human and machine paraphrasing. While these attacks dilute the strength of the watermark, paraphrases are statistically likely to leak n-grams or even longer fragments of the original text, resulting in high-confidence detections when enough tokens are observed. For example, after strong human paraphrasing the watermark is detectable after observing 800 tokens on average, when setting a 1e-5 false positive rate. We also consider a range of new detection schemes that are sensitive to short spans of watermarked text embedded inside a large document, and we compare the robustness of watermarking to other kinds of detectors.",
+    "cited_by_count": 186,
+    "discovery_routes": [
+      "openalex:search:document version change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "method"
+    ],
+    "curation_score": 22.638,
+    "retained": true
+  },
+  {
+    "paper_id": "W4409954495",
+    "openalex_id": "https://openalex.org/W4409954495",
+    "title": "SPIRIT 2025 explanation and elaboration: updated guideline for protocols of randomised trials",
+    "authors": [
+      "Asbjørn Hróbjartsson",
+      "Isabelle Boutron",
+      "Sally Hopewell",
+      "David Moher",
+      "Kenneth F. Schulz",
+      "Professor Gary S. Collins",
+      "Ruth Tunn",
+      "Rakesh Aggarwal",
+      "Michael Berkwits",
+      "Jesse A. Berlin",
+      "Nita Bhandari",
+      "Nancy J. Butcher",
+      "Marion Campbell",
+      "Runcie C.W. Chidebe",
+      "Diana R. Elbourne",
+      "Andrew A. Farmer",
+      "Dean A. Fergusson",
+      "Robert M Golub",
+      "Steven N. Goodman",
+      "Tammy Hoffmann"
+    ],
+    "year": 2025,
+    "venue": "BMJ",
+    "doi": "https://doi.org/10.1136/bmj-2024-081660",
+    "source_url": "https://doi.org/10.1136/bmj-2024-081660",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "High quality protocols facilitate proper planning, conduct, reporting, and external review of randomised trials, yet their completeness varies and key elements are often not considered. To strengthen good reporting of trial protocols, the SPIRIT (Standard Protocol Items: Recommendations for Interventional Trials) 2013 statement has been updated to incorporate new evidence and emerging perspectives. This SPIRIT 2025 explanation and elaboration document provides users with exemplars of reporting in contemporary trial protocols, contextual elaboration, more detailed guidance on reporting, references to key empirical studies, an expanded checklist, and a link to a website for further information. The document is intended to be used in conjunction with the SPIRIT 2025 statement and serves as a resource for researchers planning a trial and for others interested in trial protocols.",
+    "cited_by_count": 183,
+    "discovery_routes": [
+      "openalex:search:guideline update comparison automatic"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "evidence"
+    ],
+    "curation_score": 22.528,
+    "retained": true
+  },
+  {
+    "paper_id": "W7161049903",
+    "openalex_id": "https://openalex.org/W7161049903",
+    "title": "AcuityBench: Evaluating Clinical Acuity Identification and Uncertainty Alignment",
+    "authors": [
+      "Robin Linzmayer",
+      "Georgianna Lin",
+      "Di Coneybeare",
+      "Jason Chu",
+      "Trudi Cloyd",
+      "Manish Garg",
+      "Miles Gordon",
+      "E. Hartofilis",
+      "Benjamin Hong",
+      "Ashraf Hussain",
+      "Eugene Y. Kim",
+      "Oluchi Iheagwara King",
+      "Ross McCormack",
+      "Erica Olsen",
+      "John K Riggins",
+      "Mustafa N. Rasheed",
+      "Dana L. Sacco",
+      "Vinay Saggar",
+      "Osman R. Sayan",
+      "Amit Shembekar"
+    ],
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2605.11398",
+    "source_url": "https://doi.org/10.48550/arxiv.2605.11398",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "We introduce AcuityBench, a benchmark for evaluating whether language models identify the appropriate urgency of care from user medical presentations. Existing health benchmarks emphasize medical question answering, broad health interactions, or narrow workflow-specific triage tasks, but they do not offer a unified evaluation of acuity identification across these settings. AcuityBench addresses this gap by harmonizing five public datasets spanning user conversations, online forum posts, clinical vignettes, and patient portal messages under a shared four-level acuity framework ranging from home monitoring to immediate emergency care. The benchmark contains 914 cases, including 697 consensus cases for standard accuracy evaluation and 217 physician-confirmed ambiguous cases for uncertainty-aware evaluation. It supports two complementary task formats: explicit four-way classification in a QA setting, and free-form conversational responses evaluated with a rubric-based judge anchored to the same framework. Across 12 frontier proprietary and open-weight models, we find substantial variation in clear-case acuity accuracy and error direction. Comparing task formats reveals a systematic tradeoff: conversational responses reduce over-triage but increase under-triage relative to QA, especially in higher-acuity cases. In ambiguous cases, no model closely matches the distribution of physician judgments, and model predictions are more concentrated than expert clinical uncertainty. We also compare expert and model adjudication on a subset of maximally ambiguous cases, using those cases to examine the role of clinical uncertainty in label disagreement. Together, these results position acuity identification as a distinct safety-critical capability and show that AcuityBench enables systematic comparison and stress-testing of how well models guide users to the right level of care in real-world health use.",
+    "cited_by_count": 2,
+    "discovery_routes": [
+      "openalex:search:surgical text revision alignment paragraph"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "application"
+    ],
+    "curation_score": 22.414,
+    "retained": true
+  },
+  {
+    "paper_id": "W3198624699",
+    "openalex_id": "https://openalex.org/W3198624699",
+    "title": "ACC/AHA/SCAI 2005 Guideline Update for Percutaneous Coronary Intervention",
+    "authors": [
+      "Sidney C. Smith",
+      "Ted E Feldman",
+      "John Winslow Hirshfeld",
+      "Alice K. Jacobs",
+      "Morton J. Kern",
+      "Spencer B. King",
+      "Douglass A. Morrison",
+      "William W. O’Neill",
+      "Hartzell Vernon Schaff",
+      "Patrick L. Whitlow",
+      "David O. Williams",
+      "Elliott Marshall Antman",
+      "Sidney C. Smith",
+      "Cynthia D. Adams",
+      "Jeffrey L. Anderson",
+      "David P. Faxon",
+      "Valentı́n Fuster",
+      "Jonathan L. Halperin",
+      "Loren F. Hiratzka",
+      "Sharon A. Hunt"
+    ],
+    "year": 2005,
+    "venue": "Journal of the American College of Cardiology",
+    "doi": "https://doi.org/10.1016/j.jacc.2005.12.001",
+    "source_url": "https://doi.org/10.1016/j.jacc.2005.12.001",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "",
+    "cited_by_count": 529,
+    "discovery_routes": [
+      "openalex:search:guideline update comparison automatic"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [],
+    "curation_score": 22.361,
+    "retained": true
+  },
+  {
+    "paper_id": "W2981140814",
+    "openalex_id": "https://openalex.org/W2981140814",
+    "title": "Preliminary evidence of the validity process of the Autism Diagnostic Observation Schedule (ADOS): translation, cross-cultural adaptation and semantic equivalence of the Brazilian Portuguese version",
+    "authors": [
+      "Maria Clara Pacífico",
+      "Cristiane Silvestre Paula",
+      "Victor Santos Namur",
+      "Rosane Lowenthal",
+      "Cleonice Alves Bosa",
+      "María Cristina Triguero Veloz Teixeira"
+    ],
+    "year": 2019,
+    "venue": "Trends in Psychiatry and Psychotherapy",
+    "doi": "https://doi.org/10.1590/2237-6089-2018-0063",
+    "source_url": "https://doi.org/10.1590/2237-6089-2018-0063",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "OBJECTIVES: To translate and back-translate the Autism Diagnostic Observation Schedule (ADOS) into Brazilian Portuguese, to assess its cross-cultural semantic equivalence, and to verify indicators of quality of the final version by analyzing the inter-rater reliability of the ADOS scores. METHODS: This study had three stages: 1) translation and back-translation; 2) semantic equivalence analysis; and 3) pre-test to verify the agreement between mental health specialists and an ADOS senior examiner regarding the scoring procedure. Authorization to translate and carry out the cultural adaptation of the instrument was first obtained from the Western Psychological Services, publishers of the instrument. RESULTS: The main preliminary results pointed to good equivalence between the original English version and the final version and the Brazilian version following the cultural adaptation process. Some semantic differences were found between the original version and the back-translation into English, but they did not interfere with the first translation into Portuguese or into the final version. One of the limitations of the study was the small sample size; for that reason, the inter-rater reliability of the ADOS scores between the specialists and the senior examiner using the kappa coefficient was adequate for 7 out of 10 areas. CONCLUSIONS: We conclude that the creation of an official Brazilian version of ADOS will help to strengthen clinical and scientific research into ASD, and deter the use of other unauthorized versions of ADOS in the country.",
+    "cited_by_count": 36,
+    "discovery_routes": [
+      "openalex:search:cross-version semantic equivalence sentence"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "evidence"
+    ],
+    "curation_score": 22.0,
+    "retained": true
+  },
+  {
+    "paper_id": "W7140373893",
+    "openalex_id": "https://openalex.org/W7140373893",
+    "title": "Technical evaluation of language models adapted for the automation of legal contracts: clause extraction, classification, and summarization",
+    "authors": [
+      "Jaime Govea",
+      "Iván Ortiz-Garcés",
+      "Pablo Palacios",
+      "Alexandra Maldonado Navarro",
+      "Santiago Martín Acurio del Pino",
+      "William Eduardo Villegas-Ch"
+    ],
+    "year": 2026,
+    "venue": "Frontiers in Artificial Intelligence",
+    "doi": "https://doi.org/10.3389/frai.2026.1782405",
+    "source_url": "https://doi.org/10.3389/frai.2026.1782405",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "The growing demand for automation in legal contract management exposes a persistent limitation of current language models: insufficient adaptation to the semantic, structural, and regulatory constraints of legal language. While large language models perform well on general NLP tasks, their direct application to legal document classification, clause extraction, and contract summarization often yields unstable, legally unreliable outputs. This work presents a structured methodological pipeline for evaluating and adapting language models for legal contract automation, combining domain-specific fine-tuning of open-source models with a controlled comparative assessment against large general-purpose LLMs used exclusively in inference mode. The methodology integrates legal corpus curation, clause-level annotation, and efficient adaptation techniques, and is evaluated across three core tasks: contract document classification, normative clause extraction, and regulatory summarization. The evaluation protocol is explicitly designed to disentangle the effects of supervision from deployment constraints arising in regulated legal settings. Experimental results show consistent and statistically significant performance gains for legally adapted models over general-purpose baselines, achieving Macro-F1 of 0.921 in classification, span-level F1 of 0.903 in clause extraction, and ROUGE-L of 0.886 in summarization ( p < 0.01). Robustness analysis and cross-validation confirm stability across heterogeneous private-sector contract types. The findings should be interpreted under the evaluated comparison regime and highlight that, in legally constrained multi-stage workflows, task-aligned supervision provides measurable structural benefits that are not reducible to model scale alone when general-purpose LLMs are restricted to inference-only deployment.",
+    "cited_by_count": 1,
+    "discovery_routes": [
+      "openalex:search:contract clause change detection large language model"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method",
+      "application"
+    ],
+    "curation_score": 22.0,
+    "retained": true
+  },
+  {
+    "paper_id": "W4405354964",
+    "openalex_id": "https://openalex.org/W4405354964",
+    "title": "When Text Embedding Meets Large Language Model: A Comprehensive Survey",
+    "authors": [
+      "Zhijie Nie",
+      "Zhangchi Feng",
+      "Mingxin Li",
+      "Cunwang Zhang",
+      "Zhang, Yanzhao",
+      "Dingkun Long",
+      "Richong Zhang"
+    ],
+    "year": 2024,
+    "venue": "arXiv (Cornell University)",
+    "doi": "https://doi.org/10.48550/arxiv.2412.09165",
+    "source_url": "https://doi.org/10.48550/arxiv.2412.09165",
+    "authority_tier": "B",
+    "authority_reason": "indexed venue",
+    "abstract": "Text embedding has become a foundational technology in natural language processing (NLP) during the deep learning era, driving advancements across a wide array of downstream tasks. While many natural language understanding challenges can now be modeled using generative paradigms and leverage the robust generative and comprehension capabilities of large language models (LLMs), numerous practical applications - such as semantic matching, clustering, and information retrieval - continue to rely on text embeddings for their efficiency and effectiveness. Therefore, integrating LLMs with text embeddings has become a major research focus in recent years. In this survey, we categorize the interplay between LLMs and text embeddings into three overarching themes: (1) LLM-augmented text embedding, enhancing traditional embedding methods with LLMs; (2) LLMs as text embedders, adapting their innate capabilities for high-quality embedding; and (3) Text embedding understanding with LLMs, leveraging LLMs to analyze and interpret embeddings. By organizing recent works based on interaction patterns rather than specific downstream applications, we offer a novel and systematic overview of contributions from various research and application domains in the era of LLMs. Furthermore, we highlight the unresolved challenges that persisted in the pre-LLM era with pre-trained language models (PLMs) and explore the emerging obstacles brought forth by LLMs. Building on this analysis, we outline prospective directions for the evolution of text embedding, addressing both theoretical and practical opportunities in the rapidly advancing landscape of NLP.",
+    "cited_by_count": 47,
+    "discovery_routes": [
+      "openalex:search:policy change detection text embedding"
+    ],
+    "reading_level": "metadata",
+    "retrieved_at": "2026-11-08",
+    "inclusion_reason": "discovered via configured route",
+    "exclusion_reason": "",
+    "categories": [
+      "task",
+      "method"
+    ],
+    "curation_score": 21.856,
+    "retained": true
+  }
+]

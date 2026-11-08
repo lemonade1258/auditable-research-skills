@@ -1,0 +1,29 @@
+{
+  "receipt": {
+    "purpose": "version-delta.verify_alignment",
+    "model": "qwen-max",
+    "prompt_digest": "b7b7991781224069",
+    "attempts": 1,
+    "latency_ms": 7844,
+    "usage": {
+      "prompt_tokens": 340,
+      "completion_tokens": 49,
+      "total_tokens": 389,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      }
+    },
+    "written_at_utc": "2026-11-08T10:27:52Z",
+    "raw_response": "{\"verdict\": \"ALIGN\", \"confidence\": \"high\", \"reason\": \"Both items ask for the criteria used to determine which studies are included in the review, although the new version also asks about how studies were grouped for synthesis.\"}",
+    "old_unit_id": "item-6",
+    "new_unit_id": "item-5",
+    "old_title": "Eligibility criteria",
+    "new_title": "Eligibility criteria",
+    "verdict": "ALIGN"
+  },
+  "payload": {
+    "verdict": "ALIGN",
+    "confidence": "high",
+    "reason": "Both items ask for the criteria used to determine which studies are included in the review, although the new version also asks about how studies were grouped for synthesis."
+  }
+}

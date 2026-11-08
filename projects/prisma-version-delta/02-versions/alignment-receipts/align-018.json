@@ -1,0 +1,29 @@
+{
+  "receipt": {
+    "purpose": "version-delta.verify_alignment",
+    "model": "qwen-max",
+    "prompt_digest": "388c19a40861a6cc",
+    "attempts": 1,
+    "latency_ms": 6496,
+    "usage": {
+      "prompt_tokens": 323,
+      "completion_tokens": 39,
+      "total_tokens": 362,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "written_at_utc": "2026-11-08T10:28:36Z",
+    "raw_response": "{\"verdict\": \"ALIGN\", \"confidence\": \"high\", \"reason\": \"Both items request the presentation of characteristics for each included study and their citations, indicating the same underlying concern.\"}",
+    "old_unit_id": "item-18",
+    "new_unit_id": "item-17",
+    "old_title": "Study characteristics",
+    "new_title": "Study characteristics",
+    "verdict": "ALIGN"
+  },
+  "payload": {
+    "verdict": "ALIGN",
+    "confidence": "high",
+    "reason": "Both items request the presentation of characteristics for each included study and their citations, indicating the same underlying concern."
+  }
+}

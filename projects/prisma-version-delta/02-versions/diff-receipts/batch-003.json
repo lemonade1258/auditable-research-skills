@@ -2,63 +2,50 @@
   "receipt": {
     "purpose": "version-delta.classify",
     "model": "qwen-max",
-    "prompt_digest": "c38c17b0776a5443",
+    "prompt_digest": "e0a082bf925a04d3",
     "attempts": 1,
-    "latency_ms": 24752,
+    "latency_ms": 19698,
     "usage": {
-      "prompt_tokens": 817,
-      "completion_tokens": 930,
-      "total_tokens": 1747,
+      "prompt_tokens": 615,
+      "completion_tokens": 591,
+      "total_tokens": 1206,
       "prompt_tokens_details": {
         "cached_tokens": 256
       }
     },
-    "written_at_utc": "2026-11-08T10:14:12Z",
-    "raw_response": "[\n  {\n    \"delta_id\": \"item-7\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"The old version required a description of all information sources and the date last searched. The new version requires the full search strategies for all databases, registers, and websites, including any filters and limits used. This represents a shift from a general overview to specific, detailed search strategies.\",\n    \"worked_example\": \"A review that under the 2009 guidelines described using PubMed (last searched on 1/1/2023) without specifying the exact search terms or filters, would now need to provide the complete search strategy, such as 'PubMed: (\\\"keyword1\\\" AND \\\"keyword2\\\") Filters: English, 2010-2023'.\",\n    \"impact_summary\": \"This change requires more detailed reporting, which could affect the reproducibility and transparency of the search process.\",\n    \"resolution_requirement\": \"Reviewers must now provide the full search strategies, including specific search terms and any filters or limits used.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Describe all information sources (such as databases with dates of coverage, contact with study authors to identify additional studies) in the search and date last searched\",\n    \"new_excerpt\": \"Present the full search strategies for all databases, registers and websites, including any filters and limits used.\"\n  },\n  {\n    \"delta_id\": \"item-8\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"high\",\n    \"interpretation\": \"The old version required presenting the full electronic search strategy for at least one database, including any limits used. The new version focuses on the methods used to decide whether a study met the inclusion criteria, including the number of reviewers, their independence, and the use of automation tools.\",\n    \"worked_example\": \"A review that under the 2009 guidelines provided the full search strategy for PubMed, but did not detail the selection process, would now need to specify how many reviewers screened each record, whether they worked independently, and if any automation tools were used.\",\n    \"impact_summary\": \"This change shifts the focus from the search strategy to the selection process, which significantly impacts the transparency and reproducibility of the review.\",\n    \"resolution_requirement\": \"Reviewers must now provide detailed information on the selection process, including the number of reviewers, their independence, and the use of automation tools.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Present full electronic search strategy for at least one database, including any limits used, such that it could be repeated\",\n    \"new_excerpt\": \"Specify the methods used to decide whether a study met the inclusion criteria of the review, including how many reviewers screened each record and each report retrieved, whether they worked independently, and if applicable, details of automation tools used in the process.\"\n  },\n  {\n    \"delta_id\": \"item-9\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"high\",\n    \"interpretation\": \"The old version required stating the process for selecting studies, including screening, eligibility, and inclusion in the systematic review. The new version focuses on the methods used to collect data from reports, including the number of reviewers, their independence, and the use of automation tools.\",\n    \"worked_example\": \"A review that under the 2009 guidelines described the process for selecting studies, but did not detail the data collection process, would now need to specify how many reviewers collected data from each report, whether they worked independently, and if any automation tools were used.\",\n    \"impact_summary\": \"This change shifts the focus from the selection process to the data collection process, which significantly impacts the transparency and reproducibility of the review.\",\n    \"resolution_requirement\": \"Reviewers must now provide detailed information on the data collection process, including the number of reviewers, their independence, and the use of automation tools.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"State the process for selecting studies (that is, screening, eligibility, included in systematic review, and, if applicable, included in the meta-analysis)\",\n    \"new_excerpt\": \"Specify the methods used to collect data from reports, including how many reviewers collected data from each report, whether they worked independently, any processes for obtaining or confirming data from study investigators, and if applicable, details of automation tools used in the process.\"\n  }\n]",
+    "written_at_utc": "2026-11-08T10:30:12Z",
+    "raw_response": "[\n  {\n    \"delta_id\": \"item-5-to-item-24a\",\n    \"change_type\": \"scope_narrowed\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"The new version focuses specifically on the registration information, requiring the register name and registration number, or a statement that the review was not registered. The old version also asked for access information to the protocol, which is no longer required.\",\n    \"worked_example\": \"A review with a publicly accessible protocol but no registration would have provided the web address of the protocol under the old version, but under the new version, it must state that the review was not registered.\",\n    \"impact_summary\": \"The requirement to provide access to the protocol has been removed, and there is now a specific focus on registration details.\",\n    \"resolution_requirement\": \"Evidence of the review's registration status, including the register name and registration number, or a clear statement that the review was not registered.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Indicate if a review protocol exists, if and where it can be accessed (such as web address), and, if available, provide registration information including registration number\",\n    \"new_excerpt\": \"Provide registration information for the review, including register name and registration number, or state that the review was not registered.\"\n  },\n  {\n    \"delta_id\": \"item-6-to-item-5\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"high\",\n    \"interpretation\": \"The new version requires specifying inclusion and exclusion criteria and how studies were grouped for the syntheses, while the old version required specifying study and report characteristics used as eligibility criteria, along with the rationale. The shift in focus from detailed characteristics and rationale to inclusion/exclusion criteria and grouping may change the way eligibility is reported.\",\n    \"worked_example\": \"A review that included studies based on PICOS, length of follow-up, years considered, language, and publication status, and provided a rationale for these choices, would now need to clearly specify the inclusion and exclusion criteria and how the studies were grouped for the syntheses, without necessarily providing a rationale for each characteristic.\",\n    \"impact_summary\": \"The new version narrows the scope to inclusion and exclusion criteria and the grouping of studies, potentially omitting the rationale and some of the detailed characteristics previously required.\",\n    \"resolution_requirement\": \"Clear specification of the inclusion and exclusion criteria and the method of grouping studies for the syntheses.\",\n    \"uncertainty\": \"medium\",\n    \"old_excerpt\": \"Specify study characteristics (such as PICOS, length of follow-up) and report characteristics (such as years considered, language, publication status) used as criteria for eligibility, giving rationale\",\n    \"new_excerpt\": \"Specify the inclusion and exclusion criteria for the review and how studies were grouped for the syntheses.\"\n  }\n]",
     "old_id": "PRISMA 2009",
     "new_id": "PRISMA 2020",
     "pair_keys": [
-      "item-7",
-      "item-8",
-      "item-9"
+      "item-5",
+      "item-6"
     ]
   },
   "payload": [
     {
-      "delta_id": "item-7",
-      "change_type": "semantic_shift",
+      "delta_id": "item-5-to-item-24a",
+      "change_type": "scope_narrowed",
       "impact_level": "medium",
-      "interpretation": "The old version required a description of all information sources and the date last searched. The new version requires the full search strategies for all databases, registers, and websites, including any filters and limits used. This represents a shift from a general overview to specific, detailed search strategies.",
-      "worked_example": "A review that under the 2009 guidelines described using PubMed (last searched on 1/1/2023) without specifying the exact search terms or filters, would now need to provide the complete search strategy, such as 'PubMed: (\"keyword1\" AND \"keyword2\") Filters: English, 2010-2023'.",
-      "impact_summary": "This change requires more detailed reporting, which could affect the reproducibility and transparency of the search process.",
-      "resolution_requirement": "Reviewers must now provide the full search strategies, including specific search terms and any filters or limits used.",
+      "interpretation": "The new version focuses specifically on the registration information, requiring the register name and registration number, or a statement that the review was not registered. The old version also asked for access information to the protocol, which is no longer required.",
+      "worked_example": "A review with a publicly accessible protocol but no registration would have provided the web address of the protocol under the old version, but under the new version, it must state that the review was not registered.",
+      "impact_summary": "The requirement to provide access to the protocol has been removed, and there is now a specific focus on registration details.",
+      "resolution_requirement": "Evidence of the review's registration status, including the register name and registration number, or a clear statement that the review was not registered.",
       "uncertainty": "low",
-      "old_excerpt": "Describe all information sources (such as databases with dates of coverage, contact with study authors to identify additional studies) in the search and date last searched",
-      "new_excerpt": "Present the full search strategies for all databases, registers and websites, including any filters and limits used."
+      "old_excerpt": "Indicate if a review protocol exists, if and where it can be accessed (such as web address), and, if available, provide registration information including registration number",
+      "new_excerpt": "Provide registration information for the review, including register name and registration number, or state that the review was not registered."
     },
     {
-      "delta_id": "item-8",
+      "delta_id": "item-6-to-item-5",
       "change_type": "semantic_shift",
       "impact_level": "high",
-      "interpretation": "The old version required presenting the full electronic search strategy for at least one database, including any limits used. The new version focuses on the methods used to decide whether a study met the inclusion criteria, including the number of reviewers, their independence, and the use of automation tools.",
-      "worked_example": "A review that under the 2009 guidelines provided the full search strategy for PubMed, but did not detail the selection process, would now need to specify how many reviewers screened each record, whether they worked independently, and if any automation tools were used.",
-      "impact_summary": "This change shifts the focus from the search strategy to the selection process, which significantly impacts the transparency and reproducibility of the review.",
-      "resolution_requirement": "Reviewers must now provide detailed information on the selection process, including the number of reviewers, their independence, and the use of automation tools.",
-      "uncertainty": "low",
-      "old_excerpt": "Present full electronic search strategy for at least one database, including any limits used, such that it could be repeated",
-      "new_excerpt": "Specify the methods used to decide whether a study met the inclusion criteria of the review, including how many reviewers screened each record and each report retrieved, whether they worked independently, and if applicable, details of automation tools used in the process."
-    },
-    {
-      "delta_id": "item-9",
-      "change_type": "semantic_shift",
-      "impact_level": "high",
-      "interpretation": "The old version required stating the process for selecting studies, including screening, eligibility, and inclusion in the systematic review. The new version focuses on the methods used to collect data from reports, including the number of reviewers, their independence, and the use of automation tools.",
-      "worked_example": "A review that under the 2009 guidelines described the process for selecting studies, but did not detail the data collection process, would now need to specify how many reviewers collected data from each report, whether they worked independently, and if any automation tools were used.",
-      "impact_summary": "This change shifts the focus from the selection process to the data collection process, which significantly impacts the transparency and reproducibility of the review.",
-      "resolution_requirement": "Reviewers must now provide detailed information on the data collection process, including the number of reviewers, their independence, and the use of automation tools.",
-      "uncertainty": "low",
-      "old_excerpt": "State the process for selecting studies (that is, screening, eligibility, included in systematic review, and, if applicable, included in the meta-analysis)",
-      "new_excerpt": "Specify the methods used to collect data from reports, including how many reviewers collected data from each report, whether they worked independently, any processes for obtaining or confirming data from study investigators, and if applicable, details of automation tools used in the process."
+      "interpretation": "The new version requires specifying inclusion and exclusion criteria and how studies were grouped for the syntheses, while the old version required specifying study and report characteristics used as eligibility criteria, along with the rationale. The shift in focus from detailed characteristics and rationale to inclusion/exclusion criteria and grouping may change the way eligibility is reported.",
+      "worked_example": "A review that included studies based on PICOS, length of follow-up, years considered, language, and publication status, and provided a rationale for these choices, would now need to clearly specify the inclusion and exclusion criteria and how the studies were grouped for the syntheses, without necessarily providing a rationale for each characteristic.",
+      "impact_summary": "The new version narrows the scope to inclusion and exclusion criteria and the grouping of studies, potentially omitting the rationale and some of the detailed characteristics previously required.",
+      "resolution_requirement": "Clear specification of the inclusion and exclusion criteria and the method of grouping studies for the syntheses.",
+      "uncertainty": "medium",
+      "old_excerpt": "Specify study characteristics (such as PICOS, length of follow-up) and report characteristics (such as years considered, language, publication status) used as criteria for eligibility, giving rationale",
+      "new_excerpt": "Specify the inclusion and exclusion criteria for the review and how studies were grouped for the syntheses."
     }
   ]
 }

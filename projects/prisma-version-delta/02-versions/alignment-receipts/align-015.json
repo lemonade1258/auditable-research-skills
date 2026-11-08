@@ -1,0 +1,29 @@
+{
+  "receipt": {
+    "purpose": "version-delta.verify_alignment",
+    "model": "qwen-max",
+    "prompt_digest": "4b5ecd70287b14cf",
+    "attempts": 1,
+    "latency_ms": 7284,
+    "usage": {
+      "prompt_tokens": 325,
+      "completion_tokens": 47,
+      "total_tokens": 372,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      }
+    },
+    "written_at_utc": "2026-11-08T10:28:29Z",
+    "raw_response": "{\"verdict\": \"MISMATCH\", \"confidence\": \"high\", \"reason\": \"The old version focuses on the risk of bias across all studies, while the new version is about the risk of bias within each individual study.\"}",
+    "old_unit_id": "item-15",
+    "new_unit_id": "item-18",
+    "old_title": "Risk of bias across studies",
+    "new_title": "Risk of bias in studies",
+    "verdict": "MISMATCH"
+  },
+  "payload": {
+    "verdict": "MISMATCH",
+    "confidence": "high",
+    "reason": "The old version focuses on the risk of bias across all studies, while the new version is about the risk of bias within each individual study."
+  }
+}

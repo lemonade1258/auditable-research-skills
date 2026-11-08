@@ -1,0 +1,29 @@
+{
+  "receipt": {
+    "purpose": "version-delta.verify_alignment",
+    "model": "qwen-max",
+    "prompt_digest": "dd2521e3d8d52ea6",
+    "attempts": 1,
+    "latency_ms": 7290,
+    "usage": {
+      "prompt_tokens": 376,
+      "completion_tokens": 46,
+      "total_tokens": 422,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      }
+    },
+    "written_at_utc": "2026-11-08T10:28:43Z",
+    "raw_response": "{\"verdict\": \"ALIGN\", \"confidence\": \"high\", \"reason\": \"Both items request the presentation of summary data for each intervention group and effect estimates with confidence intervals for all outcomes, indicating the same underlying concern.\"}",
+    "old_unit_id": "item-20",
+    "new_unit_id": "item-19",
+    "old_title": "Results of individual studies",
+    "new_title": "Results of individual studies",
+    "verdict": "ALIGN"
+  },
+  "payload": {
+    "verdict": "ALIGN",
+    "confidence": "high",
+    "reason": "Both items request the presentation of summary data for each intervention group and effect estimates with confidence intervals for all outcomes, indicating the same underlying concern."
+  }
+}

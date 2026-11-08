@@ -4,8 +4,15 @@ The script performs three mechanical steps and one model-assisted step:
 
 1. mechanical  -- segment both versions into comparable units.
 2. mechanical  -- align units one-to-one on normalized title similarity.
-3. model       -- classify each aligned pair that differs, with a worked example.
-4. mechanical  -- validate and write, keeping every model receipt on disk.
+3. model       -- verify ambiguous pairs: are these really the same concept?
+4. model       -- classify each aligned pair that differs, with a worked example.
+5. mechanical  -- validate and write, keeping every model receipt on disk.
+
+Step 3 exists because numbering is not an alignment anchor. Two editions of a
+guideline routinely reuse an item number for a different topic, so a title-only
+matcher can pair "Risk of bias in individual studies" with "Effect measures"
+and the classifier will dutifully invent a semantic shift between them.
+Verifying the pair before classifying it is what keeps the delta map honest.
 
 Nothing here decides that a change is real. Every delta is written with
 ``machine_proposed`` status so a person still has to confirm it.
@@ -236,6 +243,199 @@ def find_unit(units: list[dict], unit_id: str | None) -> dict | None:
     return None
 
 
+ALIGN_CHECK_SYSTEM = """You decide whether two items from different versions of a reporting
+guideline address the same underlying concern.
+
+Rules you must follow:
+- Judge only the text given. Never rely on item numbers: numbers are reused across
+  versions for different topics, so a number match means nothing.
+- Two items ALIGN when they ask for the same kind of information, even if the wording,
+  the scope, or the required detail changed. A tightened or widened requirement is
+  still the same concern.
+- Two items MISMATCH when they ask for fundamentally different information. An item
+  about search strategy and an item about effect measures do not align, however
+  similar they look lexically.
+- An item in the old version and a genuinely new item in the new version MISMATCH.
+- Return a JSON object with keys: verdict ("ALIGN" or "MISMATCH"), confidence
+  ("high" | "medium" | "low"), and reason (one sentence, no line breaks).
+- Return ONLY a JSON object. No prose, no code fence."""
+
+ALIGN_CHECK_USER = """OLD VERSION ({old_id}) - item {old_unit_id}: {old_title}
+{old_text}
+
+NEW VERSION ({new_id}) - item {new_unit_id}: {new_title}
+{new_text}
+
+Do these two items address the same underlying concern? Answer with the JSON object."""
+
+
+def verify_alignment(
+    pairs: list[dict],
+    old_units: list[dict],
+    new_units: list[dict],
+    old_id: str,
+    new_id: str,
+    config: LLMConfig,
+    receipts_dir: Path,
+) -> list[dict]:
+    """Re-check every candidate pair with the model before classifying it.
+
+    Only pairs that survived title similarity are checked. A model verdict of
+    MISMATCH demotes the pair: the two units become unmatched, and each side is
+    reconsidered on its own in the next pass.
+    """
+    checked: list[dict] = []
+    for index, pair in enumerate(pairs):
+        if pair["alignment"] != "matched":
+            checked.append(pair)
+            continue
+
+        old = find_unit(old_units, pair["old_unit_id"])
+        new = find_unit(new_units, pair["new_unit_id"])
+        if old is None or new is None:
+            checked.append(pair)
+            continue
+
+        prompt = ALIGN_CHECK_USER.format(
+            old_id=old_id,
+            new_id=new_id,
+            old_unit_id=old["unit_id"],
+            new_unit_id=new["unit_id"],
+            old_title=old["title"],
+            new_title=new["title"],
+            old_text=old["text"][:2500],
+            new_text=new["text"][:2500],
+        )
+        payload, result = chat_json(
+            [{"role": "user", "content": prompt}],
+            config,
+            system=ALIGN_CHECK_SYSTEM,
+        )
+        if isinstance(payload, list):
+            payload = payload[0] if payload else {}
+        if not isinstance(payload, dict):
+            payload = {}
+
+        verdict = str(payload.get("verdict", "")).upper()
+        pair["alignment_confidence"] = payload.get("confidence", "low")
+        pair["alignment_reason"] = payload.get("reason", "")
+        pair["aligned_by"] = "title_similarity+model_verified"
+        if verdict != "ALIGN":
+            pair["alignment"] = "mismatch"
+            pair["similarity"] = 0.0
+
+        write_receipt(
+            receipts_dir / f"align-{index + 1:03d}.json",
+            payload,
+            result,
+            purpose="version-delta.verify_alignment",
+            extra={
+                "old_unit_id": pair["old_unit_id"],
+                "new_unit_id": pair["new_unit_id"],
+                "old_title": pair["old_title"],
+                "new_title": pair["new_title"],
+                "verdict": verdict,
+            },
+        )
+        checked.append(pair)
+    return checked
+
+
+def resolve_unmatched(
+    pairs: list[dict],
+    old_units: list[dict],
+    new_units: list[dict],
+    old_id: str,
+    new_id: str,
+    config: LLMConfig,
+    receipts_dir: Path,
+) -> list[dict]:
+    """Second pass: try to match units the first pass left unmatched.
+
+    The first pass pairs on title similarity only, so a reworded item ("Search"
+    becoming "Search strategy") falls through. This pass asks the model to
+    match the leftovers against each other, which is where the real
+    cross-version mapping comes from.
+    """
+    unmatched_old = [p for p in pairs if p["alignment"] in ("removed", "mismatch")]
+    unmatched_new = [p for p in pairs if p["alignment"] in ("added", "mismatch")]
+
+    old_candidates = [u for u in old_units if u["unit_id"] in {p["old_unit_id"] for p in unmatched_old}]
+    new_candidates = [u for u in new_units if u["unit_id"] in {p["new_unit_id"] for p in unmatched_new}]
+    if not old_candidates or not new_candidates:
+        return pairs
+
+    old_list = "\n".join(
+        f"- {u['unit_id']}: {u['title']}\n  {u['text'][:300]}" for u in old_candidates
+    )
+    new_list = "\n".join(
+        f"- {u['unit_id']}: {u['title']}\n  {u['text'][:300]}" for u in new_candidates
+    )
+
+    system = """You match leftover items between two versions of a reporting guideline.
+
+Rules:
+- For each old item, decide whether exactly one new item addresses the same concern.
+  Many-to-one and one-to-many mappings are NOT allowed; each item may be used once.
+- If no new item matches, leave that old item unmatched.
+- If a new item matches nothing, it is genuinely new.
+- Judge by meaning, not by item number and not by lexical similarity alone.
+- Return a JSON object: {"matches": [{"old_unit_id": "...", "new_unit_id": "...",
+  "confidence": "high|medium|low", "reason": "..."}]}. Only list the matches you are
+  confident about; omit uncertain ones.
+- Return ONLY a JSON object. No prose, no code fence."""
+
+    prompt = f"""OLD VERSION ({old_id}) unmatched items:
+{old_list}
+
+NEW VERSION ({new_id}) unmatched items:
+{new_list}
+
+Match the old items to new items where they address the same concern."""
+
+    payload, result = chat_json([{"role": "user", "content": prompt}], config, system=system)
+    if isinstance(payload, list):
+        payload = payload[0] if payload else {}
+    matches = payload.get("matches", []) if isinstance(payload, dict) else []
+
+    write_receipt(
+        receipts_dir / "resolve-unmatched.json",
+        payload,
+        result,
+        purpose="version-delta.resolve_unmatched",
+        extra={"old_candidates": len(old_candidates), "new_candidates": len(new_candidates)},
+    )
+
+    by_old = {p["old_unit_id"]: p for p in pairs}
+    by_new = {p["new_unit_id"]: p for p in pairs}
+    used_new: set[str] = set()
+
+    for match in matches:
+        old_id_ = match.get("old_unit_id")
+        new_id_ = match.get("new_unit_id")
+        if not old_id_ or not new_id_ or new_id_ in used_new:
+            continue
+        old_pair = by_old.get(old_id_)
+        new_pair = by_new.get(new_id_)
+        if old_pair is None or new_pair is None:
+            continue
+        if old_pair["alignment"] == "matched" or new_pair["alignment"] == "matched":
+            continue
+
+        # Merge the two pair records into one matched pair.
+        old_pair["new_unit_id"] = new_id_
+        old_pair["new_title"] = new_pair["new_title"]
+        old_pair["alignment"] = "matched"
+        old_pair["similarity"] = 0.0
+        old_pair["aligned_by"] = "model_resolved"
+        old_pair["alignment_confidence"] = match.get("confidence", "medium")
+        old_pair["alignment_reason"] = match.get("reason", "")
+        new_pair["alignment"] = "absorbed"
+        used_new.add(new_id_)
+
+    return pairs
+
+
 CLASSIFY_SYSTEM = """You compare two versions of a normative document and classify differences.
 
 Rules you must follow:
@@ -316,16 +516,6 @@ def main() -> int:
     new_units = load_units(args.new)
     pairs, _ = align(old_units, new_units)
 
-    # Only pairs whose text actually differs are worth a model call.
-    candidates: list[dict] = []
-    for pair in pairs:
-        old_unit = find_unit(old_units, pair["old_unit_id"])
-        new_unit = find_unit(new_units, pair["new_unit_id"])
-        pair["old_text"] = old_unit["text"] if old_unit else ""
-        pair["new_text"] = new_unit["text"] if new_unit else ""
-        if pair["old_text"].strip() != pair["new_text"].strip():
-            candidates.append(pair)
-
     out_dir = project / "02-versions"
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "segmentation.json").write_text(json.dumps({
@@ -336,7 +526,7 @@ def main() -> int:
 
     print(json.dumps({
         "old_units": len(old_units), "new_units": len(new_units),
-        "aligned_pairs": len(pairs), "differing_pairs": len(candidates),
+        "aligned_pairs": len(pairs),
     }, ensure_ascii=False))
 
     if args.dry_run:
@@ -349,8 +539,39 @@ def main() -> int:
     except LLMUnavailable as exc:
         raise SystemExit(str(exc))
 
-    deltas: list[dict] = []
+    out_dir = project / "02-versions"
     receipts_dir = out_dir / "diff-receipts"
+    align_receipts = out_dir / "alignment-receipts"
+
+    # Step 3: verify the title-based pairing with the model before classifying.
+    # A wrong pair produces a confident, well-written, meaningless delta.
+    pairs = verify_alignment(pairs, old_units, new_units, args.old_id, args.new_id, config, align_receipts)
+    mismatched = [p for p in pairs if p["alignment"] == "mismatch"]
+
+    # Step 3b: match the leftovers the title matcher could not pair.
+    pairs = resolve_unmatched(pairs, old_units, new_units, args.old_id, args.new_id, config, align_receipts)
+
+    (out_dir / "alignment.json").write_text(
+        json.dumps(pairs, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    print(json.dumps({
+        "alignment_mismatches": len(mismatched),
+        "alignment_resolved": sum(1 for p in pairs if p.get("aligned_by") == "model_resolved"),
+    }, ensure_ascii=False))
+
+    # Only pairs whose text actually differs are worth a model call.
+    candidates: list[dict] = []
+    for pair in pairs:
+        if pair["alignment"] != "matched":
+            continue
+        old_unit = find_unit(old_units, pair["old_unit_id"])
+        new_unit = find_unit(new_units, pair["new_unit_id"])
+        pair["old_text"] = old_unit["text"] if old_unit else ""
+        pair["new_text"] = new_unit["text"] if new_unit else ""
+        if pair["old_text"].strip() != pair["new_text"].strip():
+            candidates.append(pair)
+
+    deltas: list[dict] = []
     for start in range(0, len(candidates), args.batch_size):
         batch = candidates[start : start + args.batch_size]
         if not batch:

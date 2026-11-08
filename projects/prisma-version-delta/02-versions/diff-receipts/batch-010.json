@@ -2,63 +2,50 @@
   "receipt": {
     "purpose": "version-delta.classify",
     "model": "qwen-max",
-    "prompt_digest": "2d808c8a4a19c985",
+    "prompt_digest": "1d3b83c5bafe395d",
     "attempts": 1,
-    "latency_ms": 21809,
+    "latency_ms": 18886,
     "usage": {
-      "prompt_tokens": 745,
-      "completion_tokens": 680,
-      "total_tokens": 1425,
+      "prompt_tokens": 603,
+      "completion_tokens": 558,
+      "total_tokens": 1161,
       "prompt_tokens_details": {
-        "cached_tokens": 256
+        "cached_tokens": 0
       }
     },
-    "written_at_utc": "2026-11-08T10:16:48Z",
-    "raw_response": "[{\"delta_id\":1,\"change_type\":\"field_added\",\"impact_level\":\"medium\",\"interpretation\":\"The new version specifies a requirement to list and define all outcomes for which data were sought, and the methods used to decide which results to collect if not all compatible results were included. This was not present in the old version.\",\"worked_example\":\"\",\"impact_summary\":\"This change introduces a new requirement that may affect the scope of data collection and reporting, impacting how outcomes are defined and reported in systematic reviews. The introduction of this field can lead to more detailed and transparent reporting of outcomes and their measurement, potentially altering conclusions or compliance status.\",\"resolution_requirement\":\"Evidence must now include a clear definition of all outcomes, and if applicable, the decision-making process for selecting specific results over others.\",\"uncertainty\":\"low\",\"old_excerpt\":\"\",\"new_excerpt\":\"List and define all outcomes for which data were sought. Specify whether all results that were compatible with each outcome domain in each study were sought (e.g. for all measures, time points, analyses), and if not, the methods used to decide which results to collect.\"},{\"delta_id\":2,\"change_type\":\"field_added\",\"impact_level\":\"medium\",\"interpretation\":\"The new version introduces a requirement to describe the processes used to decide which studies were eligible for each synthesis, including an example of tabulating study intervention characteristics and comparing against planned groups. This level of detail on synthesis eligibility criteria was not specified in the old version.\",\"worked_example\":\"\",\"impact_summary\":\"This addition requires a more detailed description of the decision-making process for study inclusion in syntheses, which could impact the transparency and reproducibility of review findings. It changes the protocol by necessitating additional information about the selection process for synthesis, though it does not necessarily change the answer to existing questions about study inclusion.\",\"resolution_requirement\":\"Evidence must now detail the specific processes and criteria used to determine the eligibility of studies for each synthesis, including any grouping or categorization methods applied.\",\"uncertainty\":\"low\",\"old_excerpt\":\"\",\"new_excerpt\":\"Describe the processes used to decide which studies were eligible for each synthesis (e.g. tabulating the study intervention characteristics and comparing against the planned groups for each synthesis (item #5)).\"},{\"delta_id\":3,\"change_type\":\"field_added\",\"impact_level\":\"medium\",\"interpretation\":\"The new version requires describing the search and selection process, from the number of records identified in the search to the number of studies included in the review, ideally using a flow diagram. This explicit guidance on detailing the search and selection process, including the recommendation for a visual representation, was not present in the old version.\",\"worked_example\":\"\",\"impact_summary\":\"This change enhances the transparency and clarity of the review process by mandating a detailed account of the steps taken from initial search to final inclusion, with a suggestion for a visual aid. This can improve the understanding and evaluation of the review's methodology, although it may not directly alter the conclusions of the review itself.\",\"resolution_requirement\":\"Evidence must now provide a step-by-step description of the search and selection process, including the use of a flow diagram to visually represent these stages.\",\"uncertainty\":\"low\",\"old_excerpt\":\"\",\"new_excerpt\":\"Describe the results of the search and selection process, from the number of records identified in the search to the number of studies included in the review, ideally using a flow diagram (see fig 1).\"}]",
+    "written_at_utc": "2026-11-08T10:32:28Z",
+    "raw_response": "[\n  {\n    \"delta_id\": \"item-24-to-item-23a\",\n    \"change_type\": \"semantic_shift\",\n    \"impact_level\": \"medium\",\n    \"interpretation\": \"The old version specifically asks for a summary of the main findings, including the strength of evidence for each main outcome and its relevance to key groups. The new version is broader, asking for a general interpretation of the results in the context of other evidence, which may or may not include the strength of evidence or specific relevance to key groups.\",\n    \"worked_example\": \"Under the old version, a review might state: 'The evidence strongly supports the use of intervention X, which is highly relevant to healthcare providers and policymakers.' Under the new version, the same review might instead say: 'The results are consistent with previous studies, suggesting that intervention X has a positive effect, but more research is needed to confirm these findings.'\",\n    \"impact_summary\": \"The change shifts the focus from a detailed, structured summary to a more general and contextual discussion, potentially omitting specific details about the strength of evidence and relevance to key groups.\",\n    \"resolution_requirement\": \"A downstream claim must now provide a clear general interpretation of the results, including how the results fit into the broader context of existing evidence, and should ideally still address the strength of evidence and relevance to key groups if applicable.\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Summarise the main findings including the strength of evidence for each main outcome; consider their relevance to key groups (such as health care providers, users, and policy makers)\",\n    \"new_excerpt\": \"Provide a general interpretation of the results in the context of other evidence.\"\n  },\n  {\n    \"delta_id\": \"item-27-to-item-25\",\n    \"change_type\": \"field_renamed\",\n    \"impact_level\": \"low\",\n    \"interpretation\": \"The field label has changed from 'Funding' to 'Support,' but the content and requirements remain the same. Both versions ask for a description of financial and non-financial support, and the role of funders or sponsors in the review.\",\n    \"worked_example\": \"\",\n    \"impact_summary\": \"The change is cosmetic, with no significant impact on the information required or the way it is presented.\",\n    \"resolution_requirement\": \"\",\n    \"uncertainty\": \"low\",\n    \"old_excerpt\": \"Describe sources of funding for the systematic review and other support (such as supply of data) and role of funders for the systematic review\",\n    \"new_excerpt\": \"Describe sources of financial or non-financial support for the review, and the role of the funders or sponsors in the review.\"\n  }\n]",
     "old_id": "PRISMA 2009",
     "new_id": "PRISMA 2020",
     "pair_keys": [
-      null,
-      null,
-      null
+      "item-24",
+      "item-27"
     ]
   },
   "payload": [
     {
-      "delta_id": 1,
-      "change_type": "field_added",
+      "delta_id": "item-24-to-item-23a",
+      "change_type": "semantic_shift",
       "impact_level": "medium",
-      "interpretation": "The new version specifies a requirement to list and define all outcomes for which data were sought, and the methods used to decide which results to collect if not all compatible results were included. This was not present in the old version.",
-      "worked_example": "",
-      "impact_summary": "This change introduces a new requirement that may affect the scope of data collection and reporting, impacting how outcomes are defined and reported in systematic reviews. The introduction of this field can lead to more detailed and transparent reporting of outcomes and their measurement, potentially altering conclusions or compliance status.",
-      "resolution_requirement": "Evidence must now include a clear definition of all outcomes, and if applicable, the decision-making process for selecting specific results over others.",
+      "interpretation": "The old version specifically asks for a summary of the main findings, including the strength of evidence for each main outcome and its relevance to key groups. The new version is broader, asking for a general interpretation of the results in the context of other evidence, which may or may not include the strength of evidence or specific relevance to key groups.",
+      "worked_example": "Under the old version, a review might state: 'The evidence strongly supports the use of intervention X, which is highly relevant to healthcare providers and policymakers.' Under the new version, the same review might instead say: 'The results are consistent with previous studies, suggesting that intervention X has a positive effect, but more research is needed to confirm these findings.'",
+      "impact_summary": "The change shifts the focus from a detailed, structured summary to a more general and contextual discussion, potentially omitting specific details about the strength of evidence and relevance to key groups.",
+      "resolution_requirement": "A downstream claim must now provide a clear general interpretation of the results, including how the results fit into the broader context of existing evidence, and should ideally still address the strength of evidence and relevance to key groups if applicable.",
       "uncertainty": "low",
-      "old_excerpt": "",
-      "new_excerpt": "List and define all outcomes for which data were sought. Specify whether all results that were compatible with each outcome domain in each study were sought (e.g. for all measures, time points, analyses), and if not, the methods used to decide which results to collect."
+      "old_excerpt": "Summarise the main findings including the strength of evidence for each main outcome; consider their relevance to key groups (such as health care providers, users, and policy makers)",
+      "new_excerpt": "Provide a general interpretation of the results in the context of other evidence."
     },
     {
-      "delta_id": 2,
-      "change_type": "field_added",
-      "impact_level": "medium",
-      "interpretation": "The new version introduces a requirement to describe the processes used to decide which studies were eligible for each synthesis, including an example of tabulating study intervention characteristics and comparing against planned groups. This level of detail on synthesis eligibility criteria was not specified in the old version.",
+      "delta_id": "item-27-to-item-25",
+      "change_type": "field_renamed",
+      "impact_level": "low",
+      "interpretation": "The field label has changed from 'Funding' to 'Support,' but the content and requirements remain the same. Both versions ask for a description of financial and non-financial support, and the role of funders or sponsors in the review.",
       "worked_example": "",
-      "impact_summary": "This addition requires a more detailed description of the decision-making process for study inclusion in syntheses, which could impact the transparency and reproducibility of review findings. It changes the protocol by necessitating additional information about the selection process for synthesis, though it does not necessarily change the answer to existing questions about study inclusion.",
-      "resolution_requirement": "Evidence must now detail the specific processes and criteria used to determine the eligibility of studies for each synthesis, including any grouping or categorization methods applied.",
+      "impact_summary": "The change is cosmetic, with no significant impact on the information required or the way it is presented.",
+      "resolution_requirement": "",
       "uncertainty": "low",
-      "old_excerpt": "",
-      "new_excerpt": "Describe the processes used to decide which studies were eligible for each synthesis (e.g. tabulating the study intervention characteristics and comparing against the planned groups for each synthesis (item #5))."
-    },
-    {
-      "delta_id": 3,
-      "change_type": "field_added",
-      "impact_level": "medium",
-      "interpretation": "The new version requires describing the search and selection process, from the number of records identified in the search to the number of studies included in the review, ideally using a flow diagram. This explicit guidance on detailing the search and selection process, including the recommendation for a visual representation, was not present in the old version.",
-      "worked_example": "",
-      "impact_summary": "This change enhances the transparency and clarity of the review process by mandating a detailed account of the steps taken from initial search to final inclusion, with a suggestion for a visual aid. This can improve the understanding and evaluation of the review's methodology, although it may not directly alter the conclusions of the review itself.",
-      "resolution_requirement": "Evidence must now provide a step-by-step description of the search and selection process, including the use of a flow diagram to visually represent these stages.",
-      "uncertainty": "low",
-      "old_excerpt": "",
-      "new_excerpt": "Describe the results of the search and selection process, from the number of records identified in the search to the number of studies included in the review, ideally using a flow diagram (see fig 1)."
+      "old_excerpt": "Describe sources of funding for the systematic review and other support (such as supply of data) and role of funders for the systematic review",
+      "new_excerpt": "Describe sources of financial or non-financial support for the review, and the role of the funders or sponsors in the review."
     }
   ]
 }

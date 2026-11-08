@@ -1,0 +1,27 @@
+{
+  "queries": [
+    "document version change detection large language model",
+    "semantic diff text revision understanding NLP",
+    "legal document amendment detection BERT",
+    "policy change detection text embedding",
+    "guideline update comparison automatic",
+    "benchmark LLM reasoning about differences between documents",
+    "surgical text revision alignment paragraph",
+    "clinical practice guideline change tracking automation",
+    "contract clause change detection large language model",
+    "cross-version semantic equivalence sentence"
+  ],
+  "counts": {
+    "document version change detection large language model": 12,
+    "semantic diff text revision understanding NLP": 12,
+    "legal document amendment detection BERT": 12,
+    "policy change detection text embedding": 12,
+    "guideline update comparison automatic": 12,
+    "benchmark LLM reasoning about differences between documents": 12,
+    "surgical text revision alignment paragraph": 12,
+    "clinical practice guideline change tracking automation": 12,
+    "contract clause change detection large language model": 12,
+    "cross-version semantic equivalence sentence": 12
+  },
+  "retrieved_at": "2026-11-08"
+}

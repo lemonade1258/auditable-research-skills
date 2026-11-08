@@ -1,0 +1,29 @@
+{
+  "receipt": {
+    "purpose": "version-delta.verify_alignment",
+    "model": "qwen-max",
+    "prompt_digest": "4239ba70b5dffa68",
+    "attempts": 1,
+    "latency_ms": 7905,
+    "usage": {
+      "prompt_tokens": 325,
+      "completion_tokens": 47,
+      "total_tokens": 372,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "written_at_utc": "2026-11-08T10:27:44Z",
+    "raw_response": "{\"verdict\": \"ALIGN\", \"confidence\": \"high\", \"reason\": \"Both items require an explicit statement of the objectives or questions being addressed by the review, even though the new version does not explicitly mention PICOS.\"}",
+    "old_unit_id": "item-4",
+    "new_unit_id": "item-4",
+    "old_title": "Objectives",
+    "new_title": "Objectives",
+    "verdict": "ALIGN"
+  },
+  "payload": {
+    "verdict": "ALIGN",
+    "confidence": "high",
+    "reason": "Both items require an explicit statement of the objectives or questions being addressed by the review, even though the new version does not explicitly mention PICOS."
+  }
+}

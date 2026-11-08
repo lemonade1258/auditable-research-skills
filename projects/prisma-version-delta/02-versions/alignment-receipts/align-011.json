@@ -1,0 +1,29 @@
+{
+  "receipt": {
+    "purpose": "version-delta.verify_alignment",
+    "model": "qwen-max",
+    "prompt_digest": "271ddf7587f041ae",
+    "attempts": 1,
+    "latency_ms": 8270,
+    "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 52,
+      "total_tokens": 418,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "written_at_utc": "2026-11-08T10:28:22Z",
+    "raw_response": "{\"verdict\": \"MISMATCH\", \"confidence\": \"high\", \"reason\": \"The old version broadly covers all variables including PICOS and funding sources, while the new version specifically focuses on outcomes and the methods used to decide which results to collect.\"}",
+    "old_unit_id": "item-11",
+    "new_unit_id": "item-10a",
+    "old_title": "Data items",
+    "new_title": "Data items",
+    "verdict": "MISMATCH"
+  },
+  "payload": {
+    "verdict": "MISMATCH",
+    "confidence": "high",
+    "reason": "The old version broadly covers all variables including PICOS and funding sources, while the new version specifically focuses on outcomes and the methods used to decide which results to collect."
+  }
+}

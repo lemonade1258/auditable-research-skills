@@ -1,0 +1,191 @@
+[
+  {
+    "unit_id": "item-1",
+    "item_number": "1",
+    "topic": "Title",
+    "text": "Identify the report as a systematic review.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-2",
+    "item_number": "2",
+    "topic": "Abstract",
+    "text": "See the PRISMA 2020 for Abstracts checklist (table 2).",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-3",
+    "item_number": "3",
+    "topic": "Rationale",
+    "text": "Describe the rationale for the review in the context of existing knowledge.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-4",
+    "item_number": "4",
+    "topic": "Objectives",
+    "text": "Provide an explicit statement of the objective(s) or question(s) the review addresses.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-5",
+    "item_number": "5",
+    "topic": "Eligibility criteria",
+    "text": "Specify the inclusion and exclusion criteria for the review and how studies were grouped for the syntheses.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-6",
+    "item_number": "6",
+    "topic": "Information sources",
+    "text": "Specify all databases, registers, websites, organisations, reference lists and other sources searched or consulted to identify studies. Specify the date when each source was last searched or consulted.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-7",
+    "item_number": "7",
+    "topic": "Search strategy",
+    "text": "Present the full search strategies for all databases, registers and websites, including any filters and limits used.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-8",
+    "item_number": "8",
+    "topic": "Selection process",
+    "text": "Specify the methods used to decide whether a study met the inclusion criteria of the review, including how many reviewers screened each record and each report retrieved, whether they worked independently, and if applicable, details of automation tools used in the process.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-9",
+    "item_number": "9",
+    "topic": "Data collection process",
+    "text": "Specify the methods used to collect data from reports, including how many reviewers collected data from each report, whether they worked independently, any processes for obtaining or confirming data from study investigators, and if applicable, details of automation tools used in the process.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-10a",
+    "item_number": "10a",
+    "topic": "Data items",
+    "text": "List and define all outcomes for which data were sought. Specify whether all results that were compatible with each outcome domain in each study were sought (e.g. for all measures, time points, analyses), and if not, the methods used to decide which results to collect.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-11",
+    "item_number": "11",
+    "topic": "Study risk of bias assessment",
+    "text": "Specify the methods used to assess risk of bias in the included studies, including details of the tool(s) used, how many reviewers assessed each study and whether they worked independently, and if applicable, details of automation tools used in the process.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-12",
+    "item_number": "12",
+    "topic": "Effect measures",
+    "text": "Specify for each outcome the effect measure(s) (e.g. risk ratio, mean difference) used in the synthesis or presentation of results.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-13a",
+    "item_number": "13a",
+    "topic": "Synthesis methods",
+    "text": "Describe the processes used to decide which studies were eligible for each synthesis (e.g. tabulating the study intervention characteristics and comparing against the planned groups for each synthesis (item #5)).",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-14",
+    "item_number": "14",
+    "topic": "Reporting bias assessment",
+    "text": "Describe any methods used to assess risk of bias due to missing results in a synthesis (arising from reporting biases).",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-15",
+    "item_number": "15",
+    "topic": "Certainty assessment",
+    "text": "Describe any methods used to assess certainty (or confidence) in the body of evidence for an outcome.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-16a",
+    "item_number": "16a",
+    "topic": "Study selection",
+    "text": "Describe the results of the search and selection process, from the number of records identified in the search to the number of studies included in the review, ideally using a flow diagram (see fig 1).",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-17",
+    "item_number": "17",
+    "topic": "Study characteristics",
+    "text": "Cite each included study and present its characteristics.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-18",
+    "item_number": "18",
+    "topic": "Risk of bias in studies",
+    "text": "Present assessments of risk of bias for each included study.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-19",
+    "item_number": "19",
+    "topic": "Results of individual studies",
+    "text": "For all outcomes, present, for each study: (a) summary statistics for each group (where appropriate) and (b) an effect estimate and its precision (e.g. confidence/credible interval), ideally using structured tables or plots.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-20a",
+    "item_number": "20a",
+    "topic": "Results of syntheses",
+    "text": "For each synthesis, briefly summarise the characteristics and risk of bias among contributing studies.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-21",
+    "item_number": "21",
+    "topic": "Reporting biases",
+    "text": "Present assessments of risk of bias due to missing results (arising from reporting biases) for each synthesis assessed.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-22",
+    "item_number": "22",
+    "topic": "Certainty of evidence",
+    "text": "Present assessments of certainty (or confidence) in the body of evidence for each outcome assessed.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-23a",
+    "item_number": "23a",
+    "topic": "Discussion",
+    "text": "Provide a general interpretation of the results in the context of other evidence.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-24a",
+    "item_number": "24a",
+    "topic": "Registration and protocol",
+    "text": "Provide registration information for the review, including register name and registration number, or state that the review was not registered.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-25",
+    "item_number": "25",
+    "topic": "Support",
+    "text": "Describe sources of financial or non-financial support for the review, and the role of the funders or sponsors in the review.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-26",
+    "item_number": "26",
+    "topic": "Competing interests",
+    "text": "Declare any competing interests of review authors.",
+    "table": "PRISMA 2020 item checklist"
+  },
+  {
+    "unit_id": "item-27",
+    "item_number": "27",
+    "topic": "Availability of data, code, and other materials",
+    "text": "Report which of the following are publicly available and where they can be found: template data collection forms; data extracted from included studies; data used for all analyses; analytic code; any other materials used in the review.",
+    "table": "PRISMA 2020 item checklist"
+  }
+]

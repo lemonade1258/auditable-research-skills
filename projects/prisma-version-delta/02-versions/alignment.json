@@ -1,0 +1,431 @@
+[
+  {
+    "old_unit_id": "item-1",
+    "new_unit_id": "item-1",
+    "old_title": "Title",
+    "new_title": "Title",
+    "alignment": "matched",
+    "similarity": 1.0,
+    "aligned_by": "title_similarity+model_verified",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items require the title to identify the report as a systematic review, with the 2009 version also allowing for meta-analysis which is a specific type of systematic review."
+  },
+  {
+    "old_unit_id": "item-2",
+    "new_unit_id": "item-2",
+    "old_title": "Structured summary",
+    "new_title": "Abstract",
+    "alignment": "matched",
+    "similarity": 0.0,
+    "aligned_by": "model_resolved",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items refer to the summary of the review, though the new version specifically refers to the PRISMA 2020 for Abstracts checklist."
+  },
+  {
+    "old_unit_id": "item-3",
+    "new_unit_id": "item-3",
+    "old_title": "Rationale",
+    "new_title": "Rationale",
+    "alignment": "matched",
+    "similarity": 1.0,
+    "aligned_by": "title_similarity+model_verified",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items request a description of the rationale for the review in the context of current knowledge, despite slight wording differences."
+  },
+  {
+    "old_unit_id": "item-4",
+    "new_unit_id": "item-4",
+    "old_title": "Objectives",
+    "new_title": "Objectives",
+    "alignment": "matched",
+    "similarity": 1.0,
+    "aligned_by": "title_similarity+model_verified",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items require an explicit statement of the objectives or questions being addressed by the review, even though the new version does not explicitly mention PICOS."
+  },
+  {
+    "old_unit_id": "item-5",
+    "new_unit_id": "item-24a",
+    "old_title": "Protocol and registration",
+    "new_title": "Registration and protocol",
+    "alignment": "matched",
+    "similarity": 0.0,
+    "aligned_by": "model_resolved",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items address the protocol and registration of the review, including where it can be accessed and registration information."
+  },
+  {
+    "old_unit_id": "item-6",
+    "new_unit_id": "item-5",
+    "old_title": "Eligibility criteria",
+    "new_title": "Eligibility criteria",
+    "alignment": "matched",
+    "similarity": 1.0,
+    "aligned_by": "title_similarity+model_verified",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items ask for the criteria used to determine which studies are included in the review, although the new version also asks about how studies were grouped for synthesis."
+  },
+  {
+    "old_unit_id": "item-7",
+    "new_unit_id": "item-6",
+    "old_title": "Information sources",
+    "new_title": "Information sources",
+    "alignment": "matched",
+    "similarity": 1.0,
+    "aligned_by": "title_similarity+model_verified",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items require the specification of information sources and the dates they were last searched or consulted, even though the new version provides more detailed examples of sources."
+  },
+  {
+    "old_unit_id": "item-8",
+    "new_unit_id": "item-7",
+    "old_title": "Search",
+    "new_title": "Search strategy",
+    "alignment": "matched",
+    "similarity": 0.0,
+    "aligned_by": "model_resolved",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items require the presentation of the full electronic search strategy, including any limits used."
+  },
+  {
+    "old_unit_id": "item-9",
+    "new_unit_id": "item-8",
+    "old_title": "Study selection",
+    "new_title": "Selection process",
+    "alignment": "matched",
+    "similarity": 0.0,
+    "aligned_by": "model_resolved",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items describe the process for selecting studies, including screening and eligibility criteria."
+  },
+  {
+    "old_unit_id": "item-10",
+    "new_unit_id": "item-9",
+    "old_title": "Data collection process",
+    "new_title": "Data collection process",
+    "alignment": "matched",
+    "similarity": 1.0,
+    "aligned_by": "title_similarity+model_verified",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items focus on the methods and processes used for data collection, including the involvement of multiple reviewers and obtaining or confirming data from investigators."
+  },
+  {
+    "old_unit_id": "item-11",
+    "new_unit_id": "item-10a",
+    "old_title": "Data items",
+    "new_title": "Data items",
+    "alignment": "absorbed",
+    "similarity": 0.0,
+    "aligned_by": "model_resolved",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items list and define the data items sought, including variables and outcomes."
+  },
+  {
+    "old_unit_id": "item-12",
+    "new_unit_id": "item-11",
+    "old_title": "Risk of bias in individual studies",
+    "new_title": "Study risk of bias assessment",
+    "alignment": "matched",
+    "similarity": 0.0,
+    "aligned_by": "model_resolved",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items describe the methods used to assess the risk of bias in individual studies."
+  },
+  {
+    "old_unit_id": "item-13",
+    "new_unit_id": "item-12",
+    "old_title": "Summary measures",
+    "new_title": "Effect measures",
+    "alignment": "matched",
+    "similarity": 0.0,
+    "aligned_by": "model_resolved",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items specify the principal summary measures used in the synthesis or presentation of results."
+  },
+  {
+    "old_unit_id": "item-14",
+    "new_unit_id": "item-13a",
+    "old_title": "Synthesis of results",
+    "new_title": "Synthesis methods",
+    "alignment": "matched",
+    "similarity": 0.0,
+    "aligned_by": "model_resolved",
+    "alignment_confidence": "medium",
+    "alignment_reason": "Both items describe the methods of handling data and combining results, though the new version is more specific about the processes used to decide which studies were eligible for each synthesis."
+  },
+  {
+    "old_unit_id": "item-15",
+    "new_unit_id": "item-14",
+    "old_title": "Risk of bias across studies",
+    "new_title": "Reporting bias assessment",
+    "alignment": "matched",
+    "similarity": 0.0,
+    "aligned_by": "model_resolved",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items address the assessment of risk of bias across studies, including publication bias and selective reporting."
+  },
+  {
+    "old_unit_id": "item-16",
+    "new_unit_id": null,
+    "old_title": "Additional analyses",
+    "new_title": null,
+    "alignment": "removed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": "item-17",
+    "new_unit_id": null,
+    "old_title": "Study selection",
+    "new_title": null,
+    "alignment": "removed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": "item-18",
+    "new_unit_id": "item-17",
+    "old_title": "Study characteristics",
+    "new_title": "Study characteristics",
+    "alignment": "matched",
+    "similarity": 1.0,
+    "aligned_by": "title_similarity+model_verified",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items request the presentation of characteristics for each included study and their citations, indicating the same underlying concern."
+  },
+  {
+    "old_unit_id": "item-19",
+    "new_unit_id": null,
+    "old_title": "Risk of bias within studies",
+    "new_title": null,
+    "alignment": "removed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": "item-20",
+    "new_unit_id": "item-19",
+    "old_title": "Results of individual studies",
+    "new_title": "Results of individual studies",
+    "alignment": "matched",
+    "similarity": 1.0,
+    "aligned_by": "title_similarity+model_verified",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items request the presentation of summary data for each intervention group and effect estimates with confidence intervals for all outcomes, indicating the same underlying concern."
+  },
+  {
+    "old_unit_id": "item-21",
+    "new_unit_id": "item-20a",
+    "old_title": "Synthesis of results",
+    "new_title": "Results of syntheses",
+    "alignment": "matched",
+    "similarity": 0.0,
+    "aligned_by": "model_resolved",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items present the results of each meta-analysis, including confidence intervals and measures of consistency."
+  },
+  {
+    "old_unit_id": "item-22",
+    "new_unit_id": "item-21",
+    "old_title": "Risk of bias across studies",
+    "new_title": "Reporting biases",
+    "alignment": "matched",
+    "similarity": 0.0,
+    "aligned_by": "model_resolved",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items present the results of any assessment of risk of bias across studies."
+  },
+  {
+    "old_unit_id": "item-23",
+    "new_unit_id": null,
+    "old_title": "Additional analysis",
+    "new_title": null,
+    "alignment": "removed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": "item-24",
+    "new_unit_id": "item-23a",
+    "old_title": "Summary of evidence",
+    "new_title": "Discussion",
+    "alignment": "matched",
+    "similarity": 0.0,
+    "aligned_by": "model_resolved",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items summarize the main findings and their relevance to key groups, and provide a general interpretation of the results."
+  },
+  {
+    "old_unit_id": "item-25",
+    "new_unit_id": null,
+    "old_title": "Limitations",
+    "new_title": null,
+    "alignment": "removed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": "item-26",
+    "new_unit_id": null,
+    "old_title": "Conclusions",
+    "new_title": null,
+    "alignment": "removed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": "item-27",
+    "new_unit_id": "item-25",
+    "old_title": "Funding",
+    "new_title": "Support",
+    "alignment": "matched",
+    "similarity": 0.0,
+    "aligned_by": "model_resolved",
+    "alignment_confidence": "high",
+    "alignment_reason": "Both items describe the sources of funding for the systematic review and other support, and the role of funders."
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-2",
+    "old_title": null,
+    "new_title": "Abstract",
+    "alignment": "absorbed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-7",
+    "old_title": null,
+    "new_title": "Search strategy",
+    "alignment": "absorbed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-8",
+    "old_title": null,
+    "new_title": "Selection process",
+    "alignment": "absorbed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-11",
+    "old_title": null,
+    "new_title": "Study risk of bias assessment",
+    "alignment": "absorbed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-12",
+    "old_title": null,
+    "new_title": "Effect measures",
+    "alignment": "absorbed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-13a",
+    "old_title": null,
+    "new_title": "Synthesis methods",
+    "alignment": "absorbed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-14",
+    "old_title": null,
+    "new_title": "Reporting bias assessment",
+    "alignment": "absorbed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-15",
+    "old_title": null,
+    "new_title": "Certainty assessment",
+    "alignment": "added",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-20a",
+    "old_title": null,
+    "new_title": "Results of syntheses",
+    "alignment": "absorbed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-21",
+    "old_title": null,
+    "new_title": "Reporting biases",
+    "alignment": "absorbed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-22",
+    "old_title": null,
+    "new_title": "Certainty of evidence",
+    "alignment": "added",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-23a",
+    "old_title": null,
+    "new_title": "Discussion",
+    "alignment": "absorbed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-24a",
+    "old_title": null,
+    "new_title": "Registration and protocol",
+    "alignment": "absorbed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-25",
+    "old_title": null,
+    "new_title": "Support",
+    "alignment": "absorbed",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-26",
+    "old_title": null,
+    "new_title": "Competing interests",
+    "alignment": "added",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  },
+  {
+    "old_unit_id": null,
+    "new_unit_id": "item-27",
+    "old_title": null,
+    "new_title": "Availability of data, code, and other materials",
+    "alignment": "added",
+    "similarity": 0.0,
+    "aligned_by": "title_similarity"
+  }
+]
