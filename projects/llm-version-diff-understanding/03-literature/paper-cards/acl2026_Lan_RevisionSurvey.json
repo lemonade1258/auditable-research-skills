@@ -15,14 +15,13 @@
     "Demonstrates edit intent classification depends on context and purpose, not just text"
   ],
   "edit_taxonomy": {
-    "content_edits": "Add/delete/replace factual information",
-    "clarity_edits": "Rephrase for comprehension",
-    "coherence_edits": "Reorder, link sentences for flow",
-    "grammar_style_edits": "Fix errors, improve readability",
-    "flow_edits": "Smooth transitions"
+    "note": "The survey reviews taxonomies ALONG four dimensions (structure, definitions/examples, application domains, data availability) rather than enumerating one canonical label set. The paper's illustrative lineage taxonomy is:",
+    "meaning_preserving": ["FLUENCY (grammar and spelling correction)", "FORMATTING"],
+    "meaning_changing": ["ELABORATION (adding new information)", "VERIFICATION (correcting factual errors or adding citations)", "SIMPLIFICATION (removing redundancy or reducing complexity)"],
+    "structure_convention": "Most edit-intention taxonomies are tree-based, up to three levels; three-level ones separate meaning-preserving from meaning-changing, sometimes refining by discourse scope or edited object."
   },
-  "key_insight": "Same text change can serve different purposes. A deletion can be a 'scope narrowing' (content intent) or a 'style improvement' (grammar intent). Classification must consider both text and context.",
-  "direct_implication_for_skill": "The skill's change_type classification (semantic_shift, scope_narrowed, etc.) attempts to encode *what* changed. But as this survey shows, understanding *why* requires context. The skill's 'interpretation' and 'worked_example' fields are attempts to capture this context.",
+  "key_insight": "Edit intentions provide a high-level abstraction OVER surface-level differences, capturing underlying goals such as content elaboration, factual correction, stylistic refinement, or structural reorganization. The same surface pattern (e.g., a deletion) can reflect different intentions: removing redundancy (SIMPLIFICATION) vs. removing a requirement (content change).",
+  "direct_implication_for_skill": "The skill's change_type taxonomy (semantic_shift, scope_narrowed, scope_broadened, field_renamed, requirement_added, requirement_removed) sits at the surface-edit-action level, whereas this survey's framing puts intent one level above. The skill's 'interpretation' and 'worked_example' fields are the place where intent is expressed — this paper argues that level is where the real signal is. The survey also notes definition quality varies and categories are often overly broad, which is a caution for the skill's own label definitions.",
   "potential_application": "When the skill marks a change as 'uncertain', could leverage this taxonomy to ask: 'Is this a content edit (scope change) or a style edit (field rename)?' This could help resolve ambiguous classifications.",
   "reading_notes": "This is a survey paper; most useful for understanding the broader landscape of edit types. Helps explain why simple lexical diffs fail: they don't distinguish intent. Key insight: same surface pattern → different semantic meaning depending on intent.",
   "pdf_status": "✅ Downloaded and text extracted",

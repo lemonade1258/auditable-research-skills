@@ -57,7 +57,7 @@ The task is to classify differences into actionable types and flag which impact 
 | Method | Alignment Acc | Classification F1 | Combined F1 |
 |--------|---------------|-------------------|------------|
 | DeepSeek-V3.2 | 70.8% | 91.6% | 56.8% |
-| all-MiniLM-L6-v2 | 79.6% | 66.5% | 60.0% |
+| paraphrase-multilingual-mpnet-base-v2 | 79.2% | 70.9% | 60.0% |
 | DocuToads | 78.1% | 54.4% | 54.8% |
 
 **Critical insight**: LLMs dominate isolated classification (91.6%) but degrade sharply when alignment and classification are coupled (56.8%). Domain-specific dense encoders offer more robust end-to-end performance.
@@ -72,32 +72,30 @@ The task is to classify differences into actionable types and flag which impact 
 **Narendra, Shetty, Ratnaparkhi (2024, NLLP)**  
 **Relevance**: ⭐⭐⭐⭐ Related task: comparison of legal documents via NLI
 
-**Approach**: Bidirectional Natural Language Inference
-- Split both template and contract into key concepts
-- Test whether each concept is entailed/contradicted/neutral by the other document
-- Bidirectional (template → contract *and* contract → template)
+**Approach**: Document-level Natural Language Inference over legal documents
+- Decompose both template and contract into key concepts / clauses
+- Test whether each concept is entailed / contradicted / neutral (not mentioned) by the other document
+- Runs the comparison in both directions: template → contract *and* contract → template
 
-**Results**: 96.46% accuracy on private dataset; outperforms BERT-based methods on ContractNLI
+**Results**: 96.46% accuracy on a private real-world legal dataset; evaluates on ContractNLI (607 NDAs × 17 hypotheses) and outperforms prior BERT-based Span-NLI baselines
 
-**Key technique**: NLI framing captures both narrowed and broadened scopes through bidirectional testing
+**Key technique**: NLI framing captures both narrowed and broadened scopes because both directions of entailment are tested
 
 **Implications**: 
 - NLI framing is well-suited for regulatory/normative comparison
-- Bidirectional pairing recovers both deletions and additions
+- Two-sided entailment testing recovers both deletions (template concept not covered) and additions (contract concept not in template)
 - Supports amendment tracking across versions
 
 ### 2.3 Making Revisions Understandable: A Survey of Edit Intentions, Methods, and Applications
 **Lan, Zhang, Dragut (2026, ACL Findings)**  
 **Relevance**: ⭐⭐⭐ Broad taxonomy of edit types in text revision
 
-**Edit taxonomy**:
-- Content edits: add/delete/replace information
-- Clarity edits: rephrase for comprehension
-- Coherence edits: reorder, link
-- Grammar/style: fix errors
-- Flow edits: smooth transitions
+**Edit taxonomy** (illustrative lineage taxonomy in the paper):
+- Meaning-preserving: FLUENCY (grammar/spelling), FORMATTING
+- Meaning-changing: ELABORATION (adding information), VERIFICATION (factual correction/citations), SIMPLIFICATION (removing redundancy)
+- Structure: most edit-intention taxonomies are tree-based up to three levels; three-level ones separate meaning-preserving from meaning-changing
 
-**Finding**: Same surface pattern (e.g., deletion) can serve different *intentions*. Edit intent varies widely.
+**Finding**: Edit intentions provide a high-level abstraction *over* surface-level differences — the same surface pattern (e.g., a deletion) can serve different intentions (removing redundancy vs. removing a requirement). The survey notes definition quality varies and categories are often overly broad, which is a caution for any change taxonomy.
 
 **Implications**: 
 - A change taxonomy must encode *why* the change happened, not just *what*

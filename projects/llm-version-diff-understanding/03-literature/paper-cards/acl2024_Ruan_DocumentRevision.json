@@ -5,8 +5,20 @@
   "venue": "ACL 2024 Main",
   "year": 2024,
   "institution": "TU Darmstadt (UKP Lab)",
+  "url": "https://aclanthology.org/2024.acl-long.255/",
   "relevance_score": 7.5,
   "categories": ["revision-analysis", "document-modeling", "collaborative-writing", "intent-prediction"],
   "key_contributions": [
-    "Re3 framework for modeling collaborative document revision",
-    "ITERATER corpus: mu
+    "Re3: a holistic framework for joint analysis of collaborative document revision (review + revision + author response)",
+    "Re3-Sci: a large corpus of aligned scientific paper revisions manually labeled by action AND intent, supplemented with the peer reviews and human-written edit summaries",
+    "Provides first empirical insights into collaborative document revision in the academic domain",
+    "Assesses state-of-the-art LLMs at automating edit analysis and facilitating text-based collaboration",
+    "Releases annotation environment, protocols, data and experimental code"
+  ],
+  "key_insight": "A revision's correctness depends on the author's intent and the review that prompted it—not on surface similarity alone. The surrounding collaboration context (review comment, author response, edit summary) is what makes a revision interpretable.",
+  "direct_implication_for_skill": "Version changes are often collaborative: a rule revision typically responds to a stakeholder request, a review comment, or a stated gap. The skill's 'interpretation', 'worked_example' and 'resolution_requirement' fields attempt to capture that intent, and this paper validates that design. It also suggests adding an optional 'rationale' input (why the change was made) alongside the old/new text, which would sharpen intent-based classification.",
+  "resolution_requirement_for_downstream": "Different change types imply different downstream obligations: a semantic_shift forces evidence revalidation, a field_rename does not. Encoding intent lets the skill target revalidation only where it is required, instead of treating all 19 PRISMA deltas alike.",
+  "reading_notes": "Read the abstract and Figure 1 (the review → revision → response loop). Useful as the framing paper for why 'why did this change' is a first-class question, not a footnote on 'what changed'.",
+  "pdf_status": "✅ Downloaded and text extracted",
+  "extraction_confidence": 0.87
+}
