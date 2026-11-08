@@ -16,6 +16,15 @@ STATUS_VALUES = {
 EVIDENCE_LABELS = {
     "author_claim", "observed_result", "pipeline_synthesis", "unverified_inference",
 }
+# Status values for evidence under version changes
+EVIDENCE_REVALIDATION_STATUS = {
+    "valid", "needs_recheck", "invalidated", "superseded", "narrowed", "unverified"
+}
+# Mapping of change types in a delta
+DELTA_CHANGE_TYPES = {
+    "field_added", "field_removed", "field_renamed", "semantic_shift",
+    "scope_narrowed", "scope_broadened", "requirement_added", "requirement_removed",
+}
 
 
 def missing(record: dict[str, Any], fields: Iterable[str]) -> list[str]:
@@ -105,6 +114,40 @@ def validate_transfer(record: dict[str, Any]) -> list[str]:
     return errors
 
 
+def validate_delta(record: dict[str, Any]) -> list[str]:
+    """Validate a version delta record: the semantic diff between two versions."""
+    errors = [f"missing {field}" for field in missing(record, (
+        "delta_id", "source_version", "target_version", "change_type",
+        "source_location", "interpretation", "impact_summary", "verification_status",
+    ))]
+    if record.get("change_type") not in DELTA_CHANGE_TYPES:
+        errors.append(f"invalid change_type; must be one of {DELTA_CHANGE_TYPES}")
+    if record.get("verification_status") not in {"unverified", "machine_proposed", "human_confirmed"}:
+        errors.append("invalid verification_status")
+    return errors
+
+
+def validate_evidence_revalidation(record: dict[str, Any]) -> list[str]:
+    """Validate a revalidation record: how an evidence statement holds under a new version."""
+    errors = [f"missing {field}" for field in missing(record, (
+        "revalidation_id", "evidence_id", "prior_version", "new_version",
+        "status", "reasoning", "checked_at",
+    ))]
+    if record.get("status") not in EVIDENCE_REVALIDATION_STATUS:
+        errors.append(f"invalid status; must be one of {EVIDENCE_REVALIDATION_STATUS}")
+    return errors
+
+
+def validate_idea_version_binding(record: dict[str, Any]) -> list[str]:
+    """Validate that an idea is tagged with the version context under which it was derived."""
+    errors = [f"missing {field}" for field in missing(record, (
+        "idea_id", "version_id", "version_assumptions", "version_dependencies",
+    ))]
+    if not isinstance(record.get("version_dependencies"), list):
+        errors.append("version_dependencies must be a list of delta IDs")
+    return errors
+
+
 def validate_records(records: Any, kind: str) -> list[str]:
     if kind == "transfer" and isinstance(records, dict):
         records = [records]
@@ -119,6 +162,9 @@ def validate_records(records: Any, kind: str) -> list[str]:
         "freshness": validate_freshness,
         "run": validate_run,
         "transfer": validate_transfer,
+        "delta": validate_delta,
+        "evidence_revalidation": validate_evidence_revalidation,
+        "idea_version_binding": validate_idea_version_binding,
     }.get(kind)
     if validator is None:
         return [f"unknown artifact kind: {kind}"]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evidence revalidation"
+  short_description: "Assess whether existing evidence survives a version change in standards or specifications"
+  default_prompt: "Use $evidence-revalidation to judge whether research evidence, claims, and ideas remain valid under a new version of a specification or guideline."

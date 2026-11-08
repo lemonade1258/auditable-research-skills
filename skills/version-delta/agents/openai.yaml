@@ -1,0 +1,4 @@
+interface:
+  display_name: "Version delta analysis"
+  short_description: "Compare two versions of a spec/standard/protocol and classify differences by semantic impact"
+  default_prompt: "Use $version-delta to produce an auditable semantic difference map between two versions of a reporting guideline, evaluation benchmark, or regulatory requirement."
