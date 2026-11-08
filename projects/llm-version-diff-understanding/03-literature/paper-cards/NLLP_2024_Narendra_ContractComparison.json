@@ -1,0 +1,28 @@
+{
+  "paper_id": "2024.nllp-1.11",
+  "title": "Enhancing Contract Negotiations with LLM-Based Legal Document Comparison",
+  "authors": ["Savinay Narendra", "Kaushal Shetty", "Adwait Ratnaparkhi"],
+  "venue": "NLLP Workshop 2024",
+  "year": 2024,
+  "organization": "JPMorgan Chase Machine Learning Center of Excellence",
+  "relevance_score": 8.5,
+  "categories": ["legal-nlp", "document-comparison", "nli", "contract-analysis"],
+  "key_contributions": [
+    "LLM-based approach for comparing legal contracts with templates using Natural Language Inference (NLI)",
+    "Bidirectional entailment testing: template concepts against contract, and contract concepts against template",
+    "Clause variation analysis to generate approved contract term catalog",
+    "RAG pipeline for clause library and amendment tracking",
+    "Achieves 96.46% accuracy on private real-world legal dataset"
+  ],
+  "methodology": {
+    "core_idea": "Frame document comparison as document-level NLI: test whether template concepts are entailed/contradicted/neutral by contract document",
+    "bidirectional": "Test both directions to catch additions (concepts in contract not in template) and deletions (concepts in template not in contract)",
+    "key_datasets": ["ContractNLI (607 NDAs, 17 hypotheses per NDA)", "Internal JPMorgan contracts (25 master contracts, 5 with amendments, span 2007-2023)"]
+  },
+  "direct_implication_for_skill": "NLI framing is well-suited for regulatory/normative version comparison. Bidirectional testing (old→new AND new→old) naturally captures both scope_narrowed and scope_broadened changes. Current skill uses unidirectional comparison; consider adopting bidirectional pattern.",
+  "practical_outcome": "Generated clause libraries suggesting template modifications, supported prenegotiated MSAs, accelerated contract review and negotiation timelines",
+  "resolution_requirement_for_downstream": "Bidirectional comparison enables automatic detection of: (1) requirements no longer implied (narrowed scope), (2) requirements newly required (broadened scope). Downstream evidence must verify against both old and new requirements.",
+  "reading_notes": "Pay attention to Section 4 (motivation and methodology). The NLI framing and bidirectional pattern are directly applicable to the version-delta skill. Consider implementing bidirectional testing in next iteration.",
+  "pdf_status": "✅ Downloaded and text extracted",
+  "extraction_confidence": 0.92
+}

@@ -1,0 +1,31 @@
+{
+  "paper_id": "2026.acl-srw.68",
+  "title": "RegTrack: A Fine-Grained Benchmark for Multi-Class Legal Change Detection",
+  "authors": ["Joe Yu", "Kevin Chenhao Li", "Julian Ostarek"],
+  "venue": "ACL 2026 Student Research Workshop",
+  "year": 2026,
+  "doi": "N/A",
+  "url": "https://aclanthology.org/2026.acl-srw.68/",
+  "relevance_score": 9.8,
+  "categories": ["legal-nlp", "version-tracking", "benchmark", "change-detection"],
+  "key_contributions": [
+    "First published benchmark for fine-grained legal change detection",
+    "4,772 manually annotated EU regulation provision pairs",
+    "Atomic Legal Units (ALUs) as the unit of comparison",
+    "6-class taxonomy: no_change, syntactic_change, reference_update, semantic_change, addition, deletion",
+    "Demonstrates LLM classification dominates (91.6% F1) but alignment is the bottleneck (combined 56.8%)"
+  ],
+  "key_result": {
+    "insight": "LLMs excel at isolated change classification (91.6% Macro-F1) but fail at end-to-end alignment+classification (56.8% combined). Domain-specific dense encoders offer more robust pipeline performance.",
+    "methods_tested": [
+      {"name": "DeepSeek-V3.2", "alignment_acc": 0.708, "classification_f1": 0.916, "combined_f1": 0.568},
+      {"name": "all-MiniLM-L6-v2", "alignment_acc": 0.796, "classification_f1": 0.665, "combined_f1": 0.600},
+      {"name": "DocuToads", "alignment_acc": 0.781, "classification_f1": 0.544, "combined_f1": 0.548}
+    ]
+  },
+  "direct_implication_for_skill": "Validates the 3-pass alignment strategy: (1) mechanical title-similarity pairing, (2) LLM verification of pairs, (3) meaning-based resolution of unmatched items. Shows item numbers are unreliable anchors; wrong pairings produce plausible but false semantic shifts.",
+  "resolution_requirement_for_downstream": "When aligning provisions between versions, always validate pairing before classification. A high-confidence but false alignment can contaminate the entire analysis.",
+  "reading_notes": "Critical validation of the skill's design. Shows the 54.5% → ~7% error reduction in PRISMA case is not just incremental improvement but fundamental architectural necessity. Recommend reading Table 2 (results) and Section 6 (discussion of alignment vs classification tradeoff).",
+  "pdf_status": "✅ Downloaded and text extracted",
+  "extraction_confidence": 0.95
+}

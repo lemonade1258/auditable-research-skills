@@ -1,0 +1,30 @@
+{
+  "paper_id": "2026.findings-acl.1747",
+  "title": "Making Revisions Understandable: A Survey of Edit Intentions, Methods, and Applications",
+  "authors": ["Fangping Lan", "Qi Zhang", "Eduard C. Dragut"],
+  "venue": "ACL 2026 Findings",
+  "year": 2026,
+  "institution": "Temple University",
+  "relevance_score": 7.8,
+  "categories": ["revision-analysis", "edit-intention", "taxonomy", "survey"],
+  "key_contributions": [
+    "Comprehensive taxonomy of edit intentions in text revision",
+    "Distinguishes content edits from clarity/coherence/grammar/style edits",
+    "Shows the same surface pattern (e.g., deletion) can reflect different intentions",
+    "Surveys methods for intent prediction and applications",
+    "Demonstrates edit intent classification depends on context and purpose, not just text"
+  ],
+  "edit_taxonomy": {
+    "content_edits": "Add/delete/replace factual information",
+    "clarity_edits": "Rephrase for comprehension",
+    "coherence_edits": "Reorder, link sentences for flow",
+    "grammar_style_edits": "Fix errors, improve readability",
+    "flow_edits": "Smooth transitions"
+  },
+  "key_insight": "Same text change can serve different purposes. A deletion can be a 'scope narrowing' (content intent) or a 'style improvement' (grammar intent). Classification must consider both text and context.",
+  "direct_implication_for_skill": "The skill's change_type classification (semantic_shift, scope_narrowed, etc.) attempts to encode *what* changed. But as this survey shows, understanding *why* requires context. The skill's 'interpretation' and 'worked_example' fields are attempts to capture this context.",
+  "potential_application": "When the skill marks a change as 'uncertain', could leverage this taxonomy to ask: 'Is this a content edit (scope change) or a style edit (field rename)?' This could help resolve ambiguous classifications.",
+  "reading_notes": "This is a survey paper; most useful for understanding the broader landscape of edit types. Helps explain why simple lexical diffs fail: they don't distinguish intent. Key insight: same surface pattern → different semantic meaning depending on intent.",
+  "pdf_status": "✅ Downloaded and text extracted",
+  "extraction_confidence": 0.90
+}

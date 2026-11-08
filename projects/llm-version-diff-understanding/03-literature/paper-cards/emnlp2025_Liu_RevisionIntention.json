@@ -1,0 +1,27 @@
+{
+  "paper_id": "2025.findings-emnlp.829",
+  "title": "Efficient Layer-wise LLM Fine-tuning for Revision Intention Prediction",
+  "authors": ["Zhexiong Liu", "Diane Litman"],
+  "venue": "EMNLP 2025 Findings",
+  "year": 2025,
+  "institution": "University of Pittsburgh",
+  "relevance_score": 7.2,
+  "categories": ["revision-analysis", "intent-prediction", "parameter-efficient-tuning", "text-classification"],
+  "key_contributions": [
+    "Introduces IR-Tuning: layer-wise PEFT that dynamically selects important LLM layers",
+    "Addresses the problem: predicting nuanced revision intentions (coherence, clarity, style, grammar) from before/after text pairs",
+    "Shows LLMs pre-trained for generation struggle at classification tasks",
+    "Demonstrates parameter-efficient fine-tuning works well on small, specialized revision corpora",
+    "Outperforms QLoRA and other layer-wise PEFT baselines on ITERATER corpus"
+  ],
+  "problem_formulation": {
+    "challenge": "Given two versions of text, predict the writer's intention behind the revision (not just what changed, but why)",
+    "example": "Original: 'We also leverage the image features to incorporate the style information of words in LayoutLM.' Revised (Clarity): 'We also leverage the image features to incorporate the visual information of words in LayoutLM.' (changed 'style' to 'visual')",
+    "difficulty": "Same surface pattern can represent different intentions; requires understanding context and purpose"
+  },
+  "direct_implication_for_skill": "Change classification (what type changed) is easier than intent prediction (why it changed). The skill's 'worked_example' and 'resolution_requirement' fields attempt to capture intent; this paper shows fine-grained intent prediction benefits from careful model tuning, not just prompting.",
+  "potential_application": "If skill needs to distinguish between 'field renamed' (same intent) vs. 'semantic shift' (new intent), could adapt IR-Tuning approach for task-specific fine-tuning on small revision corpora.",
+  "reading_notes": "Important for understanding the distinction between 'what changed' (easier) vs. 'why it changed' (harder). Section 1 clearly frames the problem. Not directly applicable now, but valuable reference for future skill iterations on intent classification.",
+  "pdf_status": "✅ Downloaded and text extracted",
+  "extraction_confidence": 0.88
+}

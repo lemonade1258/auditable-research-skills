@@ -1,0 +1,12 @@
+{
+  "paper_id": "2024.acl-long.255",
+  "title": "Re3: A Holistic Framework and Dataset for Modeling Collaborative Document Revision",
+  "authors": ["Qian Ruan", "Ilia Kuznetsov", "Iryna Gurevych"],
+  "venue": "ACL 2024 Main",
+  "year": 2024,
+  "institution": "TU Darmstadt (UKP Lab)",
+  "relevance_score": 7.5,
+  "categories": ["revision-analysis", "document-modeling", "collaborative-writing", "intent-prediction"],
+  "key_contributions": [
+    "Re3 framework for modeling collaborative document revision",
+    "ITERATER corpus: mu
